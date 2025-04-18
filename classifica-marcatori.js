@@ -9,17 +9,19 @@ async function loadMarcatori() {
   (dati[cat]?.partite || []).forEach(p => {
     (p.marcatori || []).forEach(m => {
       const key = m.nome.trim();
-      if (!marcatori[key]) marcatori[key] = 0;
-      marcatori[key] += parseInt(m.gol || 0);
+      if (!marcatori[key]) {
+        marcatori[key] = { gol: 0, squadra: m.squadra || "-" };
+      }
+      marcatori[key].gol += parseInt(m.gol || 0);
     });
   });
 
   const table = document.createElement('table');
-  table.innerHTML = '<tr><th>Giocatore</th><th>Gol</th></tr>';
+  table.innerHTML = '<tr><th>Giocatore</th><th>Squadra</th><th>Gol</th></tr>';
   Object.entries(marcatori)
-    .sort((a, b) => b[1] - a[1])
-    .forEach(([nome, gol]) => {
-      table.innerHTML += `<tr><td>${nome}</td><td>${gol}</td></tr>`;
+    .sort((a, b) => b[1].gol - a[1].gol)
+    .forEach(([nome, info]) => {
+      table.innerHTML += `<tr><td>${nome}</td><td>${info.squadra}</td><td>${info.gol}</td></tr>`;
     });
   div.appendChild(table);
 }
