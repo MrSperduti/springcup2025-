@@ -1,7 +1,31 @@
 {
   "Under 17": {
-    "partite": [],
-    "gironi": {},
+    "partite": [
+      {
+        "giornata": null,
+        "squadraA": "ACADEMY",
+        "squadraB": "NEW TEAM",
+        "data": "9.052025",
+        "orario": "19.00",
+        "campo": "CAMPO A",
+        "girone": "GIRONE A",
+        "portiere": "MELADIO' GIOVANNI",
+        "giocatore": "GOBBI ALESSANDRO",
+        "marcatori": []
+      }
+    ],
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY",
+        "NEW TEAM",
+        "CIRCOLO MASTER"
+      ],
+      "GIRONE B": [
+        "FORTITUDO",
+        "ARDEA",
+        "ECOCITY"
+      ]
+    },
     "finali": []
   },
   "Under 15": {
