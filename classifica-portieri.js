@@ -11,7 +11,7 @@ async function loadPortieri() {
     }
   });
   const table = document.createElement('table');
-  table.innerHTML = '<tr><th>Portiere</th><th>Presenze</th></tr>';
+  table.innerHTML = '<tr><th>Portiere</th><th>Voti</th></tr>';
   Object.entries(count).sort((a, b) => b[1] - a[1]).forEach(([nome, n]) => {
     table.innerHTML += `<tr><td>${nome}</td><td>${n}</td></tr>`;
   });
