@@ -1,9 +1,54 @@
 {
-  "Under 17": { "partite": [], "gironi": {} },
-  "Under 15": { "partite": [], "gironi": {} },
-  "Under 13": { "partite": [], "gironi": {} },
-  "2014/15": { "partite": [], "gironi": {} },
-  "2016/17": { "partite": [], "gironi": {} },
-  "Under 15 femminile": { "partite": [], "gironi": {} },
-  "Under 13 femminile": { "partite": [], "gironi": {} }
+  "Under 17": {
+    "partite": [
+      {
+        "giornata": 1,
+        "squadraA": "ACADEMY",
+        "squadraB": "NEW TEAM",
+        "data": "9.05.2025",
+        "orario": "19.00",
+        "campo": "CAMPO A",
+        "girone": "A",
+        "portiere": "MELADIO' GIOVANNI",
+        "giocatore": "ALESSANDRO GOBBI",
+        "marcatori": []
+      }
+    ],
+    "gironi": {
+      "GIRONE A": [
+        "ACCADEMY",
+        "NEW TEAM",
+        "CIRCOLO MASTER"
+      ],
+      "GIRONE B": [
+        "FORTITUDO",
+        "ARDEA",
+        "ECOCITY"
+      ]
+    }
+  },
+  "Under 15": {
+    "partite": [],
+    "gironi": {}
+  },
+  "Under 13": {
+    "partite": [],
+    "gironi": {}
+  },
+  "2014/15": {
+    "partite": [],
+    "gironi": {}
+  },
+  "2016/17": {
+    "partite": [],
+    "gironi": {}
+  },
+  "Under 15 femminile": {
+    "partite": [],
+    "gironi": {}
+  },
+  "Under 13 femminile": {
+    "partite": [],
+    "gironi": {}
+  }
 }
