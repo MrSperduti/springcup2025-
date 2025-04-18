@@ -1,4 +1,7 @@
 
+// LOGICA AGGIORNATA - editor-completo.js
+// Marcatori con nome, gol e squadra
+
 let dati = {};
 let categoriaSelezionata = "";
 
@@ -44,7 +47,6 @@ function aggiornaCategorie() {
 
 function aggiornaVista() {
   aggiornaPreview();
-  renderGironi();
   renderPartite();
 }
 
@@ -87,40 +89,6 @@ function creaBottone(label, fn) {
   return btn;
 }
 
-function renderGironi() {
-  const div = document.getElementById("listaGironi");
-  div.innerHTML = "";
-  const gironi = dati[categoriaSelezionata].gironi || {};
-  Object.entries(gironi).forEach(([nome, squadre]) => {
-    const d = document.createElement("div");
-    d.className = "item";
-    const iNome = creaInput(nome, "Nome girone");
-    const iSquadre = creaTextarea(squadre.join(", "), "Squadre separate da virgola");
-    d.appendChild(iNome);
-    d.appendChild(iSquadre);
-    const azioni = document.createElement("div");
-    azioni.className = "actions";
-    azioni.appendChild(creaBottone("💾 Salva", () => {
-      delete gironi[nome];
-      gironi[iNome.value] = iSquadre.value.split(",").map(s => s.trim()).filter(Boolean);
-      aggiornaVista();
-    }));
-    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
-      delete gironi[nome];
-      aggiornaVista();
-    }));
-    d.appendChild(azioni);
-    div.appendChild(d);
-  });
-}
-
-function creaTextarea(val = "", ph = "") {
-  const ta = document.createElement("textarea");
-  ta.placeholder = ph;
-  ta.value = val;
-  return ta;
-}
-
 function renderPartite() {
   const div = document.getElementById("listaPartite");
   div.innerHTML = "";
@@ -157,7 +125,7 @@ function renderPartite() {
 
       const marcatoriDiv = document.createElement("div");
       marcatoriDiv.className = "marcatori";
-      const listaMarcatori = (p.marcatori || []).map(m => ({ nome: m.nome, gol: m.gol, squadra: m.squadra }));
+      const listaMarcatori = (p.marcatori || []).map(m => ({ nome: m.nome, gol: m.gol, squadra: m.squadra || "A" }));
 
       function aggiornaMarcatoriView() {
         marcatoriDiv.innerHTML = "<h5>Marcatori</h5>";
@@ -165,7 +133,7 @@ function renderPartite() {
           const riga = document.createElement("div");
           const nome = creaInput(m.nome, "Nome");
           const gol = creaNumber(m.gol, "Gol");
-          const squadra = creaSelect(["A", "B"], m.squadra || "A");
+          const squadra = creaSelect(["A", "B"], m.squadra);
           riga.appendChild(nome);
           riga.appendChild(gol);
           riga.appendChild(squadra);
