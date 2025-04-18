@@ -8,7 +8,7 @@ async function loadPortieri() {
 
   (dati[cat]?.partite || []).forEach(p => {
     const nome = p.portiere;
-    const squadra = p.squadraB || "-";
+    const squadra = p.squadraPortiere || "-";
     if (nome) {
       if (!count[nome]) count[nome] = { voti: 0, squadra: squadra };
       count[nome].voti += 1;
