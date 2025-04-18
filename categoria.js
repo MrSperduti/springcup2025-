@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     ['Calendario', 'calendario.html'],
     ['Classifica', 'classifica.html'],
     ['Marcatori', 'classifica-marcatori.html'],
-    ['Portieri', 'classifica-portieri.html'],
-    ['Giocatori', 'classifica-giocatori.html'],
+    ['Classifica Miglior Portiere', 'classifica-portieri.html'],
+    ['Classifica Miglior Giocatore', 'classifica-giocatori.html'],
     ['Gironi', 'girone.html']
   ].forEach(([nome, file]) => {
     const btn = document.createElement('button');
