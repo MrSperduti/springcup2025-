@@ -4,16 +4,43 @@ async function loadCalendar() {
   const res = await fetch('dati.json');
   const dati = await res.json();
   const div = document.getElementById('calendario');
-  (dati[cat]?.partite || []).forEach(p => {
-    const card = document.createElement('div');
-    card.innerHTML = `
-      <h3>${p.squadraA} vs ${p.squadraB}</h3>
-      <p>🗓️ ${p.data || ''} ⏰ ${p.orario || ''} 🏟️ ${p.campo || ''}</p>
-      ${p.golA != null && p.golB != null ? `<p><strong>Risultato:</strong> ${p.golA} - ${p.golB}</p>` : ''}
-      ${p.girone ? `<p><strong>Girone:</strong> ${p.girone}</p>` : ''}
-    `;
-    card.className = 'container';
-    div.appendChild(card);
+  div.innerHTML = '';
+
+  const partite = dati[cat]?.partite || [];
+  const giornate = {};
+
+  partite.forEach(p => {
+    const g = p.giornata || 0;
+    if (!giornate[g]) giornate[g] = [];
+    giornate[g].push(p);
+  });
+
+  Object.keys(giornate).sort((a, b) => parseInt(a) - parseInt(b)).forEach(g => {
+    const section = document.createElement('div');
+    const titolo = document.createElement('h3');
+    titolo.textContent = "Giornata " + g;
+    section.appendChild(titolo);
+
+    const table = document.createElement('table');
+    table.innerHTML = '<tr><th>Squadra A</th><th>Squadra B</th><th>Data</th><th>Ora</th><th>Campo</th><th>Risultato</th><th>Girone</th></tr>';
+
+    giornate[g].forEach(p => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${p.squadraA || ''}</td>
+        <td>${p.squadraB || ''}</td>
+        <td>${p.data || ''}</td>
+        <td>${p.orario || ''}</td>
+        <td>${p.campo || ''}</td>
+        <td>${p.golA != null && p.golB != null ? p.golA + ' - ' + p.golB : ''}</td>
+        <td>${p.girone || ''}</td>
+      `;
+      table.appendChild(row);
+    });
+
+    section.appendChild(table);
+    div.appendChild(section);
   });
 }
+
 document.addEventListener('DOMContentLoaded', loadCalendar);
