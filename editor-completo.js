@@ -44,6 +44,7 @@ function aggiornaCategorie() {
 
 function aggiornaVista() {
   aggiornaPreview();
+  renderGironi();
   renderPartite();
 }
 
@@ -67,6 +68,18 @@ function creaNumber(val = 0, ph = "") {
   return input;
 }
 
+function creaSelect(options, selectedValue = "") {
+  const select = document.createElement("select");
+  options.forEach(opt => {
+    const o = document.createElement("option");
+    o.value = opt;
+    o.textContent = opt;
+    if (opt === selectedValue) o.selected = true;
+    select.appendChild(o);
+  });
+  return select;
+}
+
 function creaBottone(label, fn) {
   const btn = document.createElement("button");
   btn.textContent = label;
@@ -74,87 +87,136 @@ function creaBottone(label, fn) {
   return btn;
 }
 
+function renderGironi() {
+  const div = document.getElementById("listaGironi");
+  div.innerHTML = "";
+  const gironi = dati[categoriaSelezionata].gironi || {};
+  Object.entries(gironi).forEach(([nome, squadre]) => {
+    const d = document.createElement("div");
+    d.className = "item";
+    const iNome = creaInput(nome, "Nome girone");
+    const iSquadre = creaTextarea(squadre.join(", "), "Squadre separate da virgola");
+    d.appendChild(iNome);
+    d.appendChild(iSquadre);
+    const azioni = document.createElement("div");
+    azioni.className = "actions";
+    azioni.appendChild(creaBottone("💾 Salva", () => {
+      delete gironi[nome];
+      gironi[iNome.value] = iSquadre.value.split(",").map(s => s.trim()).filter(Boolean);
+      aggiornaVista();
+    }));
+    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
+      delete gironi[nome];
+      aggiornaVista();
+    }));
+    d.appendChild(azioni);
+    div.appendChild(d);
+  });
+}
+
+function creaTextarea(val = "", ph = "") {
+  const ta = document.createElement("textarea");
+  ta.placeholder = ph;
+  ta.value = val;
+  return ta;
+}
+
 function renderPartite() {
   const div = document.getElementById("listaPartite");
   div.innerHTML = "";
   const partite = dati[categoriaSelezionata].partite || [];
 
+  const giornate = {};
   partite.forEach((p, i) => {
-    const d = document.createElement("div");
-    d.className = "item";
+    const g = p.giornata || 0;
+    if (!giornate[g]) giornate[g] = [];
+    giornate[g].push({ p, i });
+  });
 
-    const inputs = {
-      giornata: creaInput(p.giornata, "Giornata"),
-      squadraA: creaInput(p.squadraA, "Squadra A"),
-      squadraB: creaInput(p.squadraB, "Squadra B"),
-      data: creaInput(p.data, "Data"),
-      orario: creaInput(p.orario, "Orario"),
-      campo: creaInput(p.campo, "Campo"),
-      girone: creaInput(p.girone, "Girone"),
-      golA: creaNumber(p.golA || 0, "Gol A"),
-      golB: creaNumber(p.golB || 0, "Gol B"),
-      portiere: creaInput(p.portiere, "Miglior Portiere"),
-      giocatore: creaInput(p.giocatore, "Miglior Giocatore")
-    };
+  Object.keys(giornate).sort((a, b) => parseInt(a) - parseInt(b)).forEach(g => {
+    const h = document.createElement("h4");
+    h.textContent = "Giornata " + g;
+    div.appendChild(h);
+    giornate[g].forEach(({ p, i }) => {
+      const d = document.createElement("div");
+      d.className = "item";
 
-    const marcatoriDiv = document.createElement("div");
-    marcatoriDiv.className = "marcatori";
-    const listaMarcatori = (p.marcatori || []).map(m => ({ nome: m.nome, gol: m.gol }));
+      const inputs = {
+        giornata: creaInput(p.giornata, "Giornata"),
+        squadraA: creaInput(p.squadraA, "Squadra A"),
+        squadraB: creaInput(p.squadraB, "Squadra B"),
+        data: creaInput(p.data, "Data"),
+        orario: creaInput(p.orario, "Orario"),
+        campo: creaInput(p.campo, "Campo"),
+        girone: creaInput(p.girone, "Girone"),
+        golA: creaNumber(p.golA || 0, "Gol squadra A"),
+        golB: creaNumber(p.golB || 0, "Gol squadra B"),
+        portiere: creaInput(p.portiere, "Miglior Portiere"),
+        giocatore: creaInput(p.giocatore, "Miglior Giocatore")
+      };
 
-    function aggiornaMarcatoriView() {
-      marcatoriDiv.innerHTML = "<h5>Marcatori</h5>";
-      listaMarcatori.forEach((m, idx) => {
-        const riga = document.createElement("div");
-        const nome = creaInput(m.nome, "Nome");
-        const gol = creaNumber(m.gol, "Gol");
-        riga.appendChild(nome);
-        riga.appendChild(gol);
-        const btnRimuovi = creaBottone("❌", () => {
-          listaMarcatori.splice(idx, 1);
+      const marcatoriDiv = document.createElement("div");
+      marcatoriDiv.className = "marcatori";
+      const listaMarcatori = (p.marcatori || []).map(m => ({ nome: m.nome, gol: m.gol, squadra: m.squadra }));
+
+      function aggiornaMarcatoriView() {
+        marcatoriDiv.innerHTML = "<h5>Marcatori</h5>";
+        listaMarcatori.forEach((m, idx) => {
+          const riga = document.createElement("div");
+          const nome = creaInput(m.nome, "Nome");
+          const gol = creaNumber(m.gol, "Gol");
+          const squadra = creaSelect(["A", "B"], m.squadra || "A");
+          riga.appendChild(nome);
+          riga.appendChild(gol);
+          riga.appendChild(squadra);
+          const btnRimuovi = creaBottone("❌", () => {
+            listaMarcatori.splice(idx, 1);
+            aggiornaMarcatoriView();
+          });
+          riga.appendChild(btnRimuovi);
+          marcatoriDiv.appendChild(riga);
+          nome.oninput = () => listaMarcatori[idx].nome = nome.value;
+          gol.oninput = () => listaMarcatori[idx].gol = parseInt(gol.value);
+          squadra.onchange = () => listaMarcatori[idx].squadra = squadra.value;
+        });
+        const btnAggiungi = creaBottone("➕ Aggiungi Marcatore", () => {
+          listaMarcatori.push({ nome: "", gol: 1, squadra: "A" });
           aggiornaMarcatoriView();
         });
-        riga.appendChild(btnRimuovi);
-        marcatoriDiv.appendChild(riga);
-        nome.oninput = () => listaMarcatori[idx].nome = nome.value;
-        gol.oninput = () => listaMarcatori[idx].gol = parseInt(gol.value);
-      });
-      const btnAggiungi = creaBottone("➕ Aggiungi Marcatore", () => {
-        listaMarcatori.push({ nome: "", gol: 1 });
-        aggiornaMarcatoriView();
-      });
-      marcatoriDiv.appendChild(btnAggiungi);
-    }
+        marcatoriDiv.appendChild(btnAggiungi);
+      }
 
-    aggiornaMarcatoriView();
+      aggiornaMarcatoriView();
 
-    Object.values(inputs).forEach(el => d.appendChild(el));
-    d.appendChild(marcatoriDiv);
+      Object.values(inputs).forEach(el => d.appendChild(el));
+      d.appendChild(marcatoriDiv);
 
-    const azioni = document.createElement("div");
-    azioni.className = "actions";
-    azioni.appendChild(creaBottone("💾 Salva", () => {
-      partite[i] = {
-        giornata: parseInt(inputs.giornata.value),
-        squadraA: inputs.squadraA.value,
-        squadraB: inputs.squadraB.value,
-        data: inputs.data.value,
-        orario: inputs.orario.value,
-        campo: inputs.campo.value,
-        girone: inputs.girone.value,
-        golA: parseInt(inputs.golA.value),
-        golB: parseInt(inputs.golB.value),
-        portiere: inputs.portiere.value,
-        giocatore: inputs.giocatore.value,
-        marcatori: listaMarcatori.filter(m => m.nome && !isNaN(m.gol))
-      };
-      aggiornaVista();
-    }));
-    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
-      partite.splice(i, 1);
-      aggiornaVista();
-    }));
-    d.appendChild(azioni);
-    div.appendChild(d);
+      const azioni = document.createElement("div");
+      azioni.className = "actions";
+      azioni.appendChild(creaBottone("💾 Salva", () => {
+        partite[i] = {
+          giornata: parseInt(inputs.giornata.value),
+          squadraA: inputs.squadraA.value,
+          squadraB: inputs.squadraB.value,
+          data: inputs.data.value,
+          orario: inputs.orario.value,
+          campo: inputs.campo.value,
+          girone: inputs.girone.value,
+          golA: parseInt(inputs.golA.value),
+          golB: parseInt(inputs.golB.value),
+          portiere: inputs.portiere.value,
+          giocatore: inputs.giocatore.value,
+          marcatori: listaMarcatori.filter(m => m.nome && !isNaN(m.gol))
+        };
+        aggiornaVista();
+      }));
+      azioni.appendChild(creaBottone("🗑️ Cancella", () => {
+        partite.splice(i, 1);
+        aggiornaVista();
+      }));
+      d.appendChild(azioni);
+      div.appendChild(d);
+    });
   });
 }
 
