@@ -120,6 +120,7 @@ function renderPartite() {
         golA: creaNumber(p.golA || 0, "Gol squadra A"),
         golB: creaNumber(p.golB || 0, "Gol squadra B"),
         portiere: creaInput(p.portiere, "Miglior Portiere"),
+        squadraPortiere: creaSelect(["A", "B"], p.squadraPortiere || "B"),
         giocatore: creaInput(p.giocatore, "Miglior Giocatore")
       };
 
@@ -156,7 +157,11 @@ function renderPartite() {
 
       aggiornaMarcatoriView();
 
-      Object.values(inputs).forEach(el => d.appendChild(el));
+      Object.entries(inputs).forEach(([key, el]) => {
+        d.appendChild(el);
+        if (key === 'giocatore') d.appendChild(inputs.squadraGiocatore);
+        if (key === 'portiere') d.appendChild(inputs.squadraPortiere);
+      });
       d.appendChild(marcatoriDiv);
 
       const azioni = document.createElement("div");
@@ -173,7 +178,9 @@ function renderPartite() {
           golA: parseInt(inputs.golA.value),
           golB: parseInt(inputs.golB.value),
           portiere: inputs.portiere.value,
+          squadraPortiere: inputs.squadraPortiere.value,
           giocatore: inputs.giocatore.value,
+          squadraGiocatore: inputs.squadraGiocatore.value,
           marcatori: listaMarcatori.filter(m => m.nome && !isNaN(m.gol))
         };
         aggiornaVista();
