@@ -2,7 +2,7 @@
   "Under 17": {
     "partite": [
       {
-        "giornata": null,
+        "giornata": 1,
         "squadraA": "ACADEMY",
         "squadraB": "NEW TEAM",
         "data": "9.052025",
@@ -21,6 +21,36 @@
           },
           {
             "nome": "Ciccio",
+            "gol": 1,
+            "squadra": "B"
+          }
+        ]
+      },
+      {
+        "giornata": 2,
+        "squadraA": "ACADEMY",
+        "squadraB": "CIRCOLO MASTER",
+        "data": "12.05.2025",
+        "orario": "20.00",
+        "campo": "CAMPO B",
+        "girone": "GIRONE A",
+        "golA": 2,
+        "golB": 0,
+        "portiere": "KIKKO",
+        "giocatore": "GOBBI ALESSANDRO",
+        "marcatori": [
+          {
+            "nome": "SUSIN",
+            "gol": 1,
+            "squadra": "A"
+          },
+          {
+            "nome": "IANCU",
+            "gol": 1,
+            "squadra": "A"
+          },
+          {
+            "nome": "TITA",
             "gol": 1,
             "squadra": "B"
           }
