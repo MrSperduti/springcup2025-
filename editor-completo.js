@@ -157,11 +157,7 @@ function renderPartite() {
 
       aggiornaMarcatoriView();
 
-      Object.entries(inputs).forEach(([key, el]) => {
-        d.appendChild(el);
-        if (key === 'giocatore') d.appendChild(inputs.squadraGiocatore);
-        if (key === 'portiere') d.appendChild(inputs.squadraPortiere);
-      });
+      Object.values(inputs).forEach(el => d.appendChild(el));
       d.appendChild(marcatoriDiv);
 
       const azioni = document.createElement("div");
