@@ -1,7 +1,4 @@
 
-// LOGICA AGGIORNATA - editor-completo.js
-// Marcatori con nome, gol e squadra
-
 let dati = {};
 let categoriaSelezionata = "";
 
@@ -47,7 +44,9 @@ function aggiornaCategorie() {
 
 function aggiornaVista() {
   aggiornaPreview();
+  renderGironi();
   renderPartite();
+  renderFinali();
 }
 
 function aggiornaPreview() {
@@ -62,24 +61,11 @@ function creaInput(val = "", ph = "") {
   return input;
 }
 
-function creaNumber(val = 0, ph = "") {
-  const input = document.createElement("input");
-  input.type = "number";
-  input.placeholder = ph;
-  input.value = val;
-  return input;
-}
-
-function creaSelect(options, selectedValue = "") {
-  const select = document.createElement("select");
-  options.forEach(opt => {
-    const o = document.createElement("option");
-    o.value = opt;
-    o.textContent = opt;
-    if (opt === selectedValue) o.selected = true;
-    select.appendChild(o);
-  });
-  return select;
+function creaTextarea(val = "", ph = "") {
+  const ta = document.createElement("textarea");
+  ta.placeholder = ph;
+  ta.value = val;
+  return ta;
 }
 
 function creaBottone(label, fn) {
@@ -87,6 +73,38 @@ function creaBottone(label, fn) {
   btn.textContent = label;
   btn.onclick = fn;
   return btn;
+}
+
+function renderGironi() {
+  const div = document.getElementById("listaGironi");
+  div.innerHTML = "";
+  const gironi = dati[categoriaSelezionata].gironi || {};
+  Object.entries(gironi).forEach(([nome, squadre]) => {
+    const d = document.createElement("div");
+    d.className = "item";
+    const iNome = creaInput(nome, "Nome girone");
+    const iSquadre = creaTextarea(squadre.join(", "), "Squadre separate da virgola");
+    d.appendChild(iNome);
+    d.appendChild(iSquadre);
+    const azioni = document.createElement("div");
+    azioni.className = "actions";
+    azioni.appendChild(creaBottone("💾 Salva", () => {
+      delete gironi[nome];
+      gironi[iNome.value] = iSquadre.value.split(",").map(s => s.trim()).filter(Boolean);
+      aggiornaVista();
+    }));
+    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
+      delete gironi[nome];
+      aggiornaVista();
+    }));
+    d.appendChild(azioni);
+    div.appendChild(d);
+  });
+}
+
+function aggiungiGirone() {
+  dati[categoriaSelezionata].gironi["Nuovo"] = [];
+  aggiornaVista();
 }
 
 function renderPartite() {
@@ -108,7 +126,6 @@ function renderPartite() {
     giornate[g].forEach(({ p, i }) => {
       const d = document.createElement("div");
       d.className = "item";
-
       const inputs = {
         giornata: creaInput(p.giornata, "Giornata"),
         squadraA: creaInput(p.squadraA, "Squadra A"),
@@ -117,53 +134,11 @@ function renderPartite() {
         orario: creaInput(p.orario, "Orario"),
         campo: creaInput(p.campo, "Campo"),
         girone: creaInput(p.girone, "Girone"),
-        golA: creaNumber(p.golA || 0, "Gol squadra A"),
-        golB: creaNumber(p.golB || 0, "Gol squadra B"),
         portiere: creaInput(p.portiere, "Miglior Portiere"),
-        squadraPortiere: creaSelect(["A", "B"], p.squadraPortiere || "B"),
-        giocatore: creaInput(p.giocatore, "Miglior Giocatore")
+        giocatore: creaInput(p.giocatore, "Miglior Giocatore"),
+        marcatori: creaTextarea((p.marcatori || []).map(m => m.nome + ":" + m.gol).join(", "), "Marcatori")
       };
-
-      const marcatoriDiv = document.createElement("div");
-      marcatoriDiv.className = "marcatori";
-      const listaMarcatori = (p.marcatori || []).map(m => ({ nome: m.nome, gol: m.gol, squadra: m.squadra || "A" }));
-
-      function aggiornaMarcatoriView() {
-        marcatoriDiv.innerHTML = "<h5>Marcatori</h5>";
-        listaMarcatori.forEach((m, idx) => {
-          const riga = document.createElement("div");
-          const nome = creaInput(m.nome, "Nome");
-          const gol = creaNumber(m.gol, "Gol");
-          const squadra = creaSelect(["A", "B"], m.squadra);
-          riga.appendChild(nome);
-          riga.appendChild(gol);
-          riga.appendChild(squadra);
-          const btnRimuovi = creaBottone("❌", () => {
-            listaMarcatori.splice(idx, 1);
-            aggiornaMarcatoriView();
-          });
-          riga.appendChild(btnRimuovi);
-          marcatoriDiv.appendChild(riga);
-          nome.oninput = () => listaMarcatori[idx].nome = nome.value;
-          gol.oninput = () => listaMarcatori[idx].gol = parseInt(gol.value);
-          squadra.onchange = () => listaMarcatori[idx].squadra = squadra.value;
-        });
-        const btnAggiungi = creaBottone("➕ Aggiungi Marcatore", () => {
-          listaMarcatori.push({ nome: "", gol: 1, squadra: "A" });
-          aggiornaMarcatoriView();
-        });
-        marcatoriDiv.appendChild(btnAggiungi);
-      }
-
-      aggiornaMarcatoriView();
-
-      Object.entries(inputs).forEach(([key, el]) => {
-        d.appendChild(el);
-        if (key === 'giocatore') d.appendChild(inputs.squadraGiocatore);
-        if (key === 'portiere') d.appendChild(inputs.squadraPortiere);
-      });
-      d.appendChild(marcatoriDiv);
-
+      Object.values(inputs).forEach(el => d.appendChild(el));
       const azioni = document.createElement("div");
       azioni.className = "actions";
       azioni.appendChild(creaBottone("💾 Salva", () => {
@@ -175,13 +150,12 @@ function renderPartite() {
           orario: inputs.orario.value,
           campo: inputs.campo.value,
           girone: inputs.girone.value,
-          golA: parseInt(inputs.golA.value),
-          golB: parseInt(inputs.golB.value),
           portiere: inputs.portiere.value,
-          squadraPortiere: inputs.squadraPortiere.value,
           giocatore: inputs.giocatore.value,
-          squadraGiocatore: inputs.squadraGiocatore.value,
-          marcatori: listaMarcatori.filter(m => m.nome && !isNaN(m.gol))
+          marcatori: inputs.marcatori.value.split(",").map(m => {
+            const [nome, gol] = m.trim().split(":");
+            return { nome, gol: parseInt(gol) };
+          }).filter(m => m.nome && !isNaN(m.gol))
         };
         aggiornaVista();
       }));
@@ -197,6 +171,58 @@ function renderPartite() {
 
 function aggiungiPartita() {
   dati[categoriaSelezionata].partite.push({});
+  aggiornaVista();
+}
+
+function renderFinali() {
+  const div = document.getElementById("listaFinali");
+  div.innerHTML = "";
+  const finali = dati[categoriaSelezionata].finali || [];
+  finali.forEach((f, i) => {
+    const d = document.createElement("div");
+    d.className = "item";
+    const inputs = {
+      fase: creaInput(f.fase, "Fase"),
+      squadraA: creaInput(f.squadraA, "Squadra A"),
+      squadraB: creaInput(f.squadraB, "Squadra B"),
+      data: creaInput(f.data, "Data"),
+      orario: creaInput(f.orario, "Orario"),
+      campo: creaInput(f.campo, "Campo"),
+      portiere: creaInput(f.portiere, "Miglior Portiere"),
+      giocatore: creaInput(f.giocatore, "Miglior Giocatore"),
+      marcatori: creaTextarea((f.marcatori || []).map(m => m.nome + ":" + m.gol).join(", "), "Marcatori")
+    };
+    Object.values(inputs).forEach(el => d.appendChild(el));
+    const azioni = document.createElement("div");
+    azioni.className = "actions";
+    azioni.appendChild(creaBottone("💾 Salva", () => {
+      finali[i] = {
+        fase: inputs.fase.value,
+        squadraA: inputs.squadraA.value,
+        squadraB: inputs.squadraB.value,
+        data: inputs.data.value,
+        orario: inputs.orario.value,
+        campo: inputs.campo.value,
+        portiere: inputs.portiere.value,
+        giocatore: inputs.giocatore.value,
+        marcatori: inputs.marcatori.value.split(",").map(m => {
+          const [nome, gol] = m.trim().split(":");
+          return { nome, gol: parseInt(gol) };
+        }).filter(m => m.nome && !isNaN(m.gol))
+      };
+      aggiornaVista();
+    }));
+    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
+      finali.splice(i, 1);
+      aggiornaVista();
+    }));
+    d.appendChild(azioni);
+    div.appendChild(d);
+  });
+}
+
+function aggiungiFinale() {
+  dati[categoriaSelezionata].finali.push({});
   aggiornaVista();
 }
 
