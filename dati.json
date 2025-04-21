@@ -3,66 +3,36 @@
     "partite": [
       {
         "giornata": 1,
-        "squadraA": "ACADEMY",
-        "squadraB": "NEW TEAM",
-        "data": "9.052025",
-        "orario": "19.00",
-        "campo": "CAMPO A",
-        "girone": "GIRONE A",
-        "portiere": "MELADIO' GIOVANNI",
-        "giocatore": "GOBBI ALESSANDRO",
-        "marcatori": [
-          {
-            "nome": "Susin",
-            "gol": 3
-          },
-          {
-            "nome": "Ciccio",
-            "gol": 1
-          }
-        ]
-      },
-      {
-        "giornata": 2,
-        "squadraA": "ACADEMY",
-        "squadraB": "CIRCOLO MASTER",
-        "data": "12.05.2025",
-        "orario": "20.00",
-        "campo": "CAMPO B",
-        "girone": "GIRONE A",
-        "golA": 2,
+        "squadraA": "Academy",
+        "squadraB": "Elite",
+        "data": "2025-04-25",
+        "orario": "15:00",
+        "campo": "Campo A",
+        "girone": "Girone 1",
+        "golA": 0,
         "golB": 0,
-        "portiere": "KIKKO",
-        "giocatore": "GOBBI ALESSANDRO",
+        "portiere": "Luca Bianchi",
+        "squadraPortiere": "Academy",
+        "giocatore": "Mario Rossi",
+        "squadraGiocatore": "Academy",
         "marcatori": [
           {
-            "nome": "Susin",
-            "gol": 1,
-            "squadra": "A"
+            "nome": "Mario Rossi",
+            "gol": 2,
+            "squadra": "Academy"
           },
           {
-            "nome": "IANCU",
+            "nome": "Luca Bianchi",
             "gol": 1,
-            "squadra": "A"
-          },
-          {
-            "nome": "TITA",
-            "gol": 1,
-            "squadra": "B"
+            "squadra": "Elite"
           }
         ]
       }
     ],
     "gironi": {
-      "GIRONE A": [
-        "ACADEMY",
-        "NEW TEAM",
-        "CIRCOLO MASTER"
-      ],
-      "GIRONE B": [
-        "FORTITUDO",
-        "ARDEA",
-        "ECOCITY"
+      "Girone 1": [
+        "Academy",
+        "Elite"
       ]
     },
     "finali": []
