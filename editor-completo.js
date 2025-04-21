@@ -136,7 +136,9 @@ function renderPartite() {
         girone: creaInput(p.girone, "Girone"),
         portiere: creaInput(p.portiere, "Miglior Portiere"),
         squadraPortiere: creaInput(p.squadraPortiere, "Squadra Portiere"),
+        squadraPortiere: creaInput(p.squadraPortiere, "Squadra Portiere"),
         giocatore: creaInput(p.giocatore, "Miglior Giocatore"),
+        squadraGiocatore: creaInput(p.squadraGiocatore, "Squadra Giocatore"),
         squadraGiocatore: creaInput(p.squadraGiocatore, "Squadra Giocatore"),
         marcatori: creaTextarea((p.marcatori || []).map(m => m.nome + ":" + m.gol).join(", "), "Marcatori")
       };
