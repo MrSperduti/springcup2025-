@@ -3,28 +3,18 @@
     "partite": [
       {
         "giornata": 1,
-        "squadraA": "Academy",
-        "squadraB": "Elite",
+        "squadraA": "MIRAFIN",
+        "squadraB": "NEW TEAM",
         "data": "2025-04-25",
         "orario": "15:00",
         "campo": "Campo A",
         "girone": "Girone 1",
-        "golA": 0,
-        "golB": 0,
-        "portiere": "Luca Bianchi",
-        "squadraPortiere": "Academy",
-        "giocatore": "Mario Rossi",
-        "squadraGiocatore": "Academy",
+        "portiere": "MELADIO GIOVANNI",
+        "giocatore": "GOBBI ALESSANDRO",
         "marcatori": [
           {
-            "nome": "Mario Rossi",
-            "gol": 2,
-            "squadra": "Academy"
-          },
-          {
-            "nome": "Luca Bianchi",
-            "gol": 1,
-            "squadra": "Elite"
+            "nome": "SUSIN FRANCESCO",
+            "gol": 2
           }
         ]
       }
