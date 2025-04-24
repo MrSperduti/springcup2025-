@@ -5,70 +5,84 @@
   <meta charset="UTF-8">
   <title>SPRING CUP 2025</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #ffffff, #e3f2fd);
+      background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+      color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding: 40px 20px;
+      text-align: center;
     }
     .logo {
-      max-width: 140px;
-      margin-top: 20px;
+      max-width: 160px;
+      margin: 20px auto 10px;
     }
     h1 {
       font-size: 28px;
-      color: #d32f2f;
-      margin: 10px 0 30px;
-      text-shadow: 1px 1px 2px #ccc;
+      color: #ff4c4c;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px black;
     }
     .buttons {
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: 15px;
       width: 100%;
-      max-width: 400px;
+      align-items: center;
     }
     .btn {
-      padding: 14px;
-      font-size: 18px;
-      background: #1976d2;
-      color: white;
-      border: none;
-      border-radius: 10px;
+      display: block;
       width: 100%;
-      text-align: center;
-      text-decoration: none;
+      max-width: 300px;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
       font-weight: bold;
-      transition: background 0.3s;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.3s ease;
     }
     .btn:hover {
-      background: #0d47a1;
+      transform: scale(1.05);
     }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 24px;
-      }
-      .btn {
-        font-size: 16px;
-      }
+    .btn-blu {
+      background: #0077cc;
+    }
+    .btn-blu:hover {
+      background: #005fa3;
+    }
+    .btn-rosso {
+      background: #d32f2f;
+    }
+    .btn-rosso:hover {
+      background: #a80c0c;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Logo Spring Cup" class="logo">
-  <h1>SPRING CUP 2025</h1>
-  <div class="buttons">
-    <a class="btn" href="categoria.html?categoria=Under 17">Under 17</a>
-    <a class="btn" href="categoria.html?categoria=Under 15">Under 15</a>
-    <a class="btn" href="categoria.html?categoria=Under 13">Under 13</a>
-    <a class="btn" href="categoria.html?categoria=2014/15">2014/15</a>
-    <a class="btn" href="categoria.html?categoria=2016/17">2016/17</a>
-    <a class="btn" href="categoria.html?categoria=Under 15 femminile">Under 15 femminile</a>
-    <a class="btn" href="categoria.html?categoria=Under 13 femminile">Under 13 femminile</a>
+  <div class="container">
+    <img src="logo.png" alt="Logo Spring Cup" class="logo">
+    <h1>SPRING CUP 2025</h1>
+    <div class="buttons">
+      <a class="btn btn-blu" href="categoria.html?categoria=Under 17">Under 17</a>
+      <a class="btn btn-rosso" href="categoria.html?categoria=Under 15">Under 15</a>
+      <a class="btn btn-blu" href="categoria.html?categoria=Under 13">Under 13</a>
+      <a class="btn btn-rosso" href="categoria.html?categoria=2014/15">2014/15</a>
+      <a class="btn btn-blu" href="categoria.html?categoria=2016/17">2016/17</a>
+      <a class="btn btn-rosso" href="categoria.html?categoria=Under 15 femminile">Under 15 femminile</a>
+      <a class="btn btn-blu" href="categoria.html?categoria=Under 13 femminile">Under 13 femminile</a>
+    </div>
   </div>
 </body>
 </html>
