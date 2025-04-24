@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor SPRING CUP 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h2 {
+      color: #d32f2f;
+      margin-top: 20px;
+      text-shadow: 1px 1px 2px #999;
+      text-align: center;
+    }
+    h3 {
+      color: #1976d2;
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .section {
+      margin-top: 40px;
+    }
+    .item {
+      border: 2px solid #1976d2;
+      padding: 15px;
+      margin-bottom: 20px;
+      background: #e3f2fd;
+      border-radius: 12px;
+    }
+    .item h4 {
+      margin-top: 0;
+      color: #0d47a1;
+    }
+    button {
+      background: #d32f2f;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #9a0007;
+    }
+    .actions button {
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+    input[type="text"], input[type="number"], select {
+      padding: 8px;
+      margin: 3px 0;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    textarea {
+      width: 100%;
+      min-height: 60px;
+      margin-top: 10px;
+    }
+    pre.json-preview {
+      background: #f0f0f0;
+      padding: 12px;
+      border-radius: 10px;
+      max-height: 400px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      border: 1px solid #ccc;
+    }
+    .marcatori {
+      margin-top: 10px;
+      padding: 12px;
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #90caf9;
+    }
+    .marcatori h5 {
+      margin-top: 0;
+      color: #1976d2;
+    }
+    .marcatori div {
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Editor Completo SPRING CUP 2025</h2>
+
+    <div class="section">
+      <h3>📂 Carica file dati.json</h3>
+      <input type="file" id="fileInput">
+    </div>
+
+    <div class="section">
+      <h3>📋 Seleziona Categoria</h3>
+      <select id="selectCategoria"></select>
+    </div>
+
+    <div class="section">
+      <h3>📄 Anteprima dati correnti</h3>
+      <pre class="json-preview" id="previewDati"></pre>
+    </div>
+
+    <div class="section">
+      <h3>👥 Gestione Gironi</h3>
+      <div id="listaGironi"></div>
+      <button onclick="aggiungiGirone()">➕ Aggiungi Girone</button>
+    </div>
+
+    <div class="section">
+      <h3>🗓️ Gestione Partite</h3>
+      <div id="listaPartite"></div>
+      <button onclick="aggiungiPartita()">➕ Aggiungi Partita</button>
+    </div>
+
+    <div class="section">
+      <h3>🏆 Gestione Finali</h3>
+      <div id="listaFinali"></div>
+      <button onclick="aggiungiFinale()">➕ Aggiungi Finale</button>
+    </div>
+
+    <div class="section">
+      <button onclick="esporta()">💾 Esporta dati.json</button>
+    </div>
+  </div>
+
+  <script src="editor-completo-upload-ok.js"></script>
+</body>
+</html>
