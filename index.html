@@ -9,64 +9,58 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+      font-family: 'Segoe UI', sans-serif;
       color: white;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
     }
     .container {
+      text-align: center;
       width: 100%;
       max-width: 480px;
-      padding: 40px 20px;
-      text-align: center;
+      padding: 30px 20px;
     }
     .logo {
-      max-width: 160px;
-      margin: 20px auto 10px;
+      width: 180px;
+      max-width: 90%;
+      margin-bottom: 20px;
     }
     h1 {
-      font-size: 28px;
+      font-size: 34px;
       color: #ff4c4c;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       text-shadow: 1px 1px 3px black;
     }
     .buttons {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 20px;
       width: 100%;
-      align-items: center;
     }
     .btn {
-      display: block;
       width: 100%;
-      max-width: 300px;
-      padding: 16px;
-      border: none;
-      border-radius: 12px;
-      font-size: 18px;
+      padding: 20px;
+      font-size: 20px;
       font-weight: bold;
       color: white;
-      cursor: pointer;
       text-decoration: none;
-      transition: transform 0.2s ease, background 0.3s ease;
+      border-radius: 14px;
+      border: none;
+      background: linear-gradient(145deg, #1d3557, #457b9d);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.2s, box-shadow 0.3s;
     }
     .btn:hover {
       transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.6);
     }
-    .btn-blu {
-      background: #0077cc;
+    .btn:nth-child(odd) {
+      background: linear-gradient(145deg, #d32f2f, #e53935);
     }
-    .btn-blu:hover {
-      background: #005fa3;
-    }
-    .btn-rosso {
-      background: #d32f2f;
-    }
-    .btn-rosso:hover {
-      background: #a80c0c;
+    .btn:nth-child(even) {
+      background: linear-gradient(145deg, #1565c0, #1976d2);
     }
   </style>
 </head>
@@ -75,13 +69,13 @@
     <img src="logo.png" alt="Logo Spring Cup" class="logo">
     <h1>SPRING CUP 2025</h1>
     <div class="buttons">
-      <a class="btn btn-blu" href="categoria.html?categoria=Under 17">Under 17</a>
-      <a class="btn btn-rosso" href="categoria.html?categoria=Under 15">Under 15</a>
-      <a class="btn btn-blu" href="categoria.html?categoria=Under 13">Under 13</a>
-      <a class="btn btn-rosso" href="categoria.html?categoria=2014/15">2014/15</a>
-      <a class="btn btn-blu" href="categoria.html?categoria=2016/17">2016/17</a>
-      <a class="btn btn-rosso" href="categoria.html?categoria=Under 15 femminile">Under 15 femminile</a>
-      <a class="btn btn-blu" href="categoria.html?categoria=Under 13 femminile">Under 13 femminile</a>
+      <a class="btn" href="categoria.html?categoria=Under 17">Under 17</a>
+      <a class="btn" href="categoria.html?categoria=Under 15">Under 15</a>
+      <a class="btn" href="categoria.html?categoria=Under 13">Under 13</a>
+      <a class="btn" href="categoria.html?categoria=2014/15">2014/15</a>
+      <a class="btn" href="categoria.html?categoria=2016/17">2016/17</a>
+      <a class="btn" href="categoria.html?categoria=Under 15 femminile">Under 15 femminile</a>
+      <a class="btn" href="categoria.html?categoria=Under 13 femminile">Under 13 femminile</a>
     </div>
   </div>
 </body>
