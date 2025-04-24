@@ -4,25 +4,29 @@ async function loadMarcatori() {
   const res = await fetch('dati.json');
   const dati = await res.json();
   const div = document.getElementById('marcatori');
-  const marcatori = {};
+  const count = {};
 
   (dati[cat]?.partite || []).forEach(p => {
     (p.marcatori || []).forEach(m => {
-      const key = m.nome.trim();
-      if (!marcatori[key]) {
-        marcatori[key] = { gol: 0, squadra: m.squadra || "-" };
+      const nome = m.nome;
+      const gol = parseInt(m.gol) || 0;
+      const squadra = m.squadra || "-";
+      if (nome && gol > 0) {
+        const key = nome + "_" + squadra;
+        if (!count[key]) count[key] = { nome: nome, squadra: squadra, gol: 0 };
+        count[key].gol += gol;
       }
-      marcatori[key].gol += parseInt(m.gol || 0);
     });
   });
 
   const table = document.createElement('table');
   table.innerHTML = '<tr><th>Giocatore</th><th>Squadra</th><th>Gol</th></tr>';
-  Object.entries(marcatori)
-    .sort((a, b) => b[1].gol - a[1].gol)
-    .forEach(([nome, info]) => {
-      table.innerHTML += `<tr><td>${nome}</td><td>${info.squadra}</td><td>${info.gol}</td></tr>`;
+  Object.values(count)
+    .sort((a, b) => b.gol - a.gol)
+    .forEach(info => {
+      table.innerHTML += `<tr><td>${info.nome}</td><td>${info.squadra}</td><td>${info.gol}</td></tr>`;
     });
   div.appendChild(table);
 }
+
 document.addEventListener('DOMContentLoaded', loadMarcatori);
