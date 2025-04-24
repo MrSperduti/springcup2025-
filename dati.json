@@ -9,22 +9,16 @@
         "orario": "19.00",
         "campo": "CAMPO A",
         "girone": "GIRONE A",
-        "golA": 3,
-        "golB": 1,
         "portiere": "MELADIO' GIOVANNI",
-        "squadraPortiere": "ACADEMY",
         "giocatore": "GOBBI ALESSANDRO",
-        "squadraGiocatore": "ACADEMY",
         "marcatori": [
           {
             "nome": "Susin",
-            "gol": 3,
-            "squadra": "A"
+            "gol": 3
           },
           {
             "nome": "Ciccio",
-            "gol": 1,
-            "squadra": "B"
+            "gol": 1
           }
         ]
       },
@@ -39,9 +33,7 @@
         "golA": 2,
         "golB": 0,
         "portiere": "KIKKO",
-        "squadraPortiere": "CIRCOLO MASTER",
         "giocatore": "GOBBI ALESSANDRO",
-        "squadraGiocatore": "ACADEMY",
         "marcatori": [
           {
             "nome": "Susin",
