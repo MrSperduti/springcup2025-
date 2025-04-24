@@ -4,25 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <title>SPRING CUP 2025</title>
-  <link rel="stylesheet" href="style.css">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     html, body {
       height: 100%;
       margin: 0;
+      padding: 0;
       background: linear-gradient(to bottom, #ffffff, #e3f2fd);
       font-family: 'Segoe UI', sans-serif;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: flex-start;
     }
     .container {
-      text-align: center;
-      padding: 40px 20px;
       max-width: 960px;
       width: 100%;
+      padding: 40px 20px;
+      text-align: center;
+      background: #ffffffcc;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
-    img.logo {
+    .logo {
       max-width: 180px;
       margin-bottom: 20px;
     }
@@ -39,20 +44,27 @@
       margin-top: 30px;
     }
     .btn {
-      padding: 12px 24px;
+      padding: 14px 28px;
       font-size: 18px;
       font-weight: bold;
       background: #1976d2;
       color: white;
       border: none;
       border-radius: 10px;
-      width: 280px;
+      width: 100%;
+      max-width: 300px;
       cursor: pointer;
       text-decoration: none;
       transition: background 0.3s;
     }
     .btn:hover {
       background: #0d47a1;
+    }
+    @media screen and (max-width: 600px) {
+      .btn {
+        font-size: 16px;
+        width: 90%;
+      }
     }
   </style>
 </head>
