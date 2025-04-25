@@ -224,3 +224,35 @@ function esporta() {
   a.click();
   URL.revokeObjectURL(url);
 }
+
+// MARCATORI: nome, gol, squadra
+function creaMarcatoriEditor(partita, container, index) {
+  const marcatori = partita.marcatori || [];
+  function aggiorna() {
+    container.innerHTML = "<h5>Marcatori</h5>";
+    marcatori.forEach((m, i) => {
+      const riga = document.createElement("div");
+      const nome = creaInput(m.nome || "", "Nome");
+      const gol = creaNumber(m.gol || 1, "Gol");
+      const squadra = creaInput(m.squadra || "", "Squadra");
+      nome.oninput = () => m.nome = nome.value;
+      gol.oninput = () => m.gol = parseInt(gol.value);
+      squadra.oninput = () => m.squadra = squadra.value;
+      riga.appendChild(nome);
+      riga.appendChild(gol);
+      riga.appendChild(squadra);
+      const rimuovi = creaBottone("❌", () => {
+        marcatori.splice(i, 1);
+        aggiorna();
+      });
+      riga.appendChild(rimuovi);
+      container.appendChild(riga);
+    });
+    const aggiungi = creaBottone("➕ Aggiungi Marcatore", () => {
+      marcatori.push({ nome: "", gol: 1, squadra: "" });
+      aggiorna();
+    });
+    container.appendChild(aggiungi);
+  }
+  aggiorna();
+}
