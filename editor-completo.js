@@ -126,6 +126,7 @@ function renderPartite() {
     const giornata = creaInput(p.giornata || "", "Giornata");
     const squadraA = creaInput(p.squadraA || "", "Squadra A");
     const squadraB = creaInput(p.squadraB || "", "Squadra B");
+    const girone = creaInput(p.girone || "", "Girone");
     const campo = creaInput(p.campo || "", "Campo");
     const orario = creaInput(p.orario || "", "Orario");
     const data = creaInput(p.data || "", "Data");
@@ -172,6 +173,7 @@ function renderPartite() {
     d.appendChild(giornata);
     d.appendChild(squadraA);
     d.appendChild(squadraB);
+    d.appendChild(girone);
     d.appendChild(campo);
     d.appendChild(orario);
     d.appendChild(data);
@@ -187,6 +189,7 @@ function renderPartite() {
     azioni.className = "actions";
     azioni.appendChild(creaBottone("💾 Salva", () => {
       partite[i] = {
+        girone: girone.value,
         giornata: giornata.value,
         squadraA: squadraA.value,
         squadraB: squadraB.value,
@@ -227,11 +230,13 @@ function renderFinali() {
     d.className = "item";
     const squadraA = creaInput(p.squadraA || "", "Squadra A");
     const squadraB = creaInput(p.squadraB || "", "Squadra B");
+    const girone = creaInput(p.girone || "", "Girone");
     const campo = creaInput(p.campo || "", "Campo");
     const orario = creaInput(p.orario || "", "Orario");
     const data = creaInput(p.data || "", "Data");
     d.appendChild(squadraA);
     d.appendChild(squadraB);
+    d.appendChild(girone);
     d.appendChild(campo);
     d.appendChild(orario);
     d.appendChild(data);
