@@ -92,7 +92,7 @@ function renderGironi() {
     
     const marcatoriBox = document.createElement("div");
     marcatoriBox.className = "marcatori";
-    creaMarcatoriEditor(partite[i], marcatoriBox, i);
+    creaMarcatoriEditor(finali[i], marcatoriBox, i);
     d.appendChild(marcatoriBox);
 
     const azioni = document.createElement("div");
@@ -150,7 +150,7 @@ function renderPartite() {
     
     const marcatoriBox = document.createElement("div");
     marcatoriBox.className = "marcatori";
-    creaMarcatoriEditor(partite[i], marcatoriBox, i);
+    creaMarcatoriEditor(finali[i], marcatoriBox, i);
     d.appendChild(marcatoriBox);
 
     const azioni = document.createElement("div");
@@ -159,6 +159,7 @@ function renderPartite() {
     azioni.appendChild(creaBottone("💾 Salva", () => {
       partite[i] = {
         giornata: parseInt(giornata.value),
+        marcatori: marcatori
         squadraA: squadraA.value,
         squadraB: squadraB.value,
         golA: parseInt(golA.value),
@@ -206,7 +207,7 @@ function renderFinali() {
     
     const marcatoriBox = document.createElement("div");
     marcatoriBox.className = "marcatori";
-    creaMarcatoriEditor(partite[i], marcatoriBox, i);
+    creaMarcatoriEditor(finali[i], marcatoriBox, i);
     d.appendChild(marcatoriBox);
 
     const azioni = document.createElement("div");
@@ -215,6 +216,7 @@ function renderFinali() {
     azioni.appendChild(creaBottone("💾 Salva", () => {
       finali[i] = {
         squadraA: squadraA.value,
+        marcatori: marcatori
         squadraB: squadraB.value,
         campo: campo.value,
         orario: orario.value,
