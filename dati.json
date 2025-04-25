@@ -86,7 +86,16 @@
   "Under 15": {
     "partite": [],
     "gironi": {},
-    "finali": []
+    "finali": [],
+    "rose": {
+      "ACADEMY": [
+        {
+          "cognome": "MIRRA",
+          "nome": "ALESSANDRO",
+          "nascita": "22.03.2011"
+        }
+      ]
+    }
   },
   "Under 13": {
     "partite": [],
