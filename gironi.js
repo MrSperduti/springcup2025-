@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", async () => {
   const categoria = new URLSearchParams(location.search).get("categoria");
   const response = await fetch("dati.json");

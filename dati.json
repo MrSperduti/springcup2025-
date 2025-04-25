@@ -2,64 +2,53 @@
   "Under 17": {
     "partite": [
       {
-        "campo": "CAMPO A",
-        "orario": "19:00",
-        "data": "09.05.2025",
-        "giornata": "1",
+        "giornata": 1,
         "squadraA": "ACADEMY",
         "squadraB": "NEW TEAM",
-        "golA": 5,
-        "golB": 1,
+        "data": "9.052025",
+        "orario": "19.00",
+        "campo": "CAMPO A",
+        "girone": "GIRONE A",
         "portiere": "MELADIO' GIOVANNI",
-        "squadraPortiere": "ACADEMY",
-        "giocatore": "ALESSANDRO GOBBI",
-        "squadraGiocatore": "ACADEMY",
+        "giocatore": "GOBBI ALESSANDRO",
         "marcatori": [
           {
-            "nome": "SUSIN FRANCESCO",
-            "gol": 4,
-            "squadra": "ACADEMY"
+            "nome": "Susin",
+            "gol": 3
           },
           {
-            "nome": "IANCU CRISTIAN ",
-            "gol": 1,
-            "squadra": "ACADEMY"
+            "nome": "Ciccio",
+            "gol": 1
           }
         ]
       },
       {
-        "campo": "CAMPO B",
-        "orario": "20:00",
-        "data": "15.05.2025",
-        "giornata": "2",
+        "giornata": 2,
         "squadraA": "ACADEMY",
-        "squadraB": "ARDEA",
-        "golA": 4,
-        "golB": 2,
-        "portiere": "MELADIO' GIOVANNI",
-        "squadraPortiere": "ACADEMY",
-        "giocatore": "CAVAGNOLI CIRO",
-        "squadraGiocatore": "ACADEMY",
+        "squadraB": "CIRCOLO MASTER",
+        "data": "12.05.2025",
+        "orario": "20.00",
+        "campo": "CAMPO B",
+        "girone": "GIRONE A",
+        "golA": 2,
+        "golB": 0,
+        "portiere": "KIKKO",
+        "giocatore": "GOBBI ALESSANDRO",
         "marcatori": [
           {
-            "nome": "SUSIN FRANCESCO",
+            "nome": "Susin",
             "gol": 1,
-            "squadra": "ACADEMY"
+            "squadra": "A"
           },
           {
-            "nome": "GOBBI ALESSANDRO",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "CAVAGNOLI CIRO",
+            "nome": "IANCU",
             "gol": 1,
-            "squadra": "ACADEMY"
+            "squadra": "A"
           },
           {
-            "nome": "ORSINI FRANCESCO",
-            "gol": 2,
-            "squadra": "ARDEA"
+            "nome": "TITA",
+            "gol": 1,
+            "squadra": "B"
           }
         ]
       }
@@ -68,9 +57,13 @@
       "GIRONE A": [
         "ACADEMY",
         "NEW TEAM",
-        "ARDEA"
+        "CIRCOLO MASTER"
       ],
-      "Nuovo Girone": []
+      "GIRONE B": [
+        "FORTITUDO",
+        "ARDEA",
+        "ECOCITY"
+      ]
     },
     "finali": []
   },

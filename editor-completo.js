@@ -1,8 +1,7 @@
-// Dati globali
+
 let dati = {};
 let categoriaSelezionata = "";
 
-// Carica file dati.json
 document.getElementById("fileInput").addEventListener("change", e => {
   const reader = new FileReader();
   reader.onload = function(event) {
@@ -17,7 +16,6 @@ document.getElementById("fileInput").addEventListener("change", e => {
   reader.readAsText(e.target.files[0]);
 });
 
-// Aggiorna categorie disponibili
 function aggiornaCategorie() {
   const select = document.getElementById("selectCategoria");
   select.innerHTML = "";
@@ -40,7 +38,6 @@ function aggiornaCategorie() {
   };
 }
 
-// Funzioni di rendering
 function aggiornaVista() {
   aggiornaPreview();
   renderGironi();
@@ -53,7 +50,7 @@ function aggiornaPreview() {
   if (categoriaSelezionata && dati[categoriaSelezionata]) {
     preview.textContent = JSON.stringify(dati[categoriaSelezionata], null, 2);
   } else {
-    preview.textContent = "⚠️ Nessun dato disponibile.";
+    preview.textContent = "⚠️ Nessun dato disponibile per la categoria selezionata.";
   }
 }
 
@@ -80,7 +77,7 @@ function creaBottone(label, fn) {
   return btn;
 }
 
-// Gironi
+// GESTIONE GIRONI
 function renderGironi() {
   const div = document.getElementById("listaGironi");
   div.innerHTML = "";
@@ -92,7 +89,14 @@ function renderGironi() {
     const inputSquadre = creaInput(gironi[nome].join(", "), "Squadre separate da virgola");
     d.appendChild(inputNome);
     d.appendChild(inputSquadre);
+    
+    const marcatoriBox = document.createElement("div");
+    marcatoriBox.className = "marcatori";
+    creaMarcatoriEditor(partite[i], marcatoriBox, i);
+    d.appendChild(marcatoriBox);
+
     const azioni = document.createElement("div");
+    
     azioni.className = "actions";
     azioni.appendChild(creaBottone("💾 Salva", () => {
       delete gironi[nome];
@@ -107,29 +111,25 @@ function renderGironi() {
     div.appendChild(d);
   });
 }
+
 function aggiungiGirone() {
   if (!dati[categoriaSelezionata].gironi) dati[categoriaSelezionata].gironi = {};
   dati[categoriaSelezionata].gironi["Nuovo Girone"] = [];
   aggiornaVista();
 }
 
-// Partite
+// GESTIONE PARTITE
 function renderPartite() {
   const div = document.getElementById("listaPartite");
   div.innerHTML = "";
-  const partite = dati[categoriaSelezionata]?.partite || [];
+  const partite = dati[categoriaSelezionata].partite || [];
 
   partite.forEach((p, i) => {
     const d = document.createElement("div");
     d.className = "item";
-
     const giornata = creaInput(p.giornata || "", "Giornata");
     const squadraA = creaInput(p.squadraA || "", "Squadra A");
     const squadraB = creaInput(p.squadraB || "", "Squadra B");
-    const girone = creaInput(p.girone || "", "Girone");
-    const campo = creaInput(p.campo || "", "Campo");
-    const orario = creaInput(p.orario || "", "Orario");
-    const data = creaInput(p.data || "", "Data");
     const golA = creaNumber(p.golA || 0, "Gol A");
     const golB = creaNumber(p.golB || 0, "Gol B");
     const portiere = creaInput(p.portiere || "", "Miglior Portiere");
@@ -137,72 +137,36 @@ function renderPartite() {
     const giocatore = creaInput(p.giocatore || "", "Miglior Giocatore");
     const squadraGiocatore = creaInput(p.squadraGiocatore || "", "Squadra Giocatore");
 
-    const marcatoriDiv = document.createElement("div");
-    marcatoriDiv.className = "marcatori";
-    const marcatori = p.marcatori || [];
-
-    function aggiornaMarcatori() {
-      marcatoriDiv.innerHTML = "<h5>Marcatori</h5>";
-      marcatori.forEach((m, idx) => {
-        const riga = document.createElement("div");
-        const nome = creaInput(m.nome, "Nome");
-        const gol = creaNumber(m.gol, "Gol");
-        const squadra = creaInput(m.squadra, "Squadra");
-        nome.oninput = () => m.nome = nome.value;
-        gol.oninput = () => m.gol = parseInt(gol.value);
-        squadra.oninput = () => m.squadra = squadra.value;
-        riga.appendChild(nome);
-        riga.appendChild(gol);
-        riga.appendChild(squadra);
-        const rimuovi = creaBottone("❌", () => {
-          marcatori.splice(idx, 1);
-          aggiornaMarcatori();
-        });
-        riga.appendChild(rimuovi);
-        marcatoriDiv.appendChild(riga);
-      });
-      const aggiungi = creaBottone("➕ Aggiungi Marcatore", () => {
-        marcatori.push({ nome: "", gol: 1, squadra: "" });
-        aggiornaMarcatori();
-      });
-      marcatoriDiv.appendChild(aggiungi);
-    }
-
-    aggiornaMarcatori();
-
     d.appendChild(giornata);
     d.appendChild(squadraA);
     d.appendChild(squadraB);
-    d.appendChild(girone);
-    d.appendChild(campo);
-    d.appendChild(orario);
-    d.appendChild(data);
     d.appendChild(golA);
     d.appendChild(golB);
     d.appendChild(portiere);
     d.appendChild(squadraPortiere);
     d.appendChild(giocatore);
     d.appendChild(squadraGiocatore);
-    d.appendChild(marcatoriDiv);
+
+    
+    const marcatoriBox = document.createElement("div");
+    marcatoriBox.className = "marcatori";
+    creaMarcatoriEditor(partite[i], marcatoriBox, i);
+    d.appendChild(marcatoriBox);
 
     const azioni = document.createElement("div");
+    
     azioni.className = "actions";
     azioni.appendChild(creaBottone("💾 Salva", () => {
       partite[i] = {
-        girone: girone.value,
-        giornata: giornata.value,
+        giornata: parseInt(giornata.value),
         squadraA: squadraA.value,
         squadraB: squadraB.value,
-        campo: campo.value,
-        orario: orario.value,
-        data: data.value,
         golA: parseInt(golA.value),
         golB: parseInt(golB.value),
         portiere: portiere.value,
         squadraPortiere: squadraPortiere.value,
         giocatore: giocatore.value,
-        squadraGiocatore: squadraGiocatore.value,
-        marcatori: marcatori
+        squadraGiocatore: squadraGiocatore.value
       };
       aggiornaVista();
     }));
@@ -220,27 +184,33 @@ function aggiungiPartita() {
   aggiornaVista();
 }
 
-// Finali
+// GESTIONE FINALI
 function renderFinali() {
   const div = document.getElementById("listaFinali");
   div.innerHTML = "";
-  const finali = dati[categoriaSelezionata]?.finali || [];
+  const finali = dati[categoriaSelezionata].finali || [];
+
   finali.forEach((p, i) => {
     const d = document.createElement("div");
     d.className = "item";
-    const squadraA = creaInput(p.squadraA || "", "Squadra A");
-    const squadraB = creaInput(p.squadraB || "", "Squadra B");
-    const girone = creaInput(p.girone || "", "Girone");
-    const campo = creaInput(p.campo || "", "Campo");
-    const orario = creaInput(p.orario || "", "Orario");
-    const data = creaInput(p.data || "", "Data");
+    const squadraA = creaInput(p.squadraA, "Squadra A");
+    const squadraB = creaInput(p.squadraB, "Squadra B");
+    const campo = creaInput(p.campo, "Campo");
+    const orario = creaInput(p.orario, "Orario");
+    const data = creaInput(p.data, "Data");
     d.appendChild(squadraA);
     d.appendChild(squadraB);
-    d.appendChild(girone);
     d.appendChild(campo);
     d.appendChild(orario);
     d.appendChild(data);
+    
+    const marcatoriBox = document.createElement("div");
+    marcatoriBox.className = "marcatori";
+    creaMarcatoriEditor(partite[i], marcatoriBox, i);
+    d.appendChild(marcatoriBox);
+
     const azioni = document.createElement("div");
+    
     azioni.className = "actions";
     azioni.appendChild(creaBottone("💾 Salva", () => {
       finali[i] = {
@@ -260,12 +230,12 @@ function renderFinali() {
     div.appendChild(d);
   });
 }
+
 function aggiungiFinale() {
   dati[categoriaSelezionata].finali.push({});
   aggiornaVista();
 }
 
-// Esporta dati
 function esporta() {
   const blob = new Blob([JSON.stringify(dati, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
@@ -274,4 +244,36 @@ function esporta() {
   a.download = "dati.json";
   a.click();
   URL.revokeObjectURL(url);
+}
+
+// MARCATORI: nome, gol, squadra
+function creaMarcatoriEditor(partita, container, index) {
+  const marcatori = partita.marcatori || [];
+  function aggiorna() {
+    container.innerHTML = "<h5>Marcatori</h5>";
+    marcatori.forEach((m, i) => {
+      const riga = document.createElement("div");
+      const nome = creaInput(m.nome || "", "Nome");
+      const gol = creaNumber(m.gol || 1, "Gol");
+      const squadra = creaInput(m.squadra || "", "Squadra");
+      nome.oninput = () => m.nome = nome.value;
+      gol.oninput = () => m.gol = parseInt(gol.value);
+      squadra.oninput = () => m.squadra = squadra.value;
+      riga.appendChild(nome);
+      riga.appendChild(gol);
+      riga.appendChild(squadra);
+      const rimuovi = creaBottone("❌", () => {
+        marcatori.splice(i, 1);
+        aggiorna();
+      });
+      riga.appendChild(rimuovi);
+      container.appendChild(riga);
+    });
+    const aggiungi = creaBottone("➕ Aggiungi Marcatore", () => {
+      marcatori.push({ nome: "", gol: 1, squadra: "" });
+      aggiorna();
+    });
+    container.appendChild(aggiungi);
+  }
+  aggiorna();
 }
