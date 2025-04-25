@@ -122,6 +122,7 @@ function renderPartite() {
   partite.forEach((p, i) => {
     const d = document.createElement("div");
     d.className = "item";
+
     const giornata = creaInput(p.giornata || "", "Giornata");
     const squadraA = creaInput(p.squadraA || "", "Squadra A");
     const squadraB = creaInput(p.squadraB || "", "Squadra B");
@@ -165,6 +166,7 @@ function renderPartite() {
       });
       marcatoriDiv.appendChild(aggiungi);
     }
+
     aggiornaMarcatori();
 
     d.appendChild(giornata);
@@ -185,9 +187,6 @@ function renderPartite() {
     azioni.className = "actions";
     azioni.appendChild(creaBottone("💾 Salva", () => {
       partite[i] = {
-        campo: campo.value,
-        orario: orario.value,
-        data: data.value,
         giornata: giornata.value,
         squadraA: squadraA.value,
         squadraB: squadraB.value,
