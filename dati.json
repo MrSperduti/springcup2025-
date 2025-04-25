@@ -1,7 +1,77 @@
 {
   "Under 17": {
-    "partite": [],
-    "gironi": {},
+    "partite": [
+      {
+        "campo": "CAMPO A",
+        "orario": "19:00",
+        "data": "09.05.2025",
+        "giornata": "1",
+        "squadraA": "ACADEMY",
+        "squadraB": "NEW TEAM",
+        "golA": 5,
+        "golB": 1,
+        "portiere": "MELADIO' GIOVANNI",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "ALESSANDRO GOBBI",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "SUSIN FRANCESCO",
+            "gol": 4,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "IANCU CRISTIAN ",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          }
+        ]
+      },
+      {
+        "campo": "CAMPO B",
+        "orario": "20:00",
+        "data": "15.05.2025",
+        "giornata": "2",
+        "squadraA": "ACADEMY",
+        "squadraB": "ARDEA",
+        "golA": 4,
+        "golB": 2,
+        "portiere": "MELADIO' GIOVANNI",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "CAVAGNOLI CIRO",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "SUSIN FRANCESCO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "GOBBI ALESSANDRO",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "CAVAGNOLI CIRO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "ORSINI FRANCESCO",
+            "gol": 2,
+            "squadra": "ARDEA"
+          }
+        ]
+      }
+    ],
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY",
+        "NEW TEAM",
+        "ARDEA"
+      ],
+      "Nuovo Girone": []
+    },
     "finali": []
   },
   "Under 15": {
