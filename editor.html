@@ -13,19 +13,16 @@
       background: linear-gradient(to bottom, #f1f5f9, #e2ecf5);
       color: #1e293b;
     }
-
     h2 {
       color: #d32f2f;
       text-align: center;
       margin-top: 20px;
     }
-
     .container {
       max-width: 960px;
       margin: 0 auto;
       padding: 20px;
     }
-
     .section {
       background: white;
       border-radius: 14px;
@@ -33,60 +30,10 @@
       margin-top: 30px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
     h3 {
       color: #1976d2;
       margin-bottom: 15px;
     }
-
-    .item {
-      border: 1px solid #ccc;
-      padding: 12px;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      background: #f9fafb;
-    }
-
-    .item h4 {
-      margin-top: 0;
-    }
-
-    button {
-      background: #d32f2f;
-      color: white;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background: #b71c1c;
-    }
-
-    .actions button {
-      margin-right: 10px;
-    }
-
-    input[type="text"],
-    input[type="number"],
-    select {
-      width: 100%;
-      padding: 8px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      margin-bottom: 10px;
-      box-sizing: border-box;
-    }
-
-    textarea {
-      width: 100%;
-      min-height: 40px;
-      margin-top: 5px;
-    }
-
     pre.json-preview {
       background: #f0f0f0;
       padding: 10px;
@@ -95,36 +42,6 @@
       overflow-y: auto;
       border-radius: 8px;
       border: 1px solid #ddd;
-    }
-
-    .marcatori {
-      margin-top: 10px;
-      padding: 10px;
-      background: #e8f0fe;
-      border-radius: 8px;
-    }
-
-    .marcatori h5 {
-      margin-top: 0;
-      color: #1565c0;
-    }
-
-    .marcatori div {
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    @media (max-width: 600px) {
-      .section {
-        padding: 15px;
-      }
-
-      button {
-        width: 100%;
-        margin-top: 10px;
-      }
     }
   </style>
 </head>
@@ -138,38 +55,28 @@
     </div>
 
     <div class="section">
-      <h3>📋 Seleziona Categoria</h3>
-      <select id="selectCategoria"></select>
-    </div>
-
-    <div class="section">
       <h3>📄 Anteprima dati correnti</h3>
-      <pre class="json-preview" id="previewDati"></pre>
-    </div>
-
-    <div class="section">
-      <h3>👥 Gestione Gironi</h3>
-      <div id="listaGironi"></div>
-      <button onclick="aggiungiGirone()">➕ Aggiungi Girone</button>
-    </div>
-
-    <div class="section">
-      <h3>🗓️ Gestione Partite</h3>
-      <div id="listaPartite"></div>
-      <button onclick="aggiungiPartita()">➕ Aggiungi Partita</button>
-    </div>
-
-    <div class="section">
-      <h3>🏆 Gestione Finali</h3>
-      <div id="listaFinali"></div>
-      <button onclick="aggiungiFinale()">➕ Aggiungi Finale</button>
-    </div>
-
-    <div class="section" style="text-align:center;">
-      <button onclick="esporta()">💾 Esporta dati.json</button>
+      <pre class="json-preview" id="previewDati">Nessun file caricato.</pre>
     </div>
   </div>
 
-  <script src="editor-completo.js"></script>
+  <script>
+    document.getElementById('fileInput').addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const json = JSON.parse(e.target.result);
+          const categoria = Object.keys(json)[0];
+          document.getElementById("previewDati").textContent = JSON.stringify(json[categoria], null, 2);
+        } catch (err) {
+          document.getElementById("previewDati").textContent = "❌ Errore nel file JSON";
+        }
+      };
+      reader.readAsText(file);
+    });
+  </script>
 </body>
 </html>
