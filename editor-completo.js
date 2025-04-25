@@ -350,3 +350,77 @@ function aggiungiFinale() {
   dati[categoriaSelezionata].finali.push({});
   aggiornaVista();
 }
+
+function renderGironi() {
+  const div = document.getElementById("listaGironi");
+  div.innerHTML = "";
+  const gironi = dati[categoriaSelezionata]?.gironi || {};
+  Object.keys(gironi).forEach(nome => {
+    const d = document.createElement("div");
+    d.className = "item";
+    const inputNome = creaInput(nome, "Nome Girone");
+    const inputSquadre = creaInput(gironi[nome].join(", "), "Squadre separate da virgola");
+    d.appendChild(inputNome);
+    d.appendChild(inputSquadre);
+    const azioni = document.createElement("div");
+    azioni.className = "actions";
+    azioni.appendChild(creaBottone("💾 Salva", () => {
+      delete gironi[nome];
+      gironi[inputNome.value] = inputSquadre.value.split(",").map(s => s.trim());
+      aggiornaVista();
+    }));
+    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
+      delete gironi[nome];
+      aggiornaVista();
+    }));
+    d.appendChild(azioni);
+    div.appendChild(d);
+  });
+}
+function aggiungiGirone() {
+  if (!dati[categoriaSelezionata].gironi) dati[categoriaSelezionata].gironi = {};
+  dati[categoriaSelezionata].gironi["Nuovo Girone"] = [];
+  aggiornaVista();
+}
+
+function renderFinali() {
+  const div = document.getElementById("listaFinali");
+  div.innerHTML = "";
+  const finali = dati[categoriaSelezionata]?.finali || [];
+  finali.forEach((p, i) => {
+    const d = document.createElement("div");
+    d.className = "item";
+    const squadraA = creaInput(p.squadraA || "", "Squadra A");
+    const squadraB = creaInput(p.squadraB || "", "Squadra B");
+    const campo = creaInput(p.campo || "", "Campo");
+    const orario = creaInput(p.orario || "", "Orario");
+    const data = creaInput(p.data || "", "Data");
+    d.appendChild(squadraA);
+    d.appendChild(squadraB);
+    d.appendChild(campo);
+    d.appendChild(orario);
+    d.appendChild(data);
+    const azioni = document.createElement("div");
+    azioni.className = "actions";
+    azioni.appendChild(creaBottone("💾 Salva", () => {
+      finali[i] = {
+        squadraA: squadraA.value,
+        squadraB: squadraB.value,
+        campo: campo.value,
+        orario: orario.value,
+        data: data.value
+      };
+      aggiornaVista();
+    }));
+    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
+      finali.splice(i, 1);
+      aggiornaVista();
+    }));
+    d.appendChild(azioni);
+    div.appendChild(d);
+  });
+}
+function aggiungiFinale() {
+  dati[categoriaSelezionata].finali.push({});
+  aggiornaVista();
+}
