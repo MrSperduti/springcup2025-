@@ -10,8 +10,8 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+      font-family: 'Segoe UI', sans-serif;
       color: white;
       display: flex;
       justify-content: center;
@@ -20,16 +20,16 @@
 
     .container {
       text-align: center;
-      padding: 40px 20px;
       width: 100%;
-      max-width: 600px;
+      max-width: 640px;
+      padding: 40px 20px;
     }
 
     .logo {
       max-width: 200px;
       width: 100%;
       height: auto;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     h1 {
@@ -37,7 +37,6 @@
       font-size: 36px;
       color: #ff4c4c;
       margin-bottom: 40px;
-      letter-spacing: 1px;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
 
@@ -49,24 +48,23 @@
     }
 
     .btn {
-      width: 100%;
-      padding: 18px;
+      padding: 18px 20px;
       font-size: 20px;
       font-weight: bold;
-      color: white;
-      border-radius: 12px;
+      border-radius: 14px;
       border: none;
       text-decoration: none;
-      background: linear-gradient(135deg, #d32f2f, #1565c0);
-      background-size: 200% 200%;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.4);
-      transition: transform 0.2s ease, box-shadow 0.3s ease, background-position 0.3s;
+      color: white;
+      background: linear-gradient(to right, #d32f2f, #1565c0);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      text-align: center;
+      width: 100%;
     }
 
     .btn:hover {
       transform: scale(1.05);
-      background-position: right center;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
     }
 
     @media (max-width: 600px) {
