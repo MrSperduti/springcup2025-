@@ -2,53 +2,64 @@
   "Under 17": {
     "partite": [
       {
-        "giornata": 1,
+        "campo": "CAMPO A",
+        "orario": "19:00",
+        "data": "09.05.2025",
+        "giornata": "1",
         "squadraA": "ACADEMY",
         "squadraB": "NEW TEAM",
-        "data": "9.052025",
-        "orario": "19.00",
-        "campo": "CAMPO A",
-        "girone": "GIRONE A",
+        "golA": 5,
+        "golB": 1,
         "portiere": "MELADIO' GIOVANNI",
-        "giocatore": "GOBBI ALESSANDRO",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "ALESSANDRO GOBBI",
+        "squadraGiocatore": "ACADEMY",
         "marcatori": [
           {
-            "nome": "Susin",
-            "gol": 3
+            "nome": "SUSIN FRANCESCO",
+            "gol": 4,
+            "squadra": "ACADEMY"
           },
           {
-            "nome": "Ciccio",
-            "gol": 1
+            "nome": "IANCU CRISTIAN ",
+            "gol": 1,
+            "squadra": "ACADEMY"
           }
         ]
       },
       {
-        "giornata": 2,
-        "squadraA": "ACADEMY",
-        "squadraB": "CIRCOLO MASTER",
-        "data": "12.05.2025",
-        "orario": "20.00",
         "campo": "CAMPO B",
-        "girone": "GIRONE A",
-        "golA": 2,
-        "golB": 0,
-        "portiere": "KIKKO",
-        "giocatore": "GOBBI ALESSANDRO",
+        "orario": "20:00",
+        "data": "15.05.2025",
+        "giornata": "2",
+        "squadraA": "ACADEMY",
+        "squadraB": "ARDEA",
+        "golA": 4,
+        "golB": 2,
+        "portiere": "MELADIO' GIOVANNI",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "CAVAGNOLI CIRO",
+        "squadraGiocatore": "ACADEMY",
         "marcatori": [
           {
-            "nome": "Susin",
+            "nome": "SUSIN FRANCESCO",
             "gol": 1,
-            "squadra": "A"
+            "squadra": "ACADEMY"
           },
           {
-            "nome": "IANCU",
-            "gol": 1,
-            "squadra": "A"
+            "nome": "GOBBI ALESSANDRO",
+            "gol": 2,
+            "squadra": "ACADEMY"
           },
           {
-            "nome": "TITA",
+            "nome": "CAVAGNOLI CIRO",
             "gol": 1,
-            "squadra": "B"
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "ORSINI FRANCESCO",
+            "gol": 2,
+            "squadra": "ARDEA"
           }
         ]
       }
@@ -57,15 +68,20 @@
       "GIRONE A": [
         "ACADEMY",
         "NEW TEAM",
-        "CIRCOLO MASTER"
+        "ARDEA"
       ],
-      "GIRONE B": [
-        "FORTITUDO",
-        "ARDEA",
-        "ECOCITY"
-      ]
+      "Nuovo Girone": []
     },
-    "finali": []
+    "finali": [],
+    "rose": {
+      "ACADEMY": [
+        {
+          "cognome": "GOBBI",
+          "nome": "ALESSANDRO",
+          "nascita": "21.08.2008"
+        }
+      ]
+    }
   },
   "Under 15": {
     "partite": [],
