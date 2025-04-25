@@ -89,7 +89,14 @@ function renderGironi() {
     const inputSquadre = creaInput(gironi[nome].join(", "), "Squadre separate da virgola");
     d.appendChild(inputNome);
     d.appendChild(inputSquadre);
+    
+    const marcatoriBox = document.createElement("div");
+    marcatoriBox.className = "marcatori";
+    creaMarcatoriEditor(partite[i], marcatoriBox, i);
+    d.appendChild(marcatoriBox);
+
     const azioni = document.createElement("div");
+    
     azioni.className = "actions";
     azioni.appendChild(creaBottone("💾 Salva", () => {
       delete gironi[nome];
@@ -140,7 +147,14 @@ function renderPartite() {
     d.appendChild(giocatore);
     d.appendChild(squadraGiocatore);
 
+    
+    const marcatoriBox = document.createElement("div");
+    marcatoriBox.className = "marcatori";
+    creaMarcatoriEditor(partite[i], marcatoriBox, i);
+    d.appendChild(marcatoriBox);
+
     const azioni = document.createElement("div");
+    
     azioni.className = "actions";
     azioni.appendChild(creaBottone("💾 Salva", () => {
       partite[i] = {
@@ -189,7 +203,14 @@ function renderFinali() {
     d.appendChild(campo);
     d.appendChild(orario);
     d.appendChild(data);
+    
+    const marcatoriBox = document.createElement("div");
+    marcatoriBox.className = "marcatori";
+    creaMarcatoriEditor(partite[i], marcatoriBox, i);
+    d.appendChild(marcatoriBox);
+
     const azioni = document.createElement("div");
+    
     azioni.className = "actions";
     azioni.appendChild(creaBottone("💾 Salva", () => {
       finali[i] = {

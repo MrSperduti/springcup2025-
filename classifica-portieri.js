@@ -9,18 +9,18 @@ async function loadPortieri() {
   (dati[cat]?.partite || []).forEach(p => {
     const nome = p.portiere;
     const squadra = p.squadraPortiere || "-";
-    if (nome) {
-      if (!count[nome]) count[nome] = { voti: 0, squadra: squadra };
-      count[nome].voti += 1;
-    }
+    if (!nome) return;
+    const key = nome + "_" + squadra;
+    if (!count[key]) count[key] = { nome, squadra, voti: 0 };
+    count[key].voti += 1;
   });
 
   const table = document.createElement('table');
   table.innerHTML = '<tr><th>Portiere</th><th>Squadra</th><th>Voti</th></tr>';
-  Object.entries(count)
-    .sort((a, b) => b[1].voti - a[1].voti)
-    .forEach(([nome, info]) => {
-      table.innerHTML += `<tr><td>${nome}</td><td>${info.squadra}</td><td>${info.voti}</td></tr>`;
+  Object.values(count)
+    .sort((a, b) => b.voti - a.voti)
+    .forEach(info => {
+      table.innerHTML += `<tr><td>${info.nome}</td><td>${info.squadra}</td><td>${info.voti}</td></tr>`;
     });
   div.appendChild(table);
 }

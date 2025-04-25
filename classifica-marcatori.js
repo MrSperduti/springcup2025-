@@ -8,14 +8,11 @@ async function loadMarcatori() {
 
   (dati[cat]?.partite || []).forEach(p => {
     (p.marcatori || []).forEach(m => {
-      const nome = m.nome;
-      const gol = parseInt(m.gol) || 0;
-      const squadra = m.squadra || "-";
-      if (nome && gol > 0) {
-        const key = nome + "_" + squadra;
-        if (!count[key]) count[key] = { nome: nome, squadra: squadra, gol: 0 };
-        count[key].gol += gol;
-      }
+      const nome = m.nome || "";
+      const squadra = m.squadra || "";
+      const key = nome + "_" + squadra;
+      if (!count[key]) count[key] = { nome, squadra, gol: 0 };
+      count[key].gol += parseInt(m.gol) || 0;
     });
   });
 
