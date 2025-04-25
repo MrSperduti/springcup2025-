@@ -1,45 +1,8 @@
 {
   "Under 17": {
-    "partite": [
-      {
-        "campo": "CAMPO A",
-        "orario": "19:00",
-        "data": "09.05.2025",
-        "giornata": "1",
-        "squadraA": "ACADEMY",
-        "squadraB": "NEW TEAM",
-        "golA": 6,
-        "golB": 1,
-        "portiere": "GIOVANNI MELADIO",
-        "squadraPortiere": "ACADEMY",
-        "giocatore": "ALESSANDRO GOBBI",
-        "squadraGiocatore": "ACADEMY",
-        "marcatori": [
-          {
-            "nome": "SUSIN",
-            "gol": 5,
-            "squadra": "ACADEMY"
-          }
-        ]
-      },
-      {}
-    ],
-    "gironi": {
-      "GIRONE B": [
-        "FORTITUDO",
-        "CIRCOLO MASTER",
-        "ECOCITY"
-      ],
-      "GIRONE A": [
-        "ACADEMY",
-        "NEW TEAM",
-        "ARDEA"
-      ],
-      "Nuovo Girone": []
-    },
-    "finali": [
-      {}
-    ]
+    "partite": [],
+    "gironi": {},
+    "finali": []
   },
   "Under 15": {
     "partite": [],
