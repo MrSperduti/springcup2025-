@@ -1,37 +1,68 @@
 {
   "Under 17": {
-    "partite": [],
-    "gironi": {},
-    "finali": []
-  },
-  "Under 15": {
-    "partite": [],
-    "gironi": {},
-    "finali": []
-  },
-  "Under 13": {
-    "partite": [],
-    "gironi": {},
-    "finali": []
-  },
-  "2014/15": {
-    "partite": [],
-    "gironi": {},
-    "finali": []
-  },
-  "2016/17": {
-    "partite": [],
-    "gironi": {},
-    "finali": []
-  },
-  "Under 15 femminile": {
-    "partite": [],
-    "gironi": {},
-    "finali": []
-  },
-  "Under 13 femminile": {
-    "partite": [],
-    "gironi": {},
+    "partite": [
+      {
+        "giornata": 1,
+        "squadraA": "ACADEMY",
+        "squadraB": "NEW TEAM",
+        "data": "10.05.2025",
+        "orario": "18:00",
+        "campo": "CAMPO A",
+        "girone": "GIRONE A",
+        "golA": 2,
+        "golB": 1,
+        "portiere": "MARIO BIANCHI",
+        "squadraPortiere": "NEW TEAM",
+        "giocatore": "LUCA ROSSI",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "Rossi",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "Verdi",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          }
+        ]
+      },
+      {
+        "giornata": 2,
+        "squadraA": "CIRCOLO MASTER",
+        "squadraB": "ACADEMY",
+        "data": "11.05.2025",
+        "orario": "19:30",
+        "campo": "CAMPO B",
+        "girone": "GIRONE A",
+        "golA": 3,
+        "golB": 3,
+        "portiere": "GIOVANNI NERI",
+        "squadraPortiere": "CIRCOLO MASTER",
+        "giocatore": "LUCA ROSSI",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "Rossi",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "Blu",
+            "gol": 2,
+            "squadra": "CIRCOLO MASTER"
+          }
+        ]
+      }
+    ],
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY",
+        "NEW TEAM",
+        "CIRCOLO MASTER"
+      ]
+    },
     "finali": []
   }
 }
