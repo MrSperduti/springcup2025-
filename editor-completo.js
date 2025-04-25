@@ -185,6 +185,9 @@ function renderPartite() {
     azioni.className = "actions";
     azioni.appendChild(creaBottone("💾 Salva", () => {
       partite[i] = {
+        campo: campo.value,
+        orario: orario.value,
+        data: data.value,
         giornata: giornata.value,
         squadraA: squadraA.value,
         squadraB: squadraB.value,
