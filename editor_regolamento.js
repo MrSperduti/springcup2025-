@@ -64,16 +64,6 @@ Dimensione: ${file.size} bytes`;
         row.remove();
         existingFiles = existingFiles.filter(f => f.name !== fileName);
         localStorage.setItem('regolamentoFiles', JSON.stringify(existingFiles));
-
-        // Rimuove anche dal file JSON su GitHub (opzionale, ma consigliato)
-        fetch('https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/regolamentoFiles.json', {
-          method: 'PUT',
-          body: JSON.stringify({regolamentoFiles: existingFiles}),
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        }).then(response => response.json())
-        .then(() => console.log('File rimosso dal JSON su GitHub.'));
       };
 
       removeCell.appendChild(removeButton);
@@ -83,16 +73,16 @@ Dimensione: ${file.size} bytes`;
       row.appendChild(removeCell);
       tableBody.appendChild(row);
 
-      // Mostra il tasto "Genera JSON"
+      // Mostra il tasto "Genera JSON" solo quando un file è stato caricato
       generateJsonButton.style.display = 'inline-block';
     } else {
       alert('Seleziona un file da caricare');
     }
   });
 
-  // Funzione per generare il JSON e scaricarlo
+  // Funzione per generare il JSON e aggiornarlo
   generateJsonButton.addEventListener('click', function() {
-    // Crea il file JSON per il download con tutti i file
+    // Crea il file JSON per il download con tutti i file presenti
     const jsonBlob = new Blob([JSON.stringify({regolamentoFiles: JSON.parse(localStorage.getItem('regolamentoFiles'))})], {type: 'application/json'});
     const jsonURL = URL.createObjectURL(jsonBlob);
 
@@ -100,7 +90,7 @@ Dimensione: ${file.size} bytes`;
     const downloadLink = document.createElement('a');
     downloadLink.href = jsonURL;
     downloadLink.download = 'regolamentoFiles.json';
-    downloadLink.textContent = 'Scarica il JSON generato';
+    downloadLink.textContent = 'Scarica il JSON aggiornato';
 
     // Aggiungi il link al body o dove vuoi
     document.body.appendChild(downloadLink);
