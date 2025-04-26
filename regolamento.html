@@ -15,6 +15,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
 
     .container {
@@ -75,25 +76,27 @@
   <div class="container">
     <img src="logo.png" alt="Logo Spring Cup" class="logo">
     <h1>Regolamento SPRING CUP 2025</h1>
-
-    <div style="margin-top: 30px;">
-      <a href="javascript:history.back()" class="squadra-button">🔙 Torna Indietro</a>
-      <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
-    </div>
   </div>
 
-  <h2>Documenti Caricati</h2>
-  <table id="pdfTable">
-    <thead>
-      <tr>
-        <th>Nome del Documento</th>
-        <th>Download</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- I file PDF caricati verranno visualizzati qui -->
-    </tbody>
-  </table>
+  <div class="container">
+    <h2>Documenti Caricati</h2>
+    <table id="pdfTable">
+      <thead>
+        <tr>
+          <th>Nome del Documento</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- I file PDF caricati verranno visualizzati qui -->
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top: 30px;">
+    <a href="javascript:history.back()" class="squadra-button">🔙 Torna Indietro</a>
+    <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
+  </div>
 
   <script src="caricamento.js"></script>
 </body>
