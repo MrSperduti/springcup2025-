@@ -2,12 +2,13 @@
   "Under 17": {
     "partite": [
       {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "NEW TEAM",
         "campo": "CAMPO A",
         "orario": "19:00",
         "data": "09.05.2025",
-        "giornata": "1",
-        "squadraA": "ACADEMY",
-        "squadraB": "NEW TEAM",
         "golA": 5,
         "golB": 1,
         "portiere": "MELADIO' GIOVANNI",
@@ -28,12 +29,13 @@
         ]
       },
       {
+        "giornata": "2",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "ARDEA",
         "campo": "CAMPO B",
         "orario": "20:00",
         "data": "15.05.2025",
-        "giornata": "2",
-        "squadraA": "ACADEMY",
-        "squadraB": "ARDEA",
         "golA": 4,
         "golB": 2,
         "portiere": "MELADIO' GIOVANNI",
