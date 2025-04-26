@@ -47,7 +47,7 @@ function aggiornaPreview() {
   if (categoriaSelezionata && dati[categoriaSelezionata]) {
     preview.textContent = JSON.stringify(dati[categoriaSelezionata], null, 2);
   } else {
-    preview.textContent = "⚠️ Nessun file caricato o categoria non selezionata.";
+    preview.textContent = "⚠️ Nessun dato disponibile.";
   }
 }
 
@@ -74,7 +74,7 @@ function creaBottone(label, fn) {
   return btn;
 }
 
-// ---------- GIRONI ----------
+// ------------------------------ GIRONI
 function renderGironi() {
   const div = document.getElementById("listaGironi");
   div.innerHTML = "";
@@ -108,7 +108,7 @@ function aggiungiGirone() {
   aggiornaVista();
 }
 
-// ---------- PARTITE ----------
+// ------------------------------ PARTITE
 function renderPartite() {
   const div = document.getElementById("listaPartite");
   div.innerHTML = "";
@@ -216,7 +216,7 @@ function aggiungiPartita() {
   aggiornaVista();
 }
 
-// ---------- FINALi ----------
+// ------------------------------ FINALi
 function renderFinali() {
   const div = document.getElementById("listaFinali");
   div.innerHTML = "";
@@ -265,8 +265,37 @@ function aggiungiFinale() {
   aggiornaVista();
 }
 
-// ---------- ROSE ----------
+// ------------------------------ ROSE
 function renderRose() {
+  const div = document.getElementById("listaRose");
+  div.innerHTML = "";
+  
+  // Ordinamento dei giocatori per cognome
+  const squadre = dati[categoriaSelezionata]?.rose || {};
+  
+  Object.entries(squadre).forEach(([squadra, giocatori]) => {
+    const section = document.createElement("div");
+    section.className = "girone-section";
+    const titolo = document.createElement("h3");
+    titolo.textContent = squadra;
+    section.appendChild(titolo);
+
+    // Ordinamento per cognome
+    const giocatoriOrdinati = giocatori.sort((a, b) => a.cognome.localeCompare(b.cognome));
+
+    const table = document.createElement("table");
+    table.innerHTML = "<tr><th>Cognome</th><th>Nome</th><th>Data di Nascita</th></tr>";
+    
+    giocatoriOrdinati.forEach(g => {
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${g.cognome}</td><td>${g.nome}</td><td>${g.nascita}</td>`;
+      table.appendChild(row);
+    });
+
+    section.appendChild(table);
+    div.appendChild(section);
+  });
+}
   const div = document.getElementById("listaRose");
   div.innerHTML = "";
 }
@@ -310,7 +339,7 @@ function aggiungiGiocatore() {
   contenitore.appendChild(wrapper);
 }
 
-// ---------- ESPORTA ----------
+// ------------------------------ ESPORTA
 function esporta() {
   const blob = new Blob([JSON.stringify(dati, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
