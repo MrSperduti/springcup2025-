@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Video - SPRING CUP 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 640px;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 36px;
+      color: #ff4c4c;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .btn {
+      padding: 18px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 14px;
+      border: none;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(to right, #d32f2f, #1565c0);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      text-align: center;
+      width: 100%;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+      .btn {
+        font-size: 18px;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logo Spring Cup" class="logo">
+    <h1>Video SPRING CUP 2025</h1>
+    <div class="buttons">
+      <a class="btn" href="categoria.html?categoria=Under 17">Under 17</a>
+      <a class="btn" href="categoria.html?categoria=Under 15">Under 15</a>
+      <a class="btn" href="categoria.html?categoria=Under 13">Under 13</a>
+      <a class="btn" href="categoria.html?categoria=2014/15">2014/15</a>
+      <a class="btn" href="categoria.html?categoria=2016/17">2016/17</a>
+      <a class="btn" href="categoria.html?categoria=Under 15 femminile">Under 15 femminile</a>
+      <a class="btn" href="categoria.html?categoria=Under 13 femminile">Under 13 femminile</a>
+    </div>
+    <div style="margin-top: 30px;">
+      <a href="javascript:history.back()" class="squadra-button">🔙 Torna Indietro</a>
+      <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Carica Video (Interviste e Video)</h2>
+    <input type="file" id="videoInput" accept="video/*">
+    <div id="previewSection">
+      <h3>Anteprima Caricamento</h3>
+      <div id="preview"></div>
+    </div>
+  </div>
+
+  <script src="caricamento.js"></script>
+</body>
+</html>
