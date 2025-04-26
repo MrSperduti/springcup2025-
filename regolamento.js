@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const tableBody = document.querySelector('#pdfTable tbody');
   
   // Funzione per caricare e visualizzare i file JSON caricati su GitHub
-  fetch('https://raw.githubusercontent.com/your-github-username/your-repository/main/path/to/your/json/regolamentoFiles.json')
+  fetch('https://raw.githubusercontent.com/your-github-username/your-repository/main/path/to/your/json/regolamentoFiles_updated.json')
     .then(response => response.json())
     .then(data => {
       data.regolamentoFiles.forEach(file => {
