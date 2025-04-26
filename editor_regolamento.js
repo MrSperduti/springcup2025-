@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (file) {
       const fileName = file.name;
 
-      // Genera l'URL corretto per il file caricato su GitHub
+      // Genera l'URL corretto per il file caricato nella root del repository GitHub
       const fileURL = `https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/${fileName}`;
       
       // Crea un oggetto JSON con i dettagli del file
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Funzione per generare il JSON e scaricarlo
   generateJsonButton.addEventListener('click', function() {
     if (fileDetails) {
-      // Verifica se esiste già un file JSON e aggiungi il nuovo file alla lista
+      // Caricare il file JSON esistente dal localStorage o crearne uno nuovo
       let existingFiles = [];
       if (localStorage.getItem('regolamentoFiles')) {
         existingFiles = JSON.parse(localStorage.getItem('regolamentoFiles'));
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Salva la lista aggiornata dei file nel localStorage
       localStorage.setItem('regolamentoFiles', JSON.stringify(existingFiles));
 
-      // Crea un link per scaricare il JSON
+      // Crea un file JSON con i dettagli dei file
       const jsonBlob = new Blob([JSON.stringify({regolamentoFiles: existingFiles})], {type: 'application/json'});
       const jsonURL = URL.createObjectURL(jsonBlob);
       
