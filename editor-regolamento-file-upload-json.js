@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const fileName = file.name;
     const fileURL = URL.createObjectURL(file);
     
-    // Salvataggio del file in formato JSON
+    // Salvataggio del file in un array JSON
     uploadedFiles.push({
       name: fileName,
       url: fileURL
