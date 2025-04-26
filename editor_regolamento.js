@@ -64,6 +64,16 @@ Dimensione: ${file.size} bytes`;
         row.remove();
         existingFiles = existingFiles.filter(f => f.name !== fileName);
         localStorage.setItem('regolamentoFiles', JSON.stringify(existingFiles));
+
+        // Rimuove anche dal file JSON su GitHub (opzionale, ma consigliato)
+        fetch('https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/regolamentoFiles.json', {
+          method: 'PUT',
+          body: JSON.stringify({regolamentoFiles: existingFiles}),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }).then(response => response.json())
+        .then(() => console.log('File rimosso dal JSON su GitHub.'));
       };
 
       removeCell.appendChild(removeButton);
