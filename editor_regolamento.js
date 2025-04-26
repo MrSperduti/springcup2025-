@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const file = pdfInput.files[0];
     if (file) {
       const fileName = file.name;
-      const fileURL = URL.createObjectURL(file);
+
+      // A questo punto, l'utente deve caricare il file su GitHub e inserire l'URL pubblico
+      const fileURL = `https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/path/to/tuo-file/${fileName}`;
       
       // Crea un oggetto JSON con i dettagli del file
       fileDetails = {
