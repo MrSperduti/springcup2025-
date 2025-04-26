@@ -62,6 +62,33 @@
             "squadra": "ARDEA"
           }
         ]
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE B",
+        "squadraA": "FORTITUDO",
+        "squadraB": "CIRCOLO MASTER",
+        "campo": "CAMPO B",
+        "orario": "19:00",
+        "data": "09.05.2025",
+        "golA": 2,
+        "golB": 2,
+        "portiere": "MAZZAROPPI CHRISTIAN",
+        "squadraPortiere": "FORTITUDO",
+        "giocatore": "ROSSI MARIO",
+        "squadraGiocatore": "CIRCOLO MASTER",
+        "marcatori": [
+          {
+            "nome": "NOZZI ",
+            "gol": 2,
+            "squadra": "FORTITUDO"
+          },
+          {
+            "nome": "ROSSI MARIO",
+            "gol": 2,
+            "squadra": "CIRCOLO MASTER"
+          }
+        ]
       }
     ],
     "gironi": {
@@ -70,7 +97,11 @@
         "NEW TEAM",
         "ARDEA"
       ],
-      "Nuovo Girone": []
+      "GIRONE B": [
+        "FORTITUDO",
+        "ECOCITY",
+        "CIRCOLO MASTER"
+      ]
     },
     "finali": [],
     "rose": {
