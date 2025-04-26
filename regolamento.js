@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
   // Funzione per caricare e visualizzare i file JSON caricati su GitHub
   fetch('https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/regolamentoFiles_updated.json')
-
     .then(response => response.json())
     .then(data => {
       data.regolamentoFiles.forEach(file => {
