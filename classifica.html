@@ -2,19 +2,50 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Classifica</title>
+  <title>Classifica - SPRING CUP</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f9;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #d32f2f;
+    }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 90%;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    th {
+      background-color: #1976d2;
+      color: white;
+    }
+    .girone-section {
+      margin-top: 30px;
+    }
+    .titolo-girone {
+      margin-top: 30px;
+      color: #1565c0;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h2 style="text-align:center">Classifica</h2><div id='classifica'></div>
+  <h2>Classifica</h2>
+  <div id="classifica"></div>
+
+  <div style="margin-top: 30px;">
+    <a href="javascript:history.back()" class="squadra-button">🔙 Torna Indietro</a>
+    <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
   </div>
+
   <script src="classifica.js"></script>
-
-<div class="container" style="margin-top: 20px;">
-  <button onclick="history.back()">🔙 Torna Indietro</button>
-  <button onclick="location.href='index.html'">🏠 Torna alla Home</button>
-</div>
-
 </body>
 </html>
