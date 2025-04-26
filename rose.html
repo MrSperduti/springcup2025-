@@ -87,8 +87,11 @@
               return;
             }
 
+            // Ordinamento alfabetico per cognome
+            const giocatoriOrdinati = giocatori.sort((a, b) => a.cognome.localeCompare(b.cognome));
+
             let html = "<h3>" + nome + "</h3><table><tr><th>Cognome</th><th>Nome</th><th>Data di Nascita</th></tr>";
-            giocatori.forEach(g => {
+            giocatoriOrdinati.forEach(g => {
               html += `<tr><td>${g.cognome}</td><td>${g.nome}</td><td>${g.nascita}</td></tr>`;
             });
             html += "</table>";
