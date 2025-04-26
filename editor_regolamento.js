@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const pdfInput = document.getElementById("pdfInput");
   const uploadFileButton = document.getElementById("uploadFileButton");
+  const generateJsonButton = document.getElementById("generateJsonButton");
   let fileDetails = null;
 
   // Funzione per caricare il file e aggiungere alla tabella
@@ -21,12 +22,26 @@ document.addEventListener("DOMContentLoaded", function() {
         size: file.size
       };
 
-      // Aggiungi il file al JSON esistente nel localStorage
+      // Mostra il tasto "Genera JSON"
+      generateJsonButton.style.display = 'inline-block';
+    } else {
+      alert('Seleziona un file da caricare');
+    }
+  });
+
+  // Funzione per generare il JSON e scaricarlo
+  generateJsonButton.addEventListener('click', function() {
+    if (fileDetails) {
+      // Caricare il file JSON esistente dal localStorage o crearne uno nuovo
       let existingFiles = [];
       if (localStorage.getItem('regolamentoFiles')) {
         existingFiles = JSON.parse(localStorage.getItem('regolamentoFiles'));
       }
+
+      // Aggiungi il nuovo file alla lista esistente
       existingFiles.push(fileDetails);
+
+      // Salva la lista aggiornata dei file nel localStorage
       localStorage.setItem('regolamentoFiles', JSON.stringify(existingFiles));
 
       // Crea il file JSON per il download
@@ -41,9 +56,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Aggiungi il link al body o dove vuoi
       document.body.appendChild(downloadLink);
-
     } else {
-      alert('Seleziona un file da caricare');
+      alert('Nessun file caricato per generare il JSON');
     }
   });
 });
