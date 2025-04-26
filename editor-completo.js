@@ -47,7 +47,7 @@ function aggiornaPreview() {
   if (categoriaSelezionata && dati[categoriaSelezionata]) {
     preview.textContent = JSON.stringify(dati[categoriaSelezionata], null, 2);
   } else {
-    preview.textContent = "⚠️ Nessun dato disponibile.";
+    preview.textContent = "⚠️ Nessun file caricato o categoria non selezionata.";
   }
 }
 
@@ -74,7 +74,7 @@ function creaBottone(label, fn) {
   return btn;
 }
 
-// ------------------------------ GIRONI
+// ---------- GIRONI ----------
 function renderGironi() {
   const div = document.getElementById("listaGironi");
   div.innerHTML = "";
@@ -108,7 +108,7 @@ function aggiungiGirone() {
   aggiornaVista();
 }
 
-// ------------------------------ PARTITE
+// ---------- PARTITE ----------
 function renderPartite() {
   const div = document.getElementById("listaPartite");
   div.innerHTML = "";
@@ -216,7 +216,7 @@ function aggiungiPartita() {
   aggiornaVista();
 }
 
-// ------------------------------ FINALi
+// ---------- FINALi ----------
 function renderFinali() {
   const div = document.getElementById("listaFinali");
   div.innerHTML = "";
@@ -265,7 +265,7 @@ function aggiungiFinale() {
   aggiornaVista();
 }
 
-// ------------------------------ ROSE
+// ---------- ROSE ----------
 function renderRose() {
   const div = document.getElementById("listaRose");
   div.innerHTML = "";
@@ -310,7 +310,7 @@ function aggiungiGiocatore() {
   contenitore.appendChild(wrapper);
 }
 
-// ------------------------------ ESPORTA
+// ---------- ESPORTA ----------
 function esporta() {
   const blob = new Blob([JSON.stringify(dati, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
