@@ -112,6 +112,25 @@
           "cognome": "GOBBI",
           "nome": "ALESSANDRO",
           "nascita": "21.08.2008"
+        },
+        {
+          "cognome": "CAVAGNOLI",
+          "nome": "CIRO",
+          "nascita": "04.05.2008"
+        }
+      ],
+      "CIRCOLO MATER": [
+        {
+          "cognome": "ROSSI",
+          "nome": "MARIO",
+          "nascita": "03.02.2009"
+        }
+      ],
+      "CIRCOLO MASTER": [
+        {
+          "cognome": "ROSSI",
+          "nome": "MARIO",
+          "nascita": "03.09.2009"
         }
       ]
     }
