@@ -51,10 +51,7 @@
   <h2 id="titolo-rose">Rose</h2>
   <div id="squadre"></div>
   <div id="dettagli" class="giocatori"></div>
-  <div style="margin-top: 30px;">
-    <a href="javascript:history.back()" class="squadra-button">🔙 Torna Indietro</a>
-    <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
-  </div>
+
   <script>
     const categoria = new URLSearchParams(location.search).get('categoria');
     const titolo = document.getElementById("titolo-rose");
@@ -98,5 +95,11 @@
         });
       });
   </script>
+
+<div style="margin-top: 30px;">
+  <a href="javascript:history.back()" class="squadra-button">🔙 Torna Indietro</a>
+  <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
+</div>
 </body>
+
 </html>
