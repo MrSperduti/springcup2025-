@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const uploadFileButton = document.getElementById("uploadFileButton");
   const generateJsonButton = document.getElementById("generateJsonButton");
   const tableBody = document.querySelector('#pdfTable tbody');
+  const previewDati = document.getElementById('previewDati');
   let fileDetails = null;
 
   // Funzione per caricare il file e aggiungere alla tabella
@@ -23,12 +24,25 @@ document.addEventListener("DOMContentLoaded", function() {
         size: file.size
       };
 
+      // Mostra anteprima del file
+      previewDati.textContent = `Nome: ${fileName}
+Tipo: ${file.type}
+Dimensione: ${file.size} bytes`;
+
       // Aggiungi il file al JSON esistente nel localStorage
       let existingFiles = [];
       if (localStorage.getItem('regolamentoFiles')) {
         existingFiles = JSON.parse(localStorage.getItem('regolamentoFiles'));
       }
-      existingFiles.push(fileDetails);
+
+      // Verifica se il file esiste già e aggiorna
+      const existingFileIndex = existingFiles.findIndex(file => file.name === fileName);
+      if (existingFileIndex !== -1) {
+        existingFiles[existingFileIndex] = fileDetails; // Sostituisci il file esistente
+      } else {
+        existingFiles.push(fileDetails); // Aggiungi il nuovo file
+      }
+
       localStorage.setItem('regolamentoFiles', JSON.stringify(existingFiles));
 
       // Aggiungi il file nella tabella della pagina HTML
