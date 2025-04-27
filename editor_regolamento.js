@@ -86,13 +86,19 @@ Dimensione: ${file.size} bytes`;
     const jsonBlob = new Blob([JSON.stringify({regolamentoFiles: JSON.parse(localStorage.getItem('regolamentoFiles'))})], {type: 'application/json'});
     const jsonURL = URL.createObjectURL(jsonBlob);
 
-    // Crea un link per scaricare il JSON
+    // Rimuovi il vecchio link e aggiungi quello nuovo
+    const existingDownloadLink = document.querySelector('a');
+    if (existingDownloadLink) {
+      existingDownloadLink.remove();
+    }
+
+    // Crea un nuovo link per il JSON
     const downloadLink = document.createElement('a');
     downloadLink.href = jsonURL;
     downloadLink.download = 'regolamentoFiles.json';
     downloadLink.textContent = 'Scarica il JSON aggiornato';
 
-    // Aggiungi il link al body o dove vuoi
+    // Aggiungi il nuovo link al body
     document.body.appendChild(downloadLink);
   });
 });

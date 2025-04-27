@@ -3,26 +3,31 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Editor - SPRING CUP 2025</title>
+  <title>Regolamento - SPRING CUP 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
+      background: linear-gradient(45deg, #1565c0, #0d47a1);
       margin: 0;
       padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
+      color: white;
     }
     .container {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 50px;
+    }
+    h1, h2 {
+      font-family: 'Orbitron', sans-serif;
     }
     .editor-container {
       margin: 20px;
     }
     .squadra-button {
-      background-color: #1565c0;
+      background-color: #d32f2f;
       color: white;
       padding: 10px 20px;
       border-radius: 5px;
@@ -30,47 +35,49 @@
       margin-top: 20px;
     }
     .squadra-button:hover {
+      background-color: #c2185b;
+    }
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+    }
+    th {
       background-color: #0d47a1;
-    }
-    .remove-button {
-      background-color: red;
       color: white;
-      padding: 5px 10px;
-      border-radius: 5px;
     }
-    .remove-button:hover {
+    td a {
       background-color: #d32f2f;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
     }
-    #previewContainer {
-      margin-top: 20px;
+    td a:hover {
+      background-color: #1565c0;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Carica Regolamento SPRING CUP 2025</h1>
-  </div>
-
-  <div class="editor-container">
-    <h3>📂 Carica file</h3>
-    <input type="file" id="pdfInput">
-    <button id="uploadFileButton">Carica File</button>
-    <button id="generateJsonButton" style="display:none;">Genera JSON</button>
-  </div>
-
-  <div id="previewContainer">
-    <h3>👁️ Anteprima del file caricato</h3>
-    <pre id="previewDati">Nessun file caricato.</pre>
+    <h1>Regolamento SPRING CUP 2025</h1>
+    <h2>Documenti Caricati</h2>
   </div>
 
   <div style="margin-top: 30px;">
-    <h3>📄 File Caricati</h3>
     <table id="pdfTable">
       <thead>
         <tr>
           <th>Nome del Documento</th>
           <th>Download</th>
-          <th>Rimuovi</th>
         </tr>
       </thead>
       <tbody>
@@ -80,9 +87,9 @@
   </div>
 
   <div style="margin-top: 30px;">
-    <a href="regolamento.html" class="squadra-button">🔙 Torna alla Pagina Regolamento</a>
+    <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
   </div>
 
-  <script src="editor_regolamento.js"></script>
+  <script src="regolamento.js"></script>
 </body>
 </html>
