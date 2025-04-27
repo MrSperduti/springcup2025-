@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const file = pdfInput.files[0];
     if (file) {
       const fileName = file.name;
-      const fileURL = `https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/${fileName}`;
+      const fileURL = `https://raw.githubusercontent.com/MrSperduti/springcup2025-/main/${encodeURIComponent(fileName)}`;
 
       fileDetails = {
         name: fileName,
