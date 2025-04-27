@@ -62,16 +62,22 @@
 </head>
 <body oncontextmenu="return false;">
   <div class="container">
-    <h1>Foto SPRING CUP 2025</h1>
-    <h2>Galleria</h2>
+    <h1>Carica Foto SPRING CUP 2025</h1>
+    <h2>File Caricati</h2>
   </div>
 
-  <div class="gallery" id="gallery">
+  <h3>📂 Carica file</h3>
+<input type="file" id="pdfInput" accept="image/*">
+<button id="uploadFileButton">Carica Foto</button>
+<button id="generateJsonButton">Genera JSON</button>
+<div id="previewContainer"><h3>👁️ Anteprima della foto caricata</h3><pre id="previewDati">Nessun file caricato.</pre></div>
+<h3>📄 Foto Caricate</h3>
+<table id="pdfTable"><thead><tr><th>Nome della Foto</th><th>Preview</th><th>Rimuovi</th></tr></thead><tbody></tbody></table>
     <!-- Le foto verranno caricate qui -->
   </div>
 
   <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
 
-  <script src="foto.js"></script>
+  <script src="editor_foto.js"></script>
 </body>
 </html>
