@@ -86,8 +86,13 @@
 </head>
 <body>
   <div class="container">
-    <h1>Comunicati SPRING CUP 2025</h1>
-    <h2>Documenti Caricati</h2>
+    <h1>Carica Comunicati SPRING CUP 2025</h1>
+    <h3>📂 Carica file</h3>
+<input type="file" id="pdfInput">
+<button id="uploadFileButton">Carica File</button>
+<button id="generateJsonButton">Genera JSON</button>
+<div id="previewContainer"><h3>👁️ Anteprima del file caricato</h3><pre id="previewDati">Nessun file caricato.</pre></div>
+<h3>📄 File Caricati</h3>
   </div>
 
   <div style="width: 100%; display: flex; justify-content: center;">
@@ -106,6 +111,6 @@
 
   <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
 
-  <script src="comunicati.js"></script>
+  <script src="editor_comunicati.js"></script>
 </body>
 </html>
