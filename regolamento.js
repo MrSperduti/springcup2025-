@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
   const tableBody = document.querySelector('#pdfTable tbody');
 
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         nameCell.textContent = file.name;
         downloadLink.href = file.url;
-        downloadLink.textContent = 'Download';
+        downloadLink.innerHTML = '📥 Scarica';
         downloadLink.download = file.name;
 
         downloadCell.appendChild(downloadLink);
