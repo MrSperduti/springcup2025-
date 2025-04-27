@@ -5,19 +5,29 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(data => {
       data.fotoFiles.forEach(file => {
+        const item = document.createElement('div');
+        item.classList.add('gallery-item');
+
         const img = document.createElement('img');
         img.src = file.url;
         img.alt = file.name;
         img.onclick = function() {
           if (img.requestFullscreen) {
             img.requestFullscreen();
-          } else if (img.webkitRequestFullscreen) { /* Safari */
+          } else if (img.webkitRequestFullscreen) {
             img.webkitRequestFullscreen();
-          } else if (img.msRequestFullscreen) { /* IE11 */
+          } else if (img.msRequestFullscreen) {
             img.msRequestFullscreen();
           }
         };
-        gallery.appendChild(img);
+
+        const desc = document.createElement('p');
+        desc.classList.add('description');
+        desc.textContent = file.description || '';
+
+        item.appendChild(img);
+        item.appendChild(desc);
+        gallery.appendChild(item);
       });
     })
     .catch(error => {
