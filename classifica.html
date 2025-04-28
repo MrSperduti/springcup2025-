@@ -2,36 +2,22 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Classifica - SPRING CUP 2025</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <title>Classifica - SPRING CUP</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Orbitron', Arial, sans-serif;
-      background: linear-gradient(135deg, #d32f2f, #1565c0);
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f9;
+      padding: 20px;
       text-align: center;
     }
     h2 {
-      margin-top: 40px;
-      font-size: 32px;
-      color: #ffffff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      color: #d32f2f;
     }
     table {
-      margin-top: 30px;
-      width: 90%;
+      margin: 20px auto;
       border-collapse: collapse;
-      background: white;
-      color: black;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      border-radius: 12px;
-      overflow: hidden;
+      width: 90%;
     }
     th, td {
       padding: 12px;
@@ -39,60 +25,23 @@
       text-align: center;
     }
     th {
-      background-color: #0d47a1;
+      background-color: #1976d2;
       color: white;
-      font-weight: bold;
-    }
-    tr:nth-child(even) {
-      background-color: #f4f6f9;
     }
     .girone-section {
       margin-top: 30px;
     }
     .titolo-girone {
       margin-top: 30px;
-      font-size: 24px;
-      color: #ffffff;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-    }
-    .buttons {
-      margin-top: 40px;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .squadra-button {
-      background: linear-gradient(to right, #d32f2f, #1565c0);
-      padding: 14px 24px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      border: none;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: transform 0.2s ease, box-shadow 0.3s ease;
-    }
-    .squadra-button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.5);
-    }
-    @media (max-width: 600px) {
-      h2 {
-        font-size: 26px;
-      }
-      .squadra-button {
-        font-size: 16px;
-        padding: 12px 18px;
-      }
+      color: #1565c0;
     }
   </style>
 </head>
-<body oncontextmenu="return false;">
+<body>
   <h2>Classifica</h2>
   <div id="classifica"></div>
 
-  <div class="buttons">
+  <div style="margin-top: 30px;">
     <a href="javascript:history.back()" class="squadra-button">🔙 Torna Indietro</a>
     <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
   </div>

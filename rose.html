@@ -1,11 +1,105 @@
-<!-- rose.html - Aggiornato con stile uniforme -->
 <!DOCTYPE html>
-<html lang='it'>
+<html lang="it">
 <head>
-<meta charset='UTF-8'>
-<title>Rose - Spring Cup 2025</title>
+  <meta charset="UTF-8">
+  <title>Rose - SPRING CUP</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f9;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #d32f2f;
+    }
+    .squadra-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(to right, #e53935, #1e88e5);
+      color: white;
+      cursor: pointer;
+    }
+    .squadra-button:hover {
+      background: linear-gradient(to right, #c62828, #1565c0);
+    }
+    .giocatori {
+      margin-top: 30px;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 90%;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #1976d2;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-<h1>Rose - SPRING CUP 2025</h1>
+  <h2 id="titolo-rose">Rose</h2>
+  <div id="squadre"></div>
+  <div id="dettagli" class="giocatori"></div>
+  <div style="margin-top: 30px;">
+    <a href="javascript:history.back()" class="squadra-button">🔙 Torna Indietro</a>
+    <a href="index.html" class="squadra-button">🏠 Torna alla Home</a>
+  </div>
+  <script>
+    const categoria = new URLSearchParams(location.search).get('categoria');
+    const titolo = document.getElementById("titolo-rose");
+    titolo.textContent += " - " + categoria;
+
+    fetch('dati.json')
+      .then(res => res.json())
+      .then(dati => {
+        const squadreSet = new Set();
+        const cat = dati[categoria];
+        if (!cat) return;
+
+        if (cat.gironi) {
+          Object.values(cat.gironi).forEach(squadre => {
+            squadre.forEach(nome => squadreSet.add(nome));
+          });
+        }
+
+        const squadreDiv = document.getElementById("squadre");
+        const dettagliDiv = document.getElementById("dettagli");
+
+        squadreSet.forEach(nome => {
+          const btn = document.createElement("button");
+          btn.className = "squadra-button";
+          btn.textContent = nome;
+          btn.onclick = () => {
+            const giocatori = (cat.rose && cat.rose[nome]) || [];
+            if (giocatori.length === 0) {
+              dettagliDiv.innerHTML = "<p>Nessun giocatore disponibile per " + nome + "</p>";
+              return;
+            }
+
+            // Ordinamento alfabetico per cognome
+            const giocatoriOrdinati = giocatori.sort((a, b) => a.cognome.localeCompare(b.cognome));
+
+            let html = "<h3>" + nome + "</h3><table><tr><th>Cognome</th><th>Nome</th><th>Data di Nascita</th></tr>";
+            giocatoriOrdinati.forEach(g => {
+              html += `<tr><td>${g.cognome}</td><td>${g.nome}</td><td>${g.nascita}</td></tr>`;
+            });
+            html += "</table>";
+            dettagliDiv.innerHTML = html;
+          };
+          squadreDiv.appendChild(btn);
+        });
+      });
+  </script>
 </body>
 </html>

@@ -1,11 +1,94 @@
-<!-- index.html - Aggiornato con modalità full-app su smartphone -->
 <!DOCTYPE html>
-<html lang='it'>
+<html lang="it">
 <head>
-<meta charset='UTF-8'>
-<title>Index - Spring Cup 2025</title>
+  <meta charset="UTF-8">
+  <title>SPRING CUP 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 640px;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 36px;
+      color: #ff4c4c;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .btn {
+      padding: 18px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 14px;
+      border: none;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(to right, #d32f2f, #1565c0);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      text-align: center;
+      width: 100%;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+      .btn {
+        font-size: 18px;
+        padding: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-<h1>Index - SPRING CUP 2025</h1>
+  <div class="container">
+    <img src="logo.png" alt="Logo Spring Cup" class="logo">
+    <h1>SPRING CUP 2025</h1>
+    <div class="buttons">
+      <a class="btn" href="torneo.html">Torneo</a>
+      <a class="btn" href="regolamento.html">Regolamento</a>
+      <a class="btn" href="comunicati.html">Comunicati</a>
+      <a class="btn" href="foto.html">Foto</a>
+      <a class="btn" href="video.html">Video</a>
+      <a class="btn" href="interviste.html">Interviste</a>
+    </div>
+  </div>
 </body>
 </html>
