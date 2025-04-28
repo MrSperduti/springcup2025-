@@ -4,25 +4,36 @@ document.addEventListener("DOMContentLoaded", function() {
     "GIRONE B": ["FORTITUDO", "CIRCOLO MASTER", "ECOCITY"]
   };
 
-  const tableBody = document.getElementById("gironiBody");
+  const tableContainer = document.getElementById("gironiBody");
 
+  // Creazione di una tabella per ogni girone
   Object.keys(gironiData).forEach(girone => {
-    const row = document.createElement("tr");
-    row.innerHTML = `<td>${girone}</td><td>${gironiData[girone].join(", ")}</td>
-    <td><button onclick="aggiungiSquadra('${girone}')">Aggiungi Squadra</button></td>`;
-    tableBody.appendChild(row);
+    const tableDiv = document.createElement("div");
+    const table = document.createElement("table");
+    const headerRow = document.createElement("tr");
+    headerRow.innerHTML = `<th colspan="2">${girone}</th>`;
+    table.appendChild(headerRow);
+    
+    gironiData[ girone ].forEach(squadra => {
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${squadra}</td><td><button onclick="aggiungiSquadra('${squadra}')">Aggiungi alla rosa</button></td>`;
+      table.appendChild(row);
+    });
+
+    tableDiv.appendChild(table);
+    tableContainer.appendChild(tableDiv);
   });
 
-  // Aggiunge una squadra alla rosa e la rende visibile nella pagina rose
-  window.aggiungiSquadra = function(girone) {
+  // Funzione per aggiungere una squadra alla rosa e salvarla nella localStorage
+  window.aggiungiSquadra = function(squadra) {
     if (!localStorage.getItem('squadre')) {
       localStorage.setItem('squadre', JSON.stringify([]));
     }
     const squadre = JSON.parse(localStorage.getItem('squadre'));
-    if (!squadre.includes(girone)) {
-      squadre.push(girone);
+    if (!squadre.includes(squadra)) {
+      squadre.push(squadra);
       localStorage.setItem('squadre', JSON.stringify(squadre));
-      alert('Squadra aggiunta alla rosa!');
+      alert(squadra + ' è stata aggiunta alla rosa!');
     }
   };
 });
