@@ -4,27 +4,27 @@ document.addEventListener("DOMContentLoaded", function() {
     "GIRONE B": ["FORTITUDO", "CIRCOLO MASTER", "ECOCITY"]
   };
 
-  const tableContainer = document.getElementById("gironiBody");
+  const gironiContainer = document.getElementById("gironiContainer");
 
-  // Creazione di una tabella per ogni girone
+  // Creazione delle tabelle per ogni girone
   Object.keys(gironiData).forEach(girone => {
     const tableDiv = document.createElement("div");
     const table = document.createElement("table");
     const headerRow = document.createElement("tr");
     headerRow.innerHTML = `<th colspan="2">${girone}</th>`;
     table.appendChild(headerRow);
-    
+
     gironiData[ girone ].forEach(squadra => {
       const row = document.createElement("tr");
       row.innerHTML = `<td>${squadra}</td><td><button onclick="aggiungiSquadra('${squadra}')">Aggiungi alla rosa</button></td>`;
       table.appendChild(row);
     });
 
+    gironiContainer.appendChild(tableDiv);
     tableDiv.appendChild(table);
-    tableContainer.appendChild(tableDiv);
   });
 
-  // Funzione per aggiungere una squadra alla rosa e salvarla nella localStorage
+  // Funzione per aggiungere una squadra alla rosa e generare il pulsante in `rose.html`
   window.aggiungiSquadra = function(squadra) {
     if (!localStorage.getItem('squadre')) {
       localStorage.setItem('squadre', JSON.stringify([]));

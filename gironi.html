@@ -17,15 +17,17 @@
       min-height: 100vh;
     }
     h1, h2 {
-      margin-bottom: 20px;
+      margin-top: 30px;
+      text-align: center;
     }
     .container {
-      text-align: center;
       margin-top: 50px;
+      width: 90%;
+      max-width: 800px;
     }
     table {
-      width: 80%;
-      margin-top: 30px;
+      width: 100%;
+      margin-top: 20px;
       border-collapse: collapse;
     }
     th, td {
@@ -43,38 +45,39 @@
     tr:hover {
       background-color: #ddd;
     }
-    .back-button {
-      margin-top: 20px;
+    .button-container {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    button {
       padding: 12px 24px;
       background-color: #0d47a1;
       color: white;
-      text-decoration: none;
       border-radius: 10px;
-      font-size: 18px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
     }
-    .back-button:hover {
+    button:hover {
       background-color: #d32f2f;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Gironi del Torneo SPRING CUP 2025</h1>
-    <h2>Categoria: Under 17</h2>
-    <table id="gironiTable">
-      <thead>
-        <tr>
-          <th>Girone</th>
-          <th>Squadre</th>
-          <th>Azioni</th>
-        </tr>
-      </thead>
-      <tbody id="gironiBody">
-        <!-- I gironi e squadre verranno caricati dinamicamente -->
-      </tbody>
-    </table>
-    <a href="index.html" class="back-button">🏠 Torna alla Home</a>
-    <a href="javascript:history.back()" class="back-button">← Torna Indietro</a>
+    <h1>GIRONI TORNEO SPRING CUP 2025</h1>
+    <h2>CATEGORIA: Under 17</h2>
+    
+    <div id="gironiContainer">
+      <!-- Le tabelle dei gironi verranno caricate dinamicamente -->
+    </div>
+
+    <div class="button-container">
+      <button onclick="window.location.href='index.html'">🏠 Torna alla Home</button>
+      <button onclick="history.back()">← Torna Indietro</button>
+    </div>
   </div>
 
   <script src="gironi.js"></script>
