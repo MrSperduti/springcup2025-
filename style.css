@@ -19,7 +19,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
-button, .category-button {
+button {
   display: block;
   width: 100%;
   padding: 15px;
@@ -34,30 +34,47 @@ button, .category-button {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
 button:hover {
   transform: scale(1.03);
   opacity: 0.9;
 }
 
-table {
-  width: 100%;
-  margin-top: 20px;
-  border-collapse: collapse;
-  background-color: rgba(255, 255, 255, 0.95);
-  color: #000;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 12px;
-  text-align: center;
-}
-
-h1, h2, h3 {
+h1, h2 {
   text-align: center;
   color: #fff;
   margin-top: 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Media query per dispositivi con schermo di larghezza max 768px (tablet e smartphone) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    max-width: 100%; /* Fai sì che il contenitore occupi tutto lo schermo */
+  }
+
+  h1, h2 {
+    font-size: 24px; /* Riduci le dimensioni del font per dispositivi più piccoli */
+  }
+
+  button {
+    font-size: 16px; /* Riduci la dimensione del font per i pulsanti */
+    padding: 12px;
+  }
+}
+
+/* Media query per schermi molto piccoli (smartphone) */
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 20px; /* Ancora più piccolo per schermi molto piccoli */
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px; /* Adatta la dimensione dei pulsanti */
+  }
 }
