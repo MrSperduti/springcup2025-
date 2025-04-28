@@ -23,25 +23,20 @@
       text-align: center;
       margin-top: 50px;
     }
-    table {
-      width: 80%;
+    .button-container {
       margin-top: 30px;
-      border-collapse: collapse;
     }
-    th, td {
+    button {
       padding: 10px;
-      text-align: left;
-      border: 1px solid #ddd;
-    }
-    th {
+      margin: 5px;
       background-color: #0d47a1;
       color: white;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
     }
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-    tr:hover {
-      background-color: #ddd;
+    button:hover {
+      background-color: #d32f2f;
     }
     .back-button {
       margin-top: 20px;
@@ -61,10 +56,11 @@
   <div class="container">
     <h1>Rose del Torneo SPRING CUP 2025</h1>
     <h2>Categoria: Under 17</h2>
-    <div id="squadreButtons">
+    <div id="squadreButtons" class="button-container">
       <!-- I pulsanti delle squadre verranno caricati dinamicamente -->
     </div>
     <a href="index.html" class="back-button">🏠 Torna alla Home</a>
+    <a href="javascript:history.back()" class="back-button">← Torna Indietro</a>
   </div>
 
   <script src="rose.js"></script>
