@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", function() {
       "ACADEMY": [
         { "cognome": "CAVAGNOLI", "nome": "CIRO", "nascita": "04.05.2008" },
         { "cognome": "GOBBI", "nome": "ALESSANDRO", "nascita": "21.08.2008" },
-        { "cognome": "IANCU", "nome": "CRISTIAN", "nascita": "09.05.2008" }
+        { "cognome": "IANCU", "nome": "CRISTIAN", "nascita": "09.05.2008" },
+        { "cognome": "MEROLA", "nome": "MATTEO", "nascita": "18.03.2008" },
+        { "cognome": "PASSARO", "nome": "SIMONE", "nascita": "29.02.2008" }
       ],
       "NEW TEAM": [
         { "cognome": "ROSSETTI", "nome": "LUCA", "nascita": "11.03.2007" }
