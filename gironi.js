@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
     tableBody.appendChild(row);
   });
 
+  // Aggiunge una squadra alla rosa e la rende visibile nella pagina rose
   window.aggiungiSquadra = function(girone) {
-    // Funzione per aggiungere squadra e generare bottone su rose.html
     if (!localStorage.getItem('squadre')) {
       localStorage.setItem('squadre', JSON.stringify([]));
     }
