@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
         { "cognome": "CAVAGNOLI", "nome": "CIRO", "nascita": "04.05.2008" },
         { "cognome": "GOBBI", "nome": "ALESSANDRO", "nascita": "21.08.2008" },
         { "cognome": "IANCU", "nome": "CRISTIAN", "nascita": "09.05.2008" }
+      ],
+      "NEW TEAM": [
+        { "cognome": "ROSSETTI", "nome": "LUCA", "nascita": "11.03.2007" }
       ]
     };
 
