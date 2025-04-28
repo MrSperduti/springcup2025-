@@ -41,6 +41,7 @@
       flex-direction: column;
       gap: 20px;
       width: 100%;
+      align-items: center; /* Centrato su tutti i dispositivi */
     }
     .btn {
       padding: 18px 20px;
@@ -54,7 +55,8 @@
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
       transition: transform 0.2s ease, box-shadow 0.3s ease;
       text-align: center;
-      width: 100%;
+      width: 80%; /* Bottoni che non occupano tutto lo schermo su desktop */
+      max-width: 300px; /* Limito la larghezza su desktop */
     }
     .btn:hover {
       transform: scale(1.05);
@@ -67,6 +69,7 @@
       .btn {
         font-size: 18px;
         padding: 16px;
+        width: 100%; /* I bottoni occupano tutta la larghezza su mobile */
       }
     }
   </style>
