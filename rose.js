@@ -1,16 +1,24 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const squadre = JSON.parse(localStorage.getItem('squadre')) || [];
-  const buttonsDiv = document.getElementById("squadreButtons");
+  const gironiData = {
+    "GIRONE A": ["ACADEMY", "NEW TEAM", "ARDEA"],
+    "GIRONE B": ["FORTITUDO", "CIRCOLO MASTER", "ECOCITY"]
+  };
 
-  squadre.forEach(squadra => {
-    const button = document.createElement("button");
-    button.textContent = squadra;
-    button.onclick = function() {
-      mostraGiocatori(squadra);
-    };
-    buttonsDiv.appendChild(button);
+  const squadreButtonsDiv = document.getElementById("squadreButtons");
+
+  // Creazione dei pulsanti per le squadre in `rose.html`
+  Object.keys(gironiData).forEach(girone => {
+    gironiData[ girone ].forEach(squadra => {
+      const button = document.createElement("button");
+      button.textContent = squadra;
+      button.onclick = function() {
+        mostraGiocatori(squadra);
+      };
+      squadreButtonsDiv.appendChild(button);
+    });
   });
 
+  // Funzione per mostrare i giocatori della squadra selezionata
   function mostraGiocatori(squadra) {
     const giocatori = {
       "ACADEMY": [
