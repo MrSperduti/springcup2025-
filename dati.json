@@ -1,177 +1,44 @@
 {
   "Under 17": {
-    "partite": [
-      {
-        "giornata": "1",
-        "girone": "GIRONE A",
-        "squadraA": "ACADEMY",
-        "squadraB": "NEW TEAM",
-        "campo": "CAMPO A",
-        "orario": "19:00",
-        "data": "09.05.2025",
-        "golA": 5,
-        "golB": 1,
-        "portiere": "MELADIO' GIOVANNI",
-        "squadraPortiere": "ACADEMY",
-        "giocatore": "ALESSANDRO GOBBI",
-        "squadraGiocatore": "ACADEMY",
-        "marcatori": [
-          {
-            "nome": "SUSIN FRANCESCO",
-            "gol": 4,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "IANCU CRISTIAN ",
-            "gol": 1,
-            "squadra": "ACADEMY"
-          }
-        ]
-      },
-      {
-        "giornata": "2",
-        "girone": "GIRONE A",
-        "squadraA": "ACADEMY",
-        "squadraB": "ARDEA",
-        "campo": "CAMPO B",
-        "orario": "20:00",
-        "data": "15.05.2025",
-        "golA": 4,
-        "golB": 2,
-        "portiere": "MELADIO' GIOVANNI",
-        "squadraPortiere": "ACADEMY",
-        "giocatore": "CAVAGNOLI CIRO",
-        "squadraGiocatore": "ACADEMY",
-        "marcatori": [
-          {
-            "nome": "SUSIN FRANCESCO",
-            "gol": 1,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "GOBBI ALESSANDRO",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "CAVAGNOLI CIRO",
-            "gol": 1,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "ORSINI FRANCESCO",
-            "gol": 2,
-            "squadra": "ARDEA"
-          }
-        ]
-      },
-      {
-        "giornata": "1",
-        "girone": "GIRONE B",
-        "squadraA": "FORTITUDO",
-        "squadraB": "CIRCOLO MASTER",
-        "campo": "CAMPO B",
-        "orario": "19:00",
-        "data": "09.05.2025",
-        "golA": 2,
-        "golB": 2,
-        "portiere": "MAZZAROPPI CHRISTIAN",
-        "squadraPortiere": "FORTITUDO",
-        "giocatore": "ROSSI MARIO",
-        "squadraGiocatore": "CIRCOLO MASTER",
-        "marcatori": [
-          {
-            "nome": "NOZZI ",
-            "gol": 2,
-            "squadra": "FORTITUDO"
-          },
-          {
-            "nome": "ROSSI MARIO",
-            "gol": 2,
-            "squadra": "CIRCOLO MASTER"
-          }
-        ]
-      }
-    ],
-    "gironi": {
-      "GIRONE A": [
-        "ACADEMY",
-        "NEW TEAM",
-        "ARDEA"
-      ],
-      "GIRONE B": [
-        "FORTITUDO",
-        "ECOCITY",
-        "CIRCOLO MASTER"
-      ]
-    },
+    "gironi": {},
+    "partite": [],
     "finali": [],
-    "rose": {
-      "ACADEMY": [
-        {
-          "cognome": "GOBBI",
-          "nome": "ALESSANDRO",
-          "nascita": "21.08.2008"
-        },
-        {
-          "cognome": "CAVAGNOLI",
-          "nome": "CIRO",
-          "nascita": "04.05.2008"
-        }
-      ],
-      "CIRCOLO MATER": [
-        {
-          "cognome": "ROSSI",
-          "nome": "MARIO",
-          "nascita": "03.02.2009"
-        }
-      ],
-      "CIRCOLO MASTER": [
-        {
-          "cognome": "ROSSI",
-          "nome": "MARIO",
-          "nascita": "03.09.2009"
-        }
-      ]
-    }
+    "rose": {}
   },
   "Under 15": {
-    "partite": [],
     "gironi": {},
+    "partite": [],
     "finali": [],
-    "rose": {
-      "ACADEMY": [
-        {
-          "cognome": "MIRRA",
-          "nome": "ALESSANDRO",
-          "nascita": "22.03.2011"
-        }
-      ]
-    }
+    "rose": {}
   },
   "Under 13": {
-    "partite": [],
     "gironi": {},
-    "finali": []
+    "partite": [],
+    "finali": [],
+    "rose": {}
   },
   "2014/15": {
-    "partite": [],
     "gironi": {},
-    "finali": []
+    "partite": [],
+    "finali": [],
+    "rose": {}
   },
   "2016/17": {
-    "partite": [],
     "gironi": {},
-    "finali": []
+    "partite": [],
+    "finali": [],
+    "rose": {}
   },
   "Under 15 femminile": {
-    "partite": [],
     "gironi": {},
-    "finali": []
+    "partite": [],
+    "finali": [],
+    "rose": {}
   },
   "Under 13 femminile": {
-    "partite": [],
     "gironi": {},
-    "finali": []
+    "partite": [],
+    "finali": [],
+    "rose": {}
   }
 }
