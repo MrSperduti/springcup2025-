@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
+  // Categoria selezionata (Under 17 o Under 15)
+  const categoriaSelezionata = localStorage.getItem("categoriaSelezionata") || "Under 17";
+  
+  // Dati dei gironi separati per categoria
   const gironiData = {
     "Under 17": {
       "GIRONE A": ["ACADEMY", "NEW TEAM", "ARDEA"],
@@ -10,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
 
-  const giocatori = {
+  // Dati dei giocatori per categoria e squadra
+  const giocatoriData = {
     "Under 17": {
       "ACADEMY": [
         { "cognome": "CAVAGNOLI", "nome": "CIRO", "nascita": "04.05.2008" },
@@ -33,19 +38,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
 
-  const selectCategoria = document.getElementById("selectCategoria");
-  let categoriaSelezionata = selectCategoria.value || "Under 17";
-
   const gironiContainer = document.getElementById("gironiContainer");
-
-  // Salva i dati nel localStorage per la categoria selezionata
-  localStorage.setItem("giocatoriData", JSON.stringify(giocatori));
+  
+  // Salvo i dati nel localStorage per la categoria selezionata
+  localStorage.setItem("giocatoriData", JSON.stringify(giocatoriData));
 
   // Funzione per visualizzare i gironi e le squadre in base alla categoria selezionata
   function renderGironi() {
     const gironi = gironiData[categoriaSelezionata];
     gironiContainer.innerHTML = "";
-    
+
     Object.keys(gironi).forEach(girone => {
       const tableDiv = document.createElement("div");
       const table = document.createElement("table");
@@ -75,12 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
       localStorage.setItem('squadre', JSON.stringify(squadre));
       alert(squadra + ' è stata aggiunta alla rosa!');
     }
-  };
-
-  // Selezione della categoria
-  selectCategoria.onchange = function() {
-    categoriaSelezionata = selectCategoria.value;
-    renderGironi();
   };
 
   // Avvio del rendering dei gironi
