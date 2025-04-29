@@ -172,6 +172,53 @@
           "nome": "GABRIELE",
           "nascita": "12.10.2013"
         }
+      ],
+      "MARINO ACADEMY": [
+        {
+          "cognome": "CERVINI",
+          "nome": "ALESSIO",
+          "nascita": "10.11.2012"
+        },
+        {
+          "cognome": "COLLARINI",
+          "nome": "FRANCESCO",
+          "nascita": "10.10.2013"
+        },
+        {
+          "cognome": "DI STEFANO",
+          "nome": "NICOLO'",
+          "nascita": "31.10.2012"
+        },
+        {
+          "cognome": "GILIBERTI",
+          "nome": "DIEGO",
+          "nascita": "26.01.2012"
+        },
+        {
+          "cognome": "ERAMO",
+          "nome": "MICHAEL",
+          "nascita": "05.01.2012"
+        },
+        {
+          "cognome": "AMBROSI",
+          "nome": "DOMIZIANO",
+          "nascita": "20.05.2013"
+        },
+        {
+          "cognome": "PERSICONE",
+          "nome": "SAMUEL",
+          "nascita": "10.01.2012"
+        },
+        {
+          "cognome": "TEMPERINI",
+          "nome": "SAMUEL",
+          "nascita": "05.12.2012"
+        },
+        {
+          "cognome": "TERSIGNI",
+          "nome": "RICCARDO",
+          "nascita": "27.04.2012"
+        }
       ]
     }
   },
