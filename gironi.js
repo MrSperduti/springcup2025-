@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Ottieni la categoria dalla query string dell'URL (se presente)
+  // Recupera la categoria dalla query string dell'URL (se presente)
   const urlParams = new URLSearchParams(window.location.search);
   const categoriaSelezionata = urlParams.get("categoria") || "Under 17"; // Default a Under 17 se non presente
-
+  
   // Dati dei gironi separati per categoria
   const gironiData = {
     "Under 17": {
@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "GIRONE B": ["FORTITUDO", "CIRCOLO MASTER", "ECOCITY"]
     },
     "Under 15": {
-      "GIRONE A": ["SQUADRA1", "SQUADRA2"],
-      "GIRONE B": ["SQUADRA3", "SQUADRA4"]
+      "GIRONE A": ["ACADEMY", "S.PETRO E PAOLO", "NEW TEAM", "VELLETRI"]
     }
   };
 
@@ -30,11 +29,17 @@ document.addEventListener("DOMContentLoaded", function() {
       ]
     },
     "Under 15": {
-      "SQUADRA1": [
-        { "cognome": "ROSI", "nome": "MATTEO", "nascita": "12.06.2005" }
+      "ACADEMY": [
+        { "cognome": "VELAZQUEZ", "nome": "RICARDO", "nascita": "10.10.2011" }
       ],
-      "SQUADRA2": [
-        { "cognome": "FERRARI", "nome": "LUCA", "nascita": "22.09.2006" }
+      "S.PETRO E PAOLO": [
+        { "cognome": "VELAZQUEZ", "nome": "RICARDO", "nascita": "10.10.2011" }
+      ],
+      "NEW TEAM": [
+        { "cognome": "ROSSETTI", "nome": "LUCA", "nascita": "11.03.2007" }
+      ],
+      "VELLETRI": [
+        { "cognome": "VELAZQUEZ", "nome": "RICARDO", "nascita": "10.10.2011" }
       ]
     }
   };
