@@ -172,7 +172,13 @@
     }
   },
   "Under 13": {
-    "gironi": {},
+    "gironi": {
+      "Girone A": [
+        "ACADEMY",
+        "ANZIO",
+        "FORTITUDO"
+      ]
+    },
     "partite": [],
     "finali": [],
     "rose": {}
