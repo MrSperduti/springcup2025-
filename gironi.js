@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     "Under 13": {
       "Girone A": ["ACADEMY", "ANZIO", "FORTITUDO"]
+    },
+    "Under 15 femminile": {
+      "GIRONE A": ["ACADEMY", "BASIC", "SAN GIOVANNI"]
     }
   };
 
@@ -26,12 +29,14 @@ document.addEventListener("DOMContentLoaded", function() {
   // Funzione per visualizzare i gironi e le squadre in base alla categoria selezionata
   function renderGironi() {
     const gironi = gironiData[categoriaSelezionata];
-    gironiContainer.innerHTML = "";
 
-    if (!gironi) {
+    // Verifica se ci sono gironi per la categoria selezionata
+    if (!gironi || Object.keys(gironi).length === 0) {
       gironiContainer.innerHTML = "<p>Nessun girone disponibile per questa categoria.</p>";
       return;
     }
+
+    gironiContainer.innerHTML = ""; // Pulisce il contenitore dei gironi
 
     Object.keys(gironi).forEach(girone => {
       const tableDiv = document.createElement("div");
@@ -42,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       gironi[ girone ].forEach(squadra => {
         const row = document.createElement("tr");
-        row.innerHTML = `<td>${squadra}</td>`;  // Mostriamo solo i nomi delle squadre
+        row.innerHTML = `<td>${squadra}</td>`;  // Visualizza solo i nomi delle squadre
         table.appendChild(row);
       });
 
