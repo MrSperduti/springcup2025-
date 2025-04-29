@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Recupera la categoria selezionata
-  const categoriaSelezionata = localStorage.getItem("categoriaSelezionata") || "Under 17";
-  
+  // Ottieni la categoria dalla query string dell'URL (se presente)
+  const urlParams = new URLSearchParams(window.location.search);
+  const categoriaSelezionata = urlParams.get("categoria") || "Under 17"; // Default a Under 17 se non presente
+
   // Dati dei gironi separati per categoria
   const gironiData = {
     "Under 17": {
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
   const gironiContainer = document.getElementById("gironiContainer");
-  
+
   // Salvo nel localStorage la categoria selezionata
   localStorage.setItem("categoriaSelezionata", categoriaSelezionata);
 
