@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
   // Recupera la categoria dalla query string dell'URL (se presente)
   const urlParams = new URLSearchParams(window.location.search);
   const categoriaSelezionata = urlParams.get("categoria") || "Under 17"; // Default a Under 17 se non presente
-
-  // Funzione per caricare dinamicamente i dati da `dati.json`
+  
+  // Funzione per caricare dinamicamente i dati dal file `dati.json`
   async function loadDatiJson() {
     const response = await fetch('dati.json');
     const dati = await response.json();
