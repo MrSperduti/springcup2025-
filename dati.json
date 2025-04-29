@@ -12,7 +12,40 @@
         "ECOCITY"
       ]
     },
-    "partite": [],
+    "partite": [
+      {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "NEW TEAM",
+        "campo": "CAMPO A",
+        "orario": "19.00",
+        "data": "09.05.2025",
+        "golA": 3,
+        "golB": 1,
+        "portiere": "MELADIO' GIOVANNI",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "GOBBI ALESSANDRO",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "SUSIN FRANCESCO",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "IANCU CRISTIAN",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "RUSSO FRANCESCO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          }
+        ]
+      }
+    ],
     "finali": [],
     "rose": {
       "ACADEMY": [
@@ -86,21 +119,29 @@
           "nome": "ALESSANDRO",
           "nascita": "22.03.2011"
         }
-      ],
-      "FORTITUDO": [
-        {
-          "cognome": "VERBENI",
-          "nome": "DAVIDE",
-          "nascita": "29.04.2007"
-        }
       ]
     }
   },
   "Under 15": {
-    "gironi": {},
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY",
+        "S.PETRO E PAOLO",
+        "NEW TEAM",
+        "VELLETRI"
+      ]
+    },
     "partite": [],
     "finali": [],
-    "rose": {}
+    "rose": {
+      "VELLETRI": [
+        {
+          "cognome": "VELAZQUEZ",
+          "nome": "RICARDO",
+          "nascita": "10.10.2011"
+        }
+      ]
+    }
   },
   "Under 13": {
     "gironi": {},
