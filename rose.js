@@ -44,6 +44,9 @@ document.addEventListener("DOMContentLoaded", function() {
   function mostraGiocatori(squadra) {
     loadDatiJson().then(giocatori => {
       const squadraGiocatori = giocatori[squadra] || [];
+      // Ordinamento dei giocatori per cognome in ordine alfabetico
+      squadraGiocatori.sort((a, b) => a.cognome.localeCompare(b.cognome));
+
       // Contenitore per i giocatori
       const giocatoriContainer = document.getElementById("giocatoriContainer");
       giocatoriContainer.innerHTML = "";
