@@ -90,10 +90,151 @@
     }
   },
   "Under 15": {
-    "gironi": {},
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY",
+        "VELLETRI",
+        "S.PIETRO E PAOLO"
+      ],
+      "GIRONE B": [
+        "REAL CIAMPINO",
+        "ECOCITY GENZANO",
+        "FORTITUDO POMEZIA"
+      ],
+      "GIRONE C": [
+        "NEW TEAM",
+        "S.GIOVANNI EVANGELISTA",
+        "CIRCOLO MASTER"
+      ]
+    },
     "partite": [],
     "finali": [],
-    "rose": {}
+    "rose": {
+      "S.PIETRO E PAOLO": [
+        {
+          "cognome": "CAPOMAGI",
+          "nome": "MANUEL",
+          "nascita": "18.02.2013"
+        },
+        {
+          "cognome": "CLAZZER",
+          "nome": "DAVIDE",
+          "nascita": "29.05.2012"
+        },
+        {
+          "cognome": "BARTOLAMEOTTI",
+          "nome": "MARKO",
+          "nascita": "22.05.2010"
+        },
+        {
+          "cognome": "GALASSO",
+          "nome": "CRISTIAN",
+          "nascita": "08.12.2011"
+        },
+        {
+          "cognome": "SEGANTINI",
+          "nome": "LORENZO",
+          "nascita": "07.08.2010"
+        },
+        {
+          "cognome": "FRANCHI",
+          "nome": "MATTEO",
+          "nascita": "27.01.2010"
+        },
+        {
+          "cognome": "DI MICCO",
+          "nome": "PAOLO GIOVANNI",
+          "nascita": "11.10.2010"
+        },
+        {
+          "cognome": "SANTORO",
+          "nome": "ANDREA",
+          "nascita": "03.08.2011"
+        },
+        {
+          "cognome": "MASULLO",
+          "nome": "ALDO JUNIOR",
+          "nascita": "22.10.2011"
+        }
+      ],
+      "ACADEMY": [
+        {
+          "cognome": "PALAZZOLO",
+          "nome": "SIMONE",
+          "nascita": "05.10.2010"
+        },
+        {
+          "cognome": "GAMBELLINI",
+          "nome": "CRISTIAN",
+          "nascita": "28.07.2010"
+        },
+        {
+          "cognome": "REGNO",
+          "nome": "MATTEO",
+          "nascita": "15.12.2010"
+        },
+        {
+          "cognome": "BASOC",
+          "nome": "DANIELE",
+          "nascita": "30.05.2010"
+        },
+        {
+          "cognome": "QUADROTTA",
+          "nome": "FLAVIO",
+          "nascita": "12.08.2011"
+        },
+        {
+          "cognome": "VARDARO",
+          "nome": "NYKOLAS",
+          "nascita": "05.03.2010"
+        },
+        {
+          "cognome": "TORRONI",
+          "nome": "MIRO'",
+          "nascita": "11.02.2010"
+        },
+        {
+          "cognome": "LAURI",
+          "nome": "DIEGO",
+          "nascita": "7.02.2011"
+        },
+        {
+          "cognome": "LELI",
+          "nome": "SIMONE",
+          "nascita": "15.01.2011"
+        },
+        {
+          "cognome": "ROMANO",
+          "nome": "DOMENICO",
+          "nascita": "17.08.2010"
+        },
+        {
+          "cognome": "LONGO",
+          "nome": "RICCARDO",
+          "nascita": "07.07.2011"
+        },
+        {
+          "cognome": "CAMPIONI",
+          "nome": "GIAMMARCO",
+          "nascita": "17.07.2010"
+        },
+        {
+          "cognome": "CANTATORE",
+          "nome": "GIORDANO",
+          "nascita": "07.04.2010"
+        },
+        {
+          "cognome": "CRISPI",
+          "nome": "CHRISTIAN",
+          "nascita": "03.04.2011"
+        },
+        {
+          "cognome": "MIRRA",
+          "nome": "ALESSANDRO",
+          "nascita": "22.03.2011"
+        }
+      ]
+    }
   },
   "Under 13": {
     "gironi": {
