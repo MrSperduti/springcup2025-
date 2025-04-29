@@ -131,7 +131,35 @@
         "VELLETRI"
       ]
     },
-    "partite": [],
+    "partite": [
+      {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "VELLETRI",
+        "campo": "CAMPO B",
+        "orario": "18.00",
+        "data": "12.05.2025",
+        "golA": 2,
+        "golB": 1,
+        "portiere": "CLATEA RICCARDO",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "VELAZQUEZ RICARDO",
+        "squadraGiocatore": "VELLETRI",
+        "marcatori": [
+          {
+            "nome": "CRISPI CHRISTIAN",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "VELAZQUEZ RICARDO",
+            "gol": 1,
+            "squadra": "VELLETRI"
+          }
+        ]
+      }
+    ],
     "finali": [],
     "rose": {
       "VELLETRI": [
