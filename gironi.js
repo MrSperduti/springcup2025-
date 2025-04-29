@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Categoria selezionata (Under 17 o Under 15)
+  // Recupera la categoria selezionata
   const categoriaSelezionata = localStorage.getItem("categoriaSelezionata") || "Under 17";
   
   // Dati dei gironi separati per categoria
@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const gironiContainer = document.getElementById("gironiContainer");
   
-  // Salvo i dati nel localStorage per la categoria selezionata
-  localStorage.setItem("giocatoriData", JSON.stringify(giocatoriData));
+  // Salvo nel localStorage la categoria selezionata
+  localStorage.setItem("categoriaSelezionata", categoriaSelezionata);
 
   // Funzione per visualizzare i gironi e le squadre in base alla categoria selezionata
   function renderGironi() {
