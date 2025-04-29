@@ -195,7 +195,13 @@
     "rose": {}
   },
   "2016/17": {
-    "gironi": {},
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY",
+        "SELVA DEI PINI",
+        "COLLEFERRO"
+      ]
+    },
     "partite": [],
     "finali": [],
     "rose": {}
@@ -206,6 +212,11 @@
         "ACADEMY",
         "BASIC",
         "SAN GIOVANNI"
+      ],
+      "GIRONE B": [
+        "COLLEFERRO",
+        "ANAGNI",
+        "MIRACOLI"
       ]
     },
     "partite": [],
