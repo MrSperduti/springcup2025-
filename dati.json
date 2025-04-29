@@ -12,40 +12,7 @@
         "ECOCITY"
       ]
     },
-    "partite": [
-      {
-        "giornata": "1",
-        "girone": "GIRONE A",
-        "squadraA": "ACADEMY",
-        "squadraB": "NEW TEAM",
-        "campo": "CAMPO A",
-        "orario": "19.00",
-        "data": "09.05.2025",
-        "golA": 3,
-        "golB": 1,
-        "portiere": "MELADIO' GIOVANNI",
-        "squadraPortiere": "ACADEMY",
-        "giocatore": "GOBBI ALESSANDRO",
-        "squadraGiocatore": "ACADEMY",
-        "marcatori": [
-          {
-            "nome": "SUSIN FRANCESCO",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "IANCU CRISTIAN",
-            "gol": 1,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "RUSSO FRANCESCO",
-            "gol": 1,
-            "squadra": "NEW TEAM"
-          }
-        ]
-      }
-    ],
+    "partite": [],
     "finali": [],
     "rose": {
       "ACADEMY": [
@@ -119,188 +86,38 @@
           "nome": "ALESSANDRO",
           "nascita": "22.03.2011"
         }
-      ],
-      "FORTITUDO": [
-        {
-          "cognome": "PARENTE",
-          "nome": "CRISTIAN",
-          "nascita": "01.01.2008"
-        }
       ]
     }
   },
   "Under 15": {
-    "gironi": {
-      "GIRONE A": [
-        "ACADEMY",
-        "S.PETRO E PAOLO",
-        "NEW TEAM",
-        "VELLETRI"
-      ],
-      "GIRONE B": [
-        "LAZIO",
-        "TORINO",
-        "LECCE"
-      ]
-    },
-    "partite": [
-      {
-        "giornata": "1",
-        "girone": "GIRONE A",
-        "squadraA": "ACADEMY",
-        "squadraB": "VELLETRI",
-        "campo": "CAMPO B",
-        "orario": "18.00",
-        "data": "12.05.2025",
-        "golA": 2,
-        "golB": 1,
-        "portiere": "CLATEA RICCARDO",
-        "squadraPortiere": "ACADEMY",
-        "giocatore": "VELAZQUEZ RICARDO",
-        "squadraGiocatore": "VELLETRI",
-        "marcatori": [
-          {
-            "nome": "CRISPI CHRISTIAN",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "VELAZQUEZ RICARDO",
-            "gol": 1,
-            "squadra": "VELLETRI"
-          }
-        ]
-      }
-    ],
+    "gironi": {},
+    "partite": [],
     "finali": [],
-    "rose": {
-      "VELLETRI": [
-        {
-          "cognome": "VELAZQUEZ",
-          "nome": "RICARDO",
-          "nascita": "10.10.2011"
-        }
-      ],
-      "ACADEMY": [
-        {
-          "cognome": "MIRRA",
-          "nome": "ALESSANDRO",
-          "nascita": "22.03.2011"
-        }
-      ]
-    }
+    "rose": {}
   },
   "Under 13": {
-    "gironi": {
-      "Girone A": [
-        "ACADEMY",
-        "ANZIO",
-        "FORTITUDO"
-      ],
-      "Girone B": [
-        "ACADEMY ROSSA",
-        "MARINO",
-        "S.PIETRO E PAOLO"
-      ]
-    },
+    "gironi": {},
     "partite": [],
     "finali": [],
     "rose": {}
   },
   "2014/15": {
-    "gironi": {
-      "GIRONE A": [
-        "ACADEMY",
-        "FORTITUDO",
-        "LADISLAO"
-      ]
-    },
+    "gironi": {},
     "partite": [],
     "finali": [],
-    "rose": {
-      "ACADEMY": [
-        {
-          "cognome": "SPERDUTI",
-          "nome": "NICOLAS",
-          "nascita": "19.11.2014"
-        }
-      ]
-    }
+    "rose": {}
   },
   "2016/17": {
-    "gironi": {
-      "GIRONE A": [
-        "ACADEMY",
-        "SELVA DEI PINI",
-        "COLLEFERRO"
-      ],
-      "GIRONE B": [
-        "POMEZIA",
-        "ROMA",
-        "LAZIO"
-      ]
-    },
+    "gironi": {},
     "partite": [],
     "finali": [],
     "rose": {}
   },
   "Under 15 femminile": {
-    "gironi": {
-      "GIRONE A": [
-        "ACADEMY",
-        "BASIC",
-        "SAN GIOVANNI"
-      ],
-      "GIRONE B": [
-        "COLLEFERRO",
-        "ANAGNI",
-        "MIRACOLI"
-      ]
-    },
-    "partite": [
-      {
-        "giornata": "1",
-        "girone": "GIRONE A",
-        "squadraA": "ACADEMY",
-        "squadraB": "BASIC",
-        "campo": "CAMPO A",
-        "orario": "10.00",
-        "data": "10.05.2025",
-        "golA": 2,
-        "golB": 1,
-        "portiere": "NEGRI NOEMI",
-        "squadraPortiere": "ACADEMY",
-        "giocatore": "BUSTI LUDOVICA",
-        "squadraGiocatore": "ACADEMY",
-        "marcatori": [
-          {
-            "nome": "MANUELE GIORGIA",
-            "gol": 1,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "BUSTI LUDOVICA",
-            "gol": 1,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "LO STOCCO GIORGIA",
-            "gol": 1,
-            "squadra": "BASIC"
-          }
-        ]
-      }
-    ],
+    "gironi": {},
+    "partite": [],
     "finali": [],
-    "rose": {
-      "ACADEMY": [
-        {
-          "cognome": "ROSSI",
-          "nome": "ALESSANDRA",
-          "nascita": "24.05.2008"
-        }
-      ]
-    }
+    "rose": {}
   },
   "Under 13 femminile": {
     "gironi": {},
