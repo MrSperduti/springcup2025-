@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const urlParams = new URLSearchParams(window.location.search);
   const categoriaSelezionata = urlParams.get("categoria") || "Under 17"; // Default a Under 17 se non presente
   
-  // Dati dei gironi separati per categoria (da `dati.json`)
+  // Dati dei gironi separati per categoria
   const gironiData = {
     "Under 17": {
       "GIRONE A": ["ACADEMY", "NEW TEAM", "ARDEA"],
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
   const gironiContainer = document.getElementById("gironiContainer");
-
+  
   // Salvo nel localStorage la categoria selezionata
   localStorage.setItem("categoriaSelezionata", categoriaSelezionata);
 
@@ -52,11 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
   function renderGironi() {
     const gironi = gironiData[categoriaSelezionata];
     gironiContainer.innerHTML = "";
-
-    if (!gironi) {
-      gironiContainer.innerHTML = "<p>Nessun girone disponibile per questa categoria.</p>";
-      return;
-    }
 
     Object.keys(gironi).forEach(girone => {
       const tableDiv = document.createElement("div");
@@ -67,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       gironi[ girone ].forEach(squadra => {
         const row = document.createElement("tr");
-        row.innerHTML = `<td>${squadra}</td><td><button onclick="aggiungiSquadra('${squadra}')">Aggiungi alla rosa</button></td>`;
+        row.innerHTML = `<td>${squadra}</td>`;  // Rimuovo il pulsante dalla seconda colonna
         table.appendChild(row);
       });
 
@@ -75,19 +70,6 @@ document.addEventListener("DOMContentLoaded", function() {
       tableDiv.appendChild(table);
     });
   }
-
-  // Funzione per aggiungere una squadra alla rosa
-  window.aggiungiSquadra = function(squadra) {
-    if (!localStorage.getItem('squadre')) {
-      localStorage.setItem('squadre', JSON.stringify([]));
-    }
-    const squadre = JSON.parse(localStorage.getItem('squadre'));
-    if (!squadre.includes(squadra)) {
-      squadre.push(squadra);
-      localStorage.setItem('squadre', JSON.stringify(squadre));
-      alert(squadra + ' è stata aggiunta alla rosa!');
-    }
-  };
 
   // Avvio del rendering dei gironi
   renderGironi();
