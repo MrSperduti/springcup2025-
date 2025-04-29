@@ -173,6 +173,13 @@
           "nome": "RICARDO",
           "nascita": "10.10.2011"
         }
+      ],
+      "ACADEMY": [
+        {
+          "cognome": "MIRRA",
+          "nome": "ALESSANDRO",
+          "nascita": "22.03.2011"
+        }
       ]
     }
   },
@@ -219,9 +226,50 @@
         "MIRACOLI"
       ]
     },
-    "partite": [],
+    "partite": [
+      {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "BASIC",
+        "campo": "CAMPO A",
+        "orario": "10.00",
+        "data": "10.05.2025",
+        "golA": 2,
+        "golB": 1,
+        "portiere": "NEGRI NOEMI",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "BUSTI LUDOVICA",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "MANUELE GIORGIA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "BUSTI LUDOVICA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "LO STOCCO GIORGIA",
+            "gol": 1,
+            "squadra": "BASIC"
+          }
+        ]
+      }
+    ],
     "finali": [],
-    "rose": {}
+    "rose": {
+      "ACADEMY": [
+        {
+          "cognome": "ROSSI",
+          "nome": "ALESSANDRA",
+          "nascita": "24.05.2008"
+        }
+      ]
+    }
   },
   "Under 13 femminile": {
     "gironi": {},
