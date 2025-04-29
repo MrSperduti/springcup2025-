@@ -96,10 +96,84 @@
     "rose": {}
   },
   "Under 13": {
-    "gironi": {},
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY ROSSA",
+        "S.PIETRO E PAOLO ROSSA",
+        "NEW TEAM"
+      ],
+      "GIRONE B": [
+        "ACADEMY BLU",
+        "S.PIETRO E PAOLO BLU",
+        "LATINA C5"
+      ],
+      "GIRONE C": [
+        "FORTITUDO POMEZIA",
+        "ANZIO C5",
+        "MARINO ACADEMY"
+      ]
+    },
     "partite": [],
     "finali": [],
-    "rose": {}
+    "rose": {
+      "ACADEMY ROSSA": [
+        {
+          "cognome": "SPERDUTI",
+          "nome": "NICOLAS",
+          "nascita": "19.11.2014"
+        },
+        {
+          "cognome": "BARBARESCHI",
+          "nome": "MATTIA",
+          "nascita": "29.07.2013"
+        },
+        {
+          "cognome": "MIRRA",
+          "nome": "LORENZO",
+          "nascita": "11.06.2014"
+        },
+        {
+          "cognome": "GENOVESE",
+          "nome": "LEONARDO",
+          "nascita": "25.05.2014"
+        },
+        {
+          "cognome": "MADDALONI",
+          "nome": "FLAVIO",
+          "nascita": "28.03.2014"
+        },
+        {
+          "cognome": "OBERMAIER",
+          "nome": "DANIELE",
+          "nascita": "04.11.2013"
+        },
+        {
+          "cognome": "ULISSE",
+          "nome": "MATTIA",
+          "nascita": "06.12.2012"
+        },
+        {
+          "cognome": "COTUGNO",
+          "nome": "MATTEO",
+          "nascita": "12.08.2012"
+        },
+        {
+          "cognome": "PIACENTI",
+          "nome": "CRISTIAN",
+          "nascita": "01.12.2012"
+        },
+        {
+          "cognome": "CAPOGRECO",
+          "nome": "MATTEO",
+          "nascita": "24.07.2012"
+        },
+        {
+          "cognome": "PICCINI",
+          "nome": "GABRIELE",
+          "nascita": "12.10.2013"
+        }
+      ]
+    }
   },
   "2014/15": {
     "gironi": {},
