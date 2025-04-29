@@ -196,10 +196,24 @@
     "rose": {}
   },
   "2014/15": {
-    "gironi": {},
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY",
+        "FORTITUDO",
+        "LADISLAO"
+      ]
+    },
     "partite": [],
     "finali": [],
-    "rose": {}
+    "rose": {
+      "ACADEMY": [
+        {
+          "cognome": "SPERDUTI",
+          "nome": "NICOLAS",
+          "nascita": "19.11.2014"
+        }
+      ]
+    }
   },
   "2016/17": {
     "gironi": {
@@ -207,6 +221,11 @@
         "ACADEMY",
         "SELVA DEI PINI",
         "COLLEFERRO"
+      ],
+      "GIRONE B": [
+        "POMEZIA",
+        "ROMA",
+        "LAZIO"
       ]
     },
     "partite": [],
