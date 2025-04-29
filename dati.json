@@ -201,7 +201,13 @@
     "rose": {}
   },
   "Under 15 femminile": {
-    "gironi": {},
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY",
+        "BASIC",
+        "SAN GIOVANNI"
+      ]
+    },
     "partite": [],
     "finali": [],
     "rose": {}
