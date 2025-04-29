@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const urlParams = new URLSearchParams(window.location.search);
   const categoriaSelezionata = urlParams.get("categoria") || "Under 17"; // Default a Under 17 se non presente
   
-  // Dati dei gironi separati per categoria
+  // Dati dei gironi separati per categoria (da `dati.json`)
   const gironiData = {
     "Under 17": {
       "GIRONE A": ["ACADEMY", "NEW TEAM", "ARDEA"],
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
 
-  // Dati dei giocatori per categoria e squadra
   const giocatoriData = {
     "Under 17": {
       "ACADEMY": [
@@ -53,6 +52,11 @@ document.addEventListener("DOMContentLoaded", function() {
   function renderGironi() {
     const gironi = gironiData[categoriaSelezionata];
     gironiContainer.innerHTML = "";
+
+    if (!gironi) {
+      gironiContainer.innerHTML = "<p>Nessun girone disponibile per questa categoria.</p>";
+      return;
+    }
 
     Object.keys(gironi).forEach(girone => {
       const tableDiv = document.createElement("div");
