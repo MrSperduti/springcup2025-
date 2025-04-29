@@ -3,48 +3,23 @@ document.addEventListener("DOMContentLoaded", function() {
   const urlParams = new URLSearchParams(window.location.search);
   const categoriaSelezionata = urlParams.get("categoria") || "Under 17"; // Default a Under 17 se non presente
   
-  // Dati dei gironi separati per categoria
+  // Dati dei gironi separati per categoria (caricati dal file dati.json)
   const gironiData = {
     "Under 17": {
       "GIRONE A": ["ACADEMY", "NEW TEAM", "ARDEA"],
       "GIRONE B": ["FORTITUDO", "CIRCOLO MASTER", "ECOCITY"]
     },
     "Under 15": {
-      "GIRONE A": ["ACADEMY", "S.PETRO E PAOLO", "NEW TEAM", "VELLETRI"]
-    }
-  };
-
-  const giocatoriData = {
-    "Under 17": {
-      "ACADEMY": [
-        { "cognome": "CAVAGNOLI", "nome": "CIRO", "nascita": "04.05.2008" },
-        { "cognome": "GOBBI", "nome": "ALESSANDRO", "nascita": "21.08.2008" },
-        { "cognome": "IANCU", "nome": "CRISTIAN", "nascita": "09.05.2008" },
-        { "cognome": "MEROLA", "nome": "MATTEO", "nascita": "18.03.2008" },
-        { "cognome": "PASSARO", "nome": "SIMONE", "nascita": "29.02.2008" }
-      ],
-      "FORTITUDO": [
-        { "cognome": "VERBENI", "nome": "DAVIDE", "nascita": "29.04.2007" }
-      ]
+      "GIRONE A": ["ACADEMY", "S.PETRO E PAOLO", "NEW TEAM", "VELLETRI"],
+      "GIRONE B": ["LAZIO", "TORINO", "LECCE"]
     },
-    "Under 15": {
-      "ACADEMY": [
-        { "cognome": "VELAZQUEZ", "nome": "RICARDO", "nascita": "10.10.2011" }
-      ],
-      "S.PETRO E PAOLO": [
-        { "cognome": "VELAZQUEZ", "nome": "RICARDO", "nascita": "10.10.2011" }
-      ],
-      "NEW TEAM": [
-        { "cognome": "ROSSETTI", "nome": "LUCA", "nascita": "11.03.2007" }
-      ],
-      "VELLETRI": [
-        { "cognome": "VELAZQUEZ", "nome": "RICARDO", "nascita": "10.10.2011" }
-      ]
+    "Under 13": {
+      "Girone A": ["ACADEMY", "ANZIO", "FORTITUDO"]
     }
   };
 
   const gironiContainer = document.getElementById("gironiContainer");
-  
+
   // Salvo nel localStorage la categoria selezionata
   localStorage.setItem("categoriaSelezionata", categoriaSelezionata);
 
@@ -52,6 +27,11 @@ document.addEventListener("DOMContentLoaded", function() {
   function renderGironi() {
     const gironi = gironiData[categoriaSelezionata];
     gironiContainer.innerHTML = "";
+
+    if (!gironi) {
+      gironiContainer.innerHTML = "<p>Nessun girone disponibile per questa categoria.</p>";
+      return;
+    }
 
     Object.keys(gironi).forEach(girone => {
       const tableDiv = document.createElement("div");
@@ -62,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       gironi[ girone ].forEach(squadra => {
         const row = document.createElement("tr");
-        row.innerHTML = `<td>${squadra}</td>`;  // Rimuovo il pulsante dalla seconda colonna
+        row.innerHTML = `<td>${squadra}</td>`;  // Mostriamo solo i nomi delle squadre
         table.appendChild(row);
       });
 
