@@ -12,7 +12,56 @@
         "ECOCITY"
       ]
     },
-    "partite": [],
+    "partite": [
+      {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "ARDEA",
+        "campo": "CAMPO A",
+        "orario": "19.00",
+        "data": "09.05.2025",
+        "golA": 0,
+        "golB": 0,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE A",
+        "squadraA": "ARDEA",
+        "squadraB": "NEW TEAM",
+        "campo": "CAMPO A ",
+        "orario": "18.00",
+        "data": "14.05.2025",
+        "golA": 0,
+        "golB": 0,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "NEW TEAM",
+        "campo": "CAMPO A",
+        "orario": "19.00",
+        "data": "17.05.2025",
+        "golA": 0,
+        "golB": 0,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      }
+    ],
     "finali": [],
     "rose": {
       "ACADEMY": [
