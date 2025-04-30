@@ -86,6 +86,68 @@
           "nome": "ALESSANDRO",
           "nascita": "22.03.2011"
         }
+      ],
+      "NEW TEAM": [
+        {
+          "cognome": "ARTENE",
+          "nome": "ALESSANDRU GABRIEL",
+          "nascita": "05.02.2009"
+        },
+        {
+          "cognome": "BERARDINELLI",
+          "nome": "LORENZO",
+          "nascita": "15.04.2008"
+        },
+        {
+          "cognome": "CARDINALI",
+          "nome": "FLAVIO",
+          "nascita": "21.06.2009"
+        },
+        {
+          "cognome": "D'ANTONI",
+          "nome": "DAVIDE",
+          "nascita": "07.11.2010"
+        },
+        {
+          "cognome": "D'ANTONI",
+          "nome": "EMANUELE",
+          "nascita": "29.08.2009"
+        },
+        {
+          "cognome": "KEZYK",
+          "nome": "VOLODYMYR",
+          "nascita": "09.05.2009"
+        },
+        {
+          "cognome": "MAVIGLIA",
+          "nome": "LORENZO",
+          "nascita": "30.06.2009"
+        },
+        {
+          "cognome": "MAZZOCCA",
+          "nome": "FRANCESCO",
+          "nascita": "17.10.2009"
+        },
+        {
+          "cognome": "ROSSETTI",
+          "nome": "DAVIDE",
+          "nascita": "01.09.2009"
+        },
+        {
+          "cognome": "SAN WOO MENDEZ",
+          "nome": "MARCELLO GIANLUCA",
+          "nascita": "25.02.2008"
+        },
+        {
+          "cognome": "SORICETTI",
+          "nome": "EDOARDO",
+          "nascita": "17.06.2009"
+        },
+        {
+          "cognome": "TRENTA",
+          "nome": "ALESSANDRO",
+          "nascita": "18.11.2009"
+        }
       ]
     }
   },
@@ -107,7 +169,9 @@
         "CIRCOLO MASTER"
       ]
     },
-    "partite": [],
+    "partite": [
+      {}
+    ],
     "finali": [],
     "rose": {
       "S.PIETRO E PAOLO": [
@@ -253,6 +317,58 @@
           "nome": "EDUARD RICCARDO",
           "nascita": "25.03.2010"
         }
+      ],
+      "NEW TEAM": [
+        {
+          "cognome": "BUCCI",
+          "nome": "SIMONE",
+          "nascita": "27.10.2010"
+        },
+        {
+          "cognome": "CARDILLO",
+          "nome": "SERGIO",
+          "nascita": "30.07.2010"
+        },
+        {
+          "cognome": "CECCARELLI",
+          "nome": "FEDERICO",
+          "nascita": "03.09.2010"
+        },
+        {
+          "cognome": "CESARINI",
+          "nome": "MATTIA",
+          "nascita": "16.03.2010"
+        },
+        {
+          "cognome": "COLASANTI",
+          "nome": "ALESSIO",
+          "nascita": "19.09.2010"
+        },
+        {
+          "cognome": "DEL DUCA",
+          "nome": "ALESSIO",
+          "nascita": "21.04.2010"
+        },
+        {
+          "cognome": "GIOVINAZZO",
+          "nome": "CHRISTIAN",
+          "nascita": "09.12.2011"
+        },
+        {
+          "cognome": "MOTTOLA",
+          "nome": "ANGELO",
+          "nascita": "20.05.2010"
+        },
+        {
+          "cognome": "TALAMO",
+          "nome": "FRANCESCO",
+          "nascita": "10.05.2011"
+        },
+        {
+          "cognome": "LANZINI",
+          "nome": "LEONARDO",
+          "nascita": "10.11.2012"
+        }
       ]
     }
   },
@@ -379,6 +495,88 @@
           "cognome": "TERSIGNI",
           "nome": "RICCARDO",
           "nascita": "27.04.2012"
+        }
+      ],
+      "NEW TEAM": [
+        {
+          "cognome": "BADARACCHI",
+          "nome": "LORENZO",
+          "nascita": "28.10.2013"
+        },
+        {
+          "cognome": "FABRIZIO",
+          "nome": "LUCA",
+          "nascita": "11.10.2012"
+        },
+        {
+          "cognome": "FOLLEGA",
+          "nome": "MANUEL",
+          "nascita": "16.11.2012"
+        },
+        {
+          "cognome": "FONTANA",
+          "nome": "FRANCESCO",
+          "nascita": "19.10.2012"
+        },
+        {
+          "cognome": "LADOGANA",
+          "nome": "CRISTIAN",
+          "nascita": "04.10.2012"
+        },
+        {
+          "cognome": "LEONARDI",
+          "nome": "TIZIANO",
+          "nascita": "02.03.2013"
+        },
+        {
+          "cognome": "MAZZOCCA",
+          "nome": "TOMMASO",
+          "nascita": "29.07.2013"
+        },
+        {
+          "cognome": "MIGLIETTA",
+          "nome": "MATTEO",
+          "nascita": "27.12.2012"
+        },
+        {
+          "cognome": "PATRIZI",
+          "nome": "SAMUELE",
+          "nascita": "22.06.2012"
+        },
+        {
+          "cognome": "SORICETTI",
+          "nome": "TOMMASO",
+          "nascita": "31.07.2012"
+        },
+        {
+          "cognome": "TALARICO",
+          "nome": "MATTEO",
+          "nascita": "01.09.2013"
+        },
+        {
+          "cognome": "TEDESCHI",
+          "nome": "ANDREA",
+          "nascita": "01.01.2015"
+        },
+        {
+          "cognome": "TENACE",
+          "nome": "EMANUELE",
+          "nascita": "03.04.2012"
+        },
+        {
+          "cognome": "TOSI",
+          "nome": "FRANCESCO",
+          "nascita": "04.01.2012"
+        },
+        {
+          "cognome": "TRENTA",
+          "nome": "GABRIELE",
+          "nascita": "19.02.2013"
+        },
+        {
+          "cognome": "VALSECCHI",
+          "nome": "SIMONE",
+          "nascita": "03.11.2012"
         }
       ]
     }
