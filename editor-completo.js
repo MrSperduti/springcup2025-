@@ -92,39 +92,6 @@ function creaBottone(label, fn) {
   return btn;
 }
 
-function renderGironi() {
-  const div = document.getElementById("listaGironi");
-  div.innerHTML = "";
-  const gironi = dati[categoriaSelezionata]?.gironi || {};
-  Object.keys(gironi).forEach(nome => {
-    const d = document.createElement("div");
-    d.className = "item";
-    const inputNome = creaInput(nome, "Nome Girone");
-    const inputSquadre = creaInput(gironi[nome].join(", "), "Squadre separate da virgola");
-    d.appendChild(inputNome);
-    d.appendChild(inputSquadre);
-    const azioni = document.createElement("div");
-    azioni.className = "actions";
-    azioni.appendChild(creaBottone("💾 Salva", () => {
-      delete gironi[nome];
-      gironi[inputNome.value] = inputSquadre.value.split(",").map(s => s.trim());
-      aggiornaVista();
-    }));
-    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
-      delete gironi[nome];
-      aggiornaVista();
-    }));
-    d.appendChild(azioni);
-    div.appendChild(d);
-  });
-}
-
-function aggiungiGirone() {
-  if (!dati[categoriaSelezionata].gironi) dati[categoriaSelezionata].gironi = {};
-  dati[categoriaSelezionata].gironi["Nuovo Girone"] = [];
-  aggiornaVista();
-}
-
 function renderPartite() {
   const div = document.getElementById("listaPartite");
   div.innerHTML = "";
@@ -141,8 +108,8 @@ function renderPartite() {
     const campo = creaInput(p.campo || "", "Campo");
     const orario = creaInput(p.orario || "", "Orario");
     const data = creaInput(p.data || "", "Data");
-    const golA = creaNumber(p.golA || 0, "Gol A");
-    const golB = creaNumber(p.golB || 0, "Gol B");
+    const golA = creaNumber(p.golA || '', "Gol A");
+    const golB = creaNumber(p.golB || '', "Gol B");
     const portiere = creaInput(p.portiere || "", "Miglior Portiere");
     const squadraPortiere = creaInput(p.squadraPortiere || "", "Squadra Portiere");
     const giocatore = creaInput(p.giocatore || "", "Miglior Giocatore");
@@ -207,8 +174,8 @@ function renderPartite() {
         campo: campo.value,
         orario: orario.value,
         data: data.value,
-        golA: parseInt(golA.value),
-        golB: parseInt(golB.value),
+        golA: golA.value !== '' ? parseInt(golA.value) : null,
+        golB: golB.value !== '' ? parseInt(golB.value) : null,
         portiere: portiere.value,
         squadraPortiere: squadraPortiere.value,
         giocatore: giocatore.value,
@@ -231,120 +198,4 @@ function aggiungiPartita() {
   if (!dati[categoriaSelezionata].partite) dati[categoriaSelezionata].partite = [];
   dati[categoriaSelezionata].partite.push({});
   aggiornaVista();
-}
-
-function renderFinali() {
-  const div = document.getElementById("listaFinali");
-  div.innerHTML = "";
-  const finali = dati[categoriaSelezionata]?.finali || [];
-  finali.forEach((p, i) => {
-    const d = document.createElement("div");
-    d.className = "item";
-    const squadraA = creaInput(p.squadraA || "", "Squadra A");
-    const squadraB = creaInput(p.squadraB || "", "Squadra B");
-    const campo = creaInput(p.campo || "", "Campo");
-    const orario = creaInput(p.orario || "", "Orario");
-    const data = creaInput(p.data || "", "Data");
-
-    d.appendChild(squadraA);
-    d.appendChild(squadraB);
-    d.appendChild(campo);
-    d.appendChild(orario);
-    d.appendChild(data);
-
-    const azioni = document.createElement("div");
-    azioni.className = "actions";
-    azioni.appendChild(creaBottone("💾 Salva", () => {
-      finali[i] = {
-        squadraA: squadraA.value,
-        squadraB: squadraB.value,
-        campo: campo.value,
-        orario: orario.value,
-        data: data.value
-      };
-      aggiornaVista();
-    }));
-    azioni.appendChild(creaBottone("🗑️ Cancella", () => {
-      finali.splice(i, 1);
-      aggiornaVista();
-    }));
-
-    d.appendChild(azioni);
-    div.appendChild(d);
-  });
-}
-
-function aggiungiFinale() {
-  if (!dati[categoriaSelezionata].finali) dati[categoriaSelezionata].finali = [];
-  dati[categoriaSelezionata].finali.push({});
-  aggiornaVista();
-}
-
-function renderRose() {
-  const div = document.getElementById("listaRose");
-  div.innerHTML = "";
-  const squadre = dati[categoriaSelezionata]?.rose || {};
-  Object.entries(squadre).forEach(([squadra, giocatori]) => {
-    const section = document.createElement("div");
-    section.className = "girone-section";
-    const titolo = document.createElement("h3");
-    titolo.textContent = squadra;
-    section.appendChild(titolo);
-    const table = document.createElement("table");
-    table.innerHTML = "<tr><th>Cognome</th><th>Nome</th><th>Data di Nascita</th></tr>";
-    giocatori.forEach(g => {
-      const row = document.createElement("tr");
-      row.innerHTML = `<td>${g.cognome}</td><td>${g.nome}</td><td>${g.nascita}</td>`;
-      table.appendChild(row);
-    });
-    section.appendChild(table);
-    div.appendChild(section);
-  });
-}
-
-function aggiungiGiocatore() {
-  const contenitore = document.getElementById("listaRose");
-  const wrapper = document.createElement("div");
-  wrapper.className = "item";
-  const squadra = creaInput("", "Nome Squadra");
-  const cognome = creaInput("", "Cognome");
-  const nome = creaInput("", "Nome");
-  const nascita = creaInput("", "Data di Nascita");
-
-  wrapper.appendChild(squadra);
-  wrapper.appendChild(cognome);
-  wrapper.appendChild(nome);
-  wrapper.appendChild(nascita);
-
-  const azioni = document.createElement("div");
-  azioni.className = "actions";
-  azioni.appendChild(creaBottone("💾 Salva", () => {
-    if (!dati[categoriaSelezionata].rose) dati[categoriaSelezionata].rose = {};
-    if (!dati[categoriaSelezionata].rose[squadra.value]) {
-      dati[categoriaSelezionata].rose[squadra.value] = [];
-    }
-    dati[categoriaSelezionata].rose[squadra.value].push({
-      cognome: cognome.value,
-      nome: nome.value,
-      nascita: nascita.value
-    });
-    aggiornaVista();
-  }));
-
-  azioni.appendChild(creaBottone("🗑️ Cancella", () => {
-    wrapper.remove();
-  }));
-
-  wrapper.appendChild(azioni);
-  contenitore.appendChild(wrapper);
-}
-
-function esporta() {
-  const blob = new Blob([JSON.stringify(dati, null, 2)], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "dati.json";
-  a.click();
-  URL.revokeObjectURL(url);
 }

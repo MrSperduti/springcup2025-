@@ -32,7 +32,7 @@ async function loadCalendar() {
         <td>${p.data || ''}</td>
         <td>${p.orario || ''}</td>
         <td>${p.campo || ''}</td>
-        <td>${p.golA != null && p.golB != null ? p.golA + ' - ' + p.golB : ''}</td>
+        <td>${(p.golA || p.golB) ? p.golA + ' - ' + p.golB : ''}</td>
         <td>${p.girone || ''}</td>
       `;
       table.appendChild(row);
