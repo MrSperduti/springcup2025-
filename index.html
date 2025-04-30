@@ -25,7 +25,8 @@
       width: 100%;
       max-width: 640px;
       padding: 40px 20px;
-      position: relative; /* Necessary for absolute positioning of the logo */
+      position: relative;
+      z-index: 1;
     }
     .logo {
       max-width: 200px;
@@ -78,13 +79,13 @@
       }
     }
 
-    /* Position the logo at the bottom of the page */
+    /* Corrected logo positioning at the bottom of the page */
     .federation-logo {
       position: absolute;
       bottom: 20px;
       width: 120px;
       max-width: 150px;
-      z-index: 10;
+      z-index: 0; /* Ensure logo stays behind the main content */
     }
   </style>
 </head>
@@ -102,7 +103,7 @@
     </div>
   </div>
 
-  <!-- Federazione logo at the bottom -->
-  <img src="2d95efc9-81af-4030-b715-df24bc8d257f.png" alt="Logo Federazione ASI" class="federation-logo">
+  <!-- Updated logo path to the new JPG image -->
+  <img src="converted_logo_federazione.jpg" alt="Logo Federazione ASI" class="federation-logo">
 </body>
 </html>
