@@ -148,6 +148,68 @@
           "nome": "ALESSANDRO",
           "nascita": "18.11.2009"
         }
+      ],
+      "CIRCOLO MASTER": [
+        {
+          "cognome": "MAIER",
+          "nome": "ALESSIO MATTIA",
+          "nascita": "23.05.2008"
+        },
+        {
+          "cognome": "CASCI",
+          "nome": "DANIELE",
+          "nascita": "19.03.2009"
+        },
+        {
+          "cognome": "CUOMO",
+          "nome": "FEDERICO",
+          "nascita": "01.11.2008"
+        },
+        {
+          "cognome": "CERILLI",
+          "nome": "VALERIO",
+          "nascita": "03.12.2008"
+        },
+        {
+          "cognome": "MUSTO",
+          "nome": "DAMIANO",
+          "nascita": "06.10.2008"
+        },
+        {
+          "cognome": "MAURIZI",
+          "nome": "VALERIO",
+          "nascita": "19.06.2009"
+        },
+        {
+          "cognome": "LOMBARDI",
+          "nome": "CRISTIANO",
+          "nascita": "06.10.2009"
+        },
+        {
+          "cognome": "CERILLI",
+          "nome": "FRANCESCO",
+          "nascita": "03.12.2008"
+        },
+        {
+          "cognome": "PROTO",
+          "nome": "MATTEO",
+          "nascita": "18.09.2009"
+        },
+        {
+          "cognome": "DI GIUSEPPE",
+          "nome": "GIOVANNI",
+          "nascita": "27.07.2008"
+        },
+        {
+          "cognome": "ANNIBALLI",
+          "nome": "DAVIDE",
+          "nascita": "15.06.2009"
+        },
+        {
+          "cognome": "MIOTTO",
+          "nome": "CHRISTIAN",
+          "nascita": "27.02.2010"
+        }
       ]
     }
   },
@@ -169,9 +231,7 @@
         "CIRCOLO MASTER"
       ]
     },
-    "partite": [
-      {}
-    ],
+    "partite": [],
     "finali": [],
     "rose": {
       "S.PIETRO E PAOLO": [
@@ -368,6 +428,58 @@
           "cognome": "LANZINI",
           "nome": "LEONARDO",
           "nascita": "10.11.2012"
+        }
+      ],
+      "CIRCOLO MASTER": [
+        {
+          "cognome": "MONTEIRO D CRUZ",
+          "nome": "FRANCESCO",
+          "nascita": "12.11.2010"
+        },
+        {
+          "cognome": "MIOTTO",
+          "nome": "CHRISTIAN",
+          "nascita": "27.02.2010"
+        },
+        {
+          "cognome": "CORBO",
+          "nome": "SIMONE",
+          "nascita": "02.01.2010"
+        },
+        {
+          "cognome": "SALEMI",
+          "nome": "GIOVANNI",
+          "nascita": "13.08.2010"
+        },
+        {
+          "cognome": "SURDU",
+          "nome": "EDUARD",
+          "nascita": "28.05.2010"
+        },
+        {
+          "cognome": "SACCO",
+          "nome": "LUIGI",
+          "nascita": "26.11.2010"
+        },
+        {
+          "cognome": "FANTINI",
+          "nome": "FRANCESCO",
+          "nascita": "15.12.2010"
+        },
+        {
+          "cognome": "GIORDANO",
+          "nome": "LUKAS",
+          "nascita": "24.05.2011"
+        },
+        {
+          "cognome": "TAORMINA",
+          "nome": "CHRISTIAN",
+          "nascita": "27.09.2011"
+        },
+        {
+          "cognome": "SHALA",
+          "nome": "EMIR",
+          "nascita": "14.06.2012"
         }
       ]
     }
