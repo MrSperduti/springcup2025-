@@ -24,6 +24,7 @@
       width: 100%;
       max-width: 640px;
       padding: 40px 20px;
+      position: relative; /* Necessary for absolute positioning of the logo */
     }
     .logo {
       max-width: 200px;
@@ -76,14 +77,14 @@
       }
     }
 
-    /* Posizionamento del logo della federazione in basso a destra */
+    /* Corrected logo positioning */
     .federation-logo {
       position: absolute;
-      bottom: 10px;
-      right: 10px;
-      width: 120px; /* Imposta la larghezza del logo */
+      bottom: 20px;
+      right: 20px;
+      width: 120px;
       max-width: 150px;
-      z-index: 10; /* Evita sovrapposizioni con altri contenuti */
+      z-index: 10;
     }
   </style>
 </head>
@@ -101,7 +102,7 @@
     </div>
   </div>
 
-  <!-- Aggiungi il logo della federazione con il nuovo percorso -->
+  <!-- Corrected logo path for federazione -->
   <img src="2d95efc9-81af-4030-b715-df24bc8d257f.png" alt="Logo Federazione ASI" class="federation-logo">
 </body>
 </html>
