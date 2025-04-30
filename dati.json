@@ -7,9 +7,9 @@
         "ARDEA"
       ],
       "GIRONE B": [
-        "FORTITUDO",
+        "FORTITUDO POMEZIA",
         "CIRCOLO MASTER",
-        "ECOCITY"
+        "ECOCITY GENZANO"
       ]
     },
     "partite": [
@@ -34,8 +34,8 @@
         "girone": "GIRONE A",
         "squadraA": "ARDEA",
         "squadraB": "NEW TEAM",
-        "campo": "CAMPO A ",
-        "orario": "18.00",
+        "campo": "CAMPO B ",
+        "orario": "19.00",
         "data": "14.05.2025",
         "golA": null,
         "golB": null,
@@ -52,6 +52,54 @@
         "squadraB": "NEW TEAM",
         "campo": "CAMPO A",
         "orario": "19.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE B",
+        "squadraA": "FORTITUDO POMEZIA",
+        "squadraB": "ECOCITY GENZANO",
+        "campo": "CAMPO B",
+        "orario": "19.00",
+        "data": "09.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE B",
+        "squadraA": "FORTITUDO POMEZIA",
+        "squadraB": "CIRCOLO MASTER",
+        "campo": "CAMPO A",
+        "orario": "19.00",
+        "data": "14.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE B",
+        "squadraA": "ECOCITY GENZANO",
+        "squadraB": "CIRCOLO MASTER",
+        "campo": "CAMPO A",
+        "orario": "17.00",
         "data": "17.05.2025",
         "golA": null,
         "golB": null,
