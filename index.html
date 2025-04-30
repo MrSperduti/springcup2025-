@@ -28,16 +28,11 @@
       position: relative;
       z-index: 1;
     }
-    .logos {
-      display: flex;
-      justify-content: center;
-      gap: 20px; /* Space between the logos */
-      margin-bottom: 20px;
-    }
     .logo {
       max-width: 200px;
       width: 100%;
       height: auto;
+      margin-bottom: 20px;
     }
     h1 {
       font-family: 'Orbitron', sans-serif;
@@ -83,15 +78,22 @@
         width: 100%;
       }
     }
+    
+    /* Position the logo below the "Interviste" button */
+    .federation-logo {
+      margin-top: 40px; /* Add margin to position it correctly */
+      width: 120px;
+      max-width: 150px;
+      z-index: 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Logos side by side -->
-    <div class="logos">
-      <img src="logo.png" alt="Logo Spring Cup" class="logo">
-      <img src="converted_logo_federazione.jpg" alt="Logo Federazione ASI" class="logo">
-    </div>
+    <img src="logo.png" alt="Logo Spring Cup" class="logo">
     <h1>SPRING CUP 2025</h1>
     <div class="buttons">
       <a class="btn" href="torneo.html">Torneo</a>
@@ -102,5 +104,8 @@
       <a class="btn" href="interviste.html">Interviste</a>
     </div>
   </div>
+
+  <!-- Position the logo of Federazione below the "Interviste" button -->
+  <img src="converted_logo_federazione.jpg" alt="Logo Federazione ASI" class="federation-logo">
 </body>
 </html>
