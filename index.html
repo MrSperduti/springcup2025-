@@ -29,29 +29,29 @@
       z-index: 1;
     }
     .logo {
-      max-width: 200px;
+      max-width: 150px;
       width: 100%;
       height: auto;
       margin-bottom: 20px;
     }
     h1 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 36px;
+      font-size: 30px;
       color: #ff4c4c;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
     .buttons {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 15px;
       width: 100%;
       justify-content: center;
       align-items: center;
     }
     .btn {
-      padding: 18px 20px;
-      font-size: 20px;
+      padding: 16px 18px;
+      font-size: 18px;
       font-weight: bold;
       border-radius: 14px;
       border: none;
@@ -62,38 +62,42 @@
       transition: transform 0.2s ease, box-shadow 0.3s ease;
       text-align: center;
       width: 80%;
-      max-width: 300px;
+      max-width: 280px;
     }
     .btn:hover {
       transform: scale(1.05);
       box-shadow: 0 6px 18px rgba(0,0,0,0.5);
     }
+    /* Mobile specific */
     @media (max-width: 600px) {
       h1 {
-        font-size: 28px;
+        font-size: 24px;
+        margin-bottom: 20px;
       }
       .btn {
-        font-size: 18px;
-        padding: 16px;
+        font-size: 16px;
+        padding: 14px 16px;
         width: 100%;
       }
-    }
-    
-    /* Position the logo below the "Interviste" button */
-    .federation-logo {
-      margin-top: 40px; /* Add margin to position it correctly */
-      width: 120px;
-      max-width: 150px;
-      z-index: 0;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      .logos {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .federation-logo {
+        width: 100px;
+        max-width: 120px;
+        margin-top: 30px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="logo.png" alt="Logo Spring Cup" class="logo">
+    <!-- Logos side by side -->
+    <div class="logos">
+      <img src="logo.png" alt="Logo Spring Cup" class="logo">
+      <img src="converted_logo_federazione.jpg" alt="Logo Federazione ASI" class="logo">
+    </div>
     <h1>SPRING CUP 2025</h1>
     <div class="buttons">
       <a class="btn" href="torneo.html">Torneo</a>
