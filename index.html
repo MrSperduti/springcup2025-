@@ -17,7 +17,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative; /* Necessario per il posizionamento assoluto del logo */
+      position: relative;
     }
     .container {
       text-align: center;
@@ -81,7 +81,9 @@
       position: absolute;
       bottom: 10px;
       right: 10px;
-      width: 150px;
+      width: 120px; /* Imposta la larghezza del logo */
+      max-width: 150px;
+      z-index: 10; /* Evita sovrapposizioni con altri contenuti */
     }
   </style>
 </head>
@@ -99,7 +101,7 @@
     </div>
   </div>
 
-  <!-- Aggiungi il logo della federazione -->
-  <img src="74b82820-bc1e-45fc-bc7c-8a764a87d06d.png" alt="Logo Federazione ASI" class="federation-logo">
+  <!-- Aggiungi il logo della federazione con il nuovo percorso -->
+  <img src="2d95efc9-81af-4030-b715-df24bc8d257f.png" alt="Logo Federazione ASI" class="federation-logo">
 </body>
 </html>
