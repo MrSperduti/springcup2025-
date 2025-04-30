@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -16,6 +17,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative; /* Necessario per il posizionamento assoluto del logo */
     }
     .container {
       text-align: center;
@@ -41,8 +43,8 @@
       flex-direction: column;
       gap: 20px;
       width: 100%;
-      justify-content: center; /* Centra i bottoni */
-      align-items: center; /* Allinea i bottoni al centro della pagina */
+      justify-content: center;
+      align-items: center;
     }
     .btn {
       padding: 18px 20px;
@@ -56,8 +58,8 @@
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
       transition: transform 0.2s ease, box-shadow 0.3s ease;
       text-align: center;
-      width: 80%; /* Bottoni centrati e con larghezza ottimale su desktop */
-      max-width: 300px; /* Limita la larghezza dei bottoni su desktop */
+      width: 80%;
+      max-width: 300px;
     }
     .btn:hover {
       transform: scale(1.05);
@@ -70,8 +72,16 @@
       .btn {
         font-size: 18px;
         padding: 16px;
-        width: 100%; /* I bottoni occupano tutta la larghezza su mobile */
+        width: 100%;
       }
+    }
+
+    /* Posizionamento del logo della federazione in basso a destra */
+    .federation-logo {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 150px;
     }
   </style>
 </head>
@@ -88,5 +98,8 @@
       <a class="btn" href="interviste.html">Interviste</a>
     </div>
   </div>
+
+  <!-- Aggiungi il logo della federazione -->
+  <img src="74b82820-bc1e-45fc-bc7c-8a764a87d06d.png" alt="Logo Federazione ASI" class="federation-logo">
 </body>
 </html>
