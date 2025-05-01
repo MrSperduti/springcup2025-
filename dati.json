@@ -984,6 +984,38 @@
         "giocatore": "",
         "squadraGiocatore": "",
         "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE A",
+        "girone": "",
+        "squadraA": "1 CLASSIFICATA GIRONE A",
+        "squadraB": "MIGLIORE SECONDA",
+        "campo": "CAMPO B",
+        "orario": "10.00",
+        "data": "31.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "girone": "",
+        "squadraA": "1 CLASSIFICATA GIRONE B",
+        "squadraB": "1 CLASSIFICATA GIRONE C",
+        "campo": "CAMPO A",
+        "orario": "10.00",
+        "data": "31.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       }
     ],
     "finali": [],
