@@ -1,43 +1,56 @@
+
 document.addEventListener("DOMContentLoaded", async () => {
   const categoria = new URLSearchParams(location.search).get("categoria");
   const response = await fetch("dati.json");
   const dati = await response.json();
   const container = document.getElementById("classifica");
 
-  if (!dati[categoria] || !dati[categoria].partite) {
-    container.innerHTML = "<p>Nessuna partita disponibile.</p>";
+  if (!dati[categoria]) {
+    container.innerHTML = "<p>Dati non disponibili per questa categoria.</p>";
     return;
   }
 
-  const partite = dati[categoria].partite;
+  const partite = dati[categoria].partite || [];
+  const gironiData = dati[categoria].gironi || {};
 
   const gironi = {};
 
+  // Inizializza gironi con le squadre presenti
+  Object.keys(gironiData).forEach(g => {
+    gironi[g] = {};
+    gironiData[g].forEach(squadra => {
+      gironi[g][squadra] = {
+        punti: 0, vinte: 0, pareggi: 0, perse: 0, gf: 0, gs: 0
+      };
+    });
+  });
+
+  // Considera solo partite con squadre presenti nei gironi
   partite.forEach(p => {
-    if (!gironi[p.girone]) gironi[p.girone] = {};
+    const { girone, squadraA, squadraB, golA, golB } = p;
+    if (!girone || !gironi[girone]) return; // Salta partite non di gironi
 
-    if (!gironi[p.girone][p.squadraA]) gironi[p.girone][p.squadraA] = { punti: 0, vinte: 0, pareggi: 0, perse: 0, gf: 0, gs: 0 };
-    if (!gironi[p.girone][p.squadraB]) gironi[p.girone][p.squadraB] = { punti: 0, vinte: 0, pareggi: 0, perse: 0, gf: 0, gs: 0 };
+    if (!(squadraA in gironi[girone]) || !(squadraB in gironi[girone])) return;
 
-    if (typeof p.golA === "number" && typeof p.golB === "number") {
-      gironi[p.girone][p.squadraA].gf += p.golA;
-      gironi[p.girone][p.squadraA].gs += p.golB;
-      gironi[p.girone][p.squadraB].gf += p.golB;
-      gironi[p.girone][p.squadraB].gs += p.golA;
+    if (typeof golA === "number" && typeof golB === "number") {
+      gironi[girone][squadraA].gf += golA;
+      gironi[girone][squadraA].gs += golB;
+      gironi[girone][squadraB].gf += golB;
+      gironi[girone][squadraB].gs += golA;
 
-      if (p.golA > p.golB) {
-        gironi[p.girone][p.squadraA].punti += 3;
-        gironi[p.girone][p.squadraA].vinte++;
-        gironi[p.girone][p.squadraB].perse++;
-      } else if (p.golA < p.golB) {
-        gironi[p.girone][p.squadraB].punti += 3;
-        gironi[p.girone][p.squadraB].vinte++;
-        gironi[p.girone][p.squadraA].perse++;
+      if (golA > golB) {
+        gironi[girone][squadraA].punti += 3;
+        gironi[girone][squadraA].vinte++;
+        gironi[girone][squadraB].perse++;
+      } else if (golA < golB) {
+        gironi[girone][squadraB].punti += 3;
+        gironi[girone][squadraB].vinte++;
+        gironi[girone][squadraA].perse++;
       } else {
-        gironi[p.girone][p.squadraA].punti += 1;
-        gironi[p.girone][p.squadraB].punti += 1;
-        gironi[p.girone][p.squadraA].pareggi++;
-        gironi[p.girone][p.squadraB].pareggi++;
+        gironi[girone][squadraA].punti += 1;
+        gironi[girone][squadraB].punti += 1;
+        gironi[girone][squadraA].pareggi++;
+        gironi[girone][squadraB].pareggi++;
       }
     }
   });
