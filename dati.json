@@ -1,4 +1,1872 @@
-  "rose": {
+{
+  "Under 17": {
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY",
+        "NEW TEAM",
+        "ARDEA"
+      ],
+      "GIRONE B": [
+        "FORTITUDO POMEZIA",
+        "CIRCOLO MASTER",
+        "VELLETRI"
+      ]
+    },
+    "partite": [
+      {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "ARDEA",
+        "campo": "CAMPO A",
+        "orario": "19.00",
+        "data": "09.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE A",
+        "squadraA": "ARDEA",
+        "squadraB": "NEW TEAM",
+        "campo": "CAMPO B ",
+        "orario": "19.00",
+        "data": "14.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "NEW TEAM",
+        "campo": "CAMPO A",
+        "orario": "19.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE B",
+        "squadraA": "FORTITUDO POMEZIA",
+        "squadraB": "VELLETRI",
+        "campo": "CAMPO B",
+        "orario": "19.00",
+        "data": "09.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE B",
+        "squadraA": "FORTITUDO POMEZIA",
+        "squadraB": "CIRCOLO MASTER",
+        "campo": "CAMPO A",
+        "orario": "19.00",
+        "data": "14.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE B",
+        "squadraA": "VELLETRI",
+        "squadraB": "CIRCOLO MASTER",
+        "campo": "CAMPO A",
+        "orario": "17.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE A",
+        "girone": "",
+        "squadraA": "PRIMA GIRONE A ",
+        "squadraB": "SECONDA GIRONE B",
+        "campo": "",
+        "orario": "",
+        "data": "",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "girone": "",
+        "squadraA": "PRIMA GIRONE B",
+        "squadraB": "SECONDA GIRONE A",
+        "campo": "",
+        "orario": "",
+        "data": "",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      }
+    ],
+    "finali": [],
+    "rose": {
+      "ACADEMY": [
+        {
+          "cognome": "CAVAGNOLI",
+          "nome": "CIRO",
+          "nascita": "04.05.2008"
+        },
+        {
+          "cognome": "GOBBI",
+          "nome": "ALESSANDRO",
+          "nascita": "21.08.2008"
+        },
+        {
+          "cognome": "IANCU",
+          "nome": "CRISTIAN",
+          "nascita": "09.05.2008"
+        },
+        {
+          "cognome": "MEROLA",
+          "nome": "MATTEO",
+          "nascita": "18.03.2008"
+        },
+        {
+          "cognome": "PASSARO",
+          "nome": "SIMONE",
+          "nascita": "29.02.2008"
+        },
+        {
+          "cognome": "MELIADO' ",
+          "nome": "GIOVANNI",
+          "nascita": "14.11.2009"
+        },
+        {
+          "cognome": "COLICINO",
+          "nome": "LUCIANO",
+          "nascita": "10.02.2009"
+        },
+        {
+          "cognome": "LUPO",
+          "nome": "DIEGO",
+          "nascita": "23.06.2009"
+        },
+        {
+          "cognome": "TABACILA",
+          "nome": "VALENTIN DAVIDE",
+          "nascita": "21.11.2009"
+        },
+        {
+          "cognome": "TURCO",
+          "nome": "GIUSEPPE",
+          "nascita": "28.03.2008"
+        },
+        {
+          "cognome": "SUSIN",
+          "nome": "FRANCESCO",
+          "nascita": "30.07.2009"
+        },
+        {
+          "cognome": "COCHI",
+          "nome": "MASSIMO",
+          "nascita": "05.07.2008"
+        },
+        {
+          "cognome": "CRISPI",
+          "nome": "CHRISTIAN",
+          "nascita": "03.04.2011"
+        },
+        {
+          "cognome": "MIRRA",
+          "nome": "ALESSANDRO",
+          "nascita": "22.03.2011"
+        }
+      ],
+      "NEW TEAM": [
+        {
+          "cognome": "ARTENE",
+          "nome": "ALESSANDRU GABRIEL",
+          "nascita": "05.02.2009"
+        },
+        {
+          "cognome": "BERARDINELLI",
+          "nome": "LORENZO",
+          "nascita": "15.04.2008"
+        },
+        {
+          "cognome": "CARDINALI",
+          "nome": "FLAVIO",
+          "nascita": "21.06.2009"
+        },
+        {
+          "cognome": "D'ANTONI",
+          "nome": "DAVIDE",
+          "nascita": "07.11.2010"
+        },
+        {
+          "cognome": "D'ANTONI",
+          "nome": "EMANUELE",
+          "nascita": "29.08.2009"
+        },
+        {
+          "cognome": "KEZYK",
+          "nome": "VOLODYMYR",
+          "nascita": "09.05.2009"
+        },
+        {
+          "cognome": "MAVIGLIA",
+          "nome": "LORENZO",
+          "nascita": "30.06.2009"
+        },
+        {
+          "cognome": "MAZZOCCA",
+          "nome": "FRANCESCO",
+          "nascita": "17.10.2009"
+        },
+        {
+          "cognome": "ROSSETTI",
+          "nome": "DAVIDE",
+          "nascita": "01.09.2009"
+        },
+        {
+          "cognome": "SAN WOO MENDEZ",
+          "nome": "MARCELLO GIANLUCA",
+          "nascita": "25.02.2008"
+        },
+        {
+          "cognome": "SORICETTI",
+          "nome": "EDOARDO",
+          "nascita": "17.06.2009"
+        },
+        {
+          "cognome": "TRENTA",
+          "nome": "ALESSANDRO",
+          "nascita": "18.11.2009"
+        }
+      ],
+      "CIRCOLO MASTER": [
+        {
+          "cognome": "MAIER",
+          "nome": "ALESSIO MATTIA",
+          "nascita": "23.05.2008"
+        },
+        {
+          "cognome": "CASCI",
+          "nome": "DANIELE",
+          "nascita": "19.03.2009"
+        },
+        {
+          "cognome": "CUOMO",
+          "nome": "FEDERICO",
+          "nascita": "01.11.2008"
+        },
+        {
+          "cognome": "CERILLI",
+          "nome": "VALERIO",
+          "nascita": "03.12.2008"
+        },
+        {
+          "cognome": "MUSTO",
+          "nome": "DAMIANO",
+          "nascita": "06.10.2008"
+        },
+        {
+          "cognome": "MAURIZI",
+          "nome": "VALERIO",
+          "nascita": "19.06.2009"
+        },
+        {
+          "cognome": "LOMBARDI",
+          "nome": "CRISTIANO",
+          "nascita": "06.10.2009"
+        },
+        {
+          "cognome": "CERILLI",
+          "nome": "FRANCESCO",
+          "nascita": "03.12.2008"
+        },
+        {
+          "cognome": "PROTO",
+          "nome": "MATTEO",
+          "nascita": "18.09.2009"
+        },
+        {
+          "cognome": "DI GIUSEPPE",
+          "nome": "GIOVANNI",
+          "nascita": "27.07.2008"
+        },
+        {
+          "cognome": "ANNIBALLI",
+          "nome": "DAVIDE",
+          "nascita": "15.06.2009"
+        },
+        {
+          "cognome": "MIOTTO",
+          "nome": "CHRISTIAN",
+          "nascita": "27.02.2010"
+        }
+      ],
+      "FORTITUDO POMEZIA": [
+        {
+          "cognome": "IMPERI",
+          "nome": "DIEGO",
+          "nascita": "26.06.2008"
+        },
+        {
+          "cognome": "DE MAURI ",
+          "nome": "RICCARDO",
+          "nascita": "25.02.2008"
+        },
+        {
+          "cognome": "FORTINI",
+          "nome": "GABRIEL",
+          "nascita": "15.07.2008"
+        },
+        {
+          "cognome": "KRCISTA",
+          "nome": "JASIN",
+          "nascita": "22.01.2008"
+        },
+        {
+          "cognome": "MAENZA",
+          "nome": "TIZIANO",
+          "nascita": "19.12.2009"
+        },
+        {
+          "cognome": "MAGLIONE",
+          "nome": "MATTEO",
+          "nascita": "12.12.2008"
+        },
+        {
+          "cognome": "NOZZI",
+          "nome": "LORENZO",
+          "nascita": "22.08.2008"
+        },
+        {
+          "cognome": "PARENTE",
+          "nome": "CRISTIAN",
+          "nascita": "15.09.2008"
+        },
+        {
+          "cognome": "COMEDINI",
+          "nome": "VALERIO",
+          "nascita": "20.09.2008"
+        },
+        {
+          "cognome": "VALLONE",
+          "nome": "FRANCESCO",
+          "nascita": "10.01.2008"
+        },
+        {
+          "cognome": "DE STEFANIS",
+          "nome": "DANIEL",
+          "nascita": "30.12.2009"
+        },
+        {
+          "cognome": "CAPPIELLO",
+          "nome": "GABRIEL",
+          "nascita": "27.05.2008"
+        },
+        {
+          "cognome": "CHHIBI",
+          "nome": "KARIM",
+          "nascita": "11.02.2008"
+        },
+        {
+          "cognome": "ABATE",
+          "nome": "MATTEO",
+          "nascita": "13.01.2009"
+        },
+        {
+          "cognome": "VIVARELLI",
+          "nome": "DANIELE",
+          "nascita": "28.11.2009"
+        },
+        {
+          "cognome": "PANNUNZIO",
+          "nome": "RICCARDO",
+          "nascita": "15.06.2009"
+        },
+        {
+          "cognome": "NOCELLA",
+          "nome": "MATTIA",
+          "nascita": "08.06.2009"
+        },
+        {
+          "cognome": "MENGOZZI",
+          "nome": "EMANUELE",
+          "nascita": "2009"
+        },
+        {
+          "cognome": "ROMAGNOLI ",
+          "nome": "SIMONE",
+          "nascita": "2009"
+        },
+        {
+          "cognome": "SONNINO",
+          "nome": "ALESSIO",
+          "nascita": "2009"
+        },
+        {
+          "cognome": "MANZO",
+          "nome": "DANIELE",
+          "nascita": "2009"
+        },
+        {
+          "cognome": "DI LAURA",
+          "nome": "RICCARDO",
+          "nascita": "2009"
+        },
+        {
+          "cognome": "RONDINELLI",
+          "nome": "FRANCESCO",
+          "nascita": "2009"
+        },
+        {
+          "cognome": "LERCARA",
+          "nome": "LORENZO",
+          "nascita": "2009"
+        }
+      ],
+      "ARDEA": [
+        {
+          "cognome": "PIASCO",
+          "nome": "VALERIO",
+          "nascita": "27.03.2009"
+        },
+        {
+          "cognome": "D'AMARIO",
+          "nome": "CHRISTIAN",
+          "nascita": "15.06.2008"
+        },
+        {
+          "cognome": "BAGLIONI",
+          "nome": "ALESSIO",
+          "nascita": "10.11.2009"
+        },
+        {
+          "cognome": "BARCHIESI",
+          "nome": "ANDREA",
+          "nascita": "29.09.2008"
+        },
+        {
+          "cognome": "BOCCOLINI",
+          "nome": "GABRIELE",
+          "nascita": "14.02.2008"
+        },
+        {
+          "cognome": "DELLA VOLPE",
+          "nome": "FEDERICO",
+          "nascita": "11.10.2009"
+        },
+        {
+          "cognome": "ESPOSITO",
+          "nome": "SIMONE",
+          "nascita": "03.05.2009"
+        },
+        {
+          "cognome": "FOFI",
+          "nome": "DANIELE",
+          "nascita": "10.07.2009"
+        },
+        {
+          "cognome": "IMBESI",
+          "nome": "VALERIO",
+          "nascita": "06.04.2009"
+        },
+        {
+          "cognome": "MAGGI",
+          "nome": "LORENZO",
+          "nascita": "11.03.2008"
+        },
+        {
+          "cognome": "ORSINI",
+          "nome": "FRANCESCO",
+          "nascita": "19.05.2009"
+        },
+        {
+          "cognome": "SEGATA",
+          "nome": "ALESSIO",
+          "nascita": "24.05.2008"
+        },
+        {
+          "cognome": "MAZZILLO",
+          "nome": "MATTEO",
+          "nascita": "2009"
+        },
+        {
+          "cognome": "DI CUNTO",
+          "nome": "MATTEO",
+          "nascita": "2009"
+        }
+      ]
+    }
+  },
+  "Under 15": {
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY",
+        "VELLETRI",
+        "S.PIETRO E PAOLO"
+      ],
+      "GIRONE B": [
+        "REAL CIAMPINO",
+        "ECOCITY GENZANO",
+        "FORTITUDO POMEZIA"
+      ],
+      "GIRONE C": [
+        "NEW TEAM",
+        "S.GIOVANNI EVANGELISTA",
+        "CIRCOLO MASTER"
+      ]
+    },
+    "partite": [
+      {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "VELLETRI",
+        "campo": "CAMPO A",
+        "orario": "16.00",
+        "data": "10.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE B",
+        "squadraA": "REAL CIAMPINO",
+        "squadraB": "ECOCITY GENZANO",
+        "campo": "CAMPO A",
+        "orario": "15.00",
+        "data": "10.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE C",
+        "squadraA": "NEW TEAM",
+        "squadraB": "S.GIOVANNI EVANGELISTA",
+        "campo": "CAMPO B",
+        "orario": "15.00",
+        "data": "10.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE A",
+        "squadraA": "S.PIETRO E PAOLO",
+        "squadraB": "VELLETRI",
+        "campo": "CAMPO B",
+        "orario": "15.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE B",
+        "squadraA": "ECOCITY GENZANO",
+        "squadraB": "FORTITUDO POMEZIA",
+        "campo": "CAMPO A",
+        "orario": "15.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE C",
+        "squadraA": "S.GIOVANNI EVANGELISTA",
+        "squadraB": "CIRCOLO MASTER",
+        "campo": "CAMPO B",
+        "orario": "16.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY",
+        "squadraB": "S.PIETRO E PAOLO",
+        "campo": "CAMPO A",
+        "orario": "18.30",
+        "data": "23.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE B",
+        "squadraA": "REAL CIAMPINO",
+        "squadraB": "FORTITUDO POMEZIA",
+        "campo": "CAMPO A",
+        "orario": "15.00",
+        "data": "24.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE C",
+        "squadraA": "NEW TEAM",
+        "squadraB": "CIRCOLO MASTER",
+        "campo": "CAMPO B",
+        "orario": "15.00",
+        "data": "24.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      }
+    ],
+    "finali": [],
+    "rose": {
+      "S.PIETRO E PAOLO": [
+        {
+          "cognome": "CAPOMAGI",
+          "nome": "MANUEL",
+          "nascita": "18.02.2013"
+        },
+        {
+          "cognome": "CLAZZER",
+          "nome": "DAVIDE",
+          "nascita": "29.05.2012"
+        },
+        {
+          "cognome": "BARTOLAMEOTTI",
+          "nome": "MARKO",
+          "nascita": "22.05.2010"
+        },
+        {
+          "cognome": "GALASSO",
+          "nome": "CRISTIAN",
+          "nascita": "08.12.2011"
+        },
+        {
+          "cognome": "SEGANTINI",
+          "nome": "LORENZO",
+          "nascita": "07.08.2010"
+        },
+        {
+          "cognome": "FRANCHI",
+          "nome": "MATTEO",
+          "nascita": "27.01.2010"
+        },
+        {
+          "cognome": "DI MICCO",
+          "nome": "PAOLO GIOVANNI",
+          "nascita": "11.10.2010"
+        },
+        {
+          "cognome": "SANTORO",
+          "nome": "ANDREA",
+          "nascita": "03.08.2011"
+        },
+        {
+          "cognome": "MASULLO",
+          "nome": "ALDO JUNIOR",
+          "nascita": "22.10.2011"
+        },
+        {
+          "cognome": "FESTA",
+          "nome": "ANDREA RAIMONDO",
+          "nascita": "14.09.2011"
+        }
+      ],
+      "ACADEMY": [
+        {
+          "cognome": "PALAZZOLO",
+          "nome": "SIMONE",
+          "nascita": "05.10.2010"
+        },
+        {
+          "cognome": "GAMBELLINI",
+          "nome": "CRISTIAN",
+          "nascita": "28.07.2010"
+        },
+        {
+          "cognome": "REGNO",
+          "nome": "MATTEO",
+          "nascita": "15.12.2010"
+        },
+        {
+          "cognome": "BASOC",
+          "nome": "DANIELE",
+          "nascita": "30.05.2010"
+        },
+        {
+          "cognome": "QUADROTTA",
+          "nome": "FLAVIO",
+          "nascita": "12.08.2011"
+        },
+        {
+          "cognome": "VARDARO",
+          "nome": "NYKOLAS",
+          "nascita": "05.03.2010"
+        },
+        {
+          "cognome": "TORRONI",
+          "nome": "MIRO'",
+          "nascita": "11.02.2010"
+        },
+        {
+          "cognome": "LAURI",
+          "nome": "DIEGO",
+          "nascita": "7.02.2011"
+        },
+        {
+          "cognome": "LELI",
+          "nome": "SIMONE",
+          "nascita": "15.01.2011"
+        },
+        {
+          "cognome": "ROMANO",
+          "nome": "DOMENICO",
+          "nascita": "17.08.2010"
+        },
+        {
+          "cognome": "LONGO",
+          "nome": "RICCARDO",
+          "nascita": "07.07.2011"
+        },
+        {
+          "cognome": "CAMPIONI",
+          "nome": "GIAMMARCO",
+          "nascita": "17.07.2010"
+        },
+        {
+          "cognome": "CANTATORE",
+          "nome": "GIORDANO",
+          "nascita": "07.04.2010"
+        },
+        {
+          "cognome": "CRISPI",
+          "nome": "CHRISTIAN",
+          "nascita": "03.04.2011"
+        },
+        {
+          "cognome": "MIRRA",
+          "nome": "ALESSANDRO",
+          "nascita": "22.03.2011"
+        },
+        {
+          "cognome": "TONDINELLI",
+          "nome": "PAOLO",
+          "nascita": "16.08.2010"
+        },
+        {
+          "cognome": "BUSACCA",
+          "nome": "MANUEL",
+          "nascita": "29.05.2010"
+        },
+        {
+          "cognome": "VESCOVO",
+          "nome": "LORENZO",
+          "nascita": "17.01.2011"
+        },
+        {
+          "cognome": "CLATEA",
+          "nome": "EDUARD RICCARDO",
+          "nascita": "25.03.2010"
+        }
+      ],
+      "NEW TEAM": [
+        {
+          "cognome": "BUCCI",
+          "nome": "SIMONE",
+          "nascita": "27.10.2010"
+        },
+        {
+          "cognome": "CARDILLO",
+          "nome": "SERGIO",
+          "nascita": "30.07.2010"
+        },
+        {
+          "cognome": "CECCARELLI",
+          "nome": "FEDERICO",
+          "nascita": "03.09.2010"
+        },
+        {
+          "cognome": "CESARINI",
+          "nome": "MATTIA",
+          "nascita": "16.03.2010"
+        },
+        {
+          "cognome": "COLASANTI",
+          "nome": "ALESSIO",
+          "nascita": "19.09.2010"
+        },
+        {
+          "cognome": "DEL DUCA",
+          "nome": "ALESSIO",
+          "nascita": "21.04.2010"
+        },
+        {
+          "cognome": "GIOVINAZZO",
+          "nome": "CHRISTIAN",
+          "nascita": "09.12.2011"
+        },
+        {
+          "cognome": "MOTTOLA",
+          "nome": "ANGELO",
+          "nascita": "20.05.2010"
+        },
+        {
+          "cognome": "TALAMO",
+          "nome": "FRANCESCO",
+          "nascita": "10.05.2011"
+        },
+        {
+          "cognome": "LANZINI",
+          "nome": "LEONARDO",
+          "nascita": "10.11.2012"
+        }
+      ],
+      "CIRCOLO MASTER": [
+        {
+          "cognome": "MONTEIRO D CRUZ",
+          "nome": "FRANCESCO",
+          "nascita": "12.11.2010"
+        },
+        {
+          "cognome": "MIOTTO",
+          "nome": "CHRISTIAN",
+          "nascita": "27.02.2010"
+        },
+        {
+          "cognome": "CORBO",
+          "nome": "SIMONE",
+          "nascita": "02.01.2010"
+        },
+        {
+          "cognome": "SALEMI",
+          "nome": "GIOVANNI",
+          "nascita": "13.08.2010"
+        },
+        {
+          "cognome": "SURDU",
+          "nome": "EDUARD",
+          "nascita": "28.05.2010"
+        },
+        {
+          "cognome": "SACCO",
+          "nome": "LUIGI",
+          "nascita": "26.11.2010"
+        },
+        {
+          "cognome": "FANTINI",
+          "nome": "FRANCESCO",
+          "nascita": "15.12.2010"
+        },
+        {
+          "cognome": "GIORDANO",
+          "nome": "LUKAS",
+          "nascita": "24.05.2011"
+        },
+        {
+          "cognome": "TAORMINA",
+          "nome": "CHRISTIAN",
+          "nascita": "27.09.2011"
+        },
+        {
+          "cognome": "SHALA",
+          "nome": "EMIR",
+          "nascita": "14.06.2012"
+        }
+      ],
+      "FORTITUDO POMEZIA": [
+        {
+          "cognome": "AELENEI LAU",
+          "nome": "ERIC MIHAI",
+          "nascita": "18.01.2011"
+        },
+        {
+          "cognome": "BARATTA",
+          "nome": "MARCO",
+          "nascita": "15.06.2011"
+        },
+        {
+          "cognome": "BINZARU",
+          "nome": "MATTEO",
+          "nascita": "12.12.2011"
+        },
+        {
+          "cognome": "CRESCIMBENE",
+          "nome": "FLAVIO",
+          "nascita": "17.11.2010"
+        },
+        {
+          "cognome": "D'AMORE ",
+          "nome": "BASILIO",
+          "nascita": "05.08.2011"
+        },
+        {
+          "cognome": "FANASCA",
+          "nome": "RICCARDO",
+          "nascita": "11.01.2011"
+        },
+        {
+          "cognome": "INCITTI",
+          "nome": "ALESSIO",
+          "nascita": "03.04.2010"
+        },
+        {
+          "cognome": "MASCARO",
+          "nome": "DAVIDE",
+          "nascita": "26.08.2011"
+        },
+        {
+          "cognome": "MASSIMIANI",
+          "nome": "GABRIEL",
+          "nascita": "04.12.2010"
+        },
+        {
+          "cognome": "MAZZAROPPI",
+          "nome": "CHRISTIAN",
+          "nascita": "05.06.2010"
+        },
+        {
+          "cognome": "PETRISOR",
+          "nome": "DIEGO NICOLAS",
+          "nascita": "02.03.2010"
+        },
+        {
+          "cognome": "PORTALE",
+          "nome": "RICCARDO",
+          "nascita": "23.03.2010"
+        },
+        {
+          "cognome": "VECCHIARELLI",
+          "nome": "FILIPPO",
+          "nascita": "29.01.2012"
+        },
+        {
+          "cognome": "BAROCCI",
+          "nome": "DANIELE",
+          "nascita": "2010"
+        },
+        {
+          "cognome": "MARTINELLI",
+          "nome": "NICOLO'",
+          "nascita": "2010"
+        },
+        {
+          "cognome": "FALCONIERI",
+          "nome": "FEDERICO",
+          "nascita": "2010"
+        }
+      ],
+      "S.GIOVANNI EVANGELISTA": [
+        {
+          "cognome": "BONO",
+          "nome": "EMANUELE",
+          "nascita": "15.03.2010"
+        },
+        {
+          "cognome": "BOSCA ",
+          "nome": "FRANCECSO",
+          "nascita": "05.04.2011"
+        },
+        {
+          "cognome": "CALIFANO",
+          "nome": "FRANCESCO",
+          "nascita": "10.02.2010"
+        },
+        {
+          "cognome": "CITRINITI",
+          "nome": "MARCO",
+          "nascita": "03.01.2012"
+        },
+        {
+          "cognome": "D'AGOSTINO",
+          "nome": "MIRKO",
+          "nascita": "05.08.2010"
+        },
+        {
+          "cognome": "DE MEO",
+          "nome": "MICHELANGELO",
+          "nascita": "12.07.2009"
+        },
+        {
+          "cognome": "FRANCESCO",
+          "nome": "MARTINO",
+          "nascita": "09.08.2009"
+        },
+        {
+          "cognome": "PALUMBO",
+          "nome": "MATTEO",
+          "nascita": "14.11.2011"
+        },
+        {
+          "cognome": "SICILIANO",
+          "nome": "FLAVIO",
+          "nascita": "23.05.2011"
+        }
+      ]
+    }
+  },
+  "Under 13": {
+    "gironi": {
+      "GIRONE B": [
+        "ACADEMY BLU",
+        "S.PIETRO E PAOLO BLU",
+        "LATINA C5"
+      ],
+      "GIRONE C": [
+        "FORTITUDO POMEZIA",
+        "ANZIO C5",
+        "MARINO ACADEMY"
+      ],
+      "GIRONE A": [
+        "ACADEMY ROSSA",
+        "S.PIETRO E PAOLO ROSSA",
+        "NEW TEAM",
+        "VELLETRI"
+      ]
+    },
+    "partite": [
+      {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY ROSSA",
+        "squadraB": "S.PIETRO E PAOLO ROSSA",
+        "campo": "CAMPO A",
+        "orario": "10.00",
+        "data": "11.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE B",
+        "squadraA": "ACADEMY BLU",
+        "squadraB": "S.PIETRO E PAOLO BLU",
+        "campo": "CAMPO B",
+        "orario": "10.00",
+        "data": "10.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE C",
+        "squadraA": "ANZIO C5",
+        "squadraB": "MARINO ACADEMY",
+        "campo": "CAMPO A",
+        "orario": "11.00",
+        "data": "10.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY ROSSA",
+        "squadraB": "NEW TEAM",
+        "campo": "CAMPO B",
+        "orario": "10.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE B",
+        "squadraA": "ACADEMY BLU",
+        "squadraB": "LATINA C5",
+        "campo": "CAMPO A",
+        "orario": "10.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE C",
+        "squadraA": "FORTITUDO POMEZIA",
+        "squadraB": "ANZIO C5",
+        "campo": "CAMPO A",
+        "orario": "11.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE A",
+        "squadraA": "NEW TEAM",
+        "squadraB": "S.PIETRO E PAOLO",
+        "campo": "CAMPO A",
+        "orario": "10.00",
+        "data": "24.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE B",
+        "squadraA": "S.PIETRO E PAOLO",
+        "squadraB": "LATINA C5",
+        "campo": "CAMPO B",
+        "orario": "10.00",
+        "data": "24.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE C",
+        "squadraA": "FORTITUDO POMEZIA",
+        "squadraB": "MARINO ACADEMY",
+        "campo": "CAMPO B",
+        "orario": "11.00",
+        "data": "24.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE A",
+        "girone": "",
+        "squadraA": "1 CLASSIFICATA GIRONE A",
+        "squadraB": "1 CLASSIFICATA GIRONE A/B",
+        "campo": "CAMPO B",
+        "orario": "10.00",
+        "data": "31.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "girone": "",
+        "squadraA": "MIGLIORE PRIMA GIRONE B/C",
+        "squadraB": "2 CLASSIFICATA GIRONE A",
+        "campo": "CAMPO A",
+        "orario": "10.00",
+        "data": "31.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "NEW TEAM",
+        "squadraB": "VELLETRI",
+        "campo": "CAMPO B",
+        "orario": "11.00",
+        "data": "10.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE A",
+        "squadraA": "S.PIETRO E PAOLO ROSSA",
+        "squadraB": "VELLETRI",
+        "campo": "CAMPO B",
+        "orario": "11.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY ROSSA",
+        "squadraB": "VELLETRI",
+        "campo": "CAMPO A",
+        "orario": "11.00",
+        "data": "24.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      }
+    ],
+    "finali": [],
+    "rose": {
+      "ACADEMY ROSSA": [
+        {
+          "cognome": "SPERDUTI",
+          "nome": "NICOLAS",
+          "nascita": "19.11.2014"
+        },
+        {
+          "cognome": "BARBARESCHI",
+          "nome": "MATTIA",
+          "nascita": "29.07.2013"
+        },
+        {
+          "cognome": "MIRRA",
+          "nome": "LORENZO",
+          "nascita": "11.06.2014"
+        },
+        {
+          "cognome": "GENOVESE",
+          "nome": "LEONARDO",
+          "nascita": "25.05.2014"
+        },
+        {
+          "cognome": "MADDALONI",
+          "nome": "FLAVIO",
+          "nascita": "28.03.2014"
+        },
+        {
+          "cognome": "OBERMAIER",
+          "nome": "DANIELE",
+          "nascita": "04.11.2013"
+        },
+        {
+          "cognome": "ULISSE",
+          "nome": "MATTIA",
+          "nascita": "06.12.2012"
+        },
+        {
+          "cognome": "COTUGNO",
+          "nome": "MATTEO",
+          "nascita": "12.08.2012"
+        },
+        {
+          "cognome": "PIACENTI",
+          "nome": "CRISTIAN",
+          "nascita": "01.12.2012"
+        },
+        {
+          "cognome": "CAPOGRECO",
+          "nome": "MATTEO",
+          "nascita": "24.07.2012"
+        },
+        {
+          "cognome": "PICCINI",
+          "nome": "GABRIELE",
+          "nascita": "12.10.2013"
+        }
+      ],
+      "MARINO ACADEMY": [
+        {
+          "cognome": "CERVINI",
+          "nome": "ALESSIO",
+          "nascita": "10.11.2012"
+        },
+        {
+          "cognome": "COLLARINI",
+          "nome": "FRANCESCO",
+          "nascita": "10.10.2013"
+        },
+        {
+          "cognome": "DI STEFANO",
+          "nome": "NICOLO'",
+          "nascita": "31.10.2012"
+        },
+        {
+          "cognome": "GILIBERTI",
+          "nome": "DIEGO",
+          "nascita": "26.01.2012"
+        },
+        {
+          "cognome": "ERAMO",
+          "nome": "MICHAEL",
+          "nascita": "05.01.2012"
+        },
+        {
+          "cognome": "AMBROSI",
+          "nome": "DOMIZIANO",
+          "nascita": "20.05.2013"
+        },
+        {
+          "cognome": "PERSICONE",
+          "nome": "SAMUEL",
+          "nascita": "10.01.2012"
+        },
+        {
+          "cognome": "TEMPERINI",
+          "nome": "SAMUEL",
+          "nascita": "05.12.2012"
+        },
+        {
+          "cognome": "TERSIGNI",
+          "nome": "RICCARDO",
+          "nascita": "27.04.2012"
+        }
+      ],
+      "NEW TEAM": [
+        {
+          "cognome": "BADARACCHI",
+          "nome": "LORENZO",
+          "nascita": "28.10.2013"
+        },
+        {
+          "cognome": "FABRIZIO",
+          "nome": "LUCA",
+          "nascita": "11.10.2012"
+        },
+        {
+          "cognome": "FOLLEGA",
+          "nome": "MANUEL",
+          "nascita": "16.11.2012"
+        },
+        {
+          "cognome": "FONTANA",
+          "nome": "FRANCESCO",
+          "nascita": "19.10.2012"
+        },
+        {
+          "cognome": "LADOGANA",
+          "nome": "CRISTIAN",
+          "nascita": "04.10.2012"
+        },
+        {
+          "cognome": "LEONARDI",
+          "nome": "TIZIANO",
+          "nascita": "02.03.2013"
+        },
+        {
+          "cognome": "MAZZOCCA",
+          "nome": "TOMMASO",
+          "nascita": "29.07.2013"
+        },
+        {
+          "cognome": "MIGLIETTA",
+          "nome": "MATTEO",
+          "nascita": "27.12.2012"
+        },
+        {
+          "cognome": "PATRIZI",
+          "nome": "SAMUELE",
+          "nascita": "22.06.2012"
+        },
+        {
+          "cognome": "SORICETTI",
+          "nome": "TOMMASO",
+          "nascita": "31.07.2012"
+        },
+        {
+          "cognome": "TALARICO",
+          "nome": "MATTEO",
+          "nascita": "01.09.2013"
+        },
+        {
+          "cognome": "TEDESCHI",
+          "nome": "ANDREA",
+          "nascita": "01.01.2015"
+        },
+        {
+          "cognome": "TENACE",
+          "nome": "EMANUELE",
+          "nascita": "03.04.2012"
+        },
+        {
+          "cognome": "TOSI",
+          "nome": "FRANCESCO",
+          "nascita": "04.01.2012"
+        },
+        {
+          "cognome": "TRENTA",
+          "nome": "GABRIELE",
+          "nascita": "19.02.2013"
+        },
+        {
+          "cognome": "VALSECCHI",
+          "nome": "SIMONE",
+          "nascita": "03.11.2012"
+        }
+      ],
+      "S.PIETRO E PAOLO BLU": [
+        {
+          "cognome": "DI FONZA ",
+          "nome": "MARCO",
+          "nascita": "18.07.2012"
+        },
+        {
+          "cognome": "FERRO",
+          "nome": "ALESSANDRO",
+          "nascita": "18.07.2012"
+        },
+        {
+          "cognome": "MAZZONI ",
+          "nome": "ROBERTO",
+          "nascita": "11.10.2012"
+        },
+        {
+          "cognome": "PAPA",
+          "nome": "GIUSEPPE",
+          "nascita": "18.10.2012"
+        },
+        {
+          "cognome": "SCHIAVONE",
+          "nome": "DAVIDE",
+          "nascita": "28.04.2012"
+        },
+        {
+          "cognome": "D'IPPOLITO",
+          "nome": "FRANCESCO",
+          "nascita": "19.02.2012"
+        },
+        {
+          "cognome": "IFTIME",
+          "nome": "CRISTIAN IONUT",
+          "nascita": "24.12.2012"
+        },
+        {
+          "cognome": "PAGLIA",
+          "nome": "CHRISTOPHER",
+          "nascita": "03.07.2013"
+        },
+        {
+          "cognome": "PASQUINI",
+          "nome": "DAVIDE",
+          "nascita": "12.05.2012"
+        },
+        {
+          "cognome": "BIANCHINI",
+          "nome": "JURI",
+          "nascita": "14.10.2013"
+        }
+      ],
+      "FORTITUDO POMEZIA": [
+        {
+          "cognome": "AURELI",
+          "nome": "ASCANIO",
+          "nascita": "20.09.2012"
+        },
+        {
+          "cognome": "BONDILA",
+          "nome": "LEONARDO GABRIEL",
+          "nascita": "31.07.2013"
+        },
+        {
+          "cognome": "CADONI",
+          "nome": "LORENZO",
+          "nascita": "02.04.2013"
+        },
+        {
+          "cognome": "CANGIANELLO",
+          "nome": "DANIELE",
+          "nascita": "12.06.2013"
+        },
+        {
+          "cognome": "CARRIERO",
+          "nome": "DONATO",
+          "nascita": "30.10.2013"
+        },
+        {
+          "cognome": "CELOTTI",
+          "nome": "DENNIS",
+          "nascita": "23.05.2012"
+        },
+        {
+          "cognome": "CERRINI",
+          "nome": "PIERGIORGIO",
+          "nascita": "27.11.2012"
+        },
+        {
+          "cognome": "DE GASPERI",
+          "nome": "NICOLO'",
+          "nascita": "18.02.2013"
+        },
+        {
+          "cognome": "DELLA TORRE",
+          "nome": "FLAVIO",
+          "nascita": "20.09.2012"
+        },
+        {
+          "cognome": "ERDI",
+          "nome": "FLAVIO",
+          "nascita": "29.03.2012"
+        },
+        {
+          "cognome": "LANNI",
+          "nome": "MICHELE",
+          "nascita": "27.10.2012"
+        },
+        {
+          "cognome": "MAENZA",
+          "nome": "DANIEL",
+          "nascita": "09.05.2013"
+        },
+        {
+          "cognome": "MANCINI",
+          "nome": "VALERIO",
+          "nascita": "27.11.2012"
+        },
+        {
+          "cognome": "PALUMBO",
+          "nome": "FRANCESCO",
+          "nascita": "26.11.2013"
+        },
+        {
+          "cognome": "PASSARETTI",
+          "nome": "FILIPPO",
+          "nascita": "13.11.2012"
+        },
+        {
+          "cognome": "PIRODDI",
+          "nome": "NICOLO'",
+          "nascita": "02.02.2012"
+        },
+        {
+          "cognome": "PRELDAKAJ",
+          "nome": "GABRIEL",
+          "nascita": "19.07.2013"
+        },
+        {
+          "cognome": "TERMINI",
+          "nome": "VALERIO",
+          "nascita": "18.07.2013"
+        }
+      ],
+      "S.PIETRO E PAOLO ROSSA": [
+        {
+          "cognome": "CAMPANELLA",
+          "nome": "FRANCESCO",
+          "nascita": "01.03.2013"
+        },
+        {
+          "cognome": "CARUSO",
+          "nome": "CLAUDIO",
+          "nascita": "17.03.2013"
+        },
+        {
+          "cognome": "CASTELPIETRA ",
+          "nome": "ANDREA",
+          "nascita": "18.11.2013"
+        },
+        {
+          "cognome": "CIOFFI",
+          "nome": "LORENZO",
+          "nascita": "14.08.2013"
+        },
+        {
+          "cognome": "DI RIENZO",
+          "nome": "ANDREA",
+          "nascita": "11.12.2013"
+        },
+        {
+          "cognome": "LUCIANI",
+          "nome": "VALERIO",
+          "nascita": "17.04.2013"
+        },
+        {
+          "cognome": "MAMBRINI",
+          "nome": "FLAVIO",
+          "nascita": "20.02.2013"
+        },
+        {
+          "cognome": "MASULLO",
+          "nome": "JESUS",
+          "nascita": "17.12.2012"
+        },
+        {
+          "cognome": "RAPICANO ",
+          "nome": "NICHOLAS",
+          "nascita": "10.12.2012"
+        },
+        {
+          "cognome": "SABUZI",
+          "nome": "CRISTIANO",
+          "nascita": "20.03.2013"
+        },
+        {
+          "cognome": "TROIANI",
+          "nome": "MATTIA",
+          "nascita": "28.09.2013"
+        }
+      ]
+    }
+  },
+  "2014/15": {
+    "gironi": {
+      "GIRONE A": [
+        "ACADEMY ROSSA",
+        "FORTITUDO POMEZIA",
+        "LADISLAO"
+      ],
+      "GIRONE B": [
+        "ACADEMY BLU",
+        "LATINA C5",
+        "S.PIETRO E PAOLO"
+      ]
+    },
+    "partite": [
+      {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY ROSSA ",
+        "squadraB": "LADISLAO",
+        "campo": "CAMPO B",
+        "orario": "12.00",
+        "data": "10.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE B",
+        "squadraA": "ACADEMY BLU",
+        "squadraB": "S.PIETRO E PAOLO",
+        "campo": "CAMPO A",
+        "orario": "11.00",
+        "data": "11.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY ROSSA ",
+        "squadraB": "FORTITUDO POMEZIA",
+        "campo": "CAMPO A",
+        "orario": "18.00",
+        "data": "14.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE B",
+        "squadraA": "S.PIETRO E PAOLO",
+        "squadraB": "LATINA C5",
+        "campo": "CAMPO B",
+        "orario": "12.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE A ",
+        "squadraA": "FORTITUDO POMEZIA",
+        "squadraB": "LADISLAO",
+        "campo": "CAMPO B",
+        "orario": "12.00",
+        "data": "24.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE B",
+        "squadraA": "ACADEMY BLU",
+        "squadraB": "LATINA C5",
+        "campo": "CAMPO A",
+        "orario": "12.00",
+        "data": "",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE A",
+        "girone": "",
+        "squadraA": "1 CLASSIFICATA GIRONE A",
+        "squadraB": "2 CLASSIFICATA GIRONE B",
+        "campo": "CAMPO A",
+        "orario": "12.00",
+        "data": "31.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "girone": "",
+        "squadraA": "1 CLASSIFICATA GIRONE B",
+        "squadraB": "2 CLASSIFICATA GIRONE A",
+        "campo": "CAMPO B",
+        "orario": "12.00",
+        "data": "31.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      }
+    ],
+    "finali": [],
+    "rose": {"rose": {
       "ACADEMY BLU": [
         {
           "cognome": "CANZONIERE",
@@ -139,4 +2007,22 @@
         }
       ]
     }
+  },
+  "2016/17": {
+    "gironi": {},
+    "partite": [],
+    "finali": [],
+    
+  "Under 15 femminile": {
+    "gironi": {},
+    "partite": [],
+    "finali": [],
+    "rose": {}
+  },
+  "Under 13 femminile": {
+    "gironi": {},
+    "partite": [],
+    "finali": [],
+    "rose": {}
   }
+}
