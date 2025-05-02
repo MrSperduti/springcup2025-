@@ -1113,7 +1113,7 @@
         "squadraB": "S.PIETRO E PAOLO ROSSA",
         "campo": "CAMPO A",
         "orario": "10.00",
-        "data": "11.05.2025",
+        "data": "10.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -1758,8 +1758,8 @@
         "squadraA": "ACADEMY BLU",
         "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO A",
-        "orario": "11.00",
-        "data": "11.05.2025",
+        "orario": "12.00",
+        "data": "10.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -1866,7 +1866,13 @@
       }
     ],
     "finali": [],
-    "rose": {"rose": {
+    "rose": {}
+  },
+  "2016/17": {
+    "gironi": {},
+    "partite": [],
+    "finali": [],
+    "rose": {
       "ACADEMY BLU": [
         {
           "cognome": "CANZONIERE",
@@ -2008,11 +2014,6 @@
       ]
     }
   },
-  "2016/17": {
-    "gironi": {},
-    "partite": [],
-    "finali": [],
-    
   "Under 15 femminile": {
     "gironi": {},
     "partite": [],
