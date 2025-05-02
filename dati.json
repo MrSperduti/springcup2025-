@@ -9,7 +9,7 @@
       "GIRONE B": [
         "FORTITUDO POMEZIA",
         "CIRCOLO MASTER",
-        "ECOCITY GENZANO"
+        "VELLETRI"
       ]
     },
     "partite": [
@@ -65,7 +65,7 @@
         "giornata": "1",
         "girone": "GIRONE B",
         "squadraA": "FORTITUDO POMEZIA",
-        "squadraB": "ECOCITY GENZANO",
+        "squadraB": "VELLETRI",
         "campo": "CAMPO B",
         "orario": "19.00",
         "data": "09.05.2025",
@@ -96,7 +96,7 @@
       {
         "giornata": "3",
         "girone": "GIRONE B",
-        "squadraA": "ECOCITY GENZANO",
+        "squadraA": "VELLETRI",
         "squadraB": "CIRCOLO MASTER",
         "campo": "CAMPO A",
         "orario": "17.00",
