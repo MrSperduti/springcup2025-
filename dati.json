@@ -1160,7 +1160,7 @@
         "squadraB": "VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
-        "data": "",
+        "data": "17.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -1721,7 +1721,13 @@
       }
     ],
     "finali": [],
-      "rose": {
+    "rose": {}
+  },
+  "2016/17": {
+    "gironi": {},
+    "partite": [],
+    "finali": [],
+    "rose": {
       "ACADEMY BLU": [
         {
           "cognome": "CANZONIERE",
@@ -1862,12 +1868,6 @@
         }
       ]
     }
-  },
-  "2016/17": {
-    "gironi": {},
-    "partite": [],
-    "finali": [],
-    "rose": {}    
   },
   "Under 15 femminile": {
     "gironi": {},
