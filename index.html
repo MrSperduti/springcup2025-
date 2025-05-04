@@ -68,6 +68,7 @@
       transform: scale(1.05);
       box-shadow: 0 6px 18px rgba(0,0,0,0.5);
     }
+    /* Mobile specific */
     @media (max-width: 600px) {
       h1 {
         font-size: 24px;
@@ -91,9 +92,10 @@
 </head>
 <body>
   <div class="container">
+    <!-- Only the Tiger logo at the top (Spring Cup logo) -->
     <img src="logo.png" alt="Logo Spring Cup" class="logo">
     <h1>SPRING CUP 2025</h1>
-    <div class="buttons" id="categorie">
+    <div class="buttons">
       <a class="btn" href="torneo.html">Torneo</a>
       <a class="btn" href="regolamento.html">Regolamento</a>
       <a class="btn" href="comunicati.html">Comunicati</a>
@@ -103,15 +105,7 @@
     </div>
   </div>
 
+  <!-- Federazione logo placed only below the buttons -->
   <img src="converted_logo_federazione.jpg" alt="Logo Federazione ASI" class="federation-logo">
-
-  <!-- Contatore visitatori -->
-  <div style="margin: 30px auto; text-align: center;">
-    <p style="font-size: 14px;">Visitatori:</p>
-    <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=ip&initCount=0"
-         title="Visite" Alt="Contatore Visite" border="0" />
-  </div>
-
-  <script src="index.js"></script>
 </body>
 </html>
