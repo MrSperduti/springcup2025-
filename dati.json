@@ -579,7 +579,7 @@
       {
         "giornata": "1",
         "girone": "GIRONE B",
-        "squadraA": "REAL CIAMPINO",
+        "squadraA": "FORTITUDO POMEZIA",
         "squadraB": "ECOCITY GENZANO",
         "campo": "CAMPO A",
         "orario": "12.00",
@@ -628,7 +628,7 @@
         "giornata": "2",
         "girone": "GIRONE B",
         "squadraA": "ECOCITY GENZANO",
-        "squadraB": "FORTITUDO POMEZIA",
+        "squadraB": "REAL CIAMPINO",
         "campo": "CAMPO A",
         "orario": "16.00",
         "data": "17.05.2025",
@@ -1159,6 +1159,78 @@
           "cognome": "D'AGOSTINO",
           "nome": "FRANCESCO",
           "nascita": "24.01.2012"
+        }
+      ],
+      "ECOCITY GENZANO": [
+        {
+          "cognome": "CORSI",
+          "nome": "LORENZO",
+          "nascita": "01.07.2010"
+        },
+        {
+          "cognome": "BOCALE",
+          "nome": "RICCARDO",
+          "nascita": "25.08.2010"
+        },
+        {
+          "cognome": "BOCALE",
+          "nome": "CRISTIAN",
+          "nascita": "25.08.2010"
+        },
+        {
+          "cognome": "BOCALE ",
+          "nome": "EDOARDO",
+          "nascita": "25.08.2010"
+        },
+        {
+          "cognome": "MELISSARI",
+          "nome": "JACOPO",
+          "nascita": "22.04.2010"
+        },
+        {
+          "cognome": "MINERVA",
+          "nome": "FLAVIO",
+          "nascita": "11.05.2010"
+        },
+        {
+          "cognome": "PAGLIA",
+          "nome": "MATTEO",
+          "nascita": "10.03.2010"
+        },
+        {
+          "cognome": "SIMULA",
+          "nome": "SAMUELE",
+          "nascita": "16.08.2010"
+        },
+        {
+          "cognome": "SENESI",
+          "nome": "FRANCESCO",
+          "nascita": "10.11.2011"
+        },
+        {
+          "cognome": "ASCENZI",
+          "nome": "LORENZO",
+          "nascita": "21.11.2010"
+        },
+        {
+          "cognome": "MOGLIANETTI",
+          "nome": "LEONARDO",
+          "nascita": "20.12.2011"
+        },
+        {
+          "cognome": "SPAZIANI",
+          "nome": "LEONARDO",
+          "nascita": "16.04.2011"
+        },
+        {
+          "cognome": "GIANNINI",
+          "nome": "ANDREA",
+          "nascita": "07.05.2011"
+        },
+        {
+          "cognome": "BERNARDI",
+          "nome": "JACOPO",
+          "nascita": "06.11.2010"
         }
       ]
     }
