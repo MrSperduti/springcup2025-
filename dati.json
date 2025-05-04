@@ -582,8 +582,8 @@
         "squadraA": "FORTITUDO POMEZIA",
         "squadraB": "ECOCITY GENZANO",
         "campo": "CAMPO A",
-        "orario": "12.00",
-        "data": "11.05.2025",
+        "orario": "10.00",
+        "data": "10.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -1295,7 +1295,7 @@
       {
         "giornata": "1",
         "girone": "GIRONE C",
-        "squadraA": "ANZIO C5",
+        "squadraA": "FORTITUDO POMEZIA",
         "squadraB": "MARINO ACADEMY",
         "campo": "CAMPO A",
         "orario": "11.00",
@@ -1391,7 +1391,7 @@
       {
         "giornata": "3",
         "girone": "GIRONE C",
-        "squadraA": "FORTITUDO POMEZIA",
+        "squadraA": "ANZIO C5",
         "squadraB": "MARINO ACADEMY",
         "campo": "CAMPO B",
         "orario": "11.00",
@@ -2375,8 +2375,8 @@
           "nascita": "28.10.2015"
         },
         {
-          "cognome": "DANIELE",
-          "nome": "CARUSO",
+          "cognome": "CARUSO",
+          "nome": "DANIELE",
           "nascita": "14.04.2014"
         },
         {
