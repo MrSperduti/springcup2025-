@@ -757,6 +757,11 @@
           "cognome": "FESTA",
           "nome": "ANDREA RAIMONDO",
           "nascita": "14.09.2011"
+        },
+        {
+          "cognome": "SETINI",
+          "nome": "LORENZO",
+          "nascita": "10.02.2010"
         }
       ],
       "ACADEMY": [
@@ -1165,7 +1170,7 @@
         {
           "cognome": "CORSI",
           "nome": "LORENZO",
-          "nascita": "01.07.2010"
+          "nascita": "0107 2010"
         },
         {
           "cognome": "BOCALE",
