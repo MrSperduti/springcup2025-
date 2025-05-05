@@ -423,7 +423,7 @@
     "gironi": {
       "GIRONE A": [
         "ACADEMY",
-        "VELLETRI",
+        "FF10",
         "S.PIETRO E PAOLO"
       ],
       "GIRONE B": [
@@ -442,7 +442,7 @@
         "giornata": "1",
         "girone": "GIRONE A",
         "squadraA": "ACADEMY",
-        "squadraB": "VELLETRI",
+        "squadraB": "FF10",
         "campo": "CAMPO A",
         "orario": "12.00",
         "data": "11.05.2025",
@@ -490,7 +490,7 @@
         "giornata": "2",
         "girone": "GIRONE A",
         "squadraA": "S.PIETRO E PAOLO",
-        "squadraB": "VELLETRI",
+        "squadraB": "FF10",
         "campo": "CAMPO A",
         "orario": "15.00",
         "data": "17.05.2025",
@@ -1038,21 +1038,22 @@
   },
   "Under 13": {
     "gironi": {
-      "GIRONE B": [
-        "ACADEMY BLU",
-        "S.PIETRO E PAOLO BLU",
-        "LATINA C5"
-      ],
-      "GIRONE C": [
-        "FORTITUDO POMEZIA",
-        "ANZIO C5",
-        "MARINO ACADEMY"
-      ],
       "GIRONE A": [
         "ACADEMY ROSSA",
         "S.PIETRO E PAOLO ROSSA",
         "NEW TEAM",
         "VELLETRI"
+      ],
+      "GIRONE B": [
+        "ACADEMY BLU",
+        "S.PIETRO E PAOLO BLU",
+        "LATINA C5",
+        "FF10"
+      ],
+      "GIRONE C": [
+        "FORTITUDO POMEZIA",
+        "ANZIO C5",
+        "MARINO ACADEMY"
       ]
     },
     "partite": [
@@ -1272,6 +1273,54 @@
         "campo": "CAMPO A",
         "orario": "11.00",
         "data": "24.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE B",
+        "squadraA": "FF10",
+        "squadraB": "LATINA C5",
+        "campo": "CAMPO A",
+        "orario": "11:00",
+        "data": "10.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE B",
+        "squadraA": "S.PIETRO E PAOLO BLU",
+        "squadraB": "FF10",
+        "campo": "CAMPO A",
+        "orario": "18.00",
+        "data": "19.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE B",
+        "squadraA": "FF10",
+        "squadraB": "ACADEMY BLU",
+        "campo": "CAMPO A",
+        "orario": "10.00",
+        "data": "25.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -2055,7 +2104,7 @@
         "giornata": "1",
         "girone": "GIRONE UNICO",
         "squadraA": "ANZIOC5",
-        "squadraB": "INDOMITA POMEZIA",
+        "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO B",
         "orario": "12.00",
         "data": "10.05.2025",
@@ -2086,7 +2135,7 @@
       {
         "giornata": "2",
         "girone": "GIRONE UNICO",
-        "squadraA": "ANZIO C5",
+        "squadraA": "FORTE COLLEFERRO",
         "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO B",
         "orario": "18.00",
@@ -2118,8 +2167,8 @@
       {
         "giornata": "3",
         "girone": "GIRONE UNICO",
-        "squadraA": "S.PIETRO E PAOLO",
-        "squadraB": "FORTE COLLEFERRO",
+        "squadraA": "FORTE COLLEFERRO",
+        "squadraB": "INDOMITA POMEZIA",
         "campo": "CAMPO B",
         "orario": "12.00",
         "data": "17.05.2025",
@@ -2150,7 +2199,7 @@
       {
         "giornata": "4",
         "girone": "GIRONE UNICO",
-        "squadraA": "FORTE COLLEFERRO",
+        "squadraA": "ANZIO C5",
         "squadraB": "INDOMITA POMEZIA",
         "campo": "CAMPO B",
         "orario": "18.00",
