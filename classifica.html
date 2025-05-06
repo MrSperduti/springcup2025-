@@ -20,7 +20,7 @@
     }
     .container {
       width: 100%;
-      max-width: 640px;
+      max-width: 100%;
       padding: 20px;
       box-sizing: border-box;
     }
@@ -35,19 +35,23 @@
       overflow-x: auto;
     }
     table {
-      width: 100%;
       border-collapse: collapse;
-      margin-bottom: 20px;
-      min-width: 400px;
+      margin: 0 auto 20px auto;
+      min-width: 500px;
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      border-radius: 12px;
+      overflow: hidden;
     }
     th, td {
-      border: 1px solid white;
-      padding: 10px;
+      padding: 10px 14px;
       text-align: center;
       font-size: 14px;
+      border: 1px solid white;
     }
     th {
-      background-color: rgba(0,0,0,0.2);
+      background-color: rgba(0,0,0,0.3);
+      font-size: 15px;
     }
     button {
       width: 90%;
@@ -68,6 +72,15 @@
       transform: scale(1.05);
       box-shadow: 0 6px 18px rgba(0,0,0,0.5);
     }
+    @media (max-width: 600px) {
+      th, td {
+        font-size: 12px;
+        padding: 8px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -75,10 +88,12 @@
     <h2>Classifica</h2>
     <div id="classifica" class="table-wrapper"></div>
   </div>
-  <div class="container">
+
+  <div class="container" style="margin-top: 20px;">
     <button onclick="history.back()">🔙 Torna Indietro</button>
     <button onclick="location.href='index.html'">🏠 Torna alla Home</button>
   </div>
+
   <script src="classifica.js"></script>
 </body>
 </html>
