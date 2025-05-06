@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ].forEach(([nome, file]) => {
     const btn = document.createElement('button');
     btn.textContent = nome;
-    btn.className = 'category-button';
+    btn.className = 'btn';
     btn.onclick = () => location.href = file + '?categoria=' + encodeURIComponent(categoria);
     menu.appendChild(btn);
   });
