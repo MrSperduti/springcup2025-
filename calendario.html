@@ -1,22 +1,90 @@
 
-    <!DOCTYPE html>
-    <html lang="it">
-    <head>
-      <meta charset="UTF-8">
-      <title>Calendario</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <div class="container">
-        <h2 style="text-align:center">Calendario</h2><div id='calendario'></div>
-      </div>
-      <script src="calendario.js"></script>
-    
-    <div class="container" style="margin-top: 20px;">
-      <button onclick="history.back()">🔙 Torna Indietro</button>
-      <button onclick="location.href='index.html'">🏠 Torna alla Home</button>
-    </div>
-    
-    </body>
-    </html>
-    
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #d32f2f, #1565c0);
+      font-family: 'Arial', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      width: 100%;
+      max-width: 640px;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid white;
+      text-align: center;
+      font-size: 14px;
+    }
+    th {
+      background-color: rgba(0,0,0,0.2);
+    }
+    button {
+      padding: 12px 16px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 12px;
+      border: none;
+      margin: 10px 5px;
+      background: linear-gradient(to right, #d32f2f, #1565c0);
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 22px;
+      }
+      th, td {
+        font-size: 12px;
+        padding: 6px;
+      }
+      button {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Calendario</h2>
+    <div id='calendario'></div>
+  </div>
+  <script src="calendario.js"></script>
+
+  <div class="container" style="margin-top: 20px;">
+    <button onclick="history.back()">🔙 Torna Indietro</button>
+    <button onclick="location.href='index.html'">🏠 Torna alla Home</button>
+  </div>
+</body>
+</html>
