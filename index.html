@@ -102,31 +102,16 @@
       <a class="btn" href="interviste.html">Interviste</a>
     </div>
   </div>
+
   <img src="converted_logo_federazione.jpg" alt="Logo Federazione ASI" class="federation-logo">
 
-  <div id="global-counter" style="margin-top: 40px; font-size: 16px; color: white; text-align: center;">
-    Visualizzazioni globali: <span id="counter">...</span>
+  <!-- Contatore visite -->
+  <div style="margin-top: 30px; text-align: center;">
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=20583647&style=0015&nbdigits=5&type=page&initCount=0"
+           title="Counter Widget" alt="Visit counter For Websites" border="0" />
+    </a>
+    <div style="font-size: 14px; color: white;">Visualizzazioni globali</div>
   </div>
-
-  <script>
-    const NAMESPACE = "springcup2025";
-    const KEY = "homepage-views";
-    const isUserExcluded = localStorage.getItem('myPc') === 'true';
-
-    async function updateCounter() {
-      const counterEl = document.getElementById("counter");
-      if (!isUserExcluded) {
-        const res = await fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${KEY}`);
-        const data = await res.json();
-        counterEl.textContent = data.value;
-      } else {
-        const res = await fetch(`https://api.countapi.xyz/get/${NAMESPACE}/${KEY}`);
-        const data = await res.json();
-        counterEl.textContent = data.value + " (non conteggiato)";
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", updateCounter);
-  </script>
 </body>
 </html>
