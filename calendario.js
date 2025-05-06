@@ -24,19 +24,29 @@ async function loadCalendar() {
     const table = document.createElement('table');
     table.innerHTML = '<tr><th>Squadra A</th><th>Squadra B</th><th>Data</th><th>Ora</th><th>Campo</th><th>Risultato</th><th>Girone</th></tr>';
 
-    giornate[g].forEach(p => {
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${p.squadraA || ''}</td>
-        <td>${p.squadraB || ''}</td>
-        <td>${p.data || ''}</td>
-        <td>${p.orario || ''}</td>
-        <td>${p.campo || ''}</td>
-        <td>${(p.golA || p.golB) ? p.golA + ' - ' + p.golB : ''}</td>
-        <td>${p.girone || ''}</td>
-      `;
-      table.appendChild(row);
-    });
+    giornate[g].sort((a, b) => {
+  const [dayA, monthA, yearA] = (a.data || '').split('-').map(Number);
+  const [hourA, minuteA] = (a.orario || '').split(':').map(Number);
+  const dateA = new Date(yearA, monthA - 1, dayA, hourA, minuteA);
+
+  const [dayB, monthB, yearB] = (b.data || '').split('-').map(Number);
+  const [hourB, minuteB] = (b.orario || '').split(':').map(Number);
+  const dateB = new Date(yearB, monthB - 1, dayB, hourB, minuteB);
+
+  return dateA - dateB;
+}).forEach(p => {
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td>${p.squadraA || ''}</td>
+    <td>${p.squadraB || ''}</td>
+    <td>${p.data || ''}</td>
+    <td>${p.orario || ''}</td>
+    <td>${p.campo || ''}</td>
+    <td>${(p.golA || p.golB) ? p.golA + ' - ' + p.golB : ''}</td>
+    <td>${p.girone || ''}</td>
+  `;
+  table.appendChild(row);
+});
 
     section.appendChild(table);
     div.appendChild(section);
