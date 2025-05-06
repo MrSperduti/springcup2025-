@@ -26,11 +26,11 @@ async function loadCalendar() {
 
     giornate[g].sort((a, b) => {
   const [dayA, monthA, yearA] = (a.data || '').split('-').map(Number);
-  const [hourA, minuteA] = (a.orario || '').split(':').map(Number);
+  const [hourA, minuteA] = (a.orario || '').split('.').map(Number);
   const dateA = new Date(yearA, monthA - 1, dayA, hourA, minuteA);
 
   const [dayB, monthB, yearB] = (b.data || '').split('-').map(Number);
-  const [hourB, minuteB] = (b.orario || '').split(':').map(Number);
+  const [hourB, minuteB] = (b.orario || '').split('.').map(Number);
   const dateB = new Date(yearB, monthB - 1, dayB, hourB, minuteB);
 
   return dateA - dateB;
