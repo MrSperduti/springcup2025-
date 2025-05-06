@@ -6,15 +6,14 @@
   <title>Calendario</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
       background: linear-gradient(135deg, #d32f2f, #1565c0);
       font-family: 'Orbitron', Arial, sans-serif;
       color: white;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -24,72 +23,121 @@
       max-width: 640px;
       padding: 20px;
       box-sizing: border-box;
-      text-align: center;
     }
     h2 {
-      font-size: 28px;
+      text-align: center;
+      font-size: 26px;
       margin-bottom: 20px;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
-    .table-wrapper {
-      width: 100%;
-      overflow-x: auto;
+    .giornata {
+      margin-bottom: 30px;
+      border-radius: 16px;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
-    table {
-      width: 100%;
-      min-width: 600px;
-      border-collapse: collapse;
-      margin-top: 10px;
+    .giornata h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #ffcccb;
     }
-    th, td {
+    .partita {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
       padding: 10px;
-      border: 1px solid white;
-      text-align: center;
-      font-size: 14px;
+      margin-bottom: 12px;
     }
-    th {
-      background-color: rgba(0,0,0,0.2);
+    .partita div {
+      margin: 4px 0;
+      font-size: 15px;
+    }
+    .label {
+      font-weight: bold;
+      display: inline-block;
+      width: 100px;
     }
     button {
-      padding: 12px 16px;
+      width: 90%;
+      max-width: 300px;
+      padding: 14px;
       font-size: 16px;
       font-weight: bold;
-      border-radius: 12px;
+      border-radius: 14px;
       border: none;
-      margin: 10px 5px;
+      margin: 10px auto;
       background: linear-gradient(to right, #d32f2f, #1565c0);
       color: white;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       cursor: pointer;
+      display: block;
     }
     button:hover {
       transform: scale(1.05);
       box-shadow: 0 6px 18px rgba(0,0,0,0.5);
-    }
-    @media (max-width: 600px) {
-      h2 {
-        font-size: 22px;
-      }
-      th, td {
-        font-size: 12px;
-        padding: 6px;
-      }
-      button {
-        width: 90%;
-        margin: 10px auto;
-        display: block;
-      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h2>Calendario</h2>
-    <div id='calendario' class="table-wrapper"></div>
+    <div id="calendario"></div>
   </div>
-  <script src="calendario.js"></script>
 
-  <div class="container" style="margin-top: 20px;">
+  <script>
+    async function loadCalendar() {
+      const cat = new URLSearchParams(location.search).get('categoria');
+      const res = await fetch('dati.json');
+      const dati = await res.json();
+      const div = document.getElementById('calendario');
+      div.innerHTML = '';
+
+      const partite = dati[cat]?.partite || [];
+      const giornate = {};
+
+      partite.forEach(p => {
+        const g = p.giornata || 0;
+        if (!giornate[g]) giornate[g] = [];
+        giornate[g].push(p);
+      });
+
+      Object.keys(giornate).sort((a, b) => parseInt(a) - parseInt(b)).forEach(g => {
+        const section = document.createElement('div');
+        section.className = 'giornata';
+        const titolo = document.createElement('h3');
+        titolo.textContent = "Giornata " + g;
+        section.appendChild(titolo);
+
+        giornate[g].sort((a, b) => {
+          function parseDate(p) {
+            if (!p.data || !p.orario) return new Date(8640000000000000);
+            const [day, month, year] = p.data.split('-').map(Number);
+            const [hour, minute] = p.orario.split('.').map(Number);
+            return new Date(year, month - 1, day, hour, minute);
+          }
+          return parseDate(a) - parseDate(b);
+        }).forEach(p => {
+          const partita = document.createElement('div');
+          partita.className = 'partita';
+          partita.innerHTML = `
+            <div><span class="label">Squadre:</span> ${p.squadraA || ''} vs ${p.squadraB || ''}</div>
+            <div><span class="label">Data:</span> ${p.data || ''}</div>
+            <div><span class="label">Ora:</span> ${p.orario || ''}</div>
+            <div><span class="label">Campo:</span> ${p.campo || ''}</div>
+            <div><span class="label">Risultato:</span> ${(p.golA || p.golB) ? p.golA + ' - ' + p.golB : ''}</div>
+            <div><span class="label">Girone:</span> ${p.girone || ''}</div>
+          `;
+          section.appendChild(partita);
+        });
+
+        div.appendChild(section);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadCalendar);
+  </script>
+
+  <div class="container">
     <button onclick="history.back()">🔙 Torna Indietro</button>
     <button onclick="location.href='index.html'">🏠 Torna alla Home</button>
   </div>
