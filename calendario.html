@@ -5,18 +5,19 @@
   <meta charset="UTF-8">
   <title>Calendario</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
       background: linear-gradient(135deg, #d32f2f, #1565c0);
-      font-family: 'Arial', sans-serif;
+      font-family: 'Orbitron', Arial, sans-serif;
       color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh;
     }
     .container {
       width: 100%;
@@ -28,9 +29,15 @@
     h2 {
       font-size: 28px;
       margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
     }
     table {
       width: 100%;
+      min-width: 600px;
       border-collapse: collapse;
       margin-top: 10px;
     }
@@ -78,7 +85,7 @@
 <body>
   <div class="container">
     <h2>Calendario</h2>
-    <div id='calendario'></div>
+    <div id='calendario' class="table-wrapper"></div>
   </div>
   <script src="calendario.js"></script>
 
