@@ -68,7 +68,6 @@
       transform: scale(1.05);
       box-shadow: 0 6px 18px rgba(0,0,0,0.5);
     }
-    /* Mobile specific */
     @media (max-width: 600px) {
       h1 {
         font-size: 24px;
@@ -92,7 +91,6 @@
 </head>
 <body>
   <div class="container">
-    <!-- Only the Tiger logo at the top (Spring Cup logo) -->
     <img src="logo.png" alt="Logo Spring Cup" class="logo">
     <h1>SPRING CUP 2025</h1>
     <div class="buttons">
@@ -104,8 +102,31 @@
       <a class="btn" href="interviste.html">Interviste</a>
     </div>
   </div>
-
-  <!-- Federazione logo placed only below the buttons -->
   <img src="converted_logo_federazione.jpg" alt="Logo Federazione ASI" class="federation-logo">
+
+  <div id="global-counter" style="margin-top: 40px; font-size: 16px; color: white; text-align: center;">
+    Visualizzazioni globali: <span id="counter">...</span>
+  </div>
+
+  <script>
+    const NAMESPACE = "springcup2025";
+    const KEY = "homepage-views";
+    const isUserExcluded = localStorage.getItem('myPc') === 'true';
+
+    async function updateCounter() {
+      const counterEl = document.getElementById("counter");
+      if (!isUserExcluded) {
+        const res = await fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/${KEY}`);
+        const data = await res.json();
+        counterEl.textContent = data.value;
+      } else {
+        const res = await fetch(`https://api.countapi.xyz/get/${NAMESPACE}/${KEY}`);
+        const data = await res.json();
+        counterEl.textContent = data.value + " (non conteggiato)";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", updateCounter);
+  </script>
 </body>
 </html>
