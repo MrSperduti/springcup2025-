@@ -25,15 +25,14 @@ async function loadCalendar() {
     table.innerHTML = '<tr><th>Squadra A</th><th>Squadra B</th><th>Data</th><th>Ora</th><th>Campo</th><th>Risultato</th><th>Girone</th></tr>';
 
     giornate[g].sort((a, b) => {
-  const [dayA, monthA, yearA] = (a.data || '').split('-').map(Number);
-  const [hourA, minuteA] = (a.orario || '').split('.').map(Number);
-  const dateA = new Date(yearA, monthA - 1, dayA, hourA, minuteA);
+  function parseDate(p) {
+    if (!p.data || !p.orario) return new Date(8640000000000000); // Max date
+    const [day, month, year] = p.data.split('-').map(Number);
+    const [hour, minute] = p.orario.split('.').map(Number);
+    return new Date(year, month - 1, day, hour, minute);
+  }
 
-  const [dayB, monthB, yearB] = (b.data || '').split('-').map(Number);
-  const [hourB, minuteB] = (b.orario || '').split('.').map(Number);
-  const dateB = new Date(yearB, monthB - 1, dayB, hourB, minuteB);
-
-  return dateA - dateB;
+  return parseDate(a) - parseDate(b);
 }).forEach(p => {
   const row = document.createElement('tr');
   row.innerHTML = `
