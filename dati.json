@@ -2410,15 +2410,112 @@
     "finali": [],
     "rose": {}
   },
-  "Under 15 femminile": {
-    "gironi": {},
-    "partite": [],
-    "finali": [],
-    "rose": {}
-  },
-  "Under 13 femminile": {
-    "gironi": {},
-    "partite": [],
+  "FEMMINILE": {
+    "gironi": {
+      "GIRONE UNICO": [
+        "ACADEMY",
+        "FUTSAL BASIC ACADEMY",
+        "S. GIOVANNI EVANGELISTA"
+      ]
+    },
+    "partite": [
+      {
+        "giornata": "1",
+        "girone": "GIRONE UNICO",
+        "squadraA": "ACADEMY",
+        "squadraB": "FUTSAL BASIC ACADEMY",
+        "campo": "CAMPO A",
+        "orario": "19.00",
+        "data": "13.05.2024",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE UNICO",
+        "squadraA": "ACADEMY",
+        "squadraB": "S. GIOVANNI EVANGELISTA",
+        "campo": "CAMPO A",
+        "orario": "19.00",
+        "data": "16.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE UNICO",
+        "squadraA": "FUTSAL BASIC ACADEMY",
+        "squadraB": "SAN GIOVANNI EVANGELISTA",
+        "campo": "CAMPO A",
+        "orario": "18.00",
+        "data": "20.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "4",
+        "girone": "GIRONE UNICO",
+        "squadraA": "FUTSAL BASIC ACADEMY",
+        "squadraB": "ACADEMY",
+        "campo": "CAMPO A",
+        "orario": "19.00",
+        "data": "23.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "5",
+        "girone": "GIRONE UNICO",
+        "squadraA": "S. GIOVANNI EVANGELISTA",
+        "squadraB": "ACADEMY",
+        "campo": "CAMPO A",
+        "orario": "18.00",
+        "data": "27.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "6",
+        "girone": "GIRONE UNICO",
+        "squadraA": "S. GIOVANNI EVANGELISTA",
+        "squadraB": "FUTSAL BASIC ACADEMY",
+        "campo": "CAMPO A",
+        "orario": "18.00",
+        "data": "30.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      }
+    ],
     "finali": [],
     "rose": {}
   }
