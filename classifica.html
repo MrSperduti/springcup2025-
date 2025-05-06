@@ -13,10 +13,10 @@
       background: linear-gradient(135deg, #d32f2f, #1565c0);
       font-family: 'Orbitron', Arial, sans-serif;
       color: white;
-      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
+      min-height: 100vh;
     }
     .container {
       width: 100%;
@@ -25,33 +25,28 @@
       box-sizing: border-box;
     }
     h2 {
+      font-size: 24px;
       text-align: center;
-      font-size: 26px;
       margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
     .table-wrapper {
       width: 100%;
       overflow-x: auto;
     }
     table {
+      width: 100%;
       border-collapse: collapse;
-      margin: 0 auto 20px auto;
-      min-width: 500px;
-      background-color: rgba(255, 255, 255, 0.05);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      border-radius: 12px;
-      overflow: hidden;
+      min-width: 360px;
+      font-size: 13px;
     }
     th, td {
-      padding: 10px 14px;
-      text-align: center;
-      font-size: 14px;
       border: 1px solid white;
+      padding: 6px 8px;
+      text-align: center;
     }
     th {
-      background-color: rgba(0,0,0,0.3);
-      font-size: 15px;
+      background-color: rgba(0, 0, 0, 0.3);
+      font-size: 14px;
     }
     button {
       width: 90%;
@@ -70,16 +65,6 @@
     }
     button:hover {
       transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
-    }
-    @media (max-width: 600px) {
-      th, td {
-        font-size: 12px;
-        padding: 8px;
-      }
-      h2 {
-        font-size: 22px;
-      }
     }
   </style>
 </head>
@@ -88,12 +73,10 @@
     <h2>Classifica</h2>
     <div id="classifica" class="table-wrapper"></div>
   </div>
-
-  <div class="container" style="margin-top: 20px;">
+  <div class="container">
     <button onclick="history.back()">🔙 Torna Indietro</button>
     <button onclick="location.href='index.html'">🏠 Torna alla Home</button>
   </div>
-
   <script src="classifica.js"></script>
 </body>
 </html>
