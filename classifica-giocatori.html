@@ -30,14 +30,24 @@
       margin-bottom: 20px;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
-    .classifica-box {
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      padding: 12px;
-      margin-bottom: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      min-width: 400px;
+    }
+    th, td {
+      border: 1px solid white;
+      padding: 10px;
       text-align: center;
-      font-size: 15px;
+      font-size: 14px;
+    }
+    th {
+      background-color: rgba(0,0,0,0.2);
     }
     button {
       width: 90%;
@@ -63,14 +73,12 @@
 <body>
   <div class="container">
     <h2>Classifica Miglior Giocatore</h2>
-    <div id="giocatori"></div>
+    <div id="giocatori" class="table-wrapper"></div>
   </div>
-
   <div class="container">
     <button onclick="history.back()">🔙 Torna Indietro</button>
     <button onclick="location.href='index.html'">🏠 Torna alla Home</button>
   </div>
-
   <script src="classifica-giocatori.js"></script>
 </body>
 </html>
