@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     squadreButtonsDiv.innerHTML = ""; // Pulisce il contenitore dei pulsanti
 
     Object.keys(squadre).forEach(squadra => {
-      const button = Object.assign(document.createElement("button"), { className: 'btn' });
+      const button = Object.assign(document.createElement("button"), { className: 'button' });
       button.textContent = squadra;
       button.onclick = function() {
         // Mostra i giocatori della squadra selezionata
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
       giocatoriContainer.appendChild(table);
 
       // Aggiungi il pulsante per chiudere l'elenco
-      const closeButton = Object.assign(document.createElement("button"), { className: 'btn' });
+      const closeButton = Object.assign(document.createElement("button"), { className: 'button' });
       closeButton.textContent = "❌ Chiudi";
       closeButton.onclick = function() {
         giocatoriContainer.innerHTML = ""; // Rimuove la tabella
