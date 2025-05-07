@@ -25,9 +25,14 @@ async function loadCalendar() {
     giornate[g].forEach((p, index) => {
       const partita = document.createElement('div');
       partita.className = 'partita';
-      const idPartita = `${cat}-${partite.indexOf(p)}`;
-      const risultatoHTML = (p.golA !== undefined && p.golB !== undefined)
-        ? `<a href="partita.html?id=${idPartita}">${p.golA} - ${p.golB}</a>` : '';
+
+      let risultatoHTML = "";
+      if (p.golA !== undefined && p.golB !== undefined && p.golA !== null && p.golB !== null) {
+        const idPartita = `${cat}-${partite.indexOf(p)}`;
+        risultatoHTML = `<a href="partita.html?id=${idPartita}">${p.golA} - ${p.golB}</a>`;
+      } else {
+        risultatoHTML = `<span>-</span>`;
+      }
 
       partita.innerHTML = `
         <div><span class="label">Squadre:</span> ${p.squadraA || ''} vs ${p.squadraB || ''}</div>
