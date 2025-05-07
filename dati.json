@@ -2427,29 +2427,13 @@
         "campo": "CAMPO A",
         "orario": "19.00",
         "data": "13.05.2024",
-        "golA": 3,
-        "golB": 1,
-        "portiere": "NEGRI NOEMI",
-        "squadraPortiere": "ACADEMY",
-        "giocatore": "AMATO AURORA",
-        "squadraGiocatore": "ACADEMY",
-        "marcatori": [
-          {
-            "nome": "GILARDINI ASIA",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "BUSTI LUDOVICA",
-            "gol": 1,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "LO STOCCO GIORGIA",
-            "gol": 1,
-            "squadra": "FUTSAL BASIC ACADEMY"
-          }
-        ]
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       },
       {
         "giornata": "2",
