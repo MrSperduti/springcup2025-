@@ -13,20 +13,17 @@ async function caricaDatiPartita() {
   const partite = dati[categoria]?.partite || [];
   const giornate = {};
 
-  // Raggruppa partite per giornata, come fa calendario.js
   partite.forEach(p => {
-    const g = p.giornata || 0;
+    const g = p.giornata || "0";
     if (!giornate[g]) giornate[g] = [];
     giornate[g].push(p);
   });
 
-  // Ricostruisce l'array ordinato
   const partiteOrdinato = [];
-  Object.keys(giornate).sort((a, b) => {
-    const n1 = parseInt(a.match(/\d+/)) || 0;
-    const n2 = parseInt(b.match(/\d+/)) || 0;
-    return n1 - n2;
-  }).forEach(g => {
+  const numeriche = Object.keys(giornate).filter(g => !isNaN(parseInt(g))).sort((a, b) => parseInt(a) - parseInt(b));
+  const nonNumeriche = Object.keys(giornate).filter(g => isNaN(parseInt(g))).sort(); // es. Semifinale, Finale
+
+  [...numeriche, ...nonNumeriche].forEach(g => {
     giornate[g].forEach(p => partiteOrdinato.push(p));
   });
 
@@ -39,16 +36,20 @@ function mostraPartita(p) {
   const contenitore = document.getElementById("dettagli-partita");
 
   const titolo = document.createElement("h2");
-  titolo.textContent = `${p.squadraA} ${p.golA} - ${p.golB} ${p.squadraB}`;
+  if (p.golA !== undefined && p.golB !== undefined && p.golA !== null && p.golB !== null) {
+    titolo.textContent = `${p.squadraA} ${p.golA} - ${p.golB} ${p.squadraB}`;
+  } else {
+    titolo.textContent = `${p.squadraA} vs ${p.squadraB}`;
+  }
   contenitore.appendChild(titolo);
 
   const wrapper = document.createElement("div");
-  wrapper.style.display = "flex";
-  wrapper.style.justifyContent = "space-around";
-  wrapper.style.marginTop = "20px";
+  wrapper.className = "wrapper";
 
   const colA = document.createElement("div");
+  colA.className = "squadra";
   const colB = document.createElement("div");
+  colB.className = "squadra";
 
   const squadraATitolo = document.createElement("h3");
   squadraATitolo.textContent = p.squadraA;
@@ -58,8 +59,9 @@ function mostraPartita(p) {
   squadraBTitolo.textContent = p.squadraB;
   colB.appendChild(squadraBTitolo);
 
-  const marcatoriA = p.marcatori?.filter(m => m.squadra === p.squadraA) || [];
-  const marcatoriB = p.marcatori?.filter(m => m.squadra === p.squadraB) || [];
+  const marcatori = Array.isArray(p.marcatori) ? p.marcatori : [];
+  const marcatoriA = marcatori.filter(m => m.squadra === p.squadraA);
+  const marcatoriB = marcatori.filter(m => m.squadra === p.squadraB);
 
   marcatoriA.forEach(m => {
     const el = document.createElement("div");

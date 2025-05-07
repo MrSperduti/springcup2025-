@@ -15,7 +15,14 @@ async function loadCalendar() {
     giornate[g].push(p);
   });
 
-  Object.keys(giornate).sort((a, b) => parseInt(a) - parseInt(b)).forEach(g => {
+  Object.keys(giornate).sort((a, b) => {
+    const n1 = parseInt(a.match(/\d+/));
+    const n2 = parseInt(b.match(/\d+/));
+    if (!isNaN(n1) && !isNaN(n2)) return n1 - n2;
+    if (!isNaN(n1)) return -1;
+    if (!isNaN(n2)) return 1;
+    return a.localeCompare(b);
+  }).forEach(g => {
     const section = document.createElement('div');
     section.className = 'giornata';
     const titolo = document.createElement('h3');
@@ -26,12 +33,10 @@ async function loadCalendar() {
       const partita = document.createElement('div');
       partita.className = 'partita';
 
-      let risultatoHTML = "";
-      if (p.golA !== undefined && p.golB !== undefined && p.golA !== null && p.golB !== null) {
+      let risultatoHTML = "-";
+      if (typeof p.golA === "number" && typeof p.golB === "number") {
         const idPartita = `${cat}-${partite.indexOf(p)}`;
         risultatoHTML = `<a href="partita.html?id=${idPartita}">${p.golA} - ${p.golB}</a>`;
-      } else {
-        risultatoHTML = `<span>-</span>`;
       }
 
       partita.innerHTML = `
