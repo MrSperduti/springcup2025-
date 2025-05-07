@@ -21,7 +21,7 @@ async function caricaDatiPartita() {
 
   const partiteOrdinato = [];
   const numeriche = Object.keys(giornate).filter(g => !isNaN(parseInt(g))).sort((a, b) => parseInt(a) - parseInt(b));
-  const nonNumeriche = Object.keys(giornate).filter(g => isNaN(parseInt(g))).sort(); // es. Semifinale, Finale
+  const nonNumeriche = Object.keys(giornate).filter(g => isNaN(parseInt(g))).sort();
 
   [...numeriche, ...nonNumeriche].forEach(g => {
     giornate[g].forEach(p => partiteOrdinato.push(p));
@@ -78,6 +78,33 @@ function mostraPartita(p) {
   wrapper.appendChild(colA);
   wrapper.appendChild(colB);
   contenitore.appendChild(wrapper);
+
+  // Mostra miglior giocatore e miglior portiere se presenti
+  const migliorie = [];
+
+  if (Array.isArray(p.migliorGiocatore) && p.migliorGiocatore.length > 0) {
+    p.migliorGiocatore.forEach(g => {
+      migliorie.push(`Miglior Giocatore: ${g.nome} (${g.voti})`);
+    });
+  }
+
+  if (Array.isArray(p.migliorPortiere) && p.migliorPortiere.length > 0) {
+    p.migliorPortiere.forEach(g => {
+      migliorie.push(`Miglior Portiere: ${g.nome} (${g.voti})`);
+    });
+  }
+
+  if (migliorie.length > 0) {
+    const extra = document.createElement("div");
+    extra.style.marginTop = "20px";
+    extra.style.textAlign = "center";
+    migliorie.forEach(t => {
+      const e = document.createElement("div");
+      e.textContent = t;
+      extra.appendChild(e);
+    });
+    contenitore.appendChild(extra);
+  }
 }
 
 window.onload = caricaDatiPartita;
