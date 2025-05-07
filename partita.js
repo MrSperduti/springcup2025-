@@ -79,30 +79,27 @@ function mostraPartita(p) {
   wrapper.appendChild(colB);
   contenitore.appendChild(wrapper);
 
-  // Mostra miglior giocatore e miglior portiere se presenti
-  const migliorie = [];
+  // Miglior giocatore e portiere
+  const extra = document.createElement("div");
+  extra.className = "extra-info";
 
-  if (Array.isArray(p.migliorGiocatore) && p.migliorGiocatore.length > 0) {
+  if (Array.isArray(p.migliorGiocatore)) {
     p.migliorGiocatore.forEach(g => {
-      migliorie.push(`Miglior Giocatore: ${g.nome} (${g.voti})`);
+      const el = document.createElement("div");
+      el.textContent = `⭐ Miglior Giocatore: ${g.nome} (${g.voti})`;
+      extra.appendChild(el);
     });
   }
 
-  if (Array.isArray(p.migliorPortiere) && p.migliorPortiere.length > 0) {
+  if (Array.isArray(p.migliorPortiere)) {
     p.migliorPortiere.forEach(g => {
-      migliorie.push(`Miglior Portiere: ${g.nome} (${g.voti})`);
+      const el = document.createElement("div");
+      el.textContent = `🧤 Miglior Portiere: ${g.nome} (${g.voti})`;
+      extra.appendChild(el);
     });
   }
 
-  if (migliorie.length > 0) {
-    const extra = document.createElement("div");
-    extra.style.marginTop = "20px";
-    extra.style.textAlign = "center";
-    migliorie.forEach(t => {
-      const e = document.createElement("div");
-      e.textContent = t;
-      extra.appendChild(e);
-    });
+  if (extra.childElementCount > 0) {
     contenitore.appendChild(extra);
   }
 }
