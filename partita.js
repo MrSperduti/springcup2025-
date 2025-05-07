@@ -79,19 +79,19 @@ function mostraPartita(p) {
   wrapper.appendChild(colB);
   contenitore.appendChild(wrapper);
 
-  // Miglior Giocatore e Portiere, se presenti come oggetti
+  // Extra info: miglior giocatore e portiere dai campi personalizzati
   const extra = document.createElement("div");
   extra.className = "extra-info";
 
-  if (p.migliorGiocatore && p.migliorGiocatore.nome) {
+  if (p.giocatore && p.squadraGiocatore) {
     const el = document.createElement("div");
-    el.textContent = `⭐ Miglior Giocatore: ${p.migliorGiocatore.nome} - ${p.migliorGiocatore.squadra} (${p.migliorGiocatore.voti} voto/i)`;
+    el.textContent = `⭐ Miglior Giocatore: ${p.giocatore} - ${p.squadraGiocatore}`;
     extra.appendChild(el);
   }
 
-  if (p.migliorPortiere && p.migliorPortiere.nome) {
+  if (p.portiere && p.squadraPortiere) {
     const el = document.createElement("div");
-    el.textContent = `🧤 Miglior Portiere: ${p.migliorPortiere.nome} - ${p.migliorPortiere.squadra} (${p.migliorPortiere.voti} voto/i)`;
+    el.textContent = `🧤 Miglior Portiere: ${p.portiere} - ${p.squadraPortiere}`;
     extra.appendChild(el);
   }
 
