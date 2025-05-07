@@ -17,37 +17,29 @@ async function loadCalendar() {
 
   Object.keys(giornate).sort((a, b) => parseInt(a) - parseInt(b)).forEach(g => {
     const section = document.createElement('div');
+    section.className = 'giornata';
     const titolo = document.createElement('h3');
     titolo.textContent = "Giornata " + g;
     section.appendChild(titolo);
 
-    const table = document.createElement('table');
-    table.innerHTML = '<tr><th>Squadra A</th><th>Squadra B</th><th>Data</th><th>Ora</th><th>Campo</th><th>Risultato</th><th>Girone</th></tr>';
+    giornate[g].forEach((p, index) => {
+      const partita = document.createElement('div');
+      partita.className = 'partita';
+      const idPartita = `${cat}-${partite.indexOf(p)}`;
+      const risultatoHTML = (p.golA !== undefined && p.golB !== undefined)
+        ? `<a href="partita.html?id=${idPartita}">${p.golA} - ${p.golB}</a>` : '';
 
-    giornate[g].sort((a, b) => {
-  function parseDate(p) {
-    if (!p.data || !p.orario) return new Date(8640000000000000); // Max date
-    const [day, month, year] = p.data.split('-').map(Number);
-    const [hour, minute] = p.orario.split('.').map(Number);
-    return new Date(year, month - 1, day, hour, minute);
-  }
+      partita.innerHTML = `
+        <div><span class="label">Squadre:</span> ${p.squadraA || ''} vs ${p.squadraB || ''}</div>
+        <div><span class="label">Data:</span> ${p.data || ''}</div>
+        <div><span class="label">Ora:</span> ${p.orario || ''}</div>
+        <div><span class="label">Campo:</span> ${p.campo || ''}</div>
+        <div><span class="label">Risultato:</span> ${risultatoHTML}</div>
+        <div><span class="label">Girone:</span> ${p.girone || ''}</div>
+      `;
+      section.appendChild(partita);
+    });
 
-  return parseDate(a) - parseDate(b);
-}).forEach(p => {
-  const row = document.createElement('tr');
-  row.innerHTML = `
-    <td>${p.squadraA || ''}</td>
-    <td>${p.squadraB || ''}</td>
-    <td>${p.data || ''}</td>
-    <td>${p.orario || ''}</td>
-    <td>${p.campo || ''}</td>
-    <td>${(p.golA || p.golB) ? p.golA + ' - ' + p.golB : ''}</td>
-    <td>${p.girone || ''}</td>
-  `;
-  table.appendChild(row);
-});
-
-    section.appendChild(table);
     div.appendChild(section);
   });
 }
