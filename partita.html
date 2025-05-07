@@ -15,42 +15,22 @@
       color: white;
     }
     .contenitore {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.3);
       border-radius: 16px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     }
-    h1, h2, h3 {
+    h1, h2, h3, h4, h5 {
       text-align: center;
     }
-    .wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      gap: 20px;
+    #riepilogo {
       margin-top: 20px;
     }
-    .squadra {
-      flex: 0 1 45%;
-      background-color: rgba(255,255,255,0.1);
-      border-radius: 12px;
-      padding: 10px;
-    }
-    .squadra h3 {
-      border-bottom: 1px solid white;
-      padding-bottom: 5px;
-      font-size: 18px;
-    }
-    .squadra div {
-      margin: 3px 0;
-      font-size: 13px;
-    }
-    .extra-info {
-      margin-top: 25px;
-      text-align: center;
-      font-size: 14px;
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
     }
     .buttons {
       text-align: center;
@@ -75,7 +55,7 @@
 <body>
   <div class="contenitore">
     <h1>Riepilogo Partita</h1>
-    <div id="dettagli-partita"></div>
+    <div id="riepilogo"></div>
     <div class="buttons">
       <button onclick="history.back()">🔙 Indietro</button>
       <button onclick="window.location.href='index.html'">🏠 Home</button>
