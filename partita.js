@@ -1,22 +1,29 @@
 
 async function caricaDatiPartita() {
   const params = new URLSearchParams(window.location.search);
-  const id = params.get('id');
-  if (!id) return;
+  const rawId = params.get('id');
+  if (!rawId) return;
+
+  const [categoriaAlias, indexStr] = rawId.split("-");
+  const CATEGORIA_MAP = {
+    "FEMMINILE": "Under 15 femminile",
+    "UNDER17": "Under 17",
+    "UNDER15": "Under 15",
+    "UNDER13": "Under 13",
+    "201415": "2014/15",
+    "201617": "2016/17",
+    "FEMMINILE13": "Under 13 femminile"
+  };
+
+  const categoria = CATEGORIA_MAP[categoriaAlias] || categoriaAlias;
+  const index = parseInt(indexStr);
 
   const response = await fetch('dati.json');
   const dati = await response.json();
 
-  for (const categoria in dati) {
-    const partite = dati[categoria].partite || [];
-    for (let i = 0; i < partite.length; i++) {
-      const p = partite[i];
-      const pid = `${categoria}-${i}`;
-      if (pid === id) {
-        mostraPartita(p, categoria);
-        return;
-      }
-    }
+  const partite = dati[categoria]?.partite || [];
+  if (index >= 0 && index < partite.length) {
+    mostraPartita(partite[index], categoria);
   }
 }
 
