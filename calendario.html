@@ -57,6 +57,10 @@
       display: inline-block;
       width: 100px;
     }
+    a {
+      color: #ffcccb;
+      text-decoration: underline;
+    }
     button {
       width: 90%;
       max-width: 300px;
@@ -119,12 +123,18 @@
         }).forEach(p => {
           const partita = document.createElement('div');
           partita.className = 'partita';
+
+          const idPartita = `${cat}-${partite.indexOf(p)}`;
+          const risultatoHTML = (p.golA !== undefined && p.golB !== undefined)
+            ? `<a href="partita.html?id=${idPartita}">${p.golA} - ${p.golB}</a>`
+            : '';
+
           partita.innerHTML = `
             <div><span class="label">Squadre:</span> ${p.squadraA || ''} vs ${p.squadraB || ''}</div>
             <div><span class="label">Data:</span> ${p.data || ''}</div>
             <div><span class="label">Ora:</span> ${p.orario || ''}</div>
             <div><span class="label">Campo:</span> ${p.campo || ''}</div>
-            <div><span class="label">Risultato:</span> ${(p.golA || p.golB) ? p.golA + ' - ' + p.golB : ''}</div>
+            <div><span class="label">Risultato:</span> ${risultatoHTML}</div>
             <div><span class="label">Girone:</span> ${p.girone || ''}</div>
           `;
           section.appendChild(partita);
