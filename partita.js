@@ -7,12 +7,31 @@ async function caricaDatiPartita() {
   const [categoria, indexStr] = rawId.split("-");
   const index = parseInt(indexStr);
 
-  const response = await fetch('dati.json');
-  const dati = await response.json();
+  const res = await fetch('dati.json');
+  const dati = await res.json();
 
   const partite = dati[categoria]?.partite || [];
-  if (index >= 0 && index < partite.length) {
-    mostraPartita(partite[index]);
+  const giornate = {};
+
+  // Raggruppa partite per giornata, come fa calendario.js
+  partite.forEach(p => {
+    const g = p.giornata || 0;
+    if (!giornate[g]) giornate[g] = [];
+    giornate[g].push(p);
+  });
+
+  // Ricostruisce l'array ordinato
+  const partiteOrdinato = [];
+  Object.keys(giornate).sort((a, b) => {
+    const n1 = parseInt(a.match(/\d+/)) || 0;
+    const n2 = parseInt(b.match(/\d+/)) || 0;
+    return n1 - n2;
+  }).forEach(g => {
+    giornate[g].forEach(p => partiteOrdinato.push(p));
+  });
+
+  if (index >= 0 && index < partiteOrdinato.length) {
+    mostraPartita(partiteOrdinato[index]);
   }
 }
 

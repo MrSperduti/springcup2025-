@@ -5,12 +5,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Riepilogo Partita</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #d32f2f, #1565c0);
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+    }
+    .contenitore {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .squadra {
+      width: 45%;
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 10px;
+    }
+    .squadra h3 {
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;
+    }
+    .squadra div {
+      margin: 5px 0;
+      font-size: 15px;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .buttons button {
+      background: linear-gradient(to right, #d32f2f, #1565c0);
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 15px;
+      color: white;
+      margin: 0 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .buttons button:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
   <div class="contenitore">
     <h1>Riepilogo Partita</h1>
     <div id="dettagli-partita"></div>
+    <div class="buttons">
+      <button onclick="history.back()">🔙 Indietro</button>
+      <button onclick="window.location.href='index.html'">🏠 Home</button>
+    </div>
   </div>
   <script src="partita.js"></script>
 </body>
