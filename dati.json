@@ -21,17 +21,17 @@
         "campo": "CAMPO A",
         "orario": "19.00",
         "data": "09.05.2025",
-        "golA": 1,
-        "golB": 0,
+        "golA": null,
+        "golB": null,
         "portiere": "",
         "squadraPortiere": "",
         "giocatore": "",
         "squadraGiocatore": "",
         "marcatori": [
           {
-            "nome": "SUSIN FRANCESCO",
-            "gol": 1,
-            "squadra": "ACADEMY"
+            "nome": "",
+            "gol": null,
+            "squadra": ""
           }
         ]
       },
