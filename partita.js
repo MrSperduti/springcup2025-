@@ -4,18 +4,7 @@ async function caricaDatiPartita() {
   const rawId = params.get('id');
   if (!rawId) return;
 
-  const [categoriaAlias, indexStr] = rawId.split("-");
-  const CATEGORIA_MAP = {
-    "FEMMINILE": "Under 15 femminile",
-    "UNDER17": "Under 17",
-    "UNDER15": "Under 15",
-    "UNDER13": "Under 13",
-    "201415": "2014/15",
-    "201617": "2016/17",
-    "FEMMINILE13": "Under 13 femminile"
-  };
-
-  const categoria = CATEGORIA_MAP[categoriaAlias] || categoriaAlias;
+  const [categoria, indexStr] = rawId.split("-");
   const index = parseInt(indexStr);
 
   const response = await fetch('dati.json');
@@ -23,11 +12,11 @@ async function caricaDatiPartita() {
 
   const partite = dati[categoria]?.partite || [];
   if (index >= 0 && index < partite.length) {
-    mostraPartita(partite[index], categoria);
+    mostraPartita(partite[index]);
   }
 }
 
-function mostraPartita(p, categoria) {
+function mostraPartita(p) {
   const contenitore = document.getElementById("dettagli-partita");
 
   const titolo = document.createElement("h2");
