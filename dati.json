@@ -9,7 +9,7 @@
       "GIRONE B": [
         "FORTITUDO POMEZIA",
         "CIRCOLO MASTER",
-        "VELLETRI"
+        "ATLETICO VELLETRI"
       ]
     },
     "partite": [
@@ -65,7 +65,7 @@
         "giornata": "1",
         "girone": "GIRONE B",
         "squadraA": "FORTITUDO POMEZIA",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "09.05.2025",
@@ -96,7 +96,7 @@
       {
         "giornata": "3",
         "girone": "GIRONE B",
-        "squadraA": "VELLETRI",
+        "squadraA": "ATLETICO VELLETRI",
         "squadraB": "CIRCOLO MASTER",
         "campo": "CAMPO A",
         "orario": "18.00",
@@ -1042,7 +1042,7 @@
         "ACADEMY ROSSA",
         "S.PIETRO E PAOLO ROSSA",
         "NEW TEAM",
-        "VELLETRI"
+        "ATLETICO VELLETRI"
       ],
       "GIRONE B": [
         "ACADEMY BLU",
@@ -1237,7 +1237,7 @@
         "giornata": "1",
         "girone": "GIRONE A",
         "squadraA": "NEW TEAM",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "10.05.2025",
@@ -1253,7 +1253,7 @@
         "giornata": "2",
         "girone": "GIRONE A",
         "squadraA": "S.PIETRO E PAOLO ROSSA",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "17.05.2025",
@@ -1269,7 +1269,7 @@
         "giornata": "3",
         "girone": "GIRONE A",
         "squadraA": "ACADEMY ROSSA",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO A",
         "orario": "11.00",
         "data": "24.05.2025",
