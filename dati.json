@@ -9,7 +9,7 @@
       "GIRONE B": [
         "FORTITUDO POMEZIA",
         "CIRCOLO MASTER",
-        "ATLETICO VELLETRI"
+        "VELLETRI"
       ]
     },
     "partite": [
@@ -65,7 +65,7 @@
         "giornata": "1",
         "girone": "GIRONE B",
         "squadraA": "FORTITUDO POMEZIA",
-        "squadraB": "ATLETICO VELLETRI",
+        "squadraB": "VELLETRI",
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "09.05.2025",
@@ -96,7 +96,7 @@
       {
         "giornata": "3",
         "girone": "GIRONE B",
-        "squadraA": "ATLETICO VELLETRI",
+        "squadraA": "VELLETRI",
         "squadraB": "CIRCOLO MASTER",
         "campo": "CAMPO A",
         "orario": "18.00",
@@ -214,6 +214,11 @@
           "cognome": "MIRRA",
           "nome": "ALESSANDRO",
           "nascita": "22.03.2011"
+        },
+        {
+          "cognome": "GIAMMASI",
+          "nome": "GABRIELE",
+          "nascita": "17.12.2009"
         }
       ],
       "NEW TEAM": [
@@ -1032,6 +1037,11 @@
           "cognome": "BERNARDI",
           "nome": "JACOPO",
           "nascita": "06.11.2010"
+        },
+        {
+          "cognome": "SETTIMI",
+          "nome": "GABRIELE",
+          "nascita": "05.02.2010"
         }
       ]
     }
@@ -1042,7 +1052,7 @@
         "ACADEMY ROSSA",
         "S.PIETRO E PAOLO ROSSA",
         "NEW TEAM",
-        "ATLETICO VELLETRI"
+        "VELLETRI"
       ],
       "GIRONE B": [
         "ACADEMY BLU",
@@ -1237,7 +1247,7 @@
         "giornata": "1",
         "girone": "GIRONE A",
         "squadraA": "NEW TEAM",
-        "squadraB": "ATLETICO VELLETRI",
+        "squadraB": "VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "10.05.2025",
@@ -1253,7 +1263,7 @@
         "giornata": "2",
         "girone": "GIRONE A",
         "squadraA": "S.PIETRO E PAOLO ROSSA",
-        "squadraB": "ATLETICO VELLETRI",
+        "squadraB": "VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "17.05.2025",
@@ -1269,7 +1279,7 @@
         "giornata": "3",
         "girone": "GIRONE A",
         "squadraA": "ACADEMY ROSSA",
-        "squadraB": "ATLETICO VELLETRI",
+        "squadraB": "VELLETRI",
         "campo": "CAMPO A",
         "orario": "11.00",
         "data": "24.05.2025",
@@ -1688,6 +1698,63 @@
           "nome": "DILAN",
           "nascita": "23.04.2015"
         }
+      ],
+      "LATINA C5": [
+        {
+          "cognome": "MATTIUZZO",
+          "nome": "ALESSADRO",
+          "nascita": ""
+        },
+        {
+          "cognome": "SOPRANZANO",
+          "nome": "GABRIELE",
+          "nascita": ""
+        },
+        {
+          "cognome": "DI RITA",
+          "nome": "LORENZO",
+          "nascita": ""
+        },
+        {
+          "cognome": "CRISTOFARO",
+          "nome": "VINCENZO",
+          "nascita": ""
+        },
+        {
+          "cognome": "PICCIRILLO",
+          "nome": "DAVIDE",
+          "nascita": ""
+        },
+        {
+          "cognome": "CORCIONE",
+          "nome": "VINCENZO",
+          "nascita": ""
+        },
+        {
+          "cognome": "GALANTE",
+          "nome": "CRISTIANO",
+          "nascita": ""
+        },
+        {
+          "cognome": "BIANCHINI",
+          "nome": "ANDREA",
+          "nascita": ""
+        },
+        {
+          "cognome": "ROCCO ",
+          "nome": "ALESSIO",
+          "nascita": ""
+        },
+        {
+          "cognome": "CONOCI",
+          "nome": "GABRIELE",
+          "nascita": ""
+        },
+        {
+          "cognome": "FORCINA",
+          "nome": "MANUEL",
+          "nascita": ""
+        }
       ]
     }
   },
@@ -1934,7 +2001,7 @@
         "squadraB": "ACADEMY BLU",
         "campo": "CAMPO A",
         "orario": "12.00",
-        "data": "25.05.2025",
+        "data": "25.05.2024",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -2150,6 +2217,58 @@
           "cognome": "SICURANZA",
           "nome": "ALESSANDRO",
           "nascita": "18.05.2015"
+        }
+      ],
+      "LATINA C5": [
+        {
+          "cognome": "FANELLI",
+          "nome": "JACOPO",
+          "nascita": ""
+        },
+        {
+          "cognome": "MARCHETTI",
+          "nome": "FABRIZIO",
+          "nascita": ""
+        },
+        {
+          "cognome": "SCHETTINO",
+          "nome": "PASQUALE",
+          "nascita": ""
+        },
+        {
+          "cognome": "AMODEO",
+          "nome": "FRANCESCO",
+          "nascita": ""
+        },
+        {
+          "cognome": "TROPLINI",
+          "nome": "ACHILLE",
+          "nascita": ""
+        },
+        {
+          "cognome": "REALI",
+          "nome": "LEONARDO",
+          "nascita": ""
+        },
+        {
+          "cognome": "TULLIO",
+          "nome": "ANDREA",
+          "nascita": ""
+        },
+        {
+          "cognome": "DI RITA",
+          "nome": "LORENZO",
+          "nascita": ""
+        },
+        {
+          "cognome": "CRUDETTI",
+          "nome": "ANGELO",
+          "nascita": ""
+        },
+        {
+          "cognome": "PAGANO",
+          "nome": "SIMONE",
+          "nascita": ""
         }
       ]
     }
@@ -2408,7 +2527,70 @@
       }
     ],
     "finali": [],
-    "rose": {}
+    "rose": {
+      "LATINA C5": [
+        {
+          "cognome": "BARBIERO",
+          "nome": "EMMA",
+          "nascita": ""
+        },
+        {
+          "cognome": "ANTOBENEDETTO",
+          "nome": "LORENZO",
+          "nascita": ""
+        },
+        {
+          "cognome": "CRISANO",
+          "nome": "LORENZO",
+          "nascita": ""
+        },
+        {
+          "cognome": "ROCCO",
+          "nome": "GABRIELE",
+          "nascita": ""
+        },
+        {
+          "cognome": "GONFIANTINI",
+          "nome": "ALESSANDRO",
+          "nascita": ""
+        },
+        {
+          "cognome": "COLONNA",
+          "nome": "ANDREA",
+          "nascita": ""
+        },
+        {
+          "cognome": "CORCIONE",
+          "nome": "FRANCESCO",
+          "nascita": ""
+        },
+        {
+          "cognome": "DI FIORE",
+          "nome": "NICOLAS",
+          "nascita": ""
+        },
+        {
+          "cognome": "GIUMBINI",
+          "nome": "GABRIELE",
+          "nascita": ""
+        },
+        {
+          "cognome": "MAGGI",
+          "nome": "GIORGIO",
+          "nascita": ""
+        },
+        {
+          "cognome": "BOZZA",
+          "nome": "GABRIELE",
+          "nascita": ""
+        },
+        {
+          "cognome": "ALTOMARE",
+          "nome": "JACOPO",
+          "nascita": ""
+        }
+      ]
+    }
   },
   "FEMMINILE": {
     "gironi": {
@@ -2426,7 +2608,7 @@
         "squadraB": "FUTSAL BASIC ACADEMY",
         "campo": "CAMPO A",
         "orario": "19.00",
-        "data": "13.05.2025",
+        "data": "13.05.2024",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -2517,6 +2699,71 @@
       }
     ],
     "finali": [],
-    "rose": {}
+    "rose": {
+      "S. GIOVANNI EVANGELISTA": [
+        {
+          "cognome": "AMMENDOLA",
+          "nome": "GRETA",
+          "nascita": "13.11.2013"
+        },
+        {
+          "cognome": "BUONANNO",
+          "nome": "SIMONA",
+          "nascita": "20.07.2012"
+        },
+        {
+          "cognome": "MARTINA",
+          "nome": "CIPRIANI",
+          "nascita": "01.08.2010"
+        },
+        {
+          "cognome": "GAIA",
+          "nome": "DI SILVIO",
+          "nascita": "12.03.2013"
+        },
+        {
+          "cognome": "D'AGOSTINO",
+          "nome": "MISIA",
+          "nascita": "02.05.2012"
+        },
+        {
+          "cognome": "PELAIA",
+          "nome": "GIULIA",
+          "nascita": "12.01.2013"
+        },
+        {
+          "cognome": "PICIUCCHI",
+          "nome": "MARTA",
+          "nascita": "10/04/2012"
+        },
+        {
+          "cognome": "ASCIONE",
+          "nome": "MARIA",
+          "nascita": "FRANCESCA"
+        },
+        {
+          "cognome": "CASALE",
+          "nome": "ELISA",
+          "nascita": "14.06.2012"
+        },
+        {
+          "cognome": "casale",
+          "nome": "elisa",
+          "nascita": "14.06.2012"
+        },
+        {
+          "cognome": "RENZI",
+          "nome": "IOLE",
+          "nascita": "03.05.2012"
+        }
+      ],
+      "FUTSAL BASIC ACADEMY": [
+        {
+          "cognome": "PINTO",
+          "nome": "NICOLE",
+          "nascita": "23.06.2012"
+        }
+      ]
+    }
   }
 }
