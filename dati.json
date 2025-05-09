@@ -4,7 +4,7 @@
       "GIRONE A": [
         "ACADEMY",
         "NEW TEAM",
-        "ARDEA"
+        "ARDEA C5"
       ],
       "GIRONE B": [
         "FORTITUDO POMEZIA",
@@ -63,7 +63,7 @@
       {
         "giornata": "2",
         "girone": "GIRONE A",
-        "squadraA": "ARDEA",
+        "squadraA": "ARDEA C5",
         "squadraB": "NEW TEAM",
         "campo": "CAMPO B ",
         "orario": "18.00",
@@ -376,7 +376,7 @@
           "nascita": "27.02.2010"
         }
       ],
-      "ARDEA": [
+      "ARDEA C5": [
         {
           "cognome": "PIASCO",
           "nome": "VALERIO",
