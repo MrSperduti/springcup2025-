@@ -9,7 +9,7 @@
       "GIRONE B": [
         "FORTITUDO POMEZIA",
         "CIRCOLO MASTER",
-        "VELLETRI"
+        "ATLETICO VELLETRI"
       ]
     },
     "partite": [
@@ -65,7 +65,7 @@
         "giornata": "1",
         "girone": "GIRONE B",
         "squadraA": "FORTITUDO POMEZIA",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "09.05.2025",
@@ -96,7 +96,7 @@
       {
         "giornata": "3",
         "girone": "GIRONE B",
-        "squadraA": "VELLETRI",
+        "squadraA": "ATLETICO VELLETRI",
         "squadraB": "CIRCOLO MASTER",
         "campo": "CAMPO A",
         "orario": "18.00",
@@ -420,6 +420,78 @@
           "cognome": "MAFFETTONE",
           "nome": "GIOVANNI",
           "nascita": "20.08.2009"
+        }
+      ],
+      "ATLETICO VELLETRI": [
+        {
+          "cognome": "ADAMI",
+          "nome": "ALESSANDRO",
+          "nascita": "09.11.2010"
+        },
+        {
+          "cognome": "BATTISTINI",
+          "nome": "MARCO",
+          "nascita": "28.12.2010"
+        },
+        {
+          "cognome": "CARLETTI",
+          "nome": "FRANCESCO",
+          "nascita": "21.12.2010"
+        },
+        {
+          "cognome": "DI DOMENICO",
+          "nome": "DANIELE",
+          "nascita": "04.10.2010"
+        },
+        {
+          "cognome": "FEDERICO",
+          "nome": "FLAVIO",
+          "nascita": "17.12.2010"
+        },
+        {
+          "cognome": "FERRARI",
+          "nome": "CRISTIAN",
+          "nascita": "26.11.2010"
+        },
+        {
+          "cognome": "GASPAR",
+          "nome": "FLAVIUS ROBERTO",
+          "nascita": "30.11.2010"
+        },
+        {
+          "cognome": "LANZANO ",
+          "nome": "LEONARDO",
+          "nascita": "20.03.2010"
+        },
+        {
+          "cognome": "LUDOVISI",
+          "nome": "DIEGO",
+          "nascita": "04.02.2010"
+        },
+        {
+          "cognome": "MIZZONI",
+          "nome": "DAVIDE",
+          "nascita": "21.03.2010"
+        },
+        {
+          "cognome": "SANTINI",
+          "nome": "SIMONE",
+          "nascita": "10.11.2010"
+        },
+        {
+          "cognome": "VITALE",
+          "nome": "MATTIA",
+          "nascita": "06.02.2010"
+        },
+        {
+          "cognome": "GIOVANNOZZI",
+          "nome": "SIMONE",
+          "nascita": "04.03.2008"
+        },
+        {
+          "cognome": "MICHETTI",
+          "nome": "GIACOMO NICOLO",
+          "nascita": "14.03.2009"
         }
       ]
     }
@@ -1052,7 +1124,7 @@
         "ACADEMY ROSSA",
         "S.PIETRO E PAOLO ROSSA",
         "NEW TEAM",
-        "VELLETRI"
+        "ATLETICO VELLETRI"
       ],
       "GIRONE B": [
         "ACADEMY BLU",
@@ -1247,7 +1319,7 @@
         "giornata": "1",
         "girone": "GIRONE A",
         "squadraA": "NEW TEAM",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "10.05.2025",
@@ -1263,7 +1335,7 @@
         "giornata": "2",
         "girone": "GIRONE A",
         "squadraA": "S.PIETRO E PAOLO ROSSA",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "17.05.2025",
@@ -1279,7 +1351,7 @@
         "giornata": "3",
         "girone": "GIRONE A",
         "squadraA": "ACADEMY ROSSA",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO A",
         "orario": "11.00",
         "data": "24.05.2025",
@@ -1754,6 +1826,88 @@
           "cognome": "FORCINA",
           "nome": "MANUEL",
           "nascita": ""
+        }
+      ],
+      "ATLETICO ATLETICO VELLETRI": [
+        {
+          "cognome": "COSTANZI",
+          "nome": "SIMONE",
+          "nascita": "28.01.2014"
+        },
+        {
+          "cognome": "MATTEI",
+          "nome": "LEONARDO",
+          "nascita": "08.12.2014"
+        },
+        {
+          "cognome": "MENIA",
+          "nome": "OMAR ALESSANDRO",
+          "nascita": "13.08.2014"
+        },
+        {
+          "cognome": "MAGGIORE",
+          "nome": "RICCARDO",
+          "nascita": "02.10.2014"
+        },
+        {
+          "cognome": "MARRAFFA",
+          "nome": "ADRIANO",
+          "nascita": "25.12.2014"
+        },
+        {
+          "cognome": "DE RENZI",
+          "nome": "VINCENZO",
+          "nascita": "11.03.2014"
+        },
+        {
+          "cognome": "KHEMIRI",
+          "nome": "YOUSSEF",
+          "nascita": "22.11.2014"
+        },
+        {
+          "cognome": "DELLA VECCHIA",
+          "nome": "MATTIA",
+          "nascita": "29.01.2014"
+        },
+        {
+          "cognome": "QUARTUCCI",
+          "nome": "ANDREA",
+          "nascita": "27.02.2014"
+        },
+        {
+          "cognome": "MANCINI",
+          "nome": "MATTEO",
+          "nascita": "25.06.2014"
+        },
+        {
+          "cognome": "MARTINI",
+          "nome": "FEDERICO",
+          "nascita": "30.09.2014"
+        },
+        {
+          "cognome": "TIRILLO'",
+          "nome": "TIZIANO",
+          "nascita": "22.04.2014"
+        },
+        {
+          "cognome": "CIANFARANI",
+          "nome": "SAMUELE",
+          "nascita": "02.03.2014"
+        },
+        {
+          "cognome": "SINGH",
+          "nome": "GURBAAZ",
+          "nascita": "21.10.2014"
+        },
+        {
+          "cognome": "FOLCARELLI",
+          "nome": "ANDREACAMILLA",
+          "nascita": "29.04.2014"
+        },
+        {
+          "cognome": "ANGELUCCI",
+          "nome": "EVA",
+          "nascita": "23.05.2014"
         }
       ]
     }
@@ -2740,6 +2894,21 @@
           "cognome": "ASCIONE",
           "nome": "MARIA",
           "nascita": "FRANCESCA"
+        },
+        {
+          "cognome": "CASALE",
+          "nome": "ELISA",
+          "nascita": "14.06.2012"
+        },
+        {
+          "cognome": "casale",
+          "nome": "elisa",
+          "nascita": "14.06.2012"
+        },
+        {
+          "cognome": "RENZI",
+          "nome": "IOLE",
+          "nascita": "03.05.2012"
         }
       ],
       "FUTSAL BASIC ACADEMY": [
@@ -2747,6 +2916,56 @@
           "cognome": "PINTO",
           "nome": "NICOLE",
           "nascita": "23.06.2012"
+        },
+        {
+          "cognome": "CASALE",
+          "nome": "ELISA",
+          "nascita": "14.06.2012"
+        },
+        {
+          "cognome": "RENZI",
+          "nome": "IOLE",
+          "nascita": "03.05.2012"
+        },
+        {
+          "cognome": "KETA",
+          "nome": "NICOL",
+          "nascita": "24.07.2011"
+        },
+        {
+          "cognome": "FAIOLA",
+          "nome": "NOEMI MARIA",
+          "nascita": "02.07.2011"
+        },
+        {
+          "cognome": "FALLOVO",
+          "nome": "MARIA ASSUNTA",
+          "nascita": "20.06.2011"
+        },
+        {
+          "cognome": "LO STOCCO",
+          "nome": "GIORGIA",
+          "nascita": "09.02.2011"
+        },
+        {
+          "cognome": "FIMIANI",
+          "nome": "MATILDE",
+          "nascita": "11.11.2009"
+        },
+        {
+          "cognome": "GALLO",
+          "nome": "DESIREE",
+          "nascita": "07.11.2009"
+        },
+        {
+          "cognome": "TRINCA",
+          "nome": "GAIA",
+          "nascita": "08.04.2009"
+        },
+        {
+          "cognome": "STRAVATO",
+          "nome": "GIORGIA",
+          "nascita": "23.09.2008"
         }
       ]
     }
