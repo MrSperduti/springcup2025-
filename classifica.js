@@ -25,19 +25,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  // Considera solo partite con squadre presenti nei gironi
+  // Elabora risultati partite
   partite.forEach(p => {
     const { girone, squadraA, squadraB, golA, golB } = p;
-    if (!girone || !gironi[girone]) return; // Salta partite non di gironi
-
+    if (!girone || !gironi[girone]) return;
     if (!(squadraA in gironi[girone]) || !(squadraB in gironi[girone])) return;
 
     if (typeof golA === "number" && typeof golB === "number") {
+      // Aggiorna GF e GS
       gironi[girone][squadraA].gf += golA;
       gironi[girone][squadraA].gs += golB;
       gironi[girone][squadraB].gf += golB;
       gironi[girone][squadraB].gs += golA;
 
+      // Assegna punti
       if (golA > golB) {
         gironi[girone][squadraA].punti += 3;
         gironi[girone][squadraA].vinte++;
@@ -55,25 +56,32 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
+  // Mostra le classifiche
   const gironiOrdinati = Object.keys(gironi).sort();
-
   gironiOrdinati.forEach(g => {
     const section = document.createElement("div");
     section.className = "girone-section";
 
     const titolo = document.createElement("h3");
     titolo.textContent = "Girone " + g;
-    titolo.className = "titolo-girone";
     section.appendChild(titolo);
 
     const table = document.createElement("table");
     table.innerHTML = "<tr><th>Squadra</th><th>Punti</th><th>Vinte</th><th>Pareggi</th><th>Perse</th><th>GF</th><th>GS</th></tr>";
 
-    const squadre = Object.entries(gironi[g]).sort((a, b) => b[1].punti - a[1].punti);
+    const squadre = Object.entries(gironi[g])
+      .sort((a, b) => b[1].punti - a[1].punti);
 
     squadre.forEach(([nome, stats]) => {
       const row = document.createElement("tr");
-      row.innerHTML = `<td>${nome}</td><td>${stats.punti}</td><td>${stats.vinte}</td><td>${stats.pareggi}</td><td>${stats.perse}</td><td>${stats.gf}</td><td>${stats.gs}</td>`;
+      row.innerHTML = `
+        <td>${nome}</td>
+        <td>${stats.punti}</td>
+        <td>${stats.vinte}</td>
+        <td>${stats.pareggi}</td>
+        <td>${stats.perse}</td>
+        <td>${stats.gf}</td>
+        <td>${stats.gs}</td>`;
       table.appendChild(row);
     });
 
