@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const gironiData = dati[categoria].gironi || {};
 
   const gironi = {};
-
-  // Inizializza gironi con le squadre presenti
   Object.keys(gironiData).forEach(g => {
     gironi[g] = {};
     gironiData[g].forEach(squadra => {
@@ -25,57 +23,49 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  // Elabora risultati partite
   partite.forEach(p => {
     const { girone, squadraA, squadraB, golA, golB } = p;
     if (!girone || !gironi[girone]) return;
     if (!(squadraA in gironi[girone]) || !(squadraB in gironi[girone])) return;
+    if (typeof golA !== "number" || typeof golB !== "number") return;
 
-    if (typeof golA === "number" && typeof golB === "number") {
-      // Aggiorna GF e GS
-      gironi[girone][squadraA].gf += golA;
-      gironi[girone][squadraA].gs += golB;
-      gironi[girone][squadraB].gf += golB;
-      gironi[girone][squadraB].gs += golA;
+    gironi[girone][squadraA].gf += golA;
+    gironi[girone][squadraA].gs += golB;
+    gironi[girone][squadraB].gf += golB;
+    gironi[girone][squadraB].gs += golA;
 
-      // Assegna punti
-      if (golA > golB) {
-        gironi[girone][squadraA].punti += 3;
-        gironi[girone][squadraA].vinte++;
-        gironi[girone][squadraB].perse++;
-      } else if (golA < golB) {
-        gironi[girone][squadraB].punti += 3;
-        gironi[girone][squadraB].vinte++;
-        gironi[girone][squadraA].perse++;
-      } else {
-        gironi[girone][squadraA].punti += 1;
-        gironi[girone][squadraB].punti += 1;
-        gironi[girone][squadraA].pareggi++;
-        gironi[girone][squadraB].pareggi++;
-      }
+    if (golA > golB) {
+      gironi[girone][squadraA].punti += 3;
+      gironi[girone][squadraA].vinte++;
+      gironi[girone][squadraB].perse++;
+    } else if (golA < golB) {
+      gironi[girone][squadraB].punti += 3;
+      gironi[girone][squadraB].vinte++;
+      gironi[girone][squadraA].perse++;
+    } else {
+      gironi[girone][squadraA].punti++;
+      gironi[girone][squadraB].punti++;
+      gironi[girone][squadraA].pareggi++;
+      gironi[girone][squadraB].pareggi++;
     }
   });
 
-  // Mostra le classifiche
   const gironiOrdinati = Object.keys(gironi).sort();
   gironiOrdinati.forEach(g => {
-    const section = document.createElement("div");
-    section.className = "girone-section";
-
+    const sezione = document.createElement("div");
+    sezione.className = "girone-section";
     const titolo = document.createElement("h3");
     titolo.textContent = "Girone " + g;
-    section.appendChild(titolo);
+    sezione.appendChild(titolo);
 
     const table = document.createElement("table");
     table.innerHTML = "<tr><th>Squadra</th><th>Punti</th><th>Vinte</th><th>Pareggi</th><th>Perse</th><th>GF</th><th>GS</th></tr>";
 
-    const squadre = Object.entries(gironi[g])
-      .sort((a, b) => b[1].punti - a[1].punti);
-
-    squadre.forEach(([nome, stats]) => {
+    const squadre = Object.entries(gironi[g]).sort((a, b) => b[1].punti - a[1].punti);
+    squadre.forEach(([squadra, stats]) => {
       const row = document.createElement("tr");
       row.innerHTML = `
-        <td>${nome}</td>
+        <td>${squadra}</td>
         <td>${stats.punti}</td>
         <td>${stats.vinte}</td>
         <td>${stats.pareggi}</td>
@@ -85,7 +75,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       table.appendChild(row);
     });
 
-    section.appendChild(table);
-    container.appendChild(section);
+    sezione.appendChild(table);
+    container.appendChild(sezione);
   });
 });
