@@ -2,31 +2,33 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dettaglio Partita</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riepilogo Partita</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1 id="titolo"></h1>
-  <p><strong>Data:</strong> <span id="data"></span></p>
-  <p><strong>Orario:</strong> <span id="orario"></span></p>
-  <p><strong>Campo:</strong> <span id="campo"></span></p>
-  <p><strong>Categoria:</strong> <span id="categoria"></span></p>
-  <p><strong>Girone:</strong> <span id="girone"></span></p>
-  <p><strong>Risultato:</strong> <span id="risultato"></span></p>
+  <div class="contenitore">
+    <p><strong>Data:</strong> <span id="data"></span></p>
+    <p><strong>Orario:</strong> <span id="orario"></span></p>
+    <p><strong>Campo:</strong> <span id="campo"></span></p>
+    <p><strong>Categoria:</strong> <span id="categoria"></span></p>
+    <p><strong>Girone:</strong> <span id="girone"></span></p>
+    <p><strong>Risultato:</strong> <span id="risultato"></span></p>
 
-  <h3>Marcatori - <span id="squadraA"></span></h3>
-  <ul id="marcatoriA"></ul>
+    <h2>Marcatori <span id="squadraA"></span></h2>
+    <ul id="marcatoriA"></ul>
 
-  <h3>Marcatori - <span id="squadraB"></span></h3>
-  <ul id="marcatoriB"></ul>
+    <h2>Marcatori <span id="squadraB"></span></h2>
+    <ul id="marcatoriB"></ul>
 
-  <h3>Miglior Giocatore</h3>
-  <p><span id="giocatore"></span> (<span id="squadraGiocatore"></span>)</p>
+    <h2>Miglior Giocatore</h2>
+    <p><span id="giocatore"></span> (<span id="squadraGiocatore"></span>)</p>
 
-  <h3>Miglior Portiere</h3>
-  <p><span id="portiere"></span> (<span id="squadraPortiere"></span>)</p>
+    <h2>Miglior Portiere</h2>
+    <p><span id="portiere"></span> (<span id="squadraPortiere"></span>)</p>
+  </div>
 
   <script src="partita.js"></script>
 </body>
