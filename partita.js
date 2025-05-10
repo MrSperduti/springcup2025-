@@ -3,19 +3,16 @@ async function caricaDatiPartita() {
   const id = params.get('id');
   if (!id) return;
 
+  const [categoria, indexStr] = id.split("-");
+  const index = parseInt(indexStr, 10);
+  if (!categoria || isNaN(index)) return;
+
   const response = await fetch('dati.json');
   const dati = await response.json();
 
-  for (const categoria in dati) {
-    const partite = dati[categoria].partite || [];
-    for (let i = 0; i < partite.length; i++) {
-      const p = partite[i];
-      const pid = `${categoria}-${i}`;
-      if (pid === id) {
-        mostraPartita(p, categoria);
-        return;
-      }
-    }
+  const partite = dati[categoria]?.partite;
+  if (partite && partite[index]) {
+    mostraPartita(partite[index], categoria);
   }
 }
 
