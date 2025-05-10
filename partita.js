@@ -1,61 +1,66 @@
 
-document.addEventListener("DOMContentLoaded", function () {
+async function caricaDatiPartita() {
   const params = new URLSearchParams(window.location.search);
-  const id = params.get("id");
-
+  const id = params.get('id');
   if (!id) return;
 
-  fetch("dati.json")
-    .then((res) => res.json())
-    .then((dati) => {
-      const [categoria, indexStr] = id.split("-");
-      const index = parseInt(indexStr);
-      const partite = dati[categoria]?.partite;
+  const response = await fetch('dati.json');
+  const dati = await response.json();
 
-      if (!partite || isNaN(index) || !partite[index]) return;
-
-      const p = partite[index];
-      const contenitore = document.getElementById("dettagliPartita");
-      if (!contenitore) return;
-
-      const squadraA = p.squadraA || "";
-      const squadraB = p.squadraB || "";
-      const golA = p.golA ?? "-";
-      const golB = p.golB ?? "-";
-      const data = p.data || "";
-      const orario = p.orario || "";
-      const campo = p.campo || "";
-      const marcatori = p.marcatori || [];
-      const migliorGiocatore = p.migliorGiocatore;
-      const migliorPortiere = p.migliorPortiere;
-
-      let marcatoriHTML = "";
-      const marcatoriA = marcatori.filter(m => m.squadra === squadraA);
-      const marcatoriB = marcatori.filter(m => m.squadra === squadraB);
-
-      if (marcatoriA.length || marcatoriB.length) {
-        marcatoriHTML += `<h3>Marcatori</h3><div class="marcatori"><div><strong>${squadraA}</strong><ul>` +
-          marcatoriA.map(m => `<li>${m.nome} (${m.gol})</li>`).join("") +
-          `</ul></div><div><strong>${squadraB}</strong><ul>` +
-          marcatoriB.map(m => `<li>${m.nome} (${m.gol})</li>`).join("") +
-          `</ul></div></div>`;
+  for (const categoria in dati) {
+    const partite = dati[categoria].partite || [];
+    for (let i = 0; i < partite.length; i++) {
+      const p = partite[i];
+      const pid = `${categoria}-${i}`;
+      if (pid === id) {
+        mostraPartita(p, categoria);
+        return;
       }
+    }
+  }
+}
 
-      let miglioriHTML = "";
-      if (migliorGiocatore) {
-        miglioriHTML += `<p><strong>Miglior Giocatore:</strong> ${migliorGiocatore.nome} (${migliorGiocatore.squadra})</p>`;
-      }
-      if (migliorPortiere) {
-        miglioriHTML += `<p><strong>Miglior Portiere:</strong> ${migliorPortiere.nome} (${migliorPortiere.squadra})</p>`;
-      }
+function mostraPartita(p, categoria) {
+  const contenitore = document.getElementById("dettagli-partita");
 
-      contenitore.innerHTML = `
-        <h2>${squadraA} ${golA} - ${golB} ${squadraB}</h2>
-        <p><strong>Data:</strong> ${data}</p>
-        <p><strong>Orario:</strong> ${orario}</p>
-        <p><strong>Campo:</strong> ${campo}</p>
-        ${marcatoriHTML}
-        ${miglioriHTML}
-      `;
-    });
-});
+  const titolo = document.createElement("h2");
+  titolo.textContent = `${p.squadraA} ${p.golA} - ${p.golB} ${p.squadraB}`;
+  contenitore.appendChild(titolo);
+
+  const wrapper = document.createElement("div");
+  wrapper.style.display = "flex";
+  wrapper.style.justifyContent = "space-around";
+  wrapper.style.marginTop = "20px";
+
+  const colA = document.createElement("div");
+  const colB = document.createElement("div");
+
+  const squadraATitolo = document.createElement("h3");
+  squadraATitolo.textContent = p.squadraA;
+  colA.appendChild(squadraATitolo);
+
+  const squadraBTitolo = document.createElement("h3");
+  squadraBTitolo.textContent = p.squadraB;
+  colB.appendChild(squadraBTitolo);
+
+  const marcatoriA = p.marcatori?.filter(m => m.squadra === p.squadraA) || [];
+  const marcatoriB = p.marcatori?.filter(m => m.squadra === p.squadraB) || [];
+
+  marcatoriA.forEach(m => {
+    const el = document.createElement("div");
+    el.textContent = `${m.nome} (${m.gol})`;
+    colA.appendChild(el);
+  });
+
+  marcatoriB.forEach(m => {
+    const el = document.createElement("div");
+    el.textContent = `${m.nome} (${m.gol})`;
+    colB.appendChild(el);
+  });
+
+  wrapper.appendChild(colA);
+  wrapper.appendChild(colB);
+  contenitore.appendChild(wrapper);
+}
+
+window.onload = caricaDatiPartita;
