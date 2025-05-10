@@ -1,5 +1,4 @@
 
-// partita.js aggiornato con miglior giocatore e portiere
 document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const p = partite[index];
       const contenitore = document.getElementById("dettagliPartita");
-
       if (!contenitore) return;
 
       const squadraA = p.squadraA || "";
@@ -34,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let marcatoriHTML = "";
       const marcatoriA = marcatori.filter(m => m.squadra === squadraA);
       const marcatoriB = marcatori.filter(m => m.squadra === squadraB);
-      
+
       if (marcatoriA.length || marcatoriB.length) {
         marcatoriHTML += `<h3>Marcatori</h3><div class="marcatori"><div><strong>${squadraA}</strong><ul>` +
           marcatoriA.map(m => `<li>${m.nome} (${m.gol})</li>`).join("") +

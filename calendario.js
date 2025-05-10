@@ -32,9 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
             : "Da giocare";
 
           const idPartita = `${cat}-${partite.indexOf(p)}`;
-          const riepilogoButton = (p.golA !== undefined && p.golB !== undefined)
-            ? `<button onclick="location.href='partita.html?id=${idPartita}'" class="riepilogo-btn">📋 Riepilogo</button>`
-            : "";
+          let riepilogoButton = "";
+
+          if (p.golA !== undefined && p.golB !== undefined) {
+            riepilogoButton = `
+              <div style="text-align:center; margin-top:8px;">
+                <a href="partita.html?id=${idPartita}" class="riepilogo-btn">📋 Riepilogo</a>
+              </div>
+            `;
+          }
 
           partita.innerHTML = `
             <div><span class="label">Squadre:</span> ${p.squadraA || ''} vs ${p.squadraB || ''}</div>
