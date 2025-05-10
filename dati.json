@@ -4,7 +4,7 @@
       "GIRONE A": [
         "ACADEMY",
         "NEW TEAM",
-        "ARDEA"
+        "ARDEA C5"
       ],
       "GIRONE B": [
         "FORTITUDO POMEZIA",
@@ -17,7 +17,7 @@
         "giornata": "1",
         "girone": "GIRONE A",
         "squadraA": "ACADEMY",
-        "squadraB": "ARDEA",
+        "squadraB": "ARDEA C5",
         "campo": "CAMPO A",
         "orario": "19.00",
         "data": "09.05.2025",
@@ -32,7 +32,7 @@
       {
         "giornata": "2",
         "girone": "GIRONE A",
-        "squadraA": "ARDEA",
+        "squadraA": "ARDEA C5",
         "squadraB": "NEW TEAM",
         "campo": "CAMPO B ",
         "orario": "18.00",
@@ -345,7 +345,7 @@
           "nascita": "27.02.2010"
         }
       ],
-      "ARDEA": [
+      "ARDEA C5": [
         {
           "cognome": "PIASCO",
           "nome": "VALERIO",
@@ -1333,90 +1333,6 @@
       },
       {
         "giornata": "1",
-        "girone": "GIRONE A",
-        "squadraA": "NEW TEAM",
-        "squadraB": "ATLETICO VELLETRI",
-        "campo": "CAMPO B",
-        "orario": "11.00",
-        "data": "10.05.2025",
-        "golA": 20,
-        "golB": 0,
-        "portiere": "PAINO GABRIELE",
-        "squadraPortiere": "ATLETICO VELLETRI",
-        "giocatore": "BADARACCHI LORENZO",
-        "squadraGiocatore": "NEW TEAM",
-        "marcatori": [
-          {
-            "nome": "FONTANA FRANCESCO",
-            "gol": 6,
-            "squadra": "NEW TEAM"
-          },
-          {
-            "nome": "BADARACCHI LORENZO",
-            "gol": 4,
-            "squadra": "NEW TEAM"
-          },
-          {
-            "nome": "IANZINI LEONARDO",
-            "gol": 3,
-            "squadra": "NEW TEAM"
-          },
-          {
-            "nome": "TRENTA GABRIELE",
-            "gol": 2,
-            "squadra": "NEW TEAM"
-          },
-          {
-            "nome": "SORICETTI TOMMASO",
-            "gol": 2,
-            "squadra": "NEW TEAM"
-          },
-          {
-            "nome": "MAGLIETTA MATTEO",
-            "gol": 2,
-            "squadra": "NEW TEAM"
-          },
-          {
-            "nome": "FOLLEGA MANUEL",
-            "gol": 1,
-            "squadra": "NEW TEAM"
-          }
-        ]
-      },
-      {
-        "giornata": "1",
-        "girone": "GIRONE B",
-        "squadraA": "FF10",
-        "squadraB": "LATINA C5",
-        "campo": "CAMPO A",
-        "orario": "11:00",
-        "data": "10.05.2025",
-        "golA": 4,
-        "golB": 4,
-        "portiere": "ROSSETTI TIZIANO",
-        "squadraPortiere": "FF10",
-        "giocatore": "CRUDETTI ANGELO",
-        "squadraGiocatore": "LATINA C5",
-        "marcatori": [
-          {
-            "nome": "CIAFFI NICOLO'",
-            "gol": 2,
-            "squadra": "FF10"
-          },
-          {
-            "nome": "ARROCCO MATTIA",
-            "gol": 1,
-            "squadra": "FF10"
-          },
-          {
-            "nome": "ARROCCO EMANUELE",
-            "gol": 1,
-            "squadra": "FF10"
-          }
-        ]
-      },
-      {
-        "giornata": "1",
         "girone": "GIRONE C",
         "squadraA": "FORTITUDO POMEZIA",
         "squadraB": "MARINO ACADEMY",
@@ -1480,42 +1396,10 @@
         "marcatori": []
       },
       {
-        "giornata": "2",
-        "girone": "GIRONE A",
-        "squadraA": "S.PIETRO E PAOLO ROSSA",
-        "squadraB": "ATLETICO VELLETRI",
-        "campo": "CAMPO B",
-        "orario": "11.00",
-        "data": "17.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
-      },
-      {
-        "giornata": "2",
-        "girone": "GIRONE B",
-        "squadraA": "S.PIETRO E PAOLO BLU",
-        "squadraB": "FF10",
-        "campo": "CAMPO A",
-        "orario": "18.00",
-        "data": "19.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
-      },
-      {
         "giornata": "3",
         "girone": "GIRONE A",
         "squadraA": "NEW TEAM",
-        "squadraB": "S.PIETRO E PAOLO ROSSA",
+        "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "24.05.2025",
@@ -1530,23 +1414,7 @@
       {
         "giornata": "3",
         "girone": "GIRONE B",
-        "squadraA": "FF10",
-        "squadraB": "ACADEMY BLU",
-        "campo": "CAMPO A",
-        "orario": "10.00",
-        "data": "25.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
-      }
-      {
-        "giornata": "3",
-        "girone": "GIRONE B",
-        "squadraA": "S.PIETRO E PAOLO BLU",
+        "squadraA": "S.PIETRO E PAOLO",
         "squadraB": "LATINA C5",
         "campo": "CAMPO B",
         "orario": "10.00",
@@ -1606,7 +1474,155 @@
         "giocatore": "",
         "squadraGiocatore": "",
         "marcatori": []
-      },  
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE A",
+        "squadraA": "NEW TEAM",
+        "squadraB": "ATLETICO VELLETRI",
+        "campo": "CAMPO B",
+        "orario": "11.00",
+        "data": "10.05.2025",
+        "golA": 20,
+        "golB": 0,
+        "portiere": "PAINO GABRIELE",
+        "squadraPortiere": "ATLETICO VELLETRI",
+        "giocatore": "BADARACCHI LORENZO",
+        "squadraGiocatore": "NEW TEAM",
+        "marcatori": [
+          {
+            "nome": "FONTANA FRANCESCO",
+            "gol": 6,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "BADARACCHI LORENZO",
+            "gol": 4,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "IANZINI LEONARDO",
+            "gol": 3,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "TRENTA GABRIELE",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "SORICETTI TOMMASO",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "MAGLIETTA MATTEO",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "FOLLEGA MANUEL",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          }
+        ]
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE A",
+        "squadraA": "S.PIETRO E PAOLO ROSSA",
+        "squadraB": "ATLETICO VELLETRI",
+        "campo": "CAMPO B",
+        "orario": "11.00",
+        "data": "17.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE A",
+        "squadraA": "ACADEMY ROSSA",
+        "squadraB": "ATLETICO VELLETRI",
+        "campo": "CAMPO A",
+        "orario": "11.00",
+        "data": "24.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "1",
+        "girone": "GIRONE B",
+        "squadraA": "FF10",
+        "squadraB": "LATINA C5",
+        "campo": "CAMPO A",
+        "orario": "11:00",
+        "data": "10.05.2025",
+        "golA": 4,
+        "golB": 4,
+        "portiere": "ROSSETTI TIZIANO",
+        "squadraPortiere": "FF10",
+        "giocatore": "CRUDETTI ANGELO",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "CIAFFI NICOLO'",
+            "gol": 2,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "ARROCCO MATTIA",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "ARROCCO EMANUELE",
+            "gol": 1,
+            "squadra": "FF10"
+          }
+        ]
+      },
+      {
+        "giornata": "2",
+        "girone": "GIRONE B",
+        "squadraA": "S.PIETRO E PAOLO BLU",
+        "squadraB": "FF10",
+        "campo": "CAMPO A",
+        "orario": "18.00",
+        "data": "19.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "3",
+        "girone": "GIRONE B",
+        "squadraA": "FF10",
+        "squadraB": "ACADEMY BLU",
+        "campo": "CAMPO A",
+        "orario": "10.00",
+        "data": "25.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      }
     ],
     "finali": [],
     "rose": {
