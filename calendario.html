@@ -6,81 +6,26 @@
   <title>Calendario</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #d32f2f, #1565c0);
-      font-family: 'Orbitron', Arial, sans-serif;
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .container {
-      width: 100%;
-      max-width: 640px;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-    h2 {
-      text-align: center;
-      font-size: 26px;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-    .giornata {
-      margin-bottom: 30px;
-      border-radius: 16px;
-      padding: 15px;
-      background-color: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-    .giornata h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      color: #ffcccb;
-    }
-    .partita {
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 12px;
-      padding: 10px;
-      margin-bottom: 12px;
-    }
-    .partita div {
-      margin: 4px 0;
-      font-size: 15px;
-    }
-    .label {
-      font-weight: bold;
-      display: inline-block;
-      width: 100px;
-    }
-    a {
-      color: #ffcccb;
-      text-decoration: underline;
-    }
-    button {
-      width: 90%;
-      max-width: 300px;
-      padding: 14px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 14px;
-      border: none;
-      margin: 10px auto;
-      background: linear-gradient(to right, #d32f2f, #1565c0);
-      color: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      cursor: pointer;
-      display: block;
-    }
-    button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
-    }
-  </style>
+  
+<style>
+.riepilogo-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: 10px auto;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+.riepilogo-btn:hover {
+    background-color: #0056b3;
+}
+</style>
+
+
 </head>
 <body>
   <div class="container">

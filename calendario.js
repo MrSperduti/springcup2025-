@@ -1,55 +1,53 @@
 
-async function loadCalendar() {
-  const cat = new URLSearchParams(location.search).get('categoria');
-  const res = await fetch('dati.json');
-  const dati = await res.json();
-  const div = document.getElementById('calendario');
-  div.innerHTML = '';
+document.addEventListener("DOMContentLoaded", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const cat = urlParams.get("cat");
 
-  const partite = dati[cat]?.partite || [];
-  const giornate = {};
+  fetch("dati.json")
+    .then((res) => res.json())
+    .then((dati) => {
+      if (!dati[cat] || !dati[cat].partite) return;
 
-  partite.forEach(p => {
-    const g = p.giornata || 0;
-    if (!giornate[g]) giornate[g] = [];
-    giornate[g].push(p);
-  });
+      const partite = dati[cat].partite;
+      const container = document.getElementById("calendario");
 
-  Object.keys(giornate).sort((a, b) => parseInt(a) - parseInt(b)).forEach(g => {
-    const section = document.createElement('div');
-    const titolo = document.createElement('h3');
-    titolo.textContent = "Giornata " + g;
-    section.appendChild(titolo);
+      const partitePerGiornata = {};
+      partite.forEach((p) => {
+        const giornata = p.giornata || "Giornata unica";
+        if (!partitePerGiornata[giornata]) partitePerGiornata[giornata] = [];
+        partitePerGiornata[giornata].push(p);
+      });
 
-    const table = document.createElement('table');
-    table.innerHTML = '<tr><th>Squadra A</th><th>Squadra B</th><th>Data</th><th>Ora</th><th>Campo</th><th>Risultato</th><th>Girone</th></tr>';
+      Object.keys(partitePerGiornata).forEach((giornata) => {
+        const titolo = document.createElement("h2");
+        titolo.textContent = giornata;
+        container.appendChild(titolo);
 
-    giornate[g].sort((a, b) => {
-  function parseDate(p) {
-    if (!p.data || !p.orario) return new Date(8640000000000000); // Max date
-    const [day, month, year] = p.data.split('-').map(Number);
-    const [hour, minute] = p.orario.split('.').map(Number);
-    return new Date(year, month - 1, day, hour, minute);
-  }
+        partitePerGiornata[giornata].forEach((p, i) => {
+          const partita = document.createElement("div");
+          partita.className = "partita";
 
-  return parseDate(a) - parseDate(b);
-}).forEach(p => {
-  const row = document.createElement('tr');
-  row.innerHTML = `
-    <td>${p.squadraA || ''}</td>
-    <td>${p.squadraB || ''}</td>
-    <td>${p.data || ''}</td>
-    <td>${p.orario || ''}</td>
-    <td>${p.campo || ''}</td>
-    <td>${(p.golA || p.golB) ? p.golA + ' - ' + p.golB : ''}</td>
-    <td>${p.girone || ''}</td>
-  `;
-  table.appendChild(row);
+          const risultatoHTML = (p.golA !== undefined && p.golB !== undefined)
+            ? `${p.golA} - ${p.golB}`
+            : "Da giocare";
+
+          const idPartita = `${cat}-${partite.indexOf(p)}`;
+          const riepilogoButton = (p.golA !== undefined && p.golB !== undefined)
+            ? `<button onclick="location.href='partita.html?id=${idPartita}'" class="riepilogo-btn">📋 Riepilogo</button>`
+            : "";
+
+          partita.innerHTML = `
+            <div><span class="label">Squadre:</span> ${p.squadraA || ''} vs ${p.squadraB || ''}</div>
+            <div><span class="label">Data:</span> ${p.data || ''}</div>
+            <div><span class="label">Ora:</span> ${p.orario || ''}</div>
+            <div><span class="label">Campo:</span> ${p.campo || ''}</div>
+            <div><span class="label">Risultato:</span> ${risultatoHTML}</div>
+            <div><span class="label">Girone:</span> ${p.girone || ''}</div>
+            ${riepilogoButton}
+          `;
+
+          container.appendChild(partita);
+        });
+      });
+    });
 });
-
-    section.appendChild(table);
-    div.appendChild(section);
-  });
-}
-
-document.addEventListener('DOMContentLoaded', loadCalendar);
