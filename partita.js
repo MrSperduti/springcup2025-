@@ -1,105 +1,64 @@
 
-async function caricaDatiPartita() {
-  const params = new URLSearchParams(window.location.search);
-  const rawId = params.get('id');
-  if (!rawId) return;
+document.addEventListener("DOMContentLoaded", async () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const categoria = decodeURIComponent(urlParams.get("categoria"));
+  const giornata = decodeURIComponent(urlParams.get("giornata"));
+  const squadraA = decodeURIComponent(urlParams.get("squadraA"));
+  const squadraB = decodeURIComponent(urlParams.get("squadraB"));
+  const data = decodeURIComponent(urlParams.get("data"));
 
-  const [categoria, indexStr] = rawId.split("-");
-  const index = parseInt(indexStr);
-
-  const res = await fetch('dati.json');
+  const res = await fetch("dati.json");
   const dati = await res.json();
 
   const partite = dati[categoria]?.partite || [];
-  const giornate = {};
 
-  partite.forEach(p => {
-    const g = p.giornata || "0";
-    if (!giornate[g]) giornate[g] = [];
-    giornate[g].push(p);
-  });
+  const normalize = (s) => (s || "").trim().toLowerCase();
 
-  const partiteOrdinato = [];
-  const numeriche = Object.keys(giornate).filter(g => !isNaN(parseInt(g))).sort((a, b) => parseInt(a) - parseInt(b));
-  const nonNumeriche = Object.keys(giornate).filter(g => isNaN(parseInt(g))).sort();
+  const partita = partite.find(p =>
+    normalize(p.giornata) === normalize(giornata) &&
+    normalize(p.squadraA) === normalize(squadraA) &&
+    normalize(p.squadraB) === normalize(squadraB) &&
+    normalize(p.data) === normalize(data)
+  );
 
-  [...numeriche, ...nonNumeriche].forEach(g => {
-    giornate[g].forEach(p => partiteOrdinato.push(p));
-  });
-
-  if (index >= 0 && index < partiteOrdinato.length) {
-    mostraPartita(partiteOrdinato[index]);
+  if (!partita) {
+    document.getElementById("riepilogo").innerHTML = "<p>Partita non trovata.</p>";
+    return;
   }
-}
 
-function mostraPartita(p) {
-  const contenitore = document.getElementById("dettagli-partita");
+  const p = partita;
+  document.getElementById("titolo").textContent = `${p.squadraA} - ${p.squadraB}`;
+  document.getElementById("data").textContent = p.data || "";
+  document.getElementById("orario").textContent = p.orario || "";
+  document.getElementById("campo").textContent = p.campo || "";
+  document.getElementById("categoria").textContent = categoria;
+  document.getElementById("girone").textContent = p.girone || "";
+  document.getElementById("risultato").textContent = (p.golA != null && p.golB != null) ? `${p.golA} - ${p.golB}` : "";
 
-  const titolo = document.createElement("h2");
-  if (p.golA !== undefined && p.golB !== undefined && p.golA !== null && p.golB !== null) {
-    titolo.textContent = `${p.squadraA} ${p.golA} - ${p.golB} ${p.squadraB}`;
-  } else {
-    titolo.textContent = `${p.squadraA} vs ${p.squadraB}`;
-  }
-  contenitore.appendChild(titolo);
+  // Miglior giocatore e portiere
+  document.getElementById("giocatore").textContent = p.giocatore || "";
+  document.getElementById("squadraGiocatore").textContent = p.squadraGiocatore || "";
+  document.getElementById("portiere").textContent = p.portiere || "";
+  document.getElementById("squadraPortiere").textContent = p.squadraPortiere || "";
 
-  const wrapper = document.createElement("div");
-  wrapper.className = "wrapper";
+  // Marcatori
+  const marcatori = p.marcatori || [];
+  const marcatoriA = marcatori.filter(m => normalize(m.squadra) === normalize(p.squadraA));
+  const marcatoriB = marcatori.filter(m => normalize(m.squadra) === normalize(p.squadraB));
 
-  const colA = document.createElement("div");
-  colA.className = "squadra";
-  const colB = document.createElement("div");
-  colB.className = "squadra";
-
-  const squadraATitolo = document.createElement("h3");
-  squadraATitolo.textContent = p.squadraA;
-  colA.appendChild(squadraATitolo);
-
-  const squadraBTitolo = document.createElement("h3");
-  squadraBTitolo.textContent = p.squadraB;
-  colB.appendChild(squadraBTitolo);
-
-  const marcatori = Array.isArray(p.marcatori) ? p.marcatori : [];
-  const marcatoriA = marcatori.filter(m => m.squadra === p.squadraA);
-  const marcatoriB = marcatori.filter(m => m.squadra === p.squadraB);
+  const listaA = document.getElementById("marcatoriA");
+  const listaB = document.getElementById("marcatoriB");
+  listaA.innerHTML = "";
+  listaB.innerHTML = "";
 
   marcatoriA.forEach(m => {
-    const el = document.createElement("div");
-    el.textContent = `${m.nome} (${m.gol})`;
-    colA.appendChild(el);
+    const li = document.createElement("li");
+    li.textContent = `${m.nome} (${m.gol})`;
+    listaA.appendChild(li);
   });
-
   marcatoriB.forEach(m => {
-    const el = document.createElement("div");
-    el.textContent = `${m.nome} (${m.gol})`;
-    colB.appendChild(el);
+    const li = document.createElement("li");
+    li.textContent = `${m.nome} (${m.gol})`;
+    listaB.appendChild(li);
   });
-
-  wrapper.appendChild(colA);
-  wrapper.appendChild(colB);
-  contenitore.appendChild(wrapper);
-
-  // Extra info: miglior giocatore e portiere dai campi personalizzati
-  const extra = document.createElement("div");
-  extra.className = "extra-info";
-
-  if (p.giocatore && p.squadraGiocatore) {
-    const el = document.createElement("div");
-    el.textContent = `⭐ Miglior Giocatore: ${p.giocatore} - ${p.squadraGiocatore}`;
-    extra.appendChild(el);
-  }
-
-  if (p.portiere && p.squadraPortiere) {
-    const el = document.createElement("div");
-    el.textContent = `🧤 Miglior Portiere: ${p.portiere} - ${p.squadraPortiere}`;
-    extra.appendChild(el);
-  }
-
-  if (extra.childElementCount > 0) {
-    extra.style.marginTop = "20px";
-    extra.style.textAlign = "center";
-    contenitore.appendChild(extra);
-  }
-}
-
-window.onload = caricaDatiPartita;
+});
