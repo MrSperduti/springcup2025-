@@ -9,7 +9,7 @@
       "GIRONE B": [
         "FORTITUDO POMEZIA",
         "CIRCOLO MASTER",
-        "VELLETRI"
+        "ATLETICO VELLETRI"
       ]
     },
     "partite": [
@@ -65,7 +65,7 @@
         "giornata": "1",
         "girone": "GIRONE B",
         "squadraA": "FORTITUDO POMEZIA",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO A",
         "orario": "",
         "data": "DA DEFINIRE",
@@ -96,7 +96,7 @@
       {
         "giornata": "3",
         "girone": "GIRONE B",
-        "squadraA": "VELLETRI",
+        "squadraA": "ATLETICO VELLETRI",
         "squadraB": "CIRCOLO MASTER",
         "campo": "CAMPO A",
         "orario": "18.00",
@@ -1258,7 +1258,7 @@
         "ACADEMY ROSSA",
         "S.PIETRO E PAOLO ROSSA",
         "NEW TEAM",
-        "VELLETRI"
+        "ATLETICO VELLETRI"
       ],
       "GIRONE B": [
         "ACADEMY BLU",
@@ -1297,13 +1297,39 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "10.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 4,
+        "golB": 3,
+        "portiere": "BIANCHINI JURI",
+        "squadraPortiere": "S.PIETRO E PAOLO BLU",
+        "giocatore": "SCHIAVONE DAVIDE",
+        "squadraGiocatore": "S.PIETRO E PAOLO BLU",
+        "marcatori": [
+          {
+            "nome": "COTUGNO MATTEO",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "PALAZZOLO LUCA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "OLIVIERI ANGELO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "SCHIAVONE DAVIDE",
+            "gol": 2,
+            "squadra": "S.PIETRO E PAOLO BLU"
+          },
+          {
+            "nome": "PAPA GIUSEPPE",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO BLU"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -1453,23 +1479,59 @@
         "giornata": "1",
         "girone": "GIRONE A",
         "squadraA": "NEW TEAM",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "10.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 20,
+        "golB": 0,
+        "portiere": "PAINO GABRIELE",
+        "squadraPortiere": "ATLETICO VELLETRI",
+        "giocatore": "BADARACCHI LORENZO",
+        "squadraGiocatore": "NEW TEAM",
+        "marcatori": [
+          {
+            "nome": "FONTANA FRANCESCO",
+            "gol": 6,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "BADARACCHI LORENZO",
+            "gol": 4,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "IANZINI LEONARDO",
+            "gol": 3,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "TRENTA GABRIELE",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "SORICETTI TOMMASO",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "MAGLIETTA MATTEO",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "FOLLEGA MANUEL",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          }
+        ]
       },
       {
         "giornata": "2",
         "girone": "GIRONE A",
         "squadraA": "S.PIETRO E PAOLO ROSSA",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "17.05.2025",
@@ -1485,7 +1547,7 @@
         "giornata": "3",
         "girone": "GIRONE A",
         "squadraA": "ACADEMY ROSSA",
-        "squadraB": "VELLETRI",
+        "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO A",
         "orario": "11.00",
         "data": "24.05.2025",
@@ -1505,13 +1567,29 @@
         "campo": "CAMPO A",
         "orario": "11:00",
         "data": "10.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 4,
+        "golB": 4,
+        "portiere": "ROSSETTI TIZIANO",
+        "squadraPortiere": "FF10",
+        "giocatore": "CRUDETTI ANGELO",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "CIAFFI NICOLO'",
+            "gol": 2,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "ARROCCO MATTIA",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "ARROCCO EMANUELE",
+            "gol": 1,
+            "squadra": "FF10"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -1962,7 +2040,7 @@
           "nascita": ""
         }
       ],
-      "ATLETICO VELLETRI": [
+      "ATLETICO ATLETICO VELLETRI": [
         {
           "cognome": "COSTANZI",
           "nome": "SIMONE",
@@ -2706,7 +2784,7 @@
       {
         "giornata": "1",
         "girone": "GIRONE UNICO",
-        "squadraA": "ANZIOC5",
+        "squadraA": "ANZIO C5",
         "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO B",
         "orario": "12.00",
@@ -2714,7 +2792,7 @@
         "golA": 6,
         "golB": 3,
         "portiere": "BANDINU GABRIELE",
-        "squadraPortiere": "S. PIETRO E PAOLO",
+        "squadraPortiere": "S.PIETRO E PAOLO",
         "giocatore": "DENNI FRANCESCO",
         "squadraGiocatore": "ANZIO C5",
         "marcatori": [
@@ -2736,12 +2814,12 @@
           {
             "nome": "DIAGNE ALESSANDRO",
             "gol": 2,
-            "squadra": "S. PIETRO E PAOLO"
+            "squadra": "S.PIETRO E PAOLO"
           },
           {
             "nome": "KIFLE JORDAN",
             "gol": 1,
-            "squadra": "S. PIETRO E PAOLO"
+            "squadra": "S.PIETRO E PAOLO"
           }
         ]
       },
