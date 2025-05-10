@@ -4,84 +4,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Riepilogo Partita</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 20px;
-      background: linear-gradient(135deg, #d32f2f, #1565c0);
-      font-family: 'Orbitron', sans-serif;
-      color: white;
-    }
-    .contenitore {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 16px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    }
-    h1, h2, h3, h4, h5 {
-      text-align: center;
-    }
-    .wrapper {
-      display: flex;
-      justify-content: space-evenly;
-      gap: 20px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-    .squadra {
-      flex: 1 1 45%;
-      background-color: rgba(255,255,255,0.1);
-      border-radius: 12px;
-      padding: 10px;
-      min-width: 150px;
-    }
-    .squadra h3 {
-      border-bottom: 1px solid white;
-      padding-bottom: 5px;
-      font-size: 18px;
-    }
-    .squadra div {
-      margin: 3px 0;
-      font-size: 13px;
-    }
-    .extra-info {
-      margin-top: 25px;
-      text-align: center;
-      font-size: 14px;
-    }
-    .buttons {
-      text-align: center;
-      margin-top: 30px;
-    }
-    .buttons button {
-      background: linear-gradient(to right, #d32f2f, #1565c0);
-      border: none;
-      padding: 12px 20px;
-      border-radius: 10px;
-      font-size: 15px;
-      color: white;
-      margin: 0 10px;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-    .buttons button:hover {
-      transform: scale(1.05);
-    }
-  </style>
+  <title>Dettaglio Partita</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="contenitore">
-    <h1>Riepilogo Partita</h1>
-    <div id="dettagli-partita"></div>
-    <div class="buttons">
-      <button onclick="history.back()">🔙 Indietro</button>
-      <button onclick="window.location.href='index.html'">🏠 Home</button>
-    </div>
-  </div>
+  <h1 id="titolo"></h1>
+  <p><strong>Data:</strong> <span id="data"></span></p>
+  <p><strong>Orario:</strong> <span id="orario"></span></p>
+  <p><strong>Campo:</strong> <span id="campo"></span></p>
+  <p><strong>Categoria:</strong> <span id="categoria"></span></p>
+  <p><strong>Girone:</strong> <span id="girone"></span></p>
+  <p><strong>Risultato:</strong> <span id="risultato"></span></p>
+
+  <h3>Marcatori - <span id="squadraA"></span></h3>
+  <ul id="marcatoriA"></ul>
+
+  <h3>Marcatori - <span id="squadraB"></span></h3>
+  <ul id="marcatoriB"></ul>
+
+  <h3>Miglior Giocatore</h3>
+  <p><span id="giocatore"></span> (<span id="squadraGiocatore"></span>)</p>
+
+  <h3>Miglior Portiere</h3>
+  <p><span id="portiere"></span> (<span id="squadraPortiere"></span>)</p>
+
   <script src="partita.js"></script>
 </body>
 </html>
