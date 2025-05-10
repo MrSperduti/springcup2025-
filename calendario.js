@@ -1,66 +1,49 @@
+async function loadCalendar() {
+  const cat = new URLSearchParams(location.search).get('categoria');
+  const res = await fetch('dati.json');
+  const dati = await res.json();
+  const div = document.getElementById('calendario');
+  div.innerHTML = '';
 
-document.addEventListener("DOMContentLoaded", async () => {
-  const categoria = new URLSearchParams(window.location.search).get("categoria");
-  const response = await fetch("dati.json");
-  const dati = await response.json();
-  const calendario = document.getElementById("calendario");
-
-  if (!dati[categoria] || !dati[categoria].partite) {
-    calendario.innerHTML = "<p>Nessuna partita trovata per questa categoria.</p>";
-    return;
-  }
-
-  const partite = dati[categoria].partite;
-
-  // Ordina le partite per giornata e poi per data e orario
+  const partite = dati[cat]?.partite || [];
   const giornate = {};
+
   partite.forEach(p => {
-    const g = p.giornata || "0";
+    const g = p.giornata || 0;
     if (!giornate[g]) giornate[g] = [];
     giornate[g].push(p);
   });
 
-  const numeriche = Object.keys(giornate).filter(g => !isNaN(parseInt(g))).sort((a, b) => a - b);
-  const nonNumeriche = Object.keys(giornate).filter(g => isNaN(parseInt(g))).sort();
-
-  const giornateOrdinate = [...numeriche, ...nonNumeriche];
-
-  giornateOrdinate.forEach(g => {
-    const sezione = document.createElement("div");
-    sezione.className = "giornata-section";
-
-    const titolo = document.createElement("h3");
+  Object.keys(giornate).sort((a, b) => a.localeCompare(b, undefined, {numeric: true})).forEach(g => {
+    const section = document.createElement('div');
+    const titolo = document.createElement('h3');
     titolo.textContent = "Giornata " + g;
-    sezione.appendChild(titolo);
+    section.appendChild(titolo);
 
-    const table = document.createElement("table");
-    table.innerHTML = "<tr><th>Data</th><th>Ora</th><th>Squadra A</th><th></th><th>Squadra B</th><th>Campo</th><th>Risultato</th></tr>";
+    const table = document.createElement('table');
+    table.innerHTML = '<tr><th>Squadra A</th><th>Squadra B</th><th>Data</th><th>Ora</th><th>Campo</th><th>Risultato</th><th>Girone</th></tr>';
 
-    giornate[g].sort((a, b) => {
-      const dA = new Date("1970/01/01 " + (a.orario || "00:00"));
-      const dB = new Date("1970/01/01 " + (b.orario || "00:00"));
-      return dA - dB;
-    }).forEach((p) => {
-      const row = document.createElement("tr");
-
-      const partitaLink = document.createElement("a");
-      partitaLink.href = `partita.html?categoria=${encodeURIComponent(categoria)}&giornata=${encodeURIComponent(p.giornata)}&squadraA=${encodeURIComponent(p.squadraA)}&squadraB=${encodeURIComponent(p.squadraB)}&data=${encodeURIComponent(p.data)}`;
-      partitaLink.textContent = (p.golA != null && p.golB != null) ? `${p.golA} - ${p.golB}` : "";
+    giornate[g].forEach(p => {
+      const row = document.createElement('tr');
+      const idPartita = `${cat}-${partite.indexOf(p)}`;
+      const risultato = (p.golA != null && p.golB != null) ? `${p.golA} - ${p.golB}` : 'Dettagli';
+      const risultatoLink = `<a href="partita.html?id=${idPartita}">${risultato}</a>`;
 
       row.innerHTML = `
-        <td>${p.data}</td>
-        <td>${p.orario}</td>
-        <td>${p.squadraA}</td>
-        <td>-</td>
-        <td>${p.squadraB}</td>
-        <td>${p.campo}</td>
-        <td></td>
+        <td>${p.squadraA || ''}</td>
+        <td>${p.squadraB || ''}</td>
+        <td>${p.data || ''}</td>
+        <td>${p.orario || ''}</td>
+        <td>${p.campo || ''}</td>
+        <td>${risultatoLink}</td>
+        <td>${p.girone || ''}</td>
       `;
-      if (partitaLink.textContent) row.cells[6].appendChild(partitaLink);
       table.appendChild(row);
     });
 
-    sezione.appendChild(table);
-    calendario.appendChild(sezione);
+    section.appendChild(table);
+    div.appendChild(section);
   });
-});
+}
+
+document.addEventListener('DOMContentLoaded', loadCalendar);
