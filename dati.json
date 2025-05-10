@@ -2844,8 +2844,8 @@
         "girone": "GIRONE UNICO",
         "squadraA": "FORTE COLLEFERRO",
         "squadraB": "S.PIETRO E PAOLO",
-        "campo": "CAMPO B",
-        "orario": "17.00",
+        "campo": "CAMPO C",
+        "orario": "19.00",
         "data": "15.05.2025",
         "golA": null,
         "golB": null,
@@ -3227,7 +3227,7 @@
       "GIRONE UNICO": [
         "ACADEMY",
         "FUTSAL BASIC ACADEMY",
-        "S. GIOVANNI EVANGELISTA"
+        "S.GIOVANNI EVANGELISTA"
       ]
     },
     "partite": [
@@ -3251,10 +3251,10 @@
         "giornata": "2",
         "girone": "GIRONE UNICO",
         "squadraA": "ACADEMY",
-        "squadraB": "S. GIOVANNI EVANGELISTA",
+        "squadraB": "S.GIOVANNI EVANGELISTA",
         "campo": "CAMPO A",
         "orario": "19.00",
-        "data": "15.05.2025",
+        "data": "14.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -3298,7 +3298,7 @@
       {
         "giornata": "5",
         "girone": "GIRONE UNICO",
-        "squadraA": "S. GIOVANNI EVANGELISTA",
+        "squadraA": "S.GIOVANNI EVANGELISTA",
         "squadraB": "ACADEMY",
         "campo": "CAMPO A",
         "orario": "18.00",
@@ -3314,7 +3314,7 @@
       {
         "giornata": "6",
         "girone": "GIRONE UNICO",
-        "squadraA": "S. GIOVANNI EVANGELISTA",
+        "squadraA": "S.GIOVANNI EVANGELISTA",
         "squadraB": "FUTSAL BASIC ACADEMY",
         "campo": "CAMPO A",
         "orario": "18.00",
@@ -3330,7 +3330,7 @@
     ],
     "finali": [],
     "rose": {
-      "S. GIOVANNI EVANGELISTA": [
+      "S.GIOVANNI EVANGELISTA": [
         {
           "cognome": "AMMENDOLA",
           "nome": "GRETA",
