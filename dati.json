@@ -1312,12 +1312,12 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
+        "golA": 4,
+        "golB": 3,
+        "portiere": "BIANCHINI JURI",
+        "squadraPortiere": "S. PIETRO E PAOLO",
+        "giocatore": "SCHIAVONE DAVIDE",
+        "squadraGiocatore": "S. PIETRO E PAOLO",
         "marcatori": []
       },
       {
