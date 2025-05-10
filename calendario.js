@@ -1,4 +1,10 @@
 
+function generaIdPartita(p, categoria) {
+  const clean = (s) => (s || '').toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9]/g, '');
+  return `${clean(categoria)}_${clean(p.giornata)}_${clean(p.squadraA)}_${clean(p.squadraB)}_${clean(p.data)}_${clean(p.orario)}`;
+}
+    
+
 async function loadCalendar() {
   const cat = new URLSearchParams(location.search).get('categoria');
   const res = await fetch('dati.json');
@@ -34,9 +40,24 @@ async function loadCalendar() {
 
   return parseDate(a) - parseDate(b);
 }).forEach(p => {
+  
+  const idPartita = generaIdPartita(p, cat);
+  const haRisultato = p.golA !== null && p.golB !== null && p.golA !== undefined && p.golB !== undefined;
+  const risultato = haRisultato
+    ? `<div>${p.golA} - ${p.golB}</div><div style='text-align:center; margin-top: 5px;'><button onclick="location.href='partita.html?id=${idPartita}'">📋 Riepilogo</button></div>`
+    : "-";
   const row = document.createElement('tr');
   row.innerHTML = `
     <td>${p.squadraA || ''}</td>
+    <td>${p.squadraB || ''}</td>
+    <td>${p.data || ''}</td>
+    <td>${p.orario || ''}</td>
+    <td>${p.campo || ''}</td>
+    <td>${risultato}</td>
+    <td>${p.girone || ''}</td>
+  `;
+  table.appendChild(row);
+
     <td>${p.squadraB || ''}</td>
     <td>${p.data || ''}</td>
     <td>${p.orario || ''}</td>

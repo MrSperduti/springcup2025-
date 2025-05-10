@@ -1,4 +1,10 @@
 
+function generaIdPartita(p, categoria) {
+  const clean = (s) => (s || '').toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9]/g, '');
+  return `${clean(categoria)}_${clean(p.giornata)}_${clean(p.squadraA)}_${clean(p.squadraB)}_${clean(p.data)}_${clean(p.orario)}`;
+}
+    
+
 async function caricaDatiPartita() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get('id');
