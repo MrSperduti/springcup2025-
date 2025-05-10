@@ -21,44 +21,13 @@
         "campo": "CAMPO A",
         "orario": "19.00",
         "data": "09.05.2025",
-        "golA": 6,
-        "golB": 4,
-        "portiere": "PIASCO VALERIO",
-        "squadraPortiere": "ARDEA C5",
-        "giocatore": "SUSIN FRANCESCO",
-        "squadraGiocatore": "ACADEMY",
-        "marcatori": [
-          {
-            "nome": "SUSIN FRANCESCO",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "GOBBI ALESSANDRO",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "IANCU CRISTIAN",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "BARCHIESI ANDREA",
-            "gol": 1,
-            "squadra": "ARDEA C5"
-          },
-          {
-            "nome": "ORSINI FRANCESCO",
-            "gol": 1,
-            "squadra": "ARDEA C5"
-          },
-          {
-            "nome": "IMBESI VALERIO",
-            "gol": 1,
-            "squadra": "ARDEA C5"
-          }
-        ]
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       },
       {
         "giornata": "2",
@@ -637,44 +606,13 @@
         "campo": "CAMPO A",
         "orario": "14.00",
         "data": "10.05.2025",
-        "golA": 11,
-        "golB": 1,
-        "portiere": "BOCALE EDOARDO",
-        "squadraPortiere": "ECOCITY GENZANO",
-        "giocatore": "D'AMORE BASILIO",
-        "squadraGiocatore": "FORTITUDO POMEZIA",
-        "marcatori": [
-          {
-            "nome": "INCITTI ALESSIO",
-            "gol": 3,
-            "squadra": "FORTITUDO POMEZIA"
-          },
-          {
-            "nome": "PETRISOR DIEGO NICOLAS",
-            "gol": 3,
-            "squadra": "FORTITUDO POMEZIA"
-          },
-          {
-            "nome": "BARATTA MARCO",
-            "gol": 2,
-            "squadra": "FORTITUDO POMEZIA"
-          },
-          {
-            "nome": "D'AMORE BASILIO",
-            "gol": 1,
-            "squadra": "FORTITUDO POMEZIA"
-          },
-          {
-            "nome": "DI BARTOLOMEI GABRIEL MARIA",
-            "gol": 1,
-            "squadra": "FORTITUDO POMEZIA"
-          },
-          {
-            "nome": "BOCALE RICCARDO",
-            "gol": 1,
-            "squadra": "ECOCITY GENZANO"
-          }
-        ]
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       },
       {
         "giornata": "1",
@@ -2240,8 +2178,7 @@
         "FORTITUDO POMEZIA",
         "ACADEMY BLU",
         "LATINA C5",
-        "S.PIETRO E PAOLO",
-        "FF10"
+        "S.PIETRO E PAOLO"
       ]
     },
     "partite": [
@@ -2396,86 +2333,6 @@
         "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO A",
         "orario": "11.00",
-        "data": "25.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
-      },
-      {
-        "giornata": "1",
-        "girone": "GIRONE UNICO",
-        "squadraA": "ACADEMY ROSSA",
-        "squadraB": "FF10",
-        "campo": "CAMPO A",
-        "orario": "18.00",
-        "data": "12.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
-      },
-      {
-        "giornata": "2",
-        "girone": "GIRONE UNICO",
-        "squadraA": "FF10",
-        "squadraB": "LATINA C5",
-        "campo": "CAMPO A",
-        "orario": "19.00",
-        "data": "16.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
-      },
-      {
-        "giornata": "3",
-        "girone": "GIRONE UNICO",
-        "squadraA": "FF10",
-        "squadraB": "FORTITUDO POMEZIA",
-        "campo": "CAMPO A",
-        "orario": "12.00",
-        "data": "18.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
-      },
-      {
-        "giornata": "4",
-        "girone": "GIRONE UNICO",
-        "squadraA": "FF10",
-        "squadraB": "S. PIETRO E PAOLO",
-        "campo": "CAMPO A",
-        "orario": "19.00",
-        "data": "21.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
-      },
-      {
-        "giornata": "5",
-        "girone": "GIRONE UNICO",
-        "squadraA": "FF10",
-        "squadraB": "ACADEMY BLU",
-        "campo": "CAMPO A",
-        "orario": "12.00",
         "data": "25.05.2025",
         "golA": null,
         "golB": null,
@@ -3299,7 +3156,7 @@
         "squadraA": "ACADEMY",
         "squadraB": "FUTSAL BASIC ACADEMY",
         "campo": "CAMPO A",
-        "orario": "19.00",
+        "orario": "18.00",
         "data": "13.05.2025",
         "golA": null,
         "golB": null,
