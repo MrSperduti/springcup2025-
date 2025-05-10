@@ -4,12 +4,12 @@
       "GIRONE A": [
         "ACADEMY",
         "NEW TEAM",
-        "ARDEA C5"
+        "ARDEA"
       ],
       "GIRONE B": [
         "FORTITUDO POMEZIA",
         "CIRCOLO MASTER",
-        "ATLETICO VELLETRI"
+        "VELLETRI"
       ]
     },
     "partite": [
@@ -17,53 +17,22 @@
         "giornata": "1",
         "girone": "GIRONE A",
         "squadraA": "ACADEMY",
-        "squadraB": "ARDEA C5",
+        "squadraB": "ARDEA",
         "campo": "CAMPO A",
         "orario": "19.00",
         "data": "09.05.2025",
-        "golA": 6,
-        "golB": 4,
-        "portiere": "PIASCO VALERIO",
-        "squadraPortiere": "ARDEA C5",
-        "giocatore": "SUSIN FRANCESCO",
-        "squadraGiocatore": "ACADEMY",
-        "marcatori": [
-          {
-            "nome": "SUSIN FRANCESCO",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "GOBBI ALESSANDRO",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "IANCU CRISTIAN",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "ORSINI FRANCESCO",
-            "gol": 2,
-            "squadra": "ARDEA C5"
-          },
-          {
-            "nome": "BARCHIESI ANDREA",
-            "gol": 1,
-            "squadra": "ARDEA C5"
-          },
-          {
-            "nome": "IMBESI VALERIO",
-            "gol": 1,
-            "squadra": "ARDEA C5"
-          }
-        ]
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       },
       {
         "giornata": "2",
         "girone": "GIRONE A",
-        "squadraA": "ARDEA C5",
+        "squadraA": "ARDEA",
         "squadraB": "NEW TEAM",
         "campo": "CAMPO B ",
         "orario": "18.00",
@@ -96,7 +65,7 @@
         "giornata": "1",
         "girone": "GIRONE B",
         "squadraA": "FORTITUDO POMEZIA",
-        "squadraB": "ATLETICO VELLETRI",
+        "squadraB": "VELLETRI",
         "campo": "CAMPO A",
         "orario": "",
         "data": "DA DEFINIRE",
@@ -127,7 +96,7 @@
       {
         "giornata": "3",
         "girone": "GIRONE B",
-        "squadraA": "ATLETICO VELLETRI",
+        "squadraA": "VELLETRI",
         "squadraB": "CIRCOLO MASTER",
         "campo": "CAMPO A",
         "orario": "18.00",
@@ -376,7 +345,7 @@
           "nascita": "27.02.2010"
         }
       ],
-      "ARDEA C5": [
+      "ARDEA": [
         {
           "cognome": "PIASCO",
           "nome": "VALERIO",
@@ -453,7 +422,7 @@
           "nascita": "20.08.2009"
         }
       ],
-      "ATLETICO ATLETICO VELLETRI": [
+      "ATLETICO VELLETRI": [
         {
           "cognome": "ADAMI",
           "nome": "ALESSANDRO",
@@ -1289,7 +1258,7 @@
         "ACADEMY ROSSA",
         "S.PIETRO E PAOLO ROSSA",
         "NEW TEAM",
-        "ATLETICO VELLETRI"
+        "VELLETRI"
       ],
       "GIRONE B": [
         "ACADEMY BLU",
@@ -1312,39 +1281,13 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "11.05.2025",
-        "golA": 4,
-        "golB": 3,
-        "portiere": "BIANCHINI JURI",
-        "squadraPortiere": "S. PIETRO E PAOLO",
-        "giocatore": "SCHIAVONE DAVIDE",
-        "squadraGiocatore": "S. PIETRO E PAOLO",
-        "marcatori": [
-          {
-            "nome": "COTUGNO MATTEO",
-            "gol": 2,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "PALAZZOLO LUCA",
-            "gol": 1,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "OLIVIERI ANGELO",
-            "gol": 1,
-            "squadra": "ACADEMY"
-          },
-          {
-            "nome": "SCHIAVONE DAVIDE",
-            "gol": 2,
-            "squadra": "S. PIETRO E PAOLO"
-          },
-          {
-            "nome": "PAPA GIUSEPPE",
-            "gol": 1,
-            "squadra": "S. PIETRO E PAOLO"
-          }
-        ]
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       },
       {
         "giornata": "1",
@@ -1510,59 +1453,23 @@
         "giornata": "1",
         "girone": "GIRONE A",
         "squadraA": "NEW TEAM",
-        "squadraB": "ATLETICO VELLETRI",
+        "squadraB": "VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "10.05.2025",
-        "golA": 20,
-        "golB": 0,
-        "portiere": "PAINO GABRIELE",
-        "squadraPortiere": "ATLETICO VELLETRI",
-        "giocatore": "BADARACCHI LORENZO",
-        "squadraGiocatore": "NEW TEAM",
-        "marcatori": [
-          {
-            "nome": "FONTANA FRANCESCO",
-            "gol": 6,
-            "squadra": "LATINA C5"
-          },
-          {
-            "nome": "BADARACCHI LORENZO",
-            "gol": 4,
-            "squadra": "NEW TEAM C5"
-          },
-          {
-            "nome": "IANZINI LEONARDO",
-            "gol": 3,
-            "squadra": "NEW TEAM"
-          },
-          {
-            "nome": "SORICETTI TOMMASO",
-            "gol": 2,
-            "squadra": "NEW TEAM"
-          },
-          {
-            "nome": "TRENTA GABRIELE",
-            "gol": 2,
-            "squadra": "NEW TEAM"
-          },
-          {
-            "nome": "MIGLIETTA MATTEO",
-            "gol": 2,
-            "squadra": "NEW TEAM"
-          },
-          {
-            "nome": "FOLLEGA MANUEL",
-            "gol": 1,
-            "squadra": "NEW TEAM"
-          }
-        ]
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       },
       {
         "giornata": "2",
         "girone": "GIRONE A",
         "squadraA": "S.PIETRO E PAOLO ROSSA",
-        "squadraB": "ATLETICO VELLETRI",
+        "squadraB": "VELLETRI",
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "17.05.2025",
@@ -1578,7 +1485,7 @@
         "giornata": "3",
         "girone": "GIRONE A",
         "squadraA": "ACADEMY ROSSA",
-        "squadraB": "ATLETICO VELLETRI",
+        "squadraB": "VELLETRI",
         "campo": "CAMPO A",
         "orario": "11.00",
         "data": "24.05.2025",
@@ -1598,49 +1505,13 @@
         "campo": "CAMPO A",
         "orario": "11:00",
         "data": "10.05.2025",
-        "golA": 4,
-        "golB": 4,
-        "portiere": "ROSSETTI TIZIANO",
-        "squadraPortiere": "FF10",
-        "giocatore": "CRUDETTI ANGELO",
-        "squadraGiocatore": "LATINA C5",
-        "marcatori": [
-          {
-            "nome": "CRUDETTI ANGELO",
-            "gol": 1,
-            "squadra": "LATINA C5"
-          },
-          {
-            "nome": "DI RITA LORENZO",
-            "gol": 1,
-            "squadra": "LATINA C5"
-          },
-          {
-            "nome": "GALANTE CRISTIANO",
-            "gol": 1,
-            "squadra": "LATINA C5"
-          },
-          {
-            "nome": "SOPRANZANO GABRIELE",
-            "gol": 1,
-            "squadra": "LATINA C5"
-          },
-          {
-            "nome": "CIAFFINI NICOLO'",
-            "gol": 1,
-            "squadra": "FF10"
-          },
-          {
-            "nome": "ARROCCO MATTIA",
-            "gol": 1,
-            "squadra": "FF10"
-          },
-          {
-            "nome": "ARROCCO EMENUELE",
-            "gol": 1,
-            "squadra": "FF10"
-          }
-        ]
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       },
       {
         "giornata": "2",
@@ -2091,7 +1962,7 @@
           "nascita": ""
         }
       ],
-      "ATLETICO ATLETICO VELLETRI": [
+      "ATLETICO VELLETRI": [
         {
           "cognome": "COSTANZI",
           "nome": "SIMONE",
@@ -2840,13 +2711,39 @@
         "campo": "CAMPO B",
         "orario": "12.00",
         "data": "10.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 6,
+        "golB": 3,
+        "portiere": "BANDINU GABRIELE",
+        "squadraPortiere": "S. PIETRO E PAOLO",
+        "giocatore": "DENNI FRANCESCO",
+        "squadraGiocatore": "ANZIO C5",
+        "marcatori": [
+          {
+            "nome": "DENNI FRANCESCO",
+            "gol": 3,
+            "squadra": "ANZIO C5"
+          },
+          {
+            "nome": "CARADONNA TOMMASO",
+            "gol": 2,
+            "squadra": "ANZIO C5"
+          },
+          {
+            "nome": "BELLINI DANIELE",
+            "gol": 1,
+            "squadra": "ANZIO C5"
+          },
+          {
+            "nome": "DIAGNE ALESSANDRO",
+            "gol": 2,
+            "squadra": "S. PIETRO E PAOLO"
+          },
+          {
+            "nome": "KIFLE JORDAN",
+            "gol": 1,
+            "squadra": "S. PIETRO E PAOLO"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -3367,13 +3264,13 @@
           "nascita": "20.07.2012"
         },
         {
-          "cognome": "CIPRIANI",
-          "nome": "MARTINA",
+          "cognome": "MARTINA",
+          "nome": "CIPRIANI",
           "nascita": "01.08.2010"
         },
         {
-          "cognome": "DI SILVIO",
-          "nome": "GAIA",
+          "cognome": "GAIA",
+          "nome": "DI SILVIO",
           "nascita": "12.03.2013"
         },
         {
@@ -3393,12 +3290,12 @@
         },
         {
           "cognome": "ASCIONE",
-          "nome": "MARIA FRANCESCA",
-          "nascita": "05.05.2015"
+          "nome": "MARIA",
+          "nascita": "FRANCESCA"
         },
         {
-          "cognome": "ROLLO",
-          "nome": "KHARYMA",
+          "cognome": "KHARYMA",
+          "nome": "ROLLO",
           "nascita": "28.12.2011"
         }
       ],
