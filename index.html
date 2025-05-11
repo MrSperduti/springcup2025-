@@ -15,15 +15,13 @@
       color: white;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      position: relative;
     }
     .container {
       text-align: center;
       width: 100%;
       max-width: 640px;
-      padding: 40px 20px;
+      padding: 20px;
       position: relative;
       z-index: 1;
     }
@@ -31,7 +29,8 @@
       max-width: 200px;
       width: 100%;
       height: auto;
-      margin-bottom: 20px;
+      margin: 20px auto;
+      display: block;
     }
     h1 {
       font-family: 'Orbitron', sans-serif;
@@ -47,6 +46,7 @@
       width: 100%;
       justify-content: center;
       align-items: center;
+      margin-bottom: 20px;
     }
     .btn {
       padding: 16px 18px;
@@ -89,6 +89,9 @@
       100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
     }
     @media (max-width: 600px) {
+      html, body {
+        padding-top: 20px;
+      }
       h1 {
         font-size: 24px;
       }
@@ -97,9 +100,9 @@
         padding: 14px 16px;
         width: 100%;
       }
-      .logos {
-        flex-direction: column;
-        gap: 20px;
+      .logo {
+        max-width: 150px;
+        margin-top: 10px;
       }
       .federation-logo {
         width: 100px;
