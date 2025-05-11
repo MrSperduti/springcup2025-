@@ -62,6 +62,10 @@
       text-align: center;
       width: 80%;
       max-width: 280px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
     }
     .btn:hover {
       transform: scale(1.05);
@@ -70,6 +74,14 @@
     .live-btn {
       background: linear-gradient(to right, #d32f2f, #ff9800);
       animation: pulse 1s infinite;
+    }
+    .btn span.icon {
+      display: inline-block;
+      animation: bounce 1.4s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
     }
     @keyframes pulse {
       0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
@@ -102,13 +114,13 @@
     <img src="logo.png" alt="Logo Spring Cup" class="logo">
     <h1>SPRING CUP 2025</h1>
     <div class="buttons">
-      <a class="btn" href="torneo.html">Torneo</a>
-      <a class="btn" href="regolamento.html">Regolamento</a>
-      <a class="btn" href="comunicati.html">Comunicati</a>
-      <a class="btn" href="foto.html">Foto</a>
-      <a class="btn" href="video.html">Video</a>
-      <a class="btn" href="interviste.html">Interviste</a>
-      <a class="btn live-btn" href="https://www.instagram.com/laurentum_mirafin_academy" target="_blank">📺 DIRETTE INSTAGRAM 🔴</a>
+      <a class="btn" href="torneo.html"><span class="icon">📋</span> Torneo</a>
+      <a class="btn" href="regolamento.html"><span class="icon">📑</span> Regolamento</a>
+      <a class="btn" href="comunicati.html"><span class="icon">📢</span> Comunicati</a>
+      <a class="btn" href="foto.html"><span class="icon">📸</span> Foto</a>
+      <a class="btn" href="video.html"><span class="icon">🎬</span> Video</a>
+      <a class="btn" href="interviste.html"><span class="icon">🎤</span> Interviste</a>
+      <a class="btn live-btn" href="https://www.instagram.com/laurentum_mirafin_academy" target="_blank"><span class="icon">📺</span> DIRETTE INSTAGRAM 🔴</a>
     </div>
   </div>
 
