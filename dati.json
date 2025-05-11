@@ -658,13 +658,59 @@
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 17,
+        "golB": 4,
+        "portiere": "BONO EMANUELE",
+        "squadraPortiere": "S.GIOVANNI EVANGELISTA",
+        "giocatore": "D'ANTONI DAVIDE",
+        "squadraGiocatore": "NEW TEAM",
+        "marcatori": [
+          {
+            "nome": "D'ANTONI DAVIDE",
+            "gol": 4,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "MOTTOLA ANGELO",
+            "gol": 4,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "COLASANTI ALESSIO",
+            "gol": 4,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "BUCCI SIMONE",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "DEL DUCA DENNIS",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "CECCARELLI FEDERICO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "D'AGOSTINO MIRKO",
+            "gol": 2,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "CITRINITI MARCO",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "MARTINO FRANCESCO",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -2298,12 +2344,12 @@
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
+        "golA": 28,
+        "golB": 0,
+        "portiere": "CASTELPIETRA ANDREA",
+        "squadraPortiere": "S.PIETRO E PAOLO",
+        "giocatore": "TRAPELLA VALENTINA",
+        "squadraGiocatore": "LATINA C5",
         "marcatori": []
       },
       {
