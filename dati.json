@@ -590,13 +590,59 @@
         "campo": "CAMPO A",
         "orario": "12.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 19,
+        "golB": 1,
+        "portiere": "CAPOMAGI MANUEL",
+        "squadraPortiere": "S.PIETRO E PAOLO",
+        "giocatore": "MIRRA ALESSANDRO",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "CRISPI CHRISTIAN",
+            "gol": 4,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "MIRRA ALESSANDRO",
+            "gol": 4,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "VARDARO NYCOLAS",
+            "gol": 4,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "PALAZZOLO SIMONE",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "TORRONI MIRO'",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "VESCOVO LORENZO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "ROMANO DOMENICO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "BASOC DANIELE",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "MASULLO ALDO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -2328,13 +2374,34 @@
         "campo": "CAMPO B",
         "orario": "12.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 2,
+        "golB": 6,
+        "portiere": "CANZONIERE ALESSANDRO",
+        "squadraPortiere": "ACADEMY BLU",
+        "giocatore": "BARBARASA LUCA",
+        "squadraGiocatore": "FORTITUDO POMEZIA",
+        "marcatori": [
+          {
+            "nome": "BARBARASA LUCA",
+            "gol": 2,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PECORAIO CHRISTIAN",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "D'AMORE SAMUEL",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PIRA DAVIDE",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -2350,7 +2417,48 @@
         "squadraPortiere": "S.PIETRO E PAOLO",
         "giocatore": "TRAPELLA VALENTINA",
         "squadraGiocatore": "LATINA C5",
-        "marcatori": []
+        "marcatori": [
+          {
+            "nome": "CRUDETTI ANGELO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "AMODEO FRANCESCO",
+            "gol": 5,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "DI RITA LORENZO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TULLIO ANDREA",
+            "gol": 5,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TROLINI ACHILLE",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "MARCHETTI FABRIZIO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "REALI LEONARDO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TRAPELLA ",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -2711,7 +2819,7 @@
           "nascita": ""
         },
         {
-          "cognome": "TROPLINI",
+          "cognome": "TROLINI",
           "nome": "ACHILLE",
           "nascita": ""
         },
