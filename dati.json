@@ -606,13 +606,49 @@
         "campo": "CAMPO A",
         "orario": "14.00",
         "data": "10.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 11,
+        "golB": 1,
+        "portiere": "BOCALE EDOARDO",
+        "squadraPortiere": "EOCITY GENZANO",
+        "giocatore": "D'AMORE BASILIO",
+        "squadraGiocatore": "FORTITUDO POMEZIA",
+        "marcatori": [
+          {
+            "nome": "INCITTI ALESSIO",
+            "gol": 3,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PETRISOR DIEGO NICOLAS",
+            "gol": 3,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "BARATTA MARCO",
+            "gol": 2,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "D'AMORE BASILIO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "MASCARO DAVIDE",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "DI BARTOLOMEI GABRIEL MARIA",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "BOCALE RICCARDO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -1281,13 +1317,69 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 15,
+        "golB": 1,
+        "portiere": "CASTELPIETRA ANDREA",
+        "squadraPortiere": "S.PIETRO E PAOLO ROSSA",
+        "giocatore": "MADDALONI FLAVIO",
+        "squadraGiocatore": "ACADEMY ROSSA",
+        "marcatori": [
+          {
+            "nome": "PICCINI GABRIELE",
+            "gol": 3,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "BARBARESCHI MATTIA",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "ULISSE MATTIA",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "MIRRA LORENZO",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "GENOVESE LEONARDO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "SPERDUTI NICOLAS",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "MADDALONI FLAVIO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "GILARDINI ASIA",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "PIACENTI CRISTIAN",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "MARTELLACCI NICOLAS",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "MASULLO JESUS",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO ROSSA"
+          }
+        ]
       },
       {
         "giornata": "1",
