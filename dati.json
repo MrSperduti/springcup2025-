@@ -1554,13 +1554,29 @@
         "campo": "CAMPO B",
         "orario": "19.00",
         "data": "13.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 5,
+        "golB": 4,
+        "portiere": "DE GASPERI NICOLO'",
+        "squadraPortiere": "FORTITUDO POMEZIA",
+        "giocatore": "MANCINI VALERIO",
+        "squadraGiocatore": "FORTITUDO POMEZIA",
+        "marcatori": [
+          {
+            "nome": "MANCINI VALERIO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PIRODDI NICOLO'",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "ERDI",
+            "gol": 1,
+            "squadra": "FLAVIO"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -3430,13 +3446,39 @@
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "13.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 2,
+        "golB": 7,
+        "portiere": "STRAVATO GIORGIA",
+        "squadraPortiere": "FUTSAL BASIC ACADEMY",
+        "giocatore": "LO STOCCO GIORGIA",
+        "squadraGiocatore": "FUTSAL BASIC ACADEMY",
+        "marcatori": [
+          {
+            "nome": "LO STOCCO GIORGIA",
+            "gol": 4,
+            "squadra": "FUTSAL BASIC ACADEMY"
+          },
+          {
+            "nome": "FALLOVO MARIA ASSUNTA",
+            "gol": 2,
+            "squadra": "FUTSAL BASIC ACADEMY"
+          },
+          {
+            "nome": "STRAVATO GIORGIA",
+            "gol": 1,
+            "squadra": "FUTSAL BASIC ACADEMY"
+          },
+          {
+            "nome": "MANUELE GIORGIA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "BUSTI LUDOVICA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          }
+        ]
       },
       {
         "giornata": "2",
