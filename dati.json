@@ -23,8 +23,8 @@
         "data": "09.05.2025",
         "golA": 6,
         "golB": 4,
-        "portiere": "PIASCO VALERIO",
-        "squadraPortiere": "ARDEA C5",
+        "portiere": "PIASCO",
+        "squadraPortiere": "VALERIO",
         "giocatore": "SUSIN FRANCESCO",
         "squadraGiocatore": "ACADEMY",
         "marcatori": [
@@ -49,12 +49,12 @@
             "squadra": "ARDEA C5"
           },
           {
-            "nome": "ORSINI FRANCESCO",
+            "nome": "IMBESI VALERIO",
             "gol": 1,
             "squadra": "ARDEA C5"
           },
           {
-            "nome": "IMBESI VALERIO",
+            "nome": "ORSINI FRANCESCO",
             "gol": 1,
             "squadra": "ARDEA C5"
           }
@@ -617,17 +617,63 @@
         "giornata": "1",
         "girone": "GIRONE A",
         "squadraA": "ACADEMY",
-        "squadraB": "S.PIETRO E PAOLO",
+        "squadraB": "S. PIETRO E PAOLO",
         "campo": "CAMPO A",
         "orario": "12.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 19,
+        "golB": 1,
+        "portiere": "CAPOMAGI MANUEL",
+        "squadraPortiere": "S.PIETRO E PAOLO",
+        "giocatore": "MIRRA ALESSANDRO",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "CRISPI CHRISTIAN",
+            "gol": 4,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "MIRRA ALESSANDRO",
+            "gol": 4,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "VARDARO NYCOLAS",
+            "gol": 4,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "PALAZZOLO SIMONE",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "TORRONI MIRO'",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "VESCOVO LORENZO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "ROMANO DOMENICO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "BASOC DANIELE",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "MASULLO ALDO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -640,7 +686,7 @@
         "golA": 11,
         "golB": 1,
         "portiere": "BOCALE EDOARDO",
-        "squadraPortiere": "ECOCITY GENZANO",
+        "squadraPortiere": "EOCITY GENZANO",
         "giocatore": "D'AMORE BASILIO",
         "squadraGiocatore": "FORTITUDO POMEZIA",
         "marcatori": [
@@ -665,6 +711,11 @@
             "squadra": "FORTITUDO POMEZIA"
           },
           {
+            "nome": "MASCARO DAVIDE",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
             "nome": "DI BARTOLOMEI GABRIEL MARIA",
             "gol": 1,
             "squadra": "FORTITUDO POMEZIA"
@@ -672,7 +723,7 @@
           {
             "nome": "BOCALE RICCARDO",
             "gol": 1,
-            "squadra": "ECOCITY GENZANO"
+            "squadra": "FORTITUDO POMEZIA"
           }
         ]
       },
@@ -684,13 +735,59 @@
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 17,
+        "golB": 4,
+        "portiere": "BONO EMANUELE",
+        "squadraPortiere": "S.GIOVANNI EVANGELISTA",
+        "giocatore": "D'ANTONI DAVIDE",
+        "squadraGiocatore": "NEW TEAM",
+        "marcatori": [
+          {
+            "nome": "D'ANTONI DAVIDE",
+            "gol": 4,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "MOTTOLA ANGELO",
+            "gol": 4,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "COLASANTI ALESSIO",
+            "gol": 4,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "BUCCI SIMONE",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "DEL DUCA DENNIS",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "CECCARELLI FEDERICO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "D'AGOSTINO MIRKO",
+            "gol": 2,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "CITRINITI MARCO",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "MARTINO FRANCESCO",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -730,8 +827,8 @@
         "squadraA": "S.GIOVANNI EVANGELISTA",
         "squadraB": "CIRCOLO MASTER",
         "campo": "CAMPO A",
-        "orario": "17.00",
-        "data": "17.05.2025",
+        "orario": "10.00",
+        "data": "18.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -1343,13 +1440,69 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 15,
+        "golB": 1,
+        "portiere": "CASTELPIETRA ANDREA",
+        "squadraPortiere": "S.PIETRO E PAOLO ROSSA",
+        "giocatore": "MADDALONI FLAVIO",
+        "squadraGiocatore": "ACADEMY ROSSA",
+        "marcatori": [
+          {
+            "nome": "PICCINI GABRIELE",
+            "gol": 3,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "BARBARESCHI MATTIA",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "ULISSE MATTIA",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "MIRRA LORENZO",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "GENOVESE LEONARDO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "SPERDUTI NICOLAS",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "MADDALONI FLAVIO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "GILARDINI ASIA",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "PIACENTI CRISTIAN",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "MARTELLACCI NICOLAS",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "MASULLO JESUS",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO ROSSA"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -1401,13 +1554,29 @@
         "campo": "CAMPO B",
         "orario": "19.00",
         "data": "13.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 5,
+        "golB": 4,
+        "portiere": "DE GASPERI NICOLO'",
+        "squadraPortiere": "FORTITUDO POMEZIA",
+        "giocatore": "MANCINI VALERIO",
+        "squadraGiocatore": "FORTITUDO POMEZIA",
+        "marcatori": [
+          {
+            "nome": "MANCINI VALERIO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PIRODDI NICOLO'",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "ERDI",
+            "gol": 1,
+            "squadra": "FLAVIO"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -1415,7 +1584,7 @@
         "squadraA": "ACADEMY ROSSA",
         "squadraB": "NEW TEAM",
         "campo": "CAMPO B",
-        "orario": "10.00",
+        "orario": "18.00",
         "data": "17.05.2025",
         "golA": null,
         "golB": null,
@@ -2240,7 +2409,7 @@
         "FORTITUDO POMEZIA",
         "ACADEMY BLU",
         "LATINA C5",
-        "S.PIETRO E PAOLO",
+        "S.PIETRO E PAOLO"
       ]
     },
     "partite": [
@@ -2252,13 +2421,34 @@
         "campo": "CAMPO B",
         "orario": "12.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 2,
+        "golB": 6,
+        "portiere": "CANZONIERE ALESSANDRO",
+        "squadraPortiere": "ACADEMY BLU",
+        "giocatore": "CELOTTI RICCARDO",
+        "squadraGiocatore": "FORTITUDO POMEZIA",
+        "marcatori": [
+          {
+            "nome": "CELOTTI RICCARDO",
+            "gol": 2,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PECORAIO CHRISTIAN",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "D'AMORE SAMUEL",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PIRA DAVIDE",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -2268,13 +2458,54 @@
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "11.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 28,
+        "golB": 0,
+        "portiere": "CASTELPIETRA ANDREA",
+        "squadraPortiere": "S.PIETRO E PAOLO",
+        "giocatore": "TRAPELLA VALENTINA",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "CRUDETTI ANGELO",
+            "gol": 7,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "AMODEO FRANCESCO",
+            "gol": 5,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "DI RITA LORENZO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TULLIO ANDREA",
+            "gol": 5,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TROLINI ACHILLE",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "MARCHETTI FABRIZIO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "REALI LEONARDO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TRAPELLA ",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -2330,8 +2561,8 @@
         "squadraA": "ACADEMY ROSSA",
         "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO B",
-        "orario": "11.00",
-        "data": "18.05.2025",
+        "orario": "19.00",
+        "data": "21.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -2635,7 +2866,7 @@
           "nascita": ""
         },
         {
-          "cognome": "TROPLINI",
+          "cognome": "TROLINI",
           "nome": "ACHILLE",
           "nascita": ""
         },
@@ -2968,7 +3199,7 @@
         "giornata": "3",
         "girone": "GIRONE UNICO",
         "squadraA": "LATINA C5",
-        "squadraB": "S.PIETRO E PAOLO",
+        "squadraB": "S. PIETRO E PAOLO",
         "campo": "CAMPO A",
         "orario": "14.00",
         "data": "17.05.2025",
@@ -3213,15 +3444,41 @@
         "squadraA": "ACADEMY",
         "squadraB": "FUTSAL BASIC ACADEMY",
         "campo": "CAMPO A",
-        "orario": "19.00",
+        "orario": "18.00",
         "data": "13.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 2,
+        "golB": 7,
+        "portiere": "STRAVATO GIORGIA",
+        "squadraPortiere": "FUTSAL BASIC ACADEMY",
+        "giocatore": "LO STOCCO GIORGIA",
+        "squadraGiocatore": "FUTSAL BASIC ACADEMY",
+        "marcatori": [
+          {
+            "nome": "LO STOCCO GIORGIA",
+            "gol": 4,
+            "squadra": "FUTSAL BASIC ACADEMY"
+          },
+          {
+            "nome": "FALLOVO MARIA ASSUNTA",
+            "gol": 2,
+            "squadra": "FUTSAL BASIC ACADEMY"
+          },
+          {
+            "nome": "STRAVATO GIORGIA",
+            "gol": 1,
+            "squadra": "FUTSAL BASIC ACADEMY"
+          },
+          {
+            "nome": "MANUELE GIORGIA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "BUSTI LUDOVICA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -3243,7 +3500,7 @@
         "giornata": "3",
         "girone": "GIRONE UNICO",
         "squadraA": "FUTSAL BASIC ACADEMY",
-        "squadraB": "S.GIOVANNI EVANGELISTA",
+        "squadraB": "SAN GIOVANNI EVANGELISTA",
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "20.05.2025",
