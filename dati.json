@@ -68,13 +68,54 @@
         "campo": "CAMPO B ",
         "orario": "18.00",
         "data": "14.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 6,
+        "golB": 4,
+        "portiere": "PIASCO VALERIO",
+        "squadraPortiere": "ARDEA C5",
+        "giocatore": "D'ANTONI EMANUELE",
+        "squadraGiocatore": "NEW TEAM",
+        "marcatori": [
+          {
+            "nome": "ARTENE ALESSANDRU GABRIEL",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "D'ANTONI DAVIDE",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "SAN WOO MENDEZ MARCELLO GIANLUCA",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "TRENTA ALESSANDRO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "ORSINI FRANCESCO",
+            "gol": 2,
+            "squadra": "ARDEA C5"
+          },
+          {
+            "nome": "FOFI DANIELE",
+            "gol": 1,
+            "squadra": "ARDEA C5"
+          },
+          {
+            "nome": "BARCHIESI ANDREA",
+            "gol": 2,
+            "squadra": "ARDEA C5"
+          },
+          {
+            "nome": "SEGATA ALESSIO",
+            "gol": 1,
+            "squadra": "ARDEA C5"
+          }
+        ]
       },
       {
         "giornata": "3",
@@ -116,13 +157,29 @@
         "campo": "CAMPO A",
         "orario": "19.00",
         "data": "14.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 1,
+        "golB": 3,
+        "portiere": "FORTINI GABRIEL",
+        "squadraPortiere": "FORTITUDO POMEZIA",
+        "giocatore": "IMPERI DIEGO",
+        "squadraGiocatore": "FORTITUDO POMEZIA",
+        "marcatori": [
+          {
+            "nome": "KRCISTA JASIN",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "MUSTO DAMIANO",
+            "gol": 2,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "DI GIUSEPPE GIOVANNI",
+            "gol": 1,
+            "squadra": "CIRCOLO MASTER"
+          }
+        ]
       },
       {
         "giornata": "3",
@@ -795,7 +852,7 @@
         "squadraA": "S.PIETRO E PAOLO",
         "squadraB": "FF10",
         "campo": "CAMPO A",
-        "orario": "15.00",
+        "orario": "19.00",
         "data": "17.05.2025",
         "golA": null,
         "golB": null,
@@ -3506,15 +3563,46 @@
         "squadraA": "ACADEMY",
         "squadraB": "S.GIOVANNI EVANGELISTA",
         "campo": "CAMPO A",
-        "orario": "19.00",
+        "orario": "18.00",
         "data": "14.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 6,
+        "golB": 3,
+        "portiere": "NEGRI NOEMI",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "PICIUCCHI MARTA",
+        "squadraGiocatore": "S.GIOVANNI EVANGELISTA",
+        "marcatori": [
+          {
+            "nome": "GILARDINI ASIA",
+            "gol": 3,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "AMATO AURORA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "RANDAZZO ALISSA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "SIMION JASMINE",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "PICIUCCHI MARTA",
+            "gol": 2,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "D' AGOSTINO MISIA",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          }
+        ]
       },
       {
         "giornata": "3",
