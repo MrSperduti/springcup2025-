@@ -1575,6 +1575,21 @@
             "nome": "ERDI",
             "gol": 1,
             "squadra": "FLAVIO"
+          },
+          {
+            "nome": "GILIBERTI DIEGO",
+            "gol": 2,
+            "squadra": "MARINO ACADEMY"
+          },
+          {
+            "nome": "CERVINI ALESSIO",
+            "gol": 1,
+            "squadra": "MARINO ACADEMY"
+          },
+          {
+            "nome": "PERSICONE SAMUEL",
+            "gol": 1,
+            "squadra": "MARINO ACADEMY"
           }
         ]
       },
