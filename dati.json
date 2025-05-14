@@ -1567,11 +1567,6 @@
             "squadra": "FORTITUDO POMEZIA"
           },
           {
-            "nome": "PIRODDI NICOLO'",
-            "gol": 1,
-            "squadra": "FORTITUDO POMEZIA"
-          },
-          {
             "nome": "ERDI",
             "gol": 1,
             "squadra": "FLAVIO"
@@ -1590,6 +1585,11 @@
             "nome": "PERSICONE SAMUEL",
             "gol": 1,
             "squadra": "MARINO ACADEMY"
+          },
+          {
+            "nome": "ERDI FLAVIO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
           }
         ]
       },
@@ -2790,6 +2790,11 @@
           "cognome": "CHIARI",
           "nome": "SIMONE",
           "nascita": "30.03.2015"
+        },
+        {
+          "cognome": "CODELLA",
+          "nome": "MATTEO",
+          "nascita": "16.08.2015"
         }
       ],
       "S.PIETRO E PAOLO": [
