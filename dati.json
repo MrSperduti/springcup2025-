@@ -617,7 +617,7 @@
         "giornata": "1",
         "girone": "GIRONE A",
         "squadraA": "ACADEMY",
-        "squadraB": "S. PIETRO E PAOLO",
+        "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO A",
         "orario": "12.00",
         "data": "11.05.2025",
@@ -686,7 +686,7 @@
         "golA": 11,
         "golB": 1,
         "portiere": "BOCALE EDOARDO",
-        "squadraPortiere": "EOCITY GENZANO",
+        "squadraPortiere": "ECOCITY GENZANO",
         "giocatore": "D'AMORE BASILIO",
         "squadraGiocatore": "FORTITUDO POMEZIA",
         "marcatori": [
@@ -1563,7 +1563,7 @@
         "marcatori": [
           {
             "nome": "MANCINI VALERIO",
-            "gol": 1,
+            "gol": 3,
             "squadra": "FORTITUDO POMEZIA"
           },
           {
@@ -3214,7 +3214,7 @@
         "giornata": "3",
         "girone": "GIRONE UNICO",
         "squadraA": "LATINA C5",
-        "squadraB": "S. PIETRO E PAOLO",
+        "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO A",
         "orario": "14.00",
         "data": "17.05.2025",
@@ -3515,7 +3515,7 @@
         "giornata": "3",
         "girone": "GIRONE UNICO",
         "squadraA": "FUTSAL BASIC ACADEMY",
-        "squadraB": "SAN GIOVANNI EVANGELISTA",
+        "squadraB": "S.GIOVANNI EVANGELISTA",
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "20.05.2025",
