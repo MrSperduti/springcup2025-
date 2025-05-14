@@ -686,7 +686,7 @@
         "golA": 11,
         "golB": 1,
         "portiere": "BOCALE EDOARDO",
-        "squadraPortiere": "EOCITY GENZANO",
+        "squadraPortiere": "ECOCITY GENZANO",
         "giocatore": "D'AMORE BASILIO",
         "squadraGiocatore": "FORTITUDO POMEZIA",
         "marcatori": [
@@ -723,7 +723,7 @@
           {
             "nome": "BOCALE RICCARDO",
             "gol": 1,
-            "squadra": "FORTITUDO POMEZIA"
+            "squadra": "ECOCITY GENZANO"
           }
         ]
       },
