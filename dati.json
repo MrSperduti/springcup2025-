@@ -23,8 +23,8 @@
         "data": "09.05.2025",
         "golA": 6,
         "golB": 4,
-        "portiere": "PIASCO VALERIO",
-        "squadraPortiere": "ARDEA C5",
+        "portiere": "PIASCO",
+        "squadraPortiere": "VALERIO",
         "giocatore": "SUSIN FRANCESCO",
         "squadraGiocatore": "ACADEMY",
         "marcatori": [
@@ -68,7 +68,7 @@
         "campo": "CAMPO B ",
         "orario": "18.00",
         "data": "14.05.2025",
-        "golA": 6,
+        "golA": 7,
         "golB": 4,
         "portiere": "PIASCO VALERIO",
         "squadraPortiere": "ARDEA C5",
@@ -112,6 +112,11 @@
           },
           {
             "nome": "SEGATA ALESSIO",
+            "gol": 1,
+            "squadra": "ARDEA C5"
+          },
+          {
+            "nome": "LESSA CRISTIAN",
             "gol": 1,
             "squadra": "ARDEA C5"
           }
@@ -508,6 +513,11 @@
           "cognome": "MAFFETTONE",
           "nome": "GIOVANNI",
           "nascita": "20.08.2009"
+        },
+        {
+          "cognome": "LESSA",
+          "nome": "CRISTIAN",
+          "nascita": "2009"
         }
       ],
       "ATLETICO VELLETRI": [
