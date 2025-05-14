@@ -61,7 +61,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     const table = document.createElement("table");
     table.innerHTML = "<tr><th>Squadra</th><th>Punti</th><th>Vinte</th><th>Pareggi</th><th>Perse</th><th>GF</th><th>GS</th></tr>";
 
-    const squadre = Object.entries(gironi[g]).sort((a, b) => b[1].punti - a[1].punti);
+    const squadre = Object.entries(gironi[g]).sort((a, b) => {
+  const diffPunti = b[1].punti - a[1].punti;
+  if (diffPunti !== 0) return diffPunti;
+
+  const diffRetiA = a[1].gf - a[1].gs;
+  const diffRetiB = b[1].gf - b[1].gs;
+  const diffDifferenzaReti = diffRetiB - diffRetiA;
+  if (diffDifferenzaReti !== 0) return diffDifferenzaReti;
+
+  return b[1].gf - a[1].gf;
+});
     squadre.forEach(([squadra, stats]) => {
       const row = document.createElement("tr");
       row.innerHTML = `
