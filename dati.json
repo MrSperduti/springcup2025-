@@ -1494,7 +1494,7 @@
       ],
       "GIRONE C": [
         "FORTITUDO POMEZIA",
-        "ANZIO C5 C5",
+        "ANZIO C5",
         "MARINO ACADEMY"
       ]
     },
@@ -1696,7 +1696,7 @@
         "giornata": "2",
         "girone": "GIRONE C",
         "squadraA": "FORTITUDO POMEZIA",
-        "squadraB": "ANZIO C5 C5",
+        "squadraB": "ANZIO C5",
         "campo": "CAMPO A",
         "orario": "11.00",
         "data": "17.05.2025",
@@ -1743,7 +1743,7 @@
       {
         "giornata": "3",
         "girone": "GIRONE C",
-        "squadraA": "ANZIO C5 C5",
+        "squadraA": "ANZIO C5",
         "squadraB": "MARINO ACADEMY",
         "campo": "CAMPO B",
         "orario": "11.00",
@@ -2234,7 +2234,7 @@
           "nascita": "28.09.2013"
         }
       ],
-      "ANZIO C5 C5": [
+      "ANZIO C5": [
         {
           "cognome": "NOVELLI ",
           "nome": "SAMUELE",
@@ -3109,7 +3109,7 @@
       {
         "giornata": "1",
         "girone": "GIRONE UNICO",
-        "squadraA": "ANZIO C5 C5",
+        "squadraA": "ANZIO C5",
         "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO B",
         "orario": "12.00",
@@ -3119,22 +3119,22 @@
         "portiere": "BANDINU GABRIELE",
         "squadraPortiere": "S.PIETRO E PAOLO",
         "giocatore": "DENNI FRANCESCO",
-        "squadraGiocatore": "ANZIO C5 C5",
+        "squadraGiocatore": "ANZIO C5",
         "marcatori": [
           {
             "nome": "DENNI FRANCESCO",
             "gol": 3,
-            "squadra": "ANZIO C5 C5"
+            "squadra": "ANZIO C5"
           },
           {
             "nome": "CARADONNA TOMMASO",
             "gol": 2,
-            "squadra": "ANZIO C5 C5"
+            "squadra": "ANZIO C5"
           },
           {
             "nome": "BELLINI DANIELE",
             "gol": 1,
-            "squadra": "ANZIO C5 C5"
+            "squadra": "ANZIO C5"
           },
           {
             "nome": "DIAGNE ALESSANDRO",
@@ -3225,7 +3225,7 @@
         "giornata": "3",
         "girone": "GIRONE UNICO",
         "squadraA": "ACADEMY",
-        "squadraB": "ANZIO C5 C5",
+        "squadraB": "ANZIO C5",
         "campo": "CAMPO A",
         "orario": "12.00",
         "data": "17.05.2025",
@@ -3272,7 +3272,7 @@
       {
         "giornata": "4",
         "girone": "GIRONE UNICO",
-        "squadraA": "ANZIO C5 C5",
+        "squadraA": "ANZIO C5",
         "squadraB": "INDOMITA POMEZIA",
         "campo": "CAMPO B",
         "orario": "18.00",
@@ -3289,7 +3289,7 @@
         "giornata": "5",
         "girone": "GIRONE UNICO",
         "squadraA": "FORTE COLLEFERRO",
-        "squadraB": "ANZIO C5 C5",
+        "squadraB": "ANZIO C5",
         "campo": "CAMPO A",
         "orario": "12.00",
         "data": "24.05.2025",
@@ -3368,14 +3368,14 @@
         "giornata": "2",
         "girone": "GIRONE UNICO",
         "squadraA": "LATINA C5",
-        "squadraB": "ANZIO C5 C5",
+        "squadraB": "ANZIO C5",
         "campo": "CAMPO B",
         "orario": "18.00",
         "data": "15.05.2025",
         "golA": 10,
         "golB": 0,
         "portiere": "MOREIRA SANTIAGO",
-        "squadraPortiere": "ANZIO C5 C5",
+        "squadraPortiere": "ANZIO C5",
         "giocatore": "BARBIERO EMMA",
         "squadraGiocatore": "LATINA C5",
         "marcatori": [
