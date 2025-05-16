@@ -3072,7 +3072,7 @@
         "campo": "CAMPO B",
         "orario": "18.00",
         "data": "12.05.2025",
-        "golA": null,
+        "golA": 0,
         "golB": 8,
         "portiere": "COSIMATO THIAGO",
         "squadraPortiere": "ACADEMY",
