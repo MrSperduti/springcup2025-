@@ -3056,7 +3056,7 @@
     "gironi": {
       "GIRONE UNICO": [
         "ACADEMY",
-        "ANZIO C5",
+        "ANZIO",
         "FORTE COLLEFERRO",
         "INDOMITA POMEZIA",
         "S.PIETRO E PAOLO",
@@ -3072,7 +3072,7 @@
         "campo": "CAMPO B",
         "orario": "18.00",
         "data": "12.05.2025",
-        "golA": 0,
+        "golA": null,
         "golB": 8,
         "portiere": "COSIMATO THIAGO",
         "squadraPortiere": "ACADEMY",
@@ -3156,13 +3156,39 @@
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "15.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 19,
+        "golB": 0,
+        "portiere": "PILATO MATTIA",
+        "squadraPortiere": "INDOMITA POMEZIA",
+        "giocatore": "BACCINI MARZIO",
+        "squadraGiocatore": "INDOMITA POMEZIA",
+        "marcatori": [
+          {
+            "nome": "BACCINI MARZIO",
+            "gol": 7,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "AFELBA FEDERICO",
+            "gol": 4,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "CADONI GIOVANNI",
+            "gol": 4,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "CANCIA DYLAN JOSAFAT",
+            "gol": 3,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "ANDREA VADALA",
+            "gol": 1,
+            "squadra": ""
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -3326,7 +3352,7 @@
         "orario": "17.00",
         "data": "15.05.2025",
         "golA": 3,
-        "golB": 5,
+        "golB": 4,
         "portiere": "ALTOMARE JACOPO",
         "squadraPortiere": "LATINA C5",
         "giocatore": "CRISANO LORENZO",
