@@ -128,7 +128,7 @@
         "squadraA": "ACADEMY",
         "squadraB": "NEW TEAM",
         "campo": "CAMPO A",
-        "orario": "19.00",
+        "orario": "17.00",
         "data": "17.05.2025",
         "golA": null,
         "golB": null,
@@ -3072,13 +3072,39 @@
         "campo": "CAMPO B",
         "orario": "18.00",
         "data": "12.05.2025",
-        "golA": 0,
+        "golA": null,
         "golB": 8,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "portiere": "COSIMATO THIAGO",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "PANNETTA NICO",
+        "squadraGiocatore": "FORTE COLLEFERRO",
+        "marcatori": [
+          {
+            "nome": "PANNETTA NICO",
+            "gol": 3,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "BRUNI CHRISTIAN",
+            "gol": 2,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "ROSSI ALESSANDRO",
+            "gol": 1,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "UBALDIFRANCESCO",
+            "gol": 1,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "RONZONI FILIPPO",
+            "gol": 1,
+            "squadra": "FORTE COLLEFERRO"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -3146,13 +3172,54 @@
         "campo": "CAMPO C",
         "orario": "19.00",
         "data": "15.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 11,
+        "golB": 4,
+        "portiere": "IACONO FLAVIO",
+        "squadraPortiere": "FORTE COLLEFERRO",
+        "giocatore": "BECK ETHAN ANTONIO",
+        "squadraGiocatore": "FORTE COLLEFERRO",
+        "marcatori": [
+          {
+            "nome": "RONZONI FILIPPO",
+            "gol": 3,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "ROSSI ALESSANDRO",
+            "gol": 2,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "PANETTA NICO",
+            "gol": 2,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "BRUNI CHRISTIAN",
+            "gol": 2,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "BECK SOL GABRIEL",
+            "gol": 1,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "AUTOGOAL",
+            "gol": 1,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "DIAGNE ALESSANDRO",
+            "gol": 3,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "GIANNINI FRANCESCO",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          }
+        ]
       },
       {
         "giornata": "3",
@@ -3258,13 +3325,44 @@
         "campo": "CAMPO A",
         "orario": "17.00",
         "data": "15.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 3,
+        "golB": 4,
+        "portiere": "ALTOMARE JACOPO",
+        "squadraPortiere": "LATINA C5",
+        "giocatore": "CRISANO LORENZO",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "CRISANO LORENZO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CORCIONE FRANCESCO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "MAGGI GIULIA",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BARBIERO EMMA",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BACCINI MARZIO",
+            "gol": 2,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "CADONI GIOVANNI",
+            "gol": 1,
+            "squadra": "INDOMITA POMEZIA"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -3274,13 +3372,44 @@
         "campo": "CAMPO B",
         "orario": "18.00",
         "data": "15.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 10,
+        "golB": 0,
+        "portiere": "MOREIRA SANTIAGO",
+        "squadraPortiere": "ANZIO C5",
+        "giocatore": "BARBIERO EMMA",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "CRISANO LORENZO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CORCIONE FRANCESCO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BARBIERO EMMA",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "ANTONBENEDETTO LORENZO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BOZZA GABRIELE",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "DI FIORE NICOLAS",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          }
+        ]
       },
       {
         "giornata": "3",
@@ -3392,6 +3521,21 @@
         {
           "cognome": "ALTOMARE",
           "nome": "JACOPO",
+          "nascita": ""
+        },
+        {
+          "cognome": "MAGGI",
+          "nome": "GIULIA",
+          "nascita": ""
+        },
+        {
+          "cognome": "CAPOZZI",
+          "nome": "GAIA",
+          "nascita": ""
+        },
+        {
+          "cognome": "BELLOTTI",
+          "nome": "ALESSIO",
           "nascita": ""
         }
       ],
