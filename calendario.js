@@ -1,3 +1,4 @@
+
 async function loadCalendar() {
   const cat = new URLSearchParams(location.search).get('categoria');
   const res = await fetch('dati.json');
@@ -23,9 +24,9 @@ async function loadCalendar() {
     const table = document.createElement('table');
     table.innerHTML = '<tr><th>Squadra A</th><th>Squadra B</th><th>Data</th><th>Ora</th><th>Campo</th><th>Risultato</th><th>Girone</th></tr>';
 
-    giornate[g].forEach(p => {
+    giornate[g].forEach((p, i) => {
       const row = document.createElement('tr');
-      const idPartita = `${cat}-${partite.indexOf(p)}`;
+      const idPartita = `${cat}-${i}`;
       const risultato = (p.golA != null && p.golB != null) ? `${p.golA} - ${p.golB}` : 'Dettagli';
       const risultatoLink = `<a href="partita.html?id=${idPartita}">${risultato}</a>`;
 

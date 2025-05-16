@@ -115,7 +115,7 @@
           const partita = document.createElement('div');
           partita.className = 'partita';
 
-          const idPartita = `${cat}-${partite.indexOf(p)}`;
+          const idPartita = `${cat}-${i}`;
           const risultatoHTML = `<a href="partita.html?id=${idPartita}">` +
             ((p.golA !== null && p.golB !== null) ? `${p.golA} - ${p.golB}` : 'Dettagli') +
             `</a>`;
