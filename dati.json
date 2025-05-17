@@ -130,13 +130,24 @@
         "campo": "CAMPO A",
         "orario": "17.00",
         "data": "17.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 6,
+        "golB": 1,
+        "portiere": "MELADIO' GIOVANNI",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "CAVAGNOLI CIRO",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "CAVAGNOLI CIRO",
+            "gol": 5,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "COCHI MASSIMO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -194,13 +205,34 @@
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "17.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 4,
+        "golB": 10,
+        "portiere": "MAIER ALESSIO MATTIA",
+        "squadraPortiere": "CIRCOLO MASTER",
+        "giocatore": "LOMBARDI CRISTIANO",
+        "squadraGiocatore": "CIRCOLO MASTER",
+        "marcatori": [
+          {
+            "nome": "LOMBARDI CRISTIANO",
+            "gol": 4,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "MUSTO DAMIANO",
+            "gol": 3,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "PROTO MATTEO",
+            "gol": 2,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "MAURIZI VALERIO",
+            "gol": 1,
+            "squadra": "CIRCOLO MASTER"
+          }
+        ]
       },
       {
         "giornata": "SEMIFINALE A",
@@ -864,13 +896,34 @@
         "campo": "CAMPO A",
         "orario": "19.00",
         "data": "17.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 0,
+        "golB": 7,
+        "portiere": "TANTALO MATTEO",
+        "squadraPortiere": "FF10",
+        "giocatore": "ROSSETTI LORENZO",
+        "squadraGiocatore": "FF10",
+        "marcatori": [
+          {
+            "nome": "ROSSETTI LORENZO",
+            "gol": 4,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "ROMANI DANIELE",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "CIARDIELLO MATTIA",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "BOTTONE MANUEL",
+            "gol": 1,
+            "squadra": "FF10"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -880,13 +933,24 @@
         "campo": "CAMPO A",
         "orario": "16.00",
         "data": "17.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 1,
+        "golB": 3,
+        "portiere": "DEREVIZIIS LORENZO",
+        "squadraPortiere": "REAL CIAMPINO",
+        "giocatore": "MIUCCI ALESSANDRO",
+        "squadraGiocatore": "REAL CIAMPINO",
+        "marcatori": [
+          {
+            "nome": "MIUCCI ALESSANDRO",
+            "gol": 2,
+            "squadra": "REAL CIAMPINO"
+          },
+          {
+            "nome": "MILLEVOLTE FLAVIO",
+            "gol": 1,
+            "squadra": "REAL CIAMPINO"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -1668,13 +1732,59 @@
         "campo": "CAMPO B",
         "orario": "18.00",
         "data": "17.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 4,
+        "golB": 7,
+        "portiere": "BARBARESCHI MATTIA",
+        "squadraPortiere": "ACADEMY ROSSA",
+        "giocatore": "LADOGANA CRISTIAN",
+        "squadraGiocatore": "NEW TEAM",
+        "marcatori": [
+          {
+            "nome": "TRENTA GABRIELE",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "FABRIZIO LUCA",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "LADOGANA CRISTIAN",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "MAZZOCCA TOMMASO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "MIGLIETTA MATTEO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "TOSI FRANCESCO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "PICCINI GABRIELE",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "CAPOGRECO MATTEO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "COTUGNO MATTEO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          }
+        ]
       },
       {
         "giornata": "2",
