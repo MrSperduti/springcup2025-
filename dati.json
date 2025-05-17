@@ -1886,16 +1886,47 @@
         "girone": "GIRONE A",
         "squadraA": "S.PIETRO E PAOLO ROSSA",
         "squadraB": "ATLETICO VELLETRI",
-        "campo": "CAMPO B",
+        "campo": "CAMPO A",
         "orario": "11.00",
         "data": "17.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 4,
+        "golB": 7,
+        "portiere": "TIRILLO TIZIANO",
+        "squadraPortiere": "ATLETICO VELLETRI",
+        "giocatore": "MATTEI LEONARDO",
+        "squadraGiocatore": "ATLETICO VELLETRI",
+        "marcatori": [
+          {
+            "nome": "QUARTUCCI DAVID",
+            "gol": 3,
+            "squadra": "ATLETICO VELLETRI"
+          },
+          {
+            "nome": "SINGH GURBAAZ",
+            "gol": 1,
+            "squadra": "ATLETICO VELLETRI"
+          },
+          {
+            "nome": "DE RENZI VINCENZO",
+            "gol": 1,
+            "squadra": "ATLETICO VELLETRI"
+          },
+          {
+            "nome": "MARAFFA ADRIANO",
+            "gol": 1,
+            "squadra": "ATLETICO VELLETRI"
+          },
+          {
+            "nome": "MENIA ALESSANDRO",
+            "gol": 1,
+            "squadra": "ATLETICO VELLETRI"
+          },
+          {
+            "nome": "MATTEI LEONARDO",
+            "gol": 1,
+            "squadra": "ATLETICO VELLETRI"
+          }
+        ]
       },
       {
         "giornata": "3",
@@ -3350,12 +3381,38 @@
         "orario": "12.00",
         "data": "17.05.2025",
         "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golB": 18,
+        "portiere": "PILATO MATTIA",
+        "squadraPortiere": "INDOMITA POMEZIA",
+        "giocatore": "BACCINI MARZIO",
+        "squadraGiocatore": "INDOMITA POMEZIA",
+        "marcatori": [
+          {
+            "nome": "BACCINI MARZIO",
+            "gol": 6,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "AFELBA FEDERICO",
+            "gol": 4,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "CADONI GIOVANNI",
+            "gol": 4,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "VADALA ANDREA",
+            "gol": 2,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "BENNARDI ALESSANDRO",
+            "gol": 2,
+            "squadra": "INDOMITA POMEZIA"
+          }
+        ]
       },
       {
         "giornata": "4",
