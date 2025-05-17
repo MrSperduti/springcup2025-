@@ -1684,7 +1684,7 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "17.05.2025",
-        "golA": null,
+        "golA": 0,
         "golB": 13,
         "portiere": "COTLET MATTEO",
         "squadraPortiere": "LATINA C5",
