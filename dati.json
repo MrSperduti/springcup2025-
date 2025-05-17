@@ -3406,7 +3406,7 @@
         "campo": "CAMPO B",
         "orario": "12.00",
         "data": "17.05.2025",
-        "golA": null,
+        "golA": 0,
         "golB": 18,
         "portiere": "PILATO MATTIA",
         "squadraPortiere": "INDOMITA POMEZIA",
