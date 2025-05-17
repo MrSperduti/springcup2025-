@@ -1685,12 +1685,53 @@
         "orario": "10.00",
         "data": "17.05.2025",
         "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golB": 13,
+        "portiere": "COTLET MATTEO",
+        "squadraPortiere": "LATINA C5",
+        "giocatore": "CRUDETTI ANGELO",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "CRUDETTI ANGELO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CRISTOFARO VINCENZO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "DI RITA LORENZO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "GALANTE CRISTIANO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "MATTIUZZO ALESSANDRO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CONOCI GABRIELE",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CORCIONE VINCENZO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "ROCCO ALESSIO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          }
+        ]
       },
       {
         "giornata": "2",
