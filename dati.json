@@ -2597,13 +2597,34 @@
         "campo": "CAMPO B",
         "orario": "18.00",
         "data": "16.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 2,
+        "golB": 3,
+        "portiere": "CANZONIERE ALESSANDRO",
+        "squadraPortiere": "ACADEMY BLU",
+        "giocatore": "CASENTINI MATTEO",
+        "squadraGiocatore": "S.PIETRO E PAOLO",
+        "marcatori": [
+          {
+            "nome": "CASENTINI MATTEO",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "CARUSO DANIELE",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "BOCCI RICCARDO",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "COTUGNO MANUEL",
+            "gol": 1,
+            "squadra": "FLAVIO CELLINI"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -2613,13 +2634,29 @@
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "16.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 5,
+        "golB": 0,
+        "portiere": "DI GIULI MIRKO",
+        "squadraPortiere": "FORTITUDO POMEZIA",
+        "giocatore": "MARTELLACCI NICOLAS",
+        "squadraGiocatore": "ACADEMY ROSSA",
+        "marcatori": [
+          {
+            "nome": "MIRRA LORENZO ",
+            "gol": 3,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "GENOVESE LEONARDO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "BRAIDICH FRANCESCO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          }
+        ]
       },
       {
         "giornata": "3",
