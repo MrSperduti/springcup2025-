@@ -146,6 +146,11 @@
             "nome": "COCHI MASSIMO",
             "gol": 1,
             "squadra": "ACADEMY"
+          },
+          {
+            "nome": "MAZZOCCA FRANCESCO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
           }
         ]
       },
@@ -155,8 +160,8 @@
         "squadraA": "FORTITUDO POMEZIA",
         "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO A",
-        "orario": "",
-        "data": "DA DEFINIRE",
+        "orario": "17.00",
+        "data": "24.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -231,6 +236,16 @@
             "nome": "MAURIZI VALERIO",
             "gol": 1,
             "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "GIOVANNOZZI SIMONE",
+            "gol": 1,
+            "squadra": "ATLETICO VELLETRI"
+          },
+          {
+            "nome": "CARLETTI FRANCESCO",
+            "gol": 2,
+            "squadra": "ATLETICO VELLETRI"
           }
         ]
       },
@@ -949,6 +964,11 @@
             "nome": "MILLEVOLTE FLAVIO",
             "gol": 1,
             "squadra": "REAL CIAMPINO"
+          },
+          {
+            "nome": "FABRIZI ALESSANDRO",
+            "gol": 1,
+            "squadra": "ECOCITY GENZANO"
           }
         ]
       },
@@ -1006,7 +1026,7 @@
         "squadraA": "NEW TEAM",
         "squadraB": "CIRCOLO MASTER",
         "campo": "CAMPO B",
-        "orario": "15.00",
+        "orario": "16.00",
         "data": "24.05.2025",
         "golA": null,
         "golB": null,
@@ -1539,6 +1559,43 @@
           "nome": "GABRIEL MARIA",
           "nascita": "09.04.2011"
         }
+      ],
+      "FF10": [
+        {
+          "cognome": "CREMONA",
+          "nome": "FRANCESCO",
+          "nascita": "22.06.2010"
+        },
+        {
+          "cognome": "ROMANI",
+          "nome": "DANIELE",
+          "nascita": "26.01.2010"
+        },
+        {
+          "cognome": "ROSSETTI",
+          "nome": "LORENZO",
+          "nascita": "01.08.2010"
+        },
+        {
+          "cognome": "CICCHINELLI",
+          "nome": "LUCA",
+          "nascita": "08.09.2010"
+        },
+        {
+          "cognome": "CIARDIELLO",
+          "nome": "MATTIA",
+          "nascita": "12.10.2010"
+        },
+        {
+          "cognome": "FIORANI",
+          "nome": "ALESSANDRO",
+          "nascita": "11.12.2010"
+        },
+        {
+          "cognome": "TANTALO",
+          "nome": "MATTEO",
+          "nascita": "11.12.2010"
+        }
       ]
     }
   },
@@ -2044,7 +2101,7 @@
         "squadraA": "ACADEMY ROSSA",
         "squadraB": "ATLETICO VELLETRI",
         "campo": "CAMPO A",
-        "orario": "11.00",
+        "orario": "18.00",
         "data": "24.05.2025",
         "golA": null,
         "golB": null,
@@ -2663,6 +2720,103 @@
           "nome": "FILIPPO",
           "nascita": "29.01.2012"
         }
+      ],
+      "FF10": [
+        {
+          "cognome": "BOTTONE",
+          "nome": "MANUEL",
+          "nascita": "19.04.2012"
+        },
+        {
+          "cognome": "GALLI",
+          "nome": "GABRIELE",
+          "nascita": "24.04.2012"
+        },
+        {
+          "cognome": "PIRROCCO",
+          "nome": "EMANUELE",
+          "nascita": "14.05.2012"
+        },
+        {
+          "cognome": "CIAFFI",
+          "nome": "NICOLO'",
+          "nascita": "02.10.2012"
+        },
+        {
+          "cognome": "MORICONI",
+          "nome": "GABRIELE",
+          "nascita": "17.11.2012"
+        },
+        {
+          "cognome": "GRECO",
+          "nome": "CHRISTIAN",
+          "nascita": "19.11.2012"
+        },
+        {
+          "cognome": "PETRACCA",
+          "nome": "GIOVANNI",
+          "nascita": "16.01.2013"
+        },
+        {
+          "cognome": "VENTURUCCI",
+          "nome": "ANDREA",
+          "nascita": "16.01.2013"
+        },
+        {
+          "cognome": "MAURI",
+          "nome": "DANIELE",
+          "nascita": "22.01.2013"
+        },
+        {
+          "cognome": "LOMBARDI ",
+          "nome": "GABRIELE",
+          "nascita": "07.02.2013"
+        },
+        {
+          "cognome": "DE PAOLIS",
+          "nome": "NICCOLO'",
+          "nascita": "24.02.2013"
+        },
+        {
+          "cognome": "ZANETTI",
+          "nome": "GABRIELE",
+          "nascita": "09.03.2013"
+        },
+        {
+          "cognome": "ROSSETTI",
+          "nome": "TIZIANO",
+          "nascita": "02.08.2013"
+        },
+        {
+          "cognome": "PIRROCCO",
+          "nome": "MATTIA",
+          "nascita": "11.08.2013"
+        },
+        {
+          "cognome": "CHIANESE",
+          "nome": "GENNARO",
+          "nascita": "03.09.2013"
+        },
+        {
+          "cognome": "SCHIAVONI",
+          "nome": "TIZIANO",
+          "nascita": "18.09.2013"
+        },
+        {
+          "cognome": "CUCOS",
+          "nome": "CRISTIAN",
+          "nascita": "13.10.2013"
+        },
+        {
+          "cognome": "TANTALO",
+          "nome": "SIMONE",
+          "nascita": "18.10.2013"
+        },
+        {
+          "cognome": "RUMBO",
+          "nome": "GIOVANNI",
+          "nascita": "12.11.2013"
+        }
       ]
     }
   },
@@ -2895,7 +3049,7 @@
         "squadraB": "LATINA C5",
         "campo": "CAMPO A",
         "orario": "18.00",
-        "data": "21.05.2025",
+        "data": "22.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -2926,8 +3080,8 @@
         "squadraA": "FORTITUDO POMEZIA",
         "squadraB": "S.PIETRO E PAOLO",
         "campo": "CAMPO A",
-        "orario": "11.00",
-        "data": "25.05.2025",
+        "orario": "18.00",
+        "data": "23.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -3268,6 +3422,48 @@
           "nome": "ALESSANDRO",
           "nascita": "09.06.2015"
         }
+      ],
+      "FF10": [
+        {
+          "cognome": "RUFINI",
+          "nome": "GABRIELE",
+          "nascita": "21.05.2014"
+        },
+        {
+          "cognome": "ROVAZZANI",
+          "nome": "SAMUEL",
+          "nascita": "28.05.2014"
+        },
+        {
+          "cognome": "ABBRUZZESE",
+          "nome": "SIMONE",
+          "nascita": "18.06.2014"
+        },
+        {
+          "cognome": "LATIFI",
+          "nome": "ALIASGHAR",
+          "nascita": "25.11.2014"
+        },
+        {
+          "cognome": "IENGO",
+          "nome": "GABRIEL",
+          "nascita": "26.03.2015"
+        },
+        {
+          "cognome": "ROCCHI",
+          "nome": "EMANUELE",
+          "nascita": "15.06.2015"
+        },
+        {
+          "cognome": "CHIANESE",
+          "nome": "FRANCESCO",
+          "nascita": "17.06.2015"
+        },
+        {
+          "cognome": "PARTE",
+          "nome": "MANUELE",
+          "nascita": "27.09.2015"
+        }
       ]
     }
   },
@@ -3555,7 +3751,7 @@
         "girone": "GIRONE UNICO",
         "squadraA": "ACADEMY",
         "squadraB": "S.PIETRO E PAOLO",
-        "campo": "CAMPO A",
+        "campo": "CAMPO C",
         "orario": "18.00",
         "data": "22.05.2025",
         "golA": null,
@@ -4061,8 +4257,8 @@
         "squadraA": "FUTSAL BASIC ACADEMY",
         "squadraB": "S.GIOVANNI EVANGELISTA",
         "campo": "CAMPO A",
-        "orario": "18.00",
-        "data": "20.05.2025",
+        "orario": "19.00",
+        "data": "27.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
