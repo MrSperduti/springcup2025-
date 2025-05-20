@@ -980,13 +980,49 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "18.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 7,
+        "golB": 7,
+        "portiere": "MONTEIRO FRANCESCO",
+        "squadraPortiere": "CIRCOLO MASTER",
+        "giocatore": "CITRINITI MARCO",
+        "squadraGiocatore": "S.GIOVANNI EVANGELISTA",
+        "marcatori": [
+          {
+            "nome": "D'AGOSTINO MIRKO",
+            "gol": 3,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "CITRINITI MARCO",
+            "gol": 2,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "DE MEO MICHELANGELO",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "BOSCA FRANCESCO",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "SALEMI GIOVANNI",
+            "gol": 4,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "CARBONE MATTEO",
+            "gol": 2,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "SORDU EDUARD",
+            "gol": 1,
+            "squadra": "CIRCOLO MASTER"
+          }
+        ]
       },
       {
         "giornata": "3",
@@ -1920,7 +1956,7 @@
         "giornata": "3",
         "girone": "GIRONE A",
         "squadraA": "NEW TEAM",
-        "squadraB": "S.PIETRO E PAOLO",
+        "squadraB": "S.PIETRO E PAOLO ROSSA",
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "24.05.2025",
@@ -1935,7 +1971,7 @@
       {
         "giornata": "3",
         "girone": "GIRONE B",
-        "squadraA": "S.PIETRO E PAOLO",
+        "squadraA": "S.PIETRO E PAOLO BLU",
         "squadraB": "LATINA C5",
         "campo": "CAMPO B",
         "orario": "10.00",
@@ -2149,15 +2185,56 @@
         "squadraA": "S.PIETRO E PAOLO BLU",
         "squadraB": "FF10",
         "campo": "CAMPO A",
-        "orario": "18.00",
+        "orario": "10.00",
         "data": "19.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 12,
+        "golB": 2,
+        "portiere": "SCHIAVONE DAVIDE",
+        "squadraPortiere": "S.PIETRO E PAOLO BLU",
+        "giocatore": "GRECO CHRISTIAN",
+        "squadraGiocatore": "FF10",
+        "marcatori": [
+          {
+            "nome": "BOTTONE MANUEL",
+            "gol": 4,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "GRECO CHRISTIAN",
+            "gol": 3,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "PIROCCO EMANUELE",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "CIAFFI NICOLO'",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "PIRROCCO MATTIA",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "TANTALO SIMONE",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "PETRACCA GIOVANNI",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "PAPA GIUSEPPE",
+            "gol": 2,
+            "squadra": "S.PIETRO E PAOLO BLU"
+          }
+        ]
       },
       {
         "giornata": "3",
@@ -3002,13 +3079,39 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "18.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 17,
+        "golB": 0,
+        "portiere": "CANZONIERE ALESSANDRO",
+        "squadraPortiere": "ACADEMY BLU",
+        "giocatore": "CRUDETTI ANGELO",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "CRUDETTI ANGELO",
+            "gol": 6,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "DI RITA LORENZO",
+            "gol": 4,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "PAGANO SIMONE",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TROPLINI ACHILLE",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "REALI LEONARDO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          }
+        ]
       },
       {
         "giornata": "3",
@@ -3912,21 +4015,52 @@
         "campo": "CAMPO A",
         "orario": "14.00",
         "data": "17.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 9,
+        "golB": 1,
+        "portiere": "BANDINU GABRIELE",
+        "squadraPortiere": "S.PIETRO E PAOLO",
+        "giocatore": "DIAGNE ALESSANDRO",
+        "squadraGiocatore": "S.PIETRO E PAOLO",
+        "marcatori": [
+          {
+            "nome": "DIAGNE ALESSANDRO",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "CRISANO LORENZO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "MAGGI GIORGIO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CORCIONE FRANCESCO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BOZZA GABRIELE",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "ALTOMARE JACOPO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          }
+        ]
       },
       {
         "giornata": "4",
         "girone": "GIRONE UNICO",
         "squadraA": "LATINA C5",
         "squadraB": "FORTE COLLEFERRO",
-        "campo": "CAMPO A ",
-        "orario": "17.00",
+        "campo": "CAMPO C ",
+        "orario": "19.00",
         "data": "22.05.2025",
         "golA": null,
         "golB": null,
