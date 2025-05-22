@@ -1944,13 +1944,39 @@
         "campo": "CAMPO A",
         "orario": "17.00",
         "data": "22.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 9,
+        "golB": 1,
+        "portiere": "CARRERO DONATO",
+        "squadraPortiere": "FORTITUDO POMEZIA",
+        "giocatore": "VECCHIARELLI FILIPPO",
+        "squadraGiocatore": "FORTITUDO POMEZIA",
+        "marcatori": [
+          {
+            "nome": "VECCHIARELLI FILIPPO",
+            "gol": 4,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "MAENZA DANIEL",
+            "gol": 2,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "ERDI FLAVIO",
+            "gol": 2,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "MANCINI VALERIO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "EGIDI SIMONE",
+            "gol": 1,
+            "squadra": "ANZIO C5"
+          }
+        ]
       },
       {
         "giornata": "3",
