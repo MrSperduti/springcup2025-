@@ -3940,13 +3940,34 @@
         "campo": "CAMPO C",
         "orario": "18.00",
         "data": "22.05.2025",
-        "golA": null,
-        "golB": null,
+        "golA": 1,
+        "golB": 6,
         "portiere": "",
         "squadraPortiere": "",
         "giocatore": "",
         "squadraGiocatore": "",
-        "marcatori": []
+        "marcatori": [
+          {
+            "nome": "ANDREOLI LORENZO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "DIAGNE ALESSANDRO",
+            "gol": 4,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "GIANNINI FRANCESCO",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "TERLIZZESE MATTIA",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          }
+        ]
       },
       {
         "giornata": "4",
@@ -3956,13 +3977,44 @@
         "campo": "CAMPO B",
         "orario": "18.00",
         "data": "22.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 2,
+        "golB": 15,
+        "portiere": "PILATO MATTIA",
+        "squadraPortiere": "INDOMITA POMEZIA",
+        "giocatore": "BACCINI MARZIO",
+        "squadraGiocatore": "INDOMITA POMEZIA",
+        "marcatori": [
+          {
+            "nome": "AFELBA FEDERICO",
+            "gol": 4,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "BACCINI MARZIO",
+            "gol": 4,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "CADONI GIOVANNI",
+            "gol": 3,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "CANCIA DYLAN",
+            "gol": 2,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "VADALA ANDREA",
+            "gol": 1,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "BENNARDI ALESSANDRO",
+            "gol": 1,
+            "squadra": "INDOMITA POMEZIA"
+          }
+        ]
       },
       {
         "giornata": "5",
