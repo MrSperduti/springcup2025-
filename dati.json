@@ -3236,13 +3236,44 @@
         "campo": "CAMPO A",
         "orario": "19.00",
         "data": "22.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 1,
+        "golB": 9,
+        "portiere": "DI GIULI",
+        "squadraPortiere": "MIRKO",
+        "giocatore": "CRUDETTI ANGELO",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "DI RITA LORENZO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CRUDETTI ANGELO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "PAGANO SIMONE",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TROPLIMI ACHILLE",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "MARCHETTI FABRIZIO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "RAMUNNO ALESSANDRO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          }
+        ]
       },
       {
         "giornata": "5",
@@ -3942,10 +3973,10 @@
         "data": "22.05.2025",
         "golA": 1,
         "golB": 6,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
+        "portiere": "COSIMATO THIAGO",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "DIAGNE ALESSANDRO",
+        "squadraGiocatore": "S.PIETRO E PAOLO",
         "marcatori": [
           {
             "nome": "ANDREOLI LORENZO",
@@ -4197,13 +4228,39 @@
         "campo": "CAMPO C ",
         "orario": "19.00",
         "data": "22.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 9,
+        "golB": 1,
+        "portiere": "IACONO FLAVIO",
+        "squadraPortiere": "FORTE COLLEFERRO",
+        "giocatore": "DI FIORE NICOLAS",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "DI FIORE NICOLAS",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CORCIONE FRANCESCO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BOZZA GABRIELE",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "ANTOBENEDETTO LORENZO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CRISANO LORENZO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          }
+        ]
       },
       {
         "giornata": "5",
