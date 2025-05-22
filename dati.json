@@ -3121,13 +3121,39 @@
         "campo": "CAMPO B",
         "orario": "19.00",
         "data": "21.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 9,
+        "golB": 1,
+        "portiere": "CASTELPIETRA ANDREA",
+        "squadraPortiere": "S.PIETRO E PAOLO",
+        "giocatore": "MARTELLACCI NICOLAS",
+        "squadraGiocatore": "ACADEMY ROSSA",
+        "marcatori": [
+          {
+            "nome": "MARTELLACCI NICOLAS",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "MARCOTULLI JONAS",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "VESCOVO GABRIELE",
+            "gol": 4,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "KIPERESCU ANGELO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "CONTI FILIPPO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          }
+        ]
       },
       {
         "giornata": "4",
@@ -3137,13 +3163,44 @@
         "campo": "CAMPO B",
         "orario": "18.00",
         "data": "21.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 1,
+        "golB": 5,
+        "portiere": "CONTENTO LUIGI",
+        "squadraPortiere": "ACADEMY ROSSA",
+        "giocatore": "COTUGNO MANUEL",
+        "squadraGiocatore": "ACADEMY BLU",
+        "marcatori": [
+          {
+            "nome": "CODELLA MATTEO",
+            "gol": 1,
+            "squadra": "ACADEMY BLU"
+          },
+          {
+            "nome": "SOULHI RYAN",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "MARTELLACCI NICOLAS",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "ROMEI EMANUELE",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "VESCOVO GABRIELE",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "KIPERESCU ANGELO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          }
+        ]
       },
       {
         "giornata": "4",
