@@ -2220,12 +2220,12 @@
             "squadra": "FF10"
           },
           {
-            "nome": "PIRROCCO MATTIA",
+            "nome": "ARROCCO MATTIA",
             "gol": 1,
             "squadra": "FF10"
           },
           {
-            "nome": "PIRROCCO EMANUELE",
+            "nome": "ARROCCO EMANUELE",
             "gol": 1,
             "squadra": "FF10"
           }
@@ -3325,13 +3325,54 @@
         "campo": "CAMPO A",
         "orario": "11.00",
         "data": "24.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 9,
+        "golB": 3,
+        "portiere": "CASTELPIETRA ANDREA",
+        "squadraPortiere": "S.PIETRO E PAOLO",
+        "giocatore": "RAMUNNO ALESSANDRO",
+        "squadraGiocatore": "FORTITUDO POMEZIA",
+        "marcatori": [
+          {
+            "nome": "RAMUNNO ALESSANDRO",
+            "gol": 3,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "CIUCCIOVINO MATTIA",
+            "gol": 2,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PIRA DAVIDE",
+            "gol": 2,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "BERNARD THOMAS",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PECORAIO CHRISTIAN",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "BELLI GABRIELE",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "BOCCI RICCARDO",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "PAPIRO LORENZO",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          }
+        ]
       }
     ],
     "finali": [],
