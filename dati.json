@@ -2180,6 +2180,11 @@
             "nome": "MATTEI LEONARDO",
             "gol": 1,
             "squadra": "ATLETICO VELLETRI"
+          },
+          {
+            "nome": "PAPIRO LORENZO",
+            "gol": 3,
+            "squadra": "S.PIETRO E PAOLO ROSSA"
           }
         ]
       },
@@ -4122,13 +4127,44 @@
         "campo": "CAMPO A",
         "orario": "12.00",
         "data": "24.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 7,
+        "golB": 2,
+        "portiere": "BECK ETHAN",
+        "squadraPortiere": "FORTE COLLEFERRO",
+        "giocatore": "ZAMBRANO DARIO",
+        "squadraGiocatore": "ANZIO C5",
+        "marcatori": [
+          {
+            "nome": "RONZONI FILIPPO",
+            "gol": 2,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "NASTASI SEFARINO",
+            "gol": 1,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "NASO ROBERTO",
+            "gol": 1,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "BRUNI CHRISTIAN",
+            "gol": 1,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "ZAMBRANO DARIO",
+            "gol": 1,
+            "squadra": "ANZIO C5"
+          },
+          {
+            "nome": "MOREIRA SANTIAGO",
+            "gol": 1,
+            "squadra": "ANZIO C5"
+          }
+        ]
       },
       {
         "giornata": "5",
@@ -4138,13 +4174,34 @@
         "campo": "CAMPO B",
         "orario": "12.00",
         "data": "24.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 1,
+        "golB": 5,
+        "portiere": "AFELBA FEDERICO",
+        "squadraPortiere": "INDOMITA POMEZIA",
+        "giocatore": "BACCINI MARZIO",
+        "squadraGiocatore": "INDOMITA POMEZIA",
+        "marcatori": [
+          {
+            "nome": "BACCINI MARZIO",
+            "gol": 3,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "VADALA ANDREA",
+            "gol": 1,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "CADONI GIOVANNI",
+            "gol": 1,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "DIAGNE ALESSANDRO",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          }
+        ]
       },
       {
         "giornata": "1",
