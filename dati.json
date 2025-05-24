@@ -1032,13 +1032,39 @@
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "23.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 6,
+        "golB": 1,
+        "portiere": "GAMBELLINI CHRISTIAN",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "ROMANO DOMENICO",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "ROMANO DOMENICO",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "REGNO MATTEO",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "MIRRA ALESSANDRO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "PALAZZOLO SIMONE",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "ROSSETTI LORENZO",
+            "gol": 1,
+            "squadra": "FF10"
+          }
+        ]
       },
       {
         "giornata": "3",
@@ -4601,13 +4627,24 @@
         "campo": "CAMPO A",
         "orario": "19.00",
         "data": "23.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 1,
+        "golB": 1,
+        "portiere": "STRAVATO GIORGIA",
+        "squadraPortiere": "FUTSAL BASIC ACADEMY",
+        "giocatore": "AMATO AURORA",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "LUDOVICA BUSTI",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "RENZI IOLE",
+            "gol": 1,
+            "squadra": "FUTSAL BASIC ACADEMY"
+          }
+        ]
       },
       {
         "giornata": "5",
