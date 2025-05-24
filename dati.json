@@ -1074,13 +1074,34 @@
         "campo": "CAMPO A",
         "orario": "16.00",
         "data": "24.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 1,
+        "golB": 4,
+        "portiere": "MAZZAROPPI CHRISTIAN",
+        "squadraPortiere": "FORTITUDO POMEZIA",
+        "giocatore": "INCITTI ALESSIO",
+        "squadraGiocatore": "FORTITUDO POMEZIA",
+        "marcatori": [
+          {
+            "nome": "INCITTI ALESSIO",
+            "gol": 2,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "D'AMORE BASILIO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "BARATTA MARCO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "MIUCCI ALESSANDRO",
+            "gol": 1,
+            "squadra": "REAL CIAMPINO"
+          }
+        ]
       },
       {
         "giornata": "3",
