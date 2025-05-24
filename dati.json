@@ -4394,13 +4394,39 @@
         "campo": "CAMPO A",
         "orario": "14.00",
         "data": "24.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 1,
+        "golB": 10,
+        "portiere": "COSIMATO THIAGO",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "DI FIORE NICOLAS",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "CORCIONE FRANCESCO",
+            "gol": 4,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BARBIERO EMMA",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CRISANO LORENZO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "DI FIORE NICOLAS",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BOZZA GABRIELE",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          }
+        ]
       }
     ],
     "finali": [],
