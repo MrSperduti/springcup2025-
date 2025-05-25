@@ -162,13 +162,39 @@
         "campo": "CAMPO A",
         "orario": "17.00",
         "data": "24.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 10,
+        "golB": 2,
+        "portiere": "FORTINI GABRIEL",
+        "squadraPortiere": "FORTITUDO POMEZIA",
+        "giocatore": "NOZZI LORENZO",
+        "squadraGiocatore": "FORTITUDO POMEZIA",
+        "marcatori": [
+          {
+            "nome": "PARENTE CRISTIAN",
+            "gol": 6,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "IMPERI DIEGO",
+            "gol": 3,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "MAENZA TIZIANO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "QUARTUCCI DAVIDE",
+            "gol": 1,
+            "squadra": "ATLETICO VELLETRI"
+          },
+          {
+            "nome": "GIOVANNOZZI SIMONE",
+            "gol": 1,
+            "squadra": "ATLETICO VELLETRI"
+          }
+        ]
       },
       {
         "giornata": "2",
@@ -1111,13 +1137,49 @@
         "campo": "CAMPO B",
         "orario": "11.00",
         "data": "25.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 6,
+        "golB": 2,
+        "portiere": "MONTEIRO FRANCESCO",
+        "squadraPortiere": "CIRCOLO MASTER",
+        "giocatore": "DEL DUCA DENNIS",
+        "squadraGiocatore": "NEW TEAM",
+        "marcatori": [
+          {
+            "nome": "SALEMI GIOVANNI",
+            "gol": 1,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "SHALA EMIR",
+            "gol": 1,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "DEL DUCA DENNIS",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "CECCARELLI FEDERICO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "COLASANTI ALESSIO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "D'ANTONI DAVIDE",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "TALAMO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          }
+        ]
       }
     ],
     "finali": [],
@@ -2049,13 +2111,59 @@
         "campo": "CAMPO B",
         "orario": "10.00",
         "data": "24.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 0,
+        "golB": 27,
+        "portiere": "CASTELPIETRA ANDREA",
+        "squadraPortiere": "S.PIETRO E PAOLO ROSSA",
+        "giocatore": "CRUDETTI ANGELO",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "GALANTE CRISTIANO",
+            "gol": 7,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CONOCI GABRIELE",
+            "gol": 5,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "PICCIRILLO DAVIDE",
+            "gol": 4,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CORCIONE VINCENZO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "DI RITA LORENZO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CRUDETTI ANGELO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TATTIUZZO ALESSANDRO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "PAGANO SIMONE",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BIANCHINI ANDREA",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          }
+        ]
       },
       {
         "giornata": "3",
@@ -2217,13 +2325,39 @@
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "24.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 5,
+        "golB": 5,
+        "portiere": "BARBARESCHI MATTIA",
+        "squadraPortiere": "ACADEMY ROSSA",
+        "giocatore": "QUARTUCCI DAVIDE",
+        "squadraGiocatore": "ATLETICO VELLETRI",
+        "marcatori": [
+          {
+            "nome": "QUARTUCCI DAVIDE",
+            "gol": 4,
+            "squadra": "ATLETICO VELLETRI"
+          },
+          {
+            "nome": "COSTANZI SIMONE",
+            "gol": 1,
+            "squadra": "ATLETICO VELLETRI"
+          },
+          {
+            "nome": "COTUGNO MATTEO",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "ULISSE MATTIA",
+            "gol": 2,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "BARBARECHI MATTIA",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -2322,13 +2456,49 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "25.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 1,
+        "golB": 11,
+        "portiere": "BARBARESCHI MATTIA",
+        "squadraPortiere": "ACADEMY ROSSA",
+        "giocatore": "CIAFFI NICOLO'",
+        "squadraGiocatore": "FF10",
+        "marcatori": [
+          {
+            "nome": "MIRRA LORENZO",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "PIRROCCO EMANUELE",
+            "gol": 3,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "CIFFI NICOLO' ",
+            "gol": 3,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "PIRROCCO MATTIA",
+            "gol": 2,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "LOMBARDI GABRIELE",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "MORICONI GABRIELE",
+            "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "BOTTONE MANUEL",
+            "gol": 1,
+            "squadra": "FF10"
+          }
+        ]
       }
     ],
     "finali": [],
@@ -3335,13 +3505,24 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "25.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 4,
+        "golB": 7,
+        "portiere": "CONTENTO LUIGI",
+        "squadraPortiere": "ACADEMY ROSSA",
+        "giocatore": "MADDALONI FLAVIO",
+        "squadraGiocatore": "ACADEMY ROSSA",
+        "marcatori": [
+          {
+            "nome": "MADDALONI FLAVIO",
+            "gol": 3,
+            "squadra": "ACADEMY ROSSA"
+          },
+          {
+            "nome": "SOULHI RAYAN",
+            "gol": 1,
+            "squadra": "ACADEMY ROSSA"
+          }
+        ]
       },
       {
         "giornata": "5",
@@ -4754,8 +4935,8 @@
         "squadraA": "FUTSAL BASIC ACADEMY",
         "squadraB": "S.GIOVANNI EVANGELISTA",
         "campo": "CAMPO A",
-        "orario": "19.00",
-        "data": "27.05.2025",
+        "orario": "17.00",
+        "data": "05.06.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -4798,7 +4979,7 @@
         "squadraB": "ACADEMY",
         "campo": "CAMPO A",
         "orario": "18.00",
-        "data": "27.05.2025",
+        "data": "03.06.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -4814,7 +4995,7 @@
         "squadraB": "FUTSAL BASIC ACADEMY",
         "campo": "CAMPO A",
         "orario": "18.00",
-        "data": "30.05.2025",
+        "data": "05.06.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
