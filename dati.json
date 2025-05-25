@@ -2380,12 +2380,12 @@
             "squadra": "FF10"
           },
           {
-            "nome": "ARROCCO MATTIA",
+            "nome": "PIRROCCO MATTIA",
             "gol": 1,
             "squadra": "FF10"
           },
           {
-            "nome": "ARROCCO EMANUELE",
+            "nome": "PIRROCCO EMANUELE",
             "gol": 1,
             "squadra": "FF10"
           }
@@ -2456,8 +2456,8 @@
         "campo": "CAMPO A",
         "orario": "10.00",
         "data": "25.05.2025",
-        "golA": 1,
-        "golB": 11,
+        "golA": 11,
+        "golB": 1,
         "portiere": "BARBARESCHI MATTIA",
         "squadraPortiere": "ACADEMY ROSSA",
         "giocatore": "CIAFFI NICOLO'",
