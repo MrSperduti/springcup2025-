@@ -2114,7 +2114,7 @@
         "orario": "11.00",
         "data": "10.05.2025",
         "golA": 20,
-        "golB": 0,
+        "golB": null,
         "portiere": "PAINO GABRIELE",
         "squadraPortiere": "ATLETICO VELLETRI",
         "giocatore": "BADARACCHI LORENZO",
@@ -2146,7 +2146,7 @@
             "squadra": "NEW TEAM"
           },
           {
-            "nome": "MAGLIETTA MATTEO",
+            "nome": "MIGLIETTA MATTEO",
             "gol": 2,
             "squadra": "NEW TEAM"
           },
