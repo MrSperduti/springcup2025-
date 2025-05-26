@@ -2173,13 +2173,44 @@
         "campo": "CAMPO B",
         "orario": "18.00",
         "data": "26.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 3,
+        "golB": 7,
+        "portiere": "MARANO DILAN",
+        "squadraPortiere": "ANZIO C5",
+        "giocatore": "GILIBERTI DIEGO",
+        "squadraGiocatore": "MARINO ACADEMY",
+        "marcatori": [
+          {
+            "nome": "MENICHELLI MIRCO",
+            "gol": 2,
+            "squadra": "ANZIO C5"
+          },
+          {
+            "nome": "EGIDI SIMONE",
+            "gol": 1,
+            "squadra": "ANZIO C5"
+          },
+          {
+            "nome": "GILIBERTI DIEGO",
+            "gol": 4,
+            "squadra": "MARINO ACADEMY"
+          },
+          {
+            "nome": "COLLARINI FRANCESCO",
+            "gol": 1,
+            "squadra": "MARINO ACADEMY"
+          },
+          {
+            "nome": "TERSIGNI RICCARDO",
+            "gol": 1,
+            "squadra": "MARINO ACADEMY"
+          },
+          {
+            "nome": "DI STEFANO NICO",
+            "gol": 1,
+            "squadra": "MARINO ACADEMY"
+          }
+        ]
       },
       {
         "giornata": "SEMIFINALE A",
