@@ -278,11 +278,11 @@
       {
         "giornata": "SEMIFINALE A",
         "girone": "",
-        "squadraA": "PRIMA GIRONE A ",
-        "squadraB": "SECONDA GIRONE B",
-        "campo": "",
-        "orario": "",
-        "data": "",
+        "squadraA": "ACADEMY",
+        "squadraB": "FORTITUDO",
+        "campo": "A",
+        "orario": "11.00",
+        "data": "01.06.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -294,11 +294,11 @@
       {
         "giornata": "SEMIFINALE B",
         "girone": "",
-        "squadraA": "PRIMA GIRONE B",
-        "squadraB": "SECONDA GIRONE A",
-        "campo": "",
-        "orario": "",
-        "data": "",
+        "squadraA": "CIRCOLO MASTER",
+        "squadraB": "ARDEA C5",
+        "campo": "A",
+        "orario": "18.00",
+        "data": "31.05.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
@@ -1180,6 +1180,38 @@
             "squadra": "NEW TEAM"
           }
         ]
+      },
+      {
+        "giornata": "SEMIFINALE A",
+        "girone": "",
+        "squadraA": "FORTITUDO POMEZIA",
+        "squadraB": "NEW TEAM",
+        "campo": "A",
+        "orario": "17.00",
+        "data": "31.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "girone": "",
+        "squadraA": "ACADEMY",
+        "squadraB": "FF10",
+        "campo": "A",
+        "orario": "10.00",
+        "data": "01.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       }
     ],
     "finali": [],
@@ -2231,10 +2263,10 @@
       {
         "giornata": "SEMIFINALE B",
         "girone": "",
-        "squadraA": "MIGLIORE PRIMA GIRONE B/C",
-        "squadraB": "2 CLASSIFICATA GIRONE A",
+        "squadraA": "LATINA C5",
+        "squadraB": "FORTITUDO POMEZIA",
         "campo": "CAMPO A",
-        "orario": "10.00",
+        "orario": "15.00",
         "data": "31.05.2025",
         "golA": null,
         "golB": null,
@@ -3631,6 +3663,38 @@
             "squadra": "S.PIETRO E PAOLO"
           }
         ]
+      },
+      {
+        "giornata": "SEMIFINALE A",
+        "girone": "",
+        "squadraA": "LATINA C5",
+        "squadraB": "S.PIETRO E PAOLO",
+        "campo": "B",
+        "orario": "14.00",
+        "data": "31.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "girone": "",
+        "squadraA": "ACADEMY",
+        "squadraB": "FORTITUDO POMEZIA",
+        "campo": "A",
+        "orario": "14.00",
+        "data": "31.05.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       }
     ],
     "finali": [],
@@ -4429,7 +4493,7 @@
         "data": "24.05.2025",
         "golA": 1,
         "golB": 5,
-        "portiere": "AFELBA FEDERICO",
+        "portiere": "PILATO MATTIA",
         "squadraPortiere": "INDOMITA POMEZIA",
         "giocatore": "BACCINI MARZIO",
         "squadraGiocatore": "INDOMITA POMEZIA",
@@ -4680,6 +4744,38 @@
             "squadra": "LATINA C5"
           }
         ]
+      },
+      {
+        "giornata": "SEMIFINALE A",
+        "girone": "",
+        "squadraA": "LATINA C5",
+        "squadraB": "S.PIETRO E PAOLO",
+        "campo": "B",
+        "orario": "18.00",
+        "data": "04.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "SEMIFINALE B",
+        "girone": "",
+        "squadraA": "INDOMITA POMEZIA",
+        "squadraB": "FORTE COLLEFERRO",
+        "campo": "A",
+        "orario": "18.00",
+        "data": "04.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       }
     ],
     "finali": [],
