@@ -2532,11 +2532,6 @@
             "squadra": "ACADEMY ROSSA"
           },
           {
-            "nome": "PIRROCCO EMANUELE",
-            "gol": 3,
-            "squadra": "FF10"
-          },
-          {
             "nome": "CIAFFI NICOLO' ",
             "gol": 3,
             "squadra": "FF10"
@@ -2559,6 +2554,11 @@
           {
             "nome": "BOTTONE MANUEL",
             "gol": 1,
+            "squadra": "FF10"
+          },
+          {
+            "nome": "CIAFFI NICOLO'",
+            "gol": 3,
             "squadra": "FF10"
           }
         ]
