@@ -1212,6 +1212,63 @@
         "giocatore": "",
         "squadraGiocatore": "",
         "marcatori": []
+      },
+      {
+        "giornata": "FINALE 5/6",
+        "girone": "",
+        "squadraA": "S.GIOVANNI EVANGELISTA",
+        "squadraB": "CIRCOLO MASTER",
+        "campo": "A",
+        "orario": "16.00",
+        "data": "31.05.2025",
+        "golA": 7,
+        "golB": 7,
+        "portiere": "BONO EMANUELE",
+        "squadraPortiere": "S.GIOVANNI EVANGELISTA",
+        "giocatore": "SALEMI GIOVANNI",
+        "squadraGiocatore": "CIRCOLO MASTER",
+        "marcatori": [
+          {
+            "nome": "D'AGOSTINO MIRKO",
+            "gol": 3,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "CALIFANO FRANCESCO",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "CITRINITI MIRKO",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "DE MEO MICHELANGELO",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "PALUMBO MATTEO",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "SALEMI GIOVANNI",
+            "gol": 4,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "MONTEIRO FRANCESCO",
+            "gol": 1,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "CASCI DANIELE",
+            "gol": 2,
+            "squadra": "CIRCOLO MASTER"
+          }
+        ]
       }
     ],
     "finali": [],
@@ -2278,13 +2335,49 @@
         "campo": "CAMPO B",
         "orario": "15.00",
         "data": "31.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 10,
+        "golB": 1,
+        "portiere": "PATRIZI SAMUELE",
+        "squadraPortiere": "NEW TEAM",
+        "giocatore": "IANZINI LEONARDO",
+        "squadraGiocatore": "NEW TEAM",
+        "marcatori": [
+          {
+            "nome": "IANZINI LEONARDO",
+            "gol": 3,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "BARDARACCHI LORENZO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "FOLLEGA MANUEL",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "MIGLIETTA MATTEO",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "TOSI FRANCESCO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "TRENTA GABRIELE",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "LOMBARDI GABRIELE",
+            "gol": 1,
+            "squadra": "FF10"
+          }
+        ]
       },
       {
         "giornata": "SEMIFINALE B",
@@ -3698,13 +3791,59 @@
         "campo": "B",
         "orario": "14.00",
         "data": "31.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 18,
+        "golB": 5,
+        "portiere": "CASTELPIETRA ANDREA",
+        "squadraPortiere": "S.PIETRO E PAOLO",
+        "giocatore": "AMODEO FRANCESCO",
+        "squadraGiocatore": "LATINA C5",
+        "marcatori": [
+          {
+            "nome": "AMODEO FRANCESCO",
+            "gol": 5,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CRUDETTI ANGELO",
+            "gol": 5,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "DI RITA LORENZO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TROPLINI ACHILLE",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "REALI LEONARDO",
+            "gol": 2,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "TULLIO ANDREA",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BELLI GABRIELE",
+            "gol": 2,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "CONTI FILIPPO",
+            "gol": 2,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "MARCIANI FRANCESCO",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          }
+        ]
       },
       {
         "giornata": "SEMIFINALE B",
