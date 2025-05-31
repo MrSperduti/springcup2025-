@@ -1189,13 +1189,34 @@
         "campo": "A",
         "orario": "17.00",
         "data": "31.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 1,
+        "golB": 8,
+        "portiere": "BUCCI SIMONE",
+        "squadraPortiere": "NEW TEAM",
+        "giocatore": "D'ANTONI DAVIDE",
+        "squadraGiocatore": "NEW TEAM",
+        "marcatori": [
+          {
+            "nome": "DEL DUCA DENNIS",
+            "gol": 4,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "BUCCI SIMONE",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "COLASANTI ALESSIO",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "D'ANTONI DAVIDE",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          }
+        ]
       },
       {
         "giornata": "SEMIFINALE B",
