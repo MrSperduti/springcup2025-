@@ -2128,7 +2128,7 @@
         "orario": "18.00",
         "data": "28.05.2025",
         "golA": 19,
-        "golB": 0,
+        "golB": null,
         "portiere": "PATRIZI SAMUELE",
         "squadraPortiere": "NEW TEAM",
         "giocatore": "SORICETTI TOMMASO",
@@ -3714,13 +3714,54 @@
         "campo": "A",
         "orario": "14.00",
         "data": "31.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 7,
+        "golB": 3,
+        "portiere": "DI GIULI MIRKO",
+        "squadraPortiere": "FORTITUDO POMEZIA",
+        "giocatore": "BRAIDICH FRANCESCO",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "BRAIDICH FRANCESCO",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "MARCOTULLI JONAS",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "SOULHI RAYAN",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "MARTELLACCI NICOLAS",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "SPERDUTI NICOLAS",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "CIUCCIOVINO MATTIA",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "D'AMORE SAMUEL",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "RAMUNNO CLAUDIO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          }
+        ]
       }
     ],
     "finali": [],
