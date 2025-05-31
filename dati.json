@@ -2127,13 +2127,39 @@
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "28.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 19,
+        "golB": 0,
+        "portiere": "PATRIZI SAMUELE",
+        "squadraPortiere": "NEW TEAM",
+        "giocatore": "SORICETTI TOMMASO",
+        "squadraGiocatore": "NEW TEAM",
+        "marcatori": [
+          {
+            "nome": "SORICETTI TOMMASO",
+            "gol": 5,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "IANZINI LEONARDO",
+            "gol": 5,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "FONTANA FRANCESCO",
+            "gol": 5,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "TOSI FRANCESCO",
+            "gol": 2,
+            "squadra": "NEW TEAM"
+          },
+          {
+            "nome": "LADOGANA CRISTIAN",
+            "gol": 1,
+            "squadra": "NEW TEAM"
+          }
+        ]
       },
       {
         "giornata": "3",
