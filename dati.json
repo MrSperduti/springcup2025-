@@ -305,7 +305,33 @@
         "squadraPortiere": "",
         "giocatore": "",
         "squadraGiocatore": "",
-        "marcatori": []
+        "marcatori": [
+          {
+            "nome": "ORSINI FRANCESCO",
+            "gol": 3,
+            "squadra": "ARDEA C5"
+          },
+          {
+            "nome": "MUSTO VALERIO",
+            "gol": 1,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "ANNIBALLI DAVIDE",
+            "gol": 1,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "CERILLI VALERIO",
+            "gol": 1,
+            "squadra": "CIRCOLO MASTER"
+          },
+          {
+            "nome": "MUSTO DAMIANO",
+            "gol": 1,
+            "squadra": "CIRCOLO MASTER"
+          }
+        ]
       }
     ],
     "finali": [],
