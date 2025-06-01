@@ -283,13 +283,54 @@
         "campo": "A",
         "orario": "11.00",
         "data": "01.06.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 7,
+        "golB": 6,
+        "portiere": "MELADIO' GIOVANNI",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "ALESSANDRO GOBBI",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "ALESSANDRO GOBBI",
+            "gol": 4,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "IANCU CRISTIAN",
+            "gol": 3,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "NOZZI LORENZO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "IMPERI DIEGO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PARENTE CRISTIAN",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "MAENZA TIZIANO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "PORTALE RICCARDO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "COMEDINI VALERIO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          }
+        ]
       },
       {
         "giornata": "SEMIFINALE B",
@@ -1252,13 +1293,34 @@
         "campo": "A",
         "orario": "10.00",
         "data": "01.06.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 7,
+        "golB": 4,
+        "portiere": "GAMBELLINI CRISTIAN",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "ROMANO DOMENICO",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "ROMANO DOMENICO",
+            "gol": 4,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "CRISPI CHRISTIAN",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "BASOC DANIELE",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "VESCOVO LORENZO",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          }
+        ]
       },
       {
         "giornata": "FINALE 5/6",
@@ -2434,12 +2496,12 @@
         "campo": "CAMPO A",
         "orario": "15.00",
         "data": "31.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
+        "golA": 1,
+        "golB": 6,
+        "portiere": "DE GASPERI NICOLO'",
+        "squadraPortiere": "FORTITUDO POMEZIA",
+        "giocatore": "CRUDETTI ANGELO",
+        "squadraGiocatore": "LATINA C5",
         "marcatori": []
       },
       {
