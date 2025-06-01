@@ -340,12 +340,12 @@
         "campo": "A",
         "orario": "18.00",
         "data": "31.05.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
+        "golA": 4,
+        "golB": 3,
+        "portiere": "PIASCO VALERIO",
+        "squadraPortiere": "ARDEA C5",
+        "giocatore": "MUSTO DAMIANO",
+        "squadraGiocatore": "CIRCOLO MASTER",
         "marcatori": [
           {
             "nome": "ORSINI FRANCESCO",
