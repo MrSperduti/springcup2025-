@@ -340,7 +340,7 @@
         "campo": "A",
         "orario": "18.00",
         "data": "31.05.2025",
-        "golA": 4,
+        "golA": 3,
         "golB": 3,
         "portiere": "PIASCO VALERIO",
         "squadraPortiere": "ARDEA C5",
@@ -367,11 +367,6 @@
             "gol": 1,
             "squadra": "CIRCOLO MASTER"
           },
-          {
-            "nome": "MUSTO DAMIANO",
-            "gol": 1,
-            "squadra": "CIRCOLO MASTER"
-          }
         ]
       }
     ],
