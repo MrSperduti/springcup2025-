@@ -5238,13 +5238,44 @@
         "campo": "B",
         "orario": "18.00",
         "data": "04.06.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 7,
+        "golB": 1,
+        "portiere": "TITTARELLI FILIPPO",
+        "squadraPortiere": "S.PIETRO E PAOLO",
+        "giocatore": "SQUITIERI GIULIA",
+        "squadraGiocatore": "S.PIETRO E PAOLO",
+        "marcatori": [
+          {
+            "nome": "DIAGNE ALESSANDRO",
+            "gol": 1,
+            "squadra": "S.PIETRO E PAOLO"
+          },
+          {
+            "nome": "CORCIONE FRANCESCO",
+            "gol": 3,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BARBIERO EMMA",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "DI FIORE NICOLAS",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "CRISANO LORENZO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "BOZZA GABRIELE",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          }
+        ]
       },
       {
         "giornata": "SEMIFINALE B",
@@ -5254,19 +5285,50 @@
         "campo": "A",
         "orario": "18.00",
         "data": "04.06.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 16,
+        "golB": 0,
+        "portiere": "BECK ETHAN ANTONIO",
+        "squadraPortiere": "FORTE COLLEFERRO",
+        "giocatore": "AFELBA FEDERICO",
+        "squadraGiocatore": "INDOMITA POMEZIA",
+        "marcatori": [
+          {
+            "nome": "BACCINI MARZIO",
+            "gol": 8,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "AFELBA FEDERICO",
+            "gol": 4,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "BENNARDI ALESSANDRO",
+            "gol": 3,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "VADALA' ANDREA",
+            "gol": 1,
+            "squadra": "INDOMITA POMEZIA"
+          },
+          {
+            "nome": "BRUNI CHRISTIAN",
+            "gol": 1,
+            "squadra": "FORTE COLLEFERRO"
+          },
+          {
+            "nome": "RONZONI FILIPPO",
+            "gol": 1,
+            "squadra": "FORTE COLLEFERRO"
+          }
+        ]
       },
       {
         "giornata": "FINALE TERZO E QUARTO POSTO",
         "girone": "",
-        "squadraA": "",
-        "squadraB": "",
+        "squadraA": "S.PIETRO E PAOLO",
+        "squadraB": "FORTE COLLEFERRO",
         "campo": "B",
         "orario": "14.00",
         "data": "07.06.2025",
@@ -5281,8 +5343,8 @@
       {
         "giornata": "FINALE ",
         "girone": "",
-        "squadraA": "",
-        "squadraB": "",
+        "squadraA": "LATINA C5",
+        "squadraB": "INDOMITA POMEZIA",
         "campo": "A",
         "orario": "14.00",
         "data": "07.06.2025",
