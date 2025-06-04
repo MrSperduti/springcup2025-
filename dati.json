@@ -368,6 +368,38 @@
             "squadra": "CIRCOLO MASTER"
           }
         ]
+      },
+      {
+        "giornata": "FINALE TERZO E QUARTO POSTO",
+        "girone": "",
+        "squadraA": "CIRCOLO MASTER",
+        "squadraB": "FORTITUDO POMEZIA",
+        "campo": "B",
+        "orario": "19.00",
+        "data": "07.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "FINALE ",
+        "girone": "",
+        "squadraA": "ACADEMY",
+        "squadraB": "ARDEA C5",
+        "campo": "A",
+        "orario": "19.00",
+        "data": "07.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       }
     ],
     "finali": [],
@@ -1290,8 +1322,8 @@
         "data": "01.06.2025",
         "golA": 7,
         "golB": 4,
-        "portiere": "GAMBELLINI CRISTIAN",
-        "squadraPortiere": "ACADEMY",
+        "portiere": "TANTALO MATTEO",
+        "squadraPortiere": "FF10",
         "giocatore": "ROMANO DOMENICO",
         "squadraGiocatore": "ACADEMY",
         "marcatori": [
@@ -1373,6 +1405,38 @@
             "squadra": "CIRCOLO MASTER"
           }
         ]
+      },
+      {
+        "giornata": "FINALE TERZO E QUARTO POSTO",
+        "girone": "",
+        "squadraA": "FORTITUDO POMEZIA ",
+        "squadraB": "FF10",
+        "campo": "B",
+        "orario": "18.00",
+        "data": "07.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "FINALE ",
+        "girone": "",
+        "squadraA": "ACADEMY",
+        "squadraB": "NEW TEAM",
+        "campo": "A",
+        "orario": "18.00",
+        "data": "07.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       }
     ],
     "finali": [],
@@ -2491,13 +2555,44 @@
         "campo": "CAMPO A",
         "orario": "15.00",
         "data": "31.05.2025",
-        "golA": 1,
-        "golB": 6,
+        "golA": 3,
+        "golB": 7,
         "portiere": "DE GASPERI NICOLO'",
         "squadraPortiere": "FORTITUDO POMEZIA",
         "giocatore": "CRUDETTI ANGELO",
         "squadraGiocatore": "LATINA C5",
-        "marcatori": []
+        "marcatori": [
+          {
+            "nome": "ERDI FLAVIO",
+            "gol": 4,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "MANCINI VALERIO",
+            "gol": 2,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "AURELI ASCANIO",
+            "gol": 1,
+            "squadra": "FORTITUDO POMEZIA"
+          },
+          {
+            "nome": "CRUDETTI ANGELO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "MATTIUZZO ALESSANDRO",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          },
+          {
+            "nome": "PICCIRILLO DAVIDE",
+            "gol": 1,
+            "squadra": "LATINA C5"
+          }
+        ]
       },
       {
         "giornata": "1",
@@ -2785,6 +2880,54 @@
             "squadra": "FF10"
           }
         ]
+      },
+      {
+        "giornata": "FINALE TERZO E QUARTO POSTO",
+        "girone": "",
+        "squadraA": "FF10",
+        "squadraB": "LATINA C5",
+        "campo": "B",
+        "orario": "16.00",
+        "data": "07.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "FINALE ",
+        "girone": "",
+        "squadraA": "FORTITUDO POMEZIA",
+        "squadraB": "NEW TEAM",
+        "campo": "A",
+        "orario": "16.00",
+        "data": "",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "FINALE QUINTO E SESTO POSTO",
+        "girone": "",
+        "squadraA": "ACADEMY",
+        "squadraB": "MARINO ACADEMY",
+        "campo": "B",
+        "orario": "17.00",
+        "data": "07.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       }
     ],
     "finali": [],
@@ -4005,6 +4148,38 @@
             "squadra": "FORTITUDO POMEZIA"
           }
         ]
+      },
+      {
+        "giornata": "FINALE TERZO E QUARTO POSTO",
+        "girone": "",
+        "squadraA": "FORTITUDO POMEZIA",
+        "squadraB": "S.PIETRO E PAOLO",
+        "campo": "B",
+        "orario": "15.00",
+        "data": "07.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "FINALE ",
+        "girone": "",
+        "squadraA": "ACADEMY",
+        "squadraB": "LATINA C5",
+        "campo": "A",
+        "orario": "15.00",
+        "data": "07.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       }
     ],
     "finali": [],
@@ -5086,6 +5261,38 @@
         "giocatore": "",
         "squadraGiocatore": "",
         "marcatori": []
+      },
+      {
+        "giornata": "FINALE TERZO E QUARTO POSTO",
+        "girone": "",
+        "squadraA": "",
+        "squadraB": "",
+        "campo": "B",
+        "orario": "14.00",
+        "data": "07.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "FINALE ",
+        "girone": "",
+        "squadraA": "",
+        "squadraB": "",
+        "campo": "A",
+        "orario": "14.00",
+        "data": "07.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
       }
     ],
     "finali": [],
@@ -5439,11 +5646,42 @@
         "data": "03.06.2025",
         "golA": null,
         "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "portiere": "MENDITTO ISABELLA",
+        "squadraPortiere": "ACADEMY",
+        "giocatore": "AMATO AURORA",
+        "squadraGiocatore": "ACADEMY",
+        "marcatori": [
+          {
+            "nome": "AMATO AURORA",
+            "gol": 2,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "BUSTI LUDOVICA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "DI BERNARSO ELEONORA",
+            "gol": 1,
+            "squadra": "ACADEMY"
+          },
+          {
+            "nome": "BUONANNO SIMONA",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "CIPRIANI MARTINA",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "D'AGOSTINO MISIA",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          }
+        ]
       },
       {
         "giornata": "6",
@@ -5453,6 +5691,22 @@
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "05.06.2025",
+        "golA": null,
+        "golB": null,
+        "portiere": "",
+        "squadraPortiere": "",
+        "giocatore": "",
+        "squadraGiocatore": "",
+        "marcatori": []
+      },
+      {
+        "giornata": "FINALE ",
+        "girone": "",
+        "squadraA": "ACADEMY",
+        "squadraB": "FUTSAL BASIC ACADEMY",
+        "campo": "A",
+        "orario": "17.00",
+        "data": "07.06.2025",
         "golA": null,
         "golB": null,
         "portiere": "",
