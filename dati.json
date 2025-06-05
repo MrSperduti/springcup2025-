@@ -5706,8 +5706,8 @@
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "03.06.2025",
-        "golA": null,
-        "golB": null,
+        "golA": 3,
+        "golB": 4,
         "portiere": "MENDITTO ISABELLA",
         "squadraPortiere": "ACADEMY",
         "giocatore": "AMATO AURORA",
@@ -5724,7 +5724,7 @@
             "squadra": "ACADEMY"
           },
           {
-            "nome": "DI BERNARSO ELEONORA",
+            "nome": "DI BERNARDO ELEONORA",
             "gol": 1,
             "squadra": "ACADEMY"
           },
