@@ -5679,13 +5679,34 @@
         "campo": "CAMPO A",
         "orario": "17.00",
         "data": "05.06.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 0,
+        "golB": 4,
+        "portiere": "STRAVATO GIORGIA",
+        "squadraPortiere": "BASIC ACADEMY",
+        "giocatore": "DI SILVIO GAIA",
+        "squadraGiocatore": "S.GIOVANNI EVANGELISTA",
+        "marcatori": [
+          {
+            "nome": "CIPRIANI MARTINA",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "D'AGOSTINO MISIA",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "ASCIONE FRANCESCA",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "DI SILVIO GAIA",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          }
+        ]
       },
       {
         "giornata": "4",
@@ -5769,13 +5790,24 @@
         "campo": "CAMPO A",
         "orario": "18.00",
         "data": "05.06.2025",
-        "golA": null,
-        "golB": null,
-        "portiere": "",
-        "squadraPortiere": "",
-        "giocatore": "",
-        "squadraGiocatore": "",
-        "marcatori": []
+        "golA": 3,
+        "golB": 0,
+        "portiere": "STRAVATO GIORGIA ",
+        "squadraPortiere": "FUTSAL BASIC ACADEMY",
+        "giocatore": "CIPRIANI MARTINA",
+        "squadraGiocatore": "S.GIOVANNI EVANGELISTA",
+        "marcatori": [
+          {
+            "nome": "DI SILVIO GAIA",
+            "gol": 2,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          },
+          {
+            "nome": "CIPRIANI MARTINA",
+            "gol": 1,
+            "squadra": "S.GIOVANNI EVANGELISTA"
+          }
+        ]
       },
       {
         "giornata": "FINALE ",
